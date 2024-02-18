@@ -1,16 +1,20 @@
-.. antsdr_doc_en documentation master file, created by
-   sphinx-quickstart on Tue Jan 10 10:04:24 2023.
+.. cpp_dictionary documentation master file, created by
+   sphinx-quickstart on Wed Jul  7 09:42:42 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentation of ANTSDR
-=========================================
-
+MicroPhase FPGA Product Guide
+=================================
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :maxdepth: 2
+   
+   docs/SOMs/index
+   docs/Dev Boards/index
+   docs/FAPS/index
 
-   device_and_usage_manual/Device_and_Usage_Manual
-   app_notes/app_notes.rst
-   about
+README
+=================================
+.. toctree::
+   :maxdepth: 2
 
+   docs/README
