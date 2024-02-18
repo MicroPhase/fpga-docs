@@ -27,7 +27,7 @@ suitable for the hardware design of the hardware developer, according to the coo
 
 ### 1.2 Components layout
 
-![image-20240218105157510](z7-nano.assets/image-20240218105157510.png)
+![image-20240218172910048](z7-nano.assets/image-20240218172910048.png)
 
 ### 1.3 Purchasing Options
 
@@ -47,7 +47,7 @@ suitable for the hardware design of the hardware developer, according to the coo
 
 The board is use the +5V supply from USB. The Figure 2-1 shows the USB can use to provide power.
 
-![image-20240218105319215](z7-nano.assets/image-20240218105319215.png)
+![image-20240218172921092](z7-nano.assets/image-20240218172921092.png)
 
 
 
@@ -55,13 +55,13 @@ The board is use the +5V supply from USB. The Figure 2-1 shows the USB can use t
 
 By default, Z7Nano- supports JTAG, QSPI and SD modes, which is controlled by the MODE input signal from the J1. User can change mode through the jumper cap. The startup mode is configured as shown in blow.
 
-![image-20240218111146803](z7-nano.assets/image-20240218111146803.png)
+![image-20240218172928170](z7-nano.assets/image-20240218172928170.png)
 
 | Jumper cap position                                          | Mode |
 | ------------------------------------------------------------ | ---- |
-| ![image-20240218111159095](z7-nano.assets/image-20240218111159095.png) | SD   |
-| ![image-20240218111207369](z7-nano.assets/image-20240218111207369.png) | QSPI |
-| ![image-20240218111214172](z7-nano.assets/image-20240218111214172.png) | JTAG |
+| ![image-20240218172936012](z7-nano.assets/image-20240218172936012.png) | SD   |
+| ![image-20240218172942722](z7-nano.assets/image-20240218172942722.png) | QSPI |
+| ![image-20240218172947842](z7-nano.assets/image-20240218172947842.png) | JTAG |
 
 ### 2.3 On-board Peripherals
 
@@ -102,7 +102,7 @@ By default, Z7Nano- supports JTAG, QSPI and SD modes, which is controlled by the
 - USB Host
   The USB2.0 transceiver on-board is USB3320C-EZK, which is supports the ULPI standard interface. It connected with ZYNQ’s bus interface to enable high-speed USB2.0 Host mode data communications.
 
-![image-20240218110022646](z7-nano.assets/image-20240218110022646.png)
+![image-20240218172957747](z7-nano.assets/image-20240218172957747.png)
 
 
 
@@ -111,7 +111,7 @@ By default, Z7Nano- supports JTAG, QSPI and SD modes, which is controlled by the
 
 |                                                              | Signal Name | Pin Number |
 | ------------------------------------------------------------ | ----------- | ---------- |
-| ![image-20240218111229361](z7-nano.assets/image-20240218111229361.png) | SYS_RESET_N | C7         |
+| ![image-20240218173005385](z7-nano.assets/image-20240218173005385.png) | SYS_RESET_N | C7         |
 
 - Micro SD
   The board provide a Micro SD card interface to make user can access the SD card memory, BOOT programs for storing ZYNQ chips, Linux operating system kernels, file systems, and other user date files.
