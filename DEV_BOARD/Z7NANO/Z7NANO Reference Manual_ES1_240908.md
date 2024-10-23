@@ -1,10 +1,4 @@
-**Z7 Nano Reference Manual**
-
-****
-
-
-
-
+**Z7-Nano Reference Manual**
 
 # Revision History
 
@@ -25,11 +19,15 @@ Vivado 2018.3 is from Xilinx website
 
 # WeChat Public Number:
 
-![image-20240808164018087](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808163724633.png)
+![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808163724633-1729651915747-2.png)
+
+<div style="page-break-after:always;"></div>
 
 # Contents
 
 [toc]
+
+<div style="page-break-after:always;"></div>
 
 # ●1. Overview
 
@@ -39,7 +37,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Board Layout
 
-![image-20240808165414608](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808165359943.png)
+![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165359943-1729651935117-4.png)
 
 ## ○Key Features
 
@@ -71,11 +69,11 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Block diagram
 
-![](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\Z7_NANO.png)
+![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\Z7_NANO-1729651977091-6.png)
 
 ## ○**Mechanical Spec**
 
-![](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\Z7NANO_MECH.jpg)
+![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\Z7NANO_MECH-1729651988566-8.jpg)
 
 # ●2. Function Resources
 
@@ -115,9 +113,9 @@ Vivado 2018.3 is from Xilinx website
 
   ​           		    4.9Mb (7020)
 
-  Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
+- Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 
-  Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
+- Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ## ○DDR3
 
@@ -163,7 +161,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
-![image-20240808165651030](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808165651030.png)
+![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165651030-1729652478123-1.png)
 
 ## ○USB UART
 
@@ -180,13 +178,13 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Boot Config
 
-​	The Z7-NANO startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the table below.
+​	The Z7-Nano startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the table below.
 
 | Jumper cap position                                          | Mode |
 | ------------------------------------------------------------ | ---- |
-| ![image-20240808165530299](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808165530299.png) | SD   |
-| ![image-20240808165538170](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808165538170.png) | QSPI |
-| ![image-20240808165544863](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808165544863.png) | JTAG |
+| ![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165530299-1729652493277-3.png) | SD   |
+| ![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165538170-1729652502086-5.png) | QSPI |
+| ![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165544863-1729652509384-7.png) | JTAG |
 
 ### Quad-SPI Flash
 
@@ -198,7 +196,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Oscillators/Clocks
 
-​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other one 50Mhz active crystal oscillator provides additional clocks for the PL logic.
+​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other one 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
 
 | Position | Signal Name | Frequency | Pin Number |
 | :------: | :---------: | :-------: | :--------: |
@@ -207,7 +205,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Reset
 
-​	We provide a key (K1) which can be used as a 'reset' signal for designs running on FPGA
+​	We provide a key (K1) which can be used as a 'reset' signal for designs running on FPGA.
 
 ## ○Micro SD
 
@@ -292,8 +290,5 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The board is use the +5V supply from USB. The Figure shows the USB can use to provide power.
 
-![](G:\MARKDOWN_DOC\DEV\Z7NANO\Z7NANO.assets\image-20240808165444585.png)
+![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165444585-1729662115842-1.png)
 
-# ●3. **Getting_Started_Guide**
-
-### 
