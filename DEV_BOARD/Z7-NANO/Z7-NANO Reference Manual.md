@@ -19,13 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 # WeChat Public Number:
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/image-20240808163724633-1729651915747-2.png)
-
-<div style="page-break-after:always;"></div>
-
-# Contents
-
-[toc]
+![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -43,7 +37,7 @@ Vivado 2018.3 is from Xilinx website
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
 
-​	Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
+&ensp;&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 
 - DDR3: 1 4Gbit, DDR3 (MT41J256M16HA-125:K or equivalent)
 
@@ -65,7 +59,9 @@ Vivado 2018.3 is from Xilinx website
 
 - USB UART:1 USB UART interface, using for serial communication with PC.
 
-- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system. 1 50Mhz active crystal oscillator provides additional clocks for the PL logic.
+- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.  
+  1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
+  
 
 ## ○Block diagram
 
@@ -73,7 +69,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○**Mechanical Spec**
 
-![image]([https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7NANO/Z7NANO%20Reference%20Manual_ES1_240908.assets/Z7NANO_MECH-1729651988566-8.jpg?raw=true](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/Z7NANO_MECH-1729651988566-8.jpg))
+![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/Z7NANO_MECH.jpg)
 
 # ●2. Function Resources
 
@@ -95,23 +91,23 @@ Vivado 2018.3 is from Xilinx website
 
   LUTs: 17,600 (7010)
 
-  ​	   53,200(7020)
+  ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)
 
   DSP Slices: 80 (7010) 
 
-  ​    		220 (7020)
+  ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)
 
   Logic Cells: 28K (7010)
 
-  ​		     85K(7020)
+  ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)
 
   Flip-Flops: 35,200 (7010) 
 
-  ​    	       106,400 (7020)
+  ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
 
   Total Block RAM: 2.1Mb (7010) 
 
-  ​           		    4.9Mb (7020)
+  ​       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
 
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 
@@ -161,7 +157,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
-![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165651030-1729652478123-1.png)
+![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/USB_HOST.png)
 
 ## ○USB UART
 
@@ -182,9 +178,9 @@ Vivado 2018.3 is from Xilinx website
 
 | Jumper cap position                                          | Mode |
 | ------------------------------------------------------------ | ---- |
-| ![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165530299-1729652493277-3.png) | SD   |
-| ![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165538170-1729652502086-5.png) | QSPI |
-| ![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165544863-1729652509384-7.png) | JTAG |
+| ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/SD_MODE.png) | SD   |
+| ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/QSPI_MODE.png) | QSPI |
+| ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/JTAG_MODE.png) | JTAG |
 
 ### Quad-SPI Flash
 
@@ -290,5 +286,5 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The board is use the +5V supply from USB. The Figure shows the USB can use to provide power.
 
-![](G:\MARKDOWN_DOC\GIT\DEV_BOARD\Z7NANO\Z7NANO Reference Manual_ES1_240908.assets\image-20240808165444585-1729662115842-1.png)
+![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/POWER_INTERFACE.png)
 
