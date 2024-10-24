@@ -27,7 +27,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	Z7 Nano is a Commercial-grade SoM (System on Module) based on Xilinx Zynq-7000 SoC (XC7Z010 or XC7Z020) with up to 4Gb of DDR3/L SDRAM, 128MB of SPI flash memory, Gigabit Ethernet PHY transceiver, a USB PHY transceiver and a simple way to support power.
 
-​	It’s not only suitable for the software verification but also of the software staff, but also suitable for the hardware design of the hardware developer, according to the cooperation of software and hardware to help you speed up the development process of the project.
+​	It is suitable for both software verification and hardware development, helping to accelerate project progress.
 
 ## ○Board Layout
 
@@ -283,7 +283,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Power
 
-​	The board is use the +5V supply from USB. The Figure shows the USB can use to provide power.
+​	The board is use a +5V supply from USB. The Figure shows the USB can use to provide power.
 
 ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/POWER_INTERFACE.png)
 
