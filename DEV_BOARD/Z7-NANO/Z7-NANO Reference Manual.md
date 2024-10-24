@@ -232,10 +232,9 @@ Vivado 2018.3 is from Xilinx website
 ## ○GPIO
 
 ​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.
-
-| JP1 |             |            |     |             |            |
+**JP1:**
+| Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
 |:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
-| Pin | Signal Name | Pin Number | Pin | Signal Name | Pin Number |
 |  1  |  GPIO1_0P   |    N17     |  2  |  GPIO1_0N   |    P18     |
 |  3  |  GPIO1_1P   |    R16     |  4  |  GPIO1_1N   |    R17     |
 |  5  |  GPIO1_2P   |    T16     |  6  |  GPIO1_2N   |    U17     |
@@ -259,9 +258,8 @@ Vivado 2018.3 is from Xilinx website
 
 
 
-| JP2 |             |            |     |             |            |
+| Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
 |:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
-| Pin | Signal Name | Pin Number | Pin | Signal Name | Pin Number |
 |  1  |  GPIO2_0P   |    L16     |  2  |  GPIO2_0N   |    L17     |
 |  3  |  GPIO2_1P   |    H15     |  4  |  GPIO2_1N   |    G15     |
 |  5  |  GPIO2_2P   |    F16     |  6  |  GPIO2_2N   |    F17     |
