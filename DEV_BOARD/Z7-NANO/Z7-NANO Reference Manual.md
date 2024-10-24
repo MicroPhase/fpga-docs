@@ -182,7 +182,7 @@ Vivado 2018.3 is from Xilinx website
 | ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/QSPI_MODE.png) | QSPI |
 | ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/JTAG_MODE.png) | JTAG |
 
-### Quad-SPI Flash
+## ○Quad-SPI Flash
 
 ​	On-board 128M Quad-SPI Flash memory W25Q128JVSIQ is used to store initial FPGA configuration and user’s application as well as data.
 
@@ -190,7 +190,7 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :----------: | :-------: | :-----: |
 |    U2    | W25Q128JVSIQ | 128M Byte | Winbond |
 
-### Oscillators/Clocks
+## ○Oscillators/Clocks
 
 ​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other one 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
 
