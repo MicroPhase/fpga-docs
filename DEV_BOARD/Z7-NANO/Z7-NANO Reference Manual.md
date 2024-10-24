@@ -51,7 +51,8 @@ Vivado 2018.3 is from Xilinx website
 
 - HDMI: 1 HDMI video output interface, can realize 1080P video image
 
-- PHY ETH: 2 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.1 PS control, 1 PL control.
+- PHY ETH: 2 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 PS control, 1 PL control.
 
 - USB Host: 1 USB Host.
 
@@ -60,7 +61,7 @@ Vivado 2018.3 is from Xilinx website
 - USB UART:1 USB UART interface, using for serial communication with PC.
 
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.  
-  1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
   
 
 ## ○Block diagram
