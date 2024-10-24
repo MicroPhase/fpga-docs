@@ -104,7 +104,7 @@ Vivado 2018.3 is from Xilinx website
 
   Flip-Flops: 35,200 (7010) 
 
-  ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
+  ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
 
   Total Block RAM: 2.1Mb (7010) 
 
@@ -231,7 +231,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○GPIO
 
-​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.
+​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.  
 **JP1:**
 | Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
 |:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
@@ -257,7 +257,7 @@ Vivado 2018.3 is from Xilinx website
 | 39  |  GPIO1_17P  |    T12     | 40  |  GPIO1_17N  |    U12     |
 
 
-
+**JP2:**
 | Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
 |:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
 |  1  |  GPIO2_0P   |    L16     |  2  |  GPIO2_0N   |    L17     |
