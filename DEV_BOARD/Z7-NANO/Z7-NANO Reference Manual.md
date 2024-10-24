@@ -283,7 +283,12 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Power
 
-​	The board is use a +5V supply from USB. The Figure shows the USB can use to provide power.
+​	The board is use a +5V supply from USB. The Figure shows the USB can use to provide power.  
+.. warning::
+
+  Input voltage should not be higher than 5.5V.
+
+
 
 ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/POWER_INTERFACE.png)
 
