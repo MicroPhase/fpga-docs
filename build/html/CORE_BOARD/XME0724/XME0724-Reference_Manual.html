@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Revision History &#8212; SPDOC 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Revision History" href="../XME0726/XME0726-Reference_Manual.html" />
+    <link rel="prev" title="CORE_BOARD Documentation" href="../CORE_BOARD.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p><strong>XME0724 Reference Manual</strong></p>
+<section id="revision-history">
+<h1>Revision History<a class="headerlink" href="#revision-history" title="Link to this heading">¶</a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Revision</p></th>
+<th class="head text-left"><p>Time</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Rev. 1.0</p></td>
+<td class="text-left"><p>2024.08.17</p></td>
+<td class="text-left"><p>First Release</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="copyright-notice">
+<h1>CopyRight Notice:<a class="headerlink" href="#copyright-notice" title="Link to this heading">¶</a></h1>
+<p>Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.</p>
+</section>
+<section id="development-environment">
+<h1>Development Environment:<a class="headerlink" href="#development-environment" title="Link to this heading">¶</a></h1>
+<p>Vivado 2018.3 is from Xilinx website</p>
+<p><a class="reference external" href="https://www.xilinx.com">https://www.xilinx.com</a></p>
+</section>
+<section id="wechat-public-number">
+<h1>WeChat Public Number:<a class="headerlink" href="#wechat-public-number" title="Link to this heading">¶</a></h1>
+<p>![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\image-20240808163724633.png)</p>
+<div style="page-break-after:always;"></div>
+</section>
+<section id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Link to this heading">¶</a></h1>
+<p>[TOC]</p>
+<div style="page-break-after:always;"></div>
+</section>
+<section id="overview">
+<h1>●1. Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h1>
+<p>​	XME0724 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology.</p>
+<p>​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request. Refer to the model descriptions for details.</p>
+<section id="board-layout">
+<h2>○Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading">¶</a></h2>
+<p>![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\1-0724标注图片原稿-01.png)</p>
+</section>
+<section id="key-features">
+<h2>○Key Features<a class="headerlink" href="#key-features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),</p></li>
+</ul>
+<p>​	Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).</p>
+<ul>
+<li><p>DDR3: 512MB DDR3 RAM((7010 Version Only),</p>
+<p>​	    1GB DDR3 RAM(7020 Version Only).</p>
+</li>
+<li><p>Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.</p></li>
+<li><p>LED: 1 Power LED, 1 FPGA Done LED;</p>
+<p>​	  2 user’s LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.</p>
+</li>
+<li><p>GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.</p></li>
+<li><p>USB JTAG: 1 on board JTAG circuit, can debug and download the ZYNQ system through a USB cable.</p></li>
+<li><p>HDMI: 1 HDMI video output interface, can realize 1080P video image</p></li>
+<li><p>Giga ETH: 10/100/1000M Adaptive</p></li>
+<li><p>USB Host: USB2.0 PHY(USB3320)</p></li>
+<li><p>CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.</p></li>
+</ul>
+</section>
+<section id="block-diagram">
+<h2>○Block diagram<a class="headerlink" href="#block-diagram" title="Link to this heading">¶</a></h2>
+<p>​            ![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\0724_block.png)</p>
+</section>
+<section id="mechanical-spec">
+<h2>○Mechanical Spec<a class="headerlink" href="#mechanical-spec" title="Link to this heading">¶</a></h2>
+<p>![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\XME0724-尺寸示意图_20190301.jpg)</p>
+</section>
+</section>
+<section id="function-resources">
+<h1>●2. Function Resources<a class="headerlink" href="#function-resources" title="Link to this heading">¶</a></h1>
+<section id="fpga">
+<h2>○FPGA<a class="headerlink" href="#fpga" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p>667 MHz dual-core Cortex-A9 processor</p></li>
+<li><p>DDR3L memory controller with 8 DMA channels and 4</p></li>
+<li><p>High Performance AXI3 Slave ports</p></li>
+<li><p>High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO</p></li>
+<li><p>Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C</p></li>
+<li><p>Programmable from JTAG, Quad-SPI flash, and microSD card</p></li>
+<li><p>Programmable logic equivalent to Artix-7 FPGA</p>
+<p>LUTs: 17,600 (7010)</p>
+<p>​	   53,200(7020)</p>
+<p>DSP Slices: 80 (7010)</p>
+<p>​    		220 (7020)</p>
+<p>Logic Cells: 28K (7010)</p>
+<p>​		     85K(7020)</p>
+<p>Flip-Flops: 35,200 (7010)</p>
+<p>​    	       106,400 (7020)</p>
+<p>Total Block RAM: 2.1Mb (7010)</p>
+<p>​           		    4.9Mb (7020)</p>
+<p>Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs</p>
+<p>Security: AES &amp; SHA 256b Decryption &amp; Authentication for Secure Programmable Logic Config</p>
+</li>
+</ul>
+</section>
+<section id="ddr3">
+<h2>○DDR3<a class="headerlink" href="#ddr3" title="Link to this heading">¶</a></h2>
+<p>​	The module uses two 16-bit DDR3 memory chips, 512MB for the XME0724-10 version and 1GB for the XME0724-20 version.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Signal Name</p></th>
+<th class="head"><p>PIN Number</p></th>
+<th class="head"><p>Signal Name</p></th>
+<th class="head"><p>PIN Number</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PS_DDR3_A0</p></td>
+<td><p>N2</p></td>
+<td><p>PS_DDR3_D9</p></td>
+<td><p>E3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A1</p></td>
+<td><p>K2</p></td>
+<td><p>PS_DDR3_D10</p></td>
+<td><p>G3</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A2</p></td>
+<td><p>M3</p></td>
+<td><p>PS_DDR3_D11</p></td>
+<td><p>H3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A3</p></td>
+<td><p>K3</p></td>
+<td><p>PS_DDR3_D12</p></td>
+<td><p>J3</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A4</p></td>
+<td><p>M4</p></td>
+<td><p>PS_DDR3_D13</p></td>
+<td><p>H2</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A5</p></td>
+<td><p>L1</p></td>
+<td><p>PS_DDR3_D14</p></td>
+<td><p>H1</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A6</p></td>
+<td><p>L4</p></td>
+<td><p>PS_DDR3_D15</p></td>
+<td><p>J1</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A7</p></td>
+<td><p>K4</p></td>
+<td><p>PS_DDR3_D16</p></td>
+<td><p>P1</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A8</p></td>
+<td><p>K1</p></td>
+<td><p>PS_DDR3_D17</p></td>
+<td><p>P3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A9</p></td>
+<td><p>J4</p></td>
+<td><p>PS_DDR3_D18</p></td>
+<td><p>R3</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A10</p></td>
+<td><p>F5</p></td>
+<td><p>PS_DDR3_D19</p></td>
+<td><p>R1</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A11</p></td>
+<td><p>G4</p></td>
+<td><p>PS_DDR3_D20</p></td>
+<td><p>T4</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A12</p></td>
+<td><p>E4</p></td>
+<td><p>PS_DDR3_D21</p></td>
+<td><p>U4</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_A13</p></td>
+<td><p>D4</p></td>
+<td><p>PS_DDR3_D22</p></td>
+<td><p>U2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_A14</p></td>
+<td><p>F4</p></td>
+<td><p>PS_DDR3_D23</p></td>
+<td><p>U3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_BA0</p></td>
+<td><p>L5</p></td>
+<td><p>PS_DDR3_D24</p></td>
+<td><p>V1</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_BA1</p></td>
+<td><p>R4</p></td>
+<td><p>PS_DDR3_D25</p></td>
+<td><p>Y3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_BA2</p></td>
+<td><p>J5</p></td>
+<td><p>PS_DDR3_D26</p></td>
+<td><p>W1</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_NCAS</p></td>
+<td><p>P5</p></td>
+<td><p>PS_DDR3_D27</p></td>
+<td><p>Y4</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_CKE</p></td>
+<td><p>N3</p></td>
+<td><p>PS_DDR3_D28</p></td>
+<td><p>Y2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_CLK_N</p></td>
+<td><p>M2</p></td>
+<td><p>PS_DDR3_D29</p></td>
+<td><p>W3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_CLK_P</p></td>
+<td><p>L2</p></td>
+<td><p>PS_DDR3_D30</p></td>
+<td><p>V2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_NCS</p></td>
+<td><p>N1</p></td>
+<td><p>PS_DDR3_D31</p></td>
+<td><p>V3</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_DM0</p></td>
+<td><p>A1</p></td>
+<td><p>PS_DDR3_DQS_N0</p></td>
+<td><p>B2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_DM1</p></td>
+<td><p>F1</p></td>
+<td><p>PS_DDR3_DQS_N1</p></td>
+<td><p>F2</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_DM2</p></td>
+<td><p>T1</p></td>
+<td><p>PS_DDR3_DQS_N2</p></td>
+<td><p>T2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_DM3</p></td>
+<td><p>Y1</p></td>
+<td><p>PS_DDR3_DQS_N3</p></td>
+<td><p>W4</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_D0</p></td>
+<td><p>C3</p></td>
+<td><p>PS_DDR3_DQS_P0</p></td>
+<td><p>C2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_D1</p></td>
+<td><p>B3</p></td>
+<td><p>PS_DDR3_DQS_P1</p></td>
+<td><p>G2</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_D2</p></td>
+<td><p>A2</p></td>
+<td><p>PS_DDR3_DQS_P2</p></td>
+<td><p>R2</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_D3</p></td>
+<td><p>A4</p></td>
+<td><p>PS_DDR3_DQS_P3</p></td>
+<td><p>W5</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_D4</p></td>
+<td><p>D3</p></td>
+<td><p>PS_DDR3_NRST</p></td>
+<td><p>B4</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_D5</p></td>
+<td><p>D1</p></td>
+<td><p>PS_DDR3_ODT</p></td>
+<td><p>N5</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_D6</p></td>
+<td><p>C1</p></td>
+<td><p>PS_DDR3_NRAS</p></td>
+<td><p>P4</p></td>
+</tr>
+<tr class="row-even"><td><p>PS_DDR3_D7</p></td>
+<td><p>E1</p></td>
+<td><p>PS_DDR3_NWE</p></td>
+<td><p>M5</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS_DDR3_D8</p></td>
+<td><p>E2</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="giga-eth">
+<h2>○Giga ETH<a class="headerlink" href="#giga-eth" title="Link to this heading">¶</a></h2>
+<p>​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.</p>
+</section>
+<section id="usb-host">
+<h2>○USB Host<a class="headerlink" href="#usb-host" title="Link to this heading">¶</a></h2>
+<p>​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It’s connected with ZYNQ’s bus interface to enable high-speed USB2.0 Host mode data communications.</p>
+</section>
+<section id="usb-uart">
+<h2>○USB UART<a class="headerlink" href="#usb-uart" title="Link to this heading">¶</a></h2>
+<p>​	A USB to UART chip, the CH340, is provided for user connection to the host PC.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>Pin Name</p></th>
+<th class="head text-center"><p>Pin Number</p></th>
+<th class="head text-center"><p>Explain</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>UART_TX</p></td>
+<td class="text-center"><p>PS_MIO15_500</p></td>
+<td class="text-center"><p>C5</p></td>
+<td class="text-center"><p>UART data output</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>UART_RX</p></td>
+<td class="text-center"><p>PS_MIO14_500</p></td>
+<td class="text-center"><p>C8</p></td>
+<td class="text-center"><p>UART data output</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="emmc">
+<h2>○eMMC<a class="headerlink" href="#emmc" title="Link to this heading">¶</a></h2>
+<p>​	he module includes an 8GB eMMC interface (PS_SDIO1) for system files or data storage. It can also serve as a secondary boot device alongside the QSPI flash. The interface is PS BANK501 MIO[46-51].</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Signal Name</p></th>
+<th class="head"><p>Pin Number</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MMC_CLK</p></td>
+<td><p>B12</p></td>
+</tr>
+<tr class="row-odd"><td><p>MMC_CMD</p></td>
+<td><p>B14</p></td>
+</tr>
+<tr class="row-even"><td><p>MMC_DATA0</p></td>
+<td><p>D16</p></td>
+</tr>
+<tr class="row-odd"><td><p>MMC_DATA1</p></td>
+<td><p>C12</p></td>
+</tr>
+<tr class="row-even"><td><p>MMC_DATA2</p></td>
+<td><p>B13</p></td>
+</tr>
+<tr class="row-odd"><td><p>MMC_DATA3</p></td>
+<td><p>B9</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="jtag">
+<h2>○JTAG<a class="headerlink" href="#jtag" title="Link to this heading">¶</a></h2>
+<p>​	The ZYNQ SoC’s JTAG signals are connected to the expansion port, which also provides a 3.3V JTAG VREF voltage output signal</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Signal</p></th>
+<th class="head text-center"><p>Module Pin Number</p></th>
+<th class="head"><p>Explain</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>VCC_3V3</p></td>
+<td class="text-center"><p>Pin 152</p></td>
+<td><p><strong>Module voltage output</strong>, JTAG reference voltage</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>FPGA_TDI</p></td>
+<td class="text-center"><p>Pin 153</p></td>
+<td><p>Input</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>FPGA_TDO</p></td>
+<td class="text-center"><p>Pin 154</p></td>
+<td><p>Output</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>FPGA_TCK</p></td>
+<td class="text-center"><p>Pin 155</p></td>
+<td><p>Input</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>FPGA_TMS</p></td>
+<td class="text-center"><p>Pin 156</p></td>
+<td><p>Input</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>GND</p></td>
+<td class="text-center"><p>—</p></td>
+<td><p>Connect to the GND signal on the module</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="boot-config">
+<h2>○Boot Config<a class="headerlink" href="#boot-config" title="Link to this heading">¶</a></h2>
+<p>​	Configure the ZYNQ startup mode using core module pins PIN119 (MODE0) and PIN120 (MODE1). The ZYNQ configuration schematic is shown below.</p>
+<p>![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\BOOT.png)</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Mode</p></th>
+<th class="head text-center"><p>MODE1(PIN120)</p></th>
+<th class="head text-center"><p>MODE0(PIN119)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>JTAG</p></td>
+<td class="text-center"><p>Connection to GND</p></td>
+<td class="text-center"><p>Connection to GND</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>QSPI</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>Connection to GND</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>SD</p></td>
+<td class="text-center"><p>NC</p></td>
+<td class="text-center"><p>NC</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="quad-spi-flash">
+<h2>○Quad-SPI Flash<a class="headerlink" href="#quad-spi-flash" title="Link to this heading">¶</a></h2>
+<p>​	On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Position</p></th>
+<th class="head text-center"><p>Model</p></th>
+<th class="head text-center"><p>Capacity</p></th>
+<th class="head text-center"><p>Factory</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>U7</p></td>
+<td class="text-center"><p>W25Q256FVEI</p></td>
+<td class="text-center"><p>256 Byte</p></td>
+<td class="text-center"><p>Winbond</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="clock">
+<h2>○Clock<a class="headerlink" href="#clock" title="Link to this heading">¶</a></h2>
+<p>​	The XME0724 core board provides a 33.3Mhz active clock for the PS system.</p>
+<p>​	The clock for the PL section can be generated by the PLL in the PS section, or the user can use it as a clock input to the PL section by connecting an external clock source to the dedicated clock pin of the module.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Position</p></th>
+<th class="head text-center"><p>Signal Name</p></th>
+<th class="head text-center"><p>Frequency</p></th>
+<th class="head text-center"><p>Pin Number</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Y2</p></td>
+<td class="text-center"><p>PS_CLK_33d3</p></td>
+<td class="text-center"><p>33.333Mhz</p></td>
+<td class="text-center"><p>E7</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="power">
+<h2>○Power<a class="headerlink" href="#power" title="Link to this heading">¶</a></h2>
+<p>​	<strong>Please note that the power input of XME0724 is +5V. We recommend using a 5V/2A power supply.</strong></p>
+<p>​	The module powers up in a cascading sequence: 1.0V &gt; 1.8V &gt; 1.5V &gt; 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.</p>
+</section>
+<section id="led">
+<h2>○LED<a class="headerlink" href="#led" title="Link to this heading">¶</a></h2>
+<p>​	The XME0724 board includes four LEDs: a power indicator, an FPGA configuration status light, a PL-controlled user LED, and a PS-controlled user LED.</p>
+<p>​	The LED signals are described in the following table.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>LED</p></th>
+<th class="head"><p>ZYNQ Pin</p></th>
+<th class="head"><p>Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>D5</p></td>
+<td><p>–</p></td>
+<td><p>Power LED</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>D2</p></td>
+<td><p>R11</p></td>
+<td><p>FPGA configuration status LED, lit after successful FPGA configuration</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>D4</p></td>
+<td><p>G14</p></td>
+<td><p>LED on when FPGA G14 output is low</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>D3</p></td>
+<td><p>E6</p></td>
+<td><p>LED on when FPGA E6 output is low</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="gpio">
+<h2>○GPIO<a class="headerlink" href="#gpio" title="Link to this heading">¶</a></h2>
+<p>​	The XME0724 features a 1.27mm pitch stamp hole connection, which ensures optimal electrical characteristics and anti-interference performance. Additionally, a single row of 1.27mm pitch holes is provided on the interior of the stamp hole, and the two-in-one structure of the stamp hole and the 1.27mm row of pins offers enhanced flexibility in the utilisation of the XME0724. The stamp holes can be used for soldering, while the row of pins can be connected according to the user’s requirements.</p>
+<p>Description:</p>
+<ol class="arabic simple">
+<li><p>Bank34 IO level depends on Pin31 voltage input, input range 1.2V~3.3V.</p></li>
+<li><p>Bank35 IO level depends on Pin71 voltage input, input range 1.2V~3.3V.</p></li>
+<li><p>SD Signal (Pin139~Pin144) voltage is 1.8V.</p></li>
+<li><p>MIO9~MIO13, UART, JTAG, RESET(Pin145~Pin157) level is 3.3V.</p></li>
+<li><p>Please refer to the ‘<a class="reference external" href="https://swnatyr2ph.feishu.cn/file/JYwobURbmocF4DxAv3tciKDinBd?from=from_copylink">XME0724_Pinout _Table</a>’ for detailed pin definitions of the XME0724.</p></li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">SPDOC</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BASED_BOARD/BASED_BOARD.html">BASED_BOARD Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../CORE_BOARD.html">CORE_BOARD Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html">DEV_BOARD Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../CORE_BOARD.html">CORE_BOARD Documentation</a><ul>
+      <li>Previous: <a href="../CORE_BOARD.html" title="previous chapter">CORE_BOARD Documentation</a></li>
+      <li>Next: <a href="../XME0726/XME0726-Reference_Manual.html" title="next chapter">Revision History</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, EAR.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/CORE_BOARD/XME0724/XME0724-Reference_Manual.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
