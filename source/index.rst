@@ -2,7 +2,7 @@ Welcome to Your Project's Documentation!
 ========================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
    BASED_BOARD/BASED_BOARD
