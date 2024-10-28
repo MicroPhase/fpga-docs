@@ -1,37 +1,34 @@
-**PE100 Reference Manual**
+# **PE100 Reference Manual**
 
-# Revision History
+## Revision History
 
 | Revision | Time  | Description   |
 | :------- | :---- | :------------ |
 | Rev. 1.0 | 2024. | First Release |
 |          |       |               |
 
-# CopyRight Notice:
+## CopyRight Notice:
 
 Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
-# WeChat Public Number:
+## WeChat Public Number:
 
 ![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\image-20240808163724633.png)
 
 <div style="page-break-after:always;"></div>
 
-# Contents
 
-[TOC]
-
-# ●1. Overview
+## ●1. Overview
 
 ​	Using PE100, you can quickly test, developed and evaluated the function of the Microphase's 5*6 XME serious SoM. It provide various of interface for XME serious SoM, such as HDMI TX, Giga ETH, SFP ,PCIe 2.0 x1 and so on.
 
 ​	For now, it support XME0715 and XME0720. The most recommend is to use with XME0715.The following is based on the XME0715 unless noted.
 
-## ○Board Layout
+### ○Board Layout
 
 ![pe100_LAYOUT](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\pe100_LAYOUT.png)
 
-## ○Key Features
+### ○Key Features
 
 - 1 PCIe x1
 - 2 Giga ETH supports 10/100/1000M network transfer rate,1 for PS, 1 for PL
@@ -44,15 +41,15 @@ Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are r
 - 1 system reset key, 2 user's key
 - 4 user's LED
 
-## ○Block diagram
+### ○Block diagram
 
 ![](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\BLOCKDIAGRAM.png)
 
-## ○Mechanical Spec
+### ○Mechanical Spec
 
 ![](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\Allegro.png)
 
-## ○Core Board Matching Description
+### ○Core Board Matching Description
 
 ✔️：Support
 
@@ -74,9 +71,9 @@ Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are r
 | GPIO1    | ✔️       | ✔️           | ✔️                     | ✔️          |
 | GPIO2    | ✔️       | ⭐           | ✔️                     | ✔️          |
 
-# ●2. Function Resources
+## ●2. Function Resources
 
-## ○Giga ETH
+### ○Giga ETH
 
 ​	The baseboard provided 2 Gigabit Ethernet interfaces. The phy IC of ETH0 is integrated in the core board. It's connected with core board according to the signs of MDI. More information of the ETH0 PHY, please reference the  corresponding core board document.
 
@@ -126,7 +123,7 @@ The pin connection assignment table for ETH1 and XME0715 is as follows.
 |      |      |      |
 |      |      |      |
 
-## ○USB HOST
+### ○USB HOST
 
 ​	PE100 provide four USB Host interfaces. **For XME0712,USB Host is not support.** The  USB 3320 is  integrated in the core board. The based board expansion four USB Host according to the USB HUB IC USB2514. The interface of USB host is TYPE-A, it can connected with different USB Slave peripheral, such as USB mouse, USB keyboard, USB WIFI and so on.
 
@@ -143,7 +140,7 @@ The pin connection assignment table for USB and XME0715 is as follows.
 |      |      |      |      |
 |      |      |      |      |
 
-## ○USB UART
+### ○USB UART
 
 ​	The base board provide a USB to UART interface, the chip is Silicon Labs CP2102. The USB is Micro USB.
 
@@ -156,7 +153,7 @@ The pin connection assignment table for UART and XME0715 is as follows.
 |      |      |      |
 |      |      |      |
 
-## ○SD
+### ○SD
 
 ​	PE100 provide a Micro SD interface for users to access the SD card memory. **For XME0712,SD is not support.** 
 

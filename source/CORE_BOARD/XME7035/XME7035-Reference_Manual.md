@@ -1,33 +1,28 @@
-**XME0724 Reference Manual**
+# **XME0724 Reference Manual**
 
-# Revision History
+## Revision History
 
 | Revision | Time       | Description   |
 | :------- | :--------- | :------------ |
 | Rev. 1.0 | 2024.10.22 | First Release |
 |          |            |               |
 
-# CopyRight Notice:
+## CopyRight Notice:
 
 Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
-# Development Environment:
+## Development Environment:
 
 Vivado 2018.3 is from Xilinx website
 
 <https://www.xilinx.com>
 
-# WeChat Public Number:
+## WeChat Public Number:
 
 ![](G:\MARKDOWN_DOC\GIT\CORE_BOARD\XME7035\XME7035_Reference Manual_REV1.0_241022.assets\image-20240808163724633.png)
 
-# Contents
 
-[toc]
-
-
-
-# ●1. Overview
+## ●1. Overview
 
 ​	XME7035 is a system module based on Xilinx Zynq-SoC from Microphase Technology.
 It integrates 4 DDR3 SDRAM chips, with two forming a 32-bit data bus and 8Gbit capacity. The
@@ -41,11 +36,11 @@ board, which can be easily used by users to realise Ethernet related application
 adjustable IO voltages, 8 GTX high-speed RX/TX pairs, and equal-length differential alignments
 with 50-ohm single-ended and 100-ohm differential impedance.
 
-## ○Board Layout
+### ○Board Layout
 
 ![](G:\MARKDOWN_DOC\GIT\CORE_BOARD\XME7035\XME7035_Reference Manual_REV1.0_241022.assets\2-7035.png)
 
-## ○Key Features
+### ○Key Features
 
 - Xilinx Zynq™ XC7Z035-FFG676 Soc
 
@@ -69,17 +64,17 @@ with 50-ohm single-ended and 100-ohm differential impedance.
 
 - Connectors: 3 x 120pin High Speed B2B Connectors  
 
-## ○Block diagram
+### ○Block diagram
 
 ![](G:\MARKDOWN_DOC\GIT\CORE_BOARD\XME7035\XME7035_Reference Manual_REV1.0_241022.assets\XME7035_DIAGRAM-01.png)
 
-## ○Mechanical Spec  
+### ○Mechanical Spec  
 
 ![](G:\MARKDOWN_DOC\GIT\CORE_BOARD\XME7035\XME7035_Reference Manual_REV1.0_241022.assets\image-20241022095900027.png)
 
-# ●2. Function Resources  
+## ●2. Function Resources  
 
-## ○FPGA  
+### ○FPGA  
 
 - Up to 1GHz MHz dual-core Cortex-A9 processor
 - DDR3L memory controller with 8 DMA channels and 4
@@ -96,7 +91,7 @@ with 50-ohm single-ended and 100-ohm differential impedance.
 - Analog Mixed Signal (AMS) / XADC: 2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Configs  
 
-## ○DDR3  
+### ○DDR3  
 
 ​	The PS of the module uses two 16-bit DDR3 memory chips, with a capacity of 512MB for a
 single chip and 1GB for two chips.
@@ -181,14 +176,14 @@ single chip and 1GB for two chips.
 | PL_DDR3_D7    | D3         | PL_DDR3_NWE    | B2         |
 | PL_DDR3_D8    | K3         |                |            |
 
-## ○Giga ETH  
+### ○Giga ETH  
 
 ​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the
 MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation,
 multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register
 management.  
 
-## ○eMMC  
+### ○eMMC  
 
 ​	The module features an 8GB eMMC interface (PS_SDIO0) that can be utilised for system files
 or other data file storage. It can also be employed as a secondary boot device in conjunction with
@@ -203,7 +198,7 @@ the QSPI flash for system boot. The interface is PS BANK501 MIO[46-51].
 | MMC_DATA2   | B22        |
 | MMC_DATA3   | B20        |
 
-## ○JTAG  
+### ○JTAG  
 
 ​	The JTAG signal link of the XME7035 is connected to the expansion connector.
 
@@ -214,7 +209,7 @@ the QSPI flash for system boot. The interface is PS BANK501 MIO[46-51].
 | FPGA_TDO | Pin27          | Output (3.3V) |
 | FPGA_TMS | Pin29          | Output (3.3V) |
 
-## ○Boot Config  
+### ○Boot Config  
 
 ​	ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1),
 the core module ZYNQ configuration schematic is shown below.  
@@ -227,7 +222,7 @@ the core module ZYNQ configuration schematic is shown below.
 | QSPI | NC                | Connection to GND |
 | SD   | NC                | NC                |
 
-## ○Quad-SPI Flash  
+### ○Quad-SPI Flash  
 
 ​	On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA
 configuration and user’s application as well as data.  
@@ -236,7 +231,7 @@ configuration and user’s application as well as data.
 | -------- | ----------- | -------- | ------- |
 | U4       | W25Q256FVEI | 256 Byte | Winbond |
 
-## ○Clock  
+### ○Clock  
 
 ​	The XME7035 core board provides a 33.3Mhz active clock for the PS system and a 200Mhz
 active clock for the PL system.  
@@ -247,7 +242,7 @@ active clock for the PL system.
 | U6       | SYS_CLK_P   | 200Mhz    | C8         |
 | U6       | SYS_CLK_N   | 200Mhz    | C7         |
 
-## ○Power  
+### ○Power  
 
 ​	**Please note that the power input of XME7035 is +5V. We recommend using a 5V/2A
 power supply.**
@@ -255,7 +250,7 @@ power supply.**
 1.0V -> 1.8V -> 1.5V -> 3.3V. The 3.3V output will be powered up last, and at the same time, it will
 provide the PG signal of system power status.  
 
-## ○LED  
+### ○LED  
 
 ​	The XME7035 board provides four LEDs, the power indicator, the FPGA configuration status
 light, the PL-controlled user LED, and the PS user-controlled LED.
@@ -268,7 +263,7 @@ light, the PL-controlled user LED, and the PS user-controlled LED.
 | D2   | G14      | LED on when FPGA E26 (MIO0) output is low                    |
 | D3   | H16      | LED on when FPGA H16 output is low                           |
 
-## ○Expansion Ports  
+### ○Expansion Ports  
 
 ​	The XME7035 uses three sets of connectors, JM1, JM3 and JM4, for the FPGA IO signals and
 Ethernet interface.

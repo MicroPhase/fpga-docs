@@ -1,45 +1,39 @@
-**Z7-LIT Reference Manual**
+# **Z7-LITE Reference Manual**
 
-# Revision History
+## Revision History
 
 | Revision | Time        | Description   |
 | :------- | :---------- | :------------ |
 | Rev. 1.0 | 2024\.08.17 | First Release |
 |          |             |               |
 
-# CopyRight Notice:
+## CopyRight Notice:
 
 Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
-# Development Environment:
+## Development Environment:
 
 Vivado 2018.3 is from Xilinx website
 
 <https://www.xilinx.com>
 
-# WeChat Public Number:
+## WeChat Public Number:
 
 ![image-20240808173810017](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\image-20240808173810017.png)
 
 <div style="page-break-after:always;"></div>
 
-# Contents
-
-[toc]
-
-<div style="page-break-after:always;"></div>
-
-# ●1. Overview
+## ●1. Overview
 
 ​	Z7 Lite is a commercial-grade SoM (System on Module) based on Xilinx Zynq-7000 SoC (XC7Z010 or XC7Z020) with up to 4Gb of DDR3/L SDRAM, 128MB of SPI flash memory, Gigabit Ethernet PHY transceiver, a USB PHY transceiver and an easy way to support power.
 
 ​	It's not only suitable for the software verification staff, but also suitable for the hardware design of the hardware developer, according to the cooperation of software and hardware to help you speed up the development process of the project.
 
-## ○Board Layout
+### ○Board Layout
 
 ![image-20240808174025444](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\image-20240808174025444.png)
 
-## ○Key Features
+### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG484C (7010 Version Only),
 
@@ -67,17 +61,17 @@ Vivado 2018.3 is from Xilinx website
 
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system. 1 50Mhz active crystal oscillator provides additional clocks for the PL logic.
 
-## ○Block diagram
+### ○Block diagram
 
 ![](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\BLOCK_DIAHRAM-1725012030628-1.png)
 
-## ○**Mechanical Spec**
+### ○**Mechanical Spec**
 
 ![](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\Z7LITE_MECH-1725677209380-4.jpeg)
 
-# ●2. Function Resources
+## ●2. Function Resources
 
-## ○FPGA
+### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor
 
@@ -117,7 +111,7 @@ Vivado 2018.3 is from Xilinx website
   
   Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
-## ○DDR3
+### ○DDR3
 
 ​	One on-board 16bit 512M DDR3/L SDRAM chips.
 
@@ -155,17 +149,17 @@ Vivado 2018.3 is from Xilinx website
 
 
 
-## ○Giga ETH
+### ○Giga ETH
 
 ​	The RTL8201F chip supports 10/100M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
 
-## ○USB Host
+### ○USB Host
 
 ​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
 ![image-20240808174242383](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\image-20240808174242383.png)
 
-## ○USB UART
+### ○USB UART
 
 ​	A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
@@ -174,11 +168,11 @@ Vivado 2018.3 is from Xilinx website
 |   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
 |   UART_RX   | PS_MIO14_500 |     C8     | UART data input  |
 
-## ○USB JTAG
+### ○USB JTAG
 
 ​	We have incorporated the JTAG download and debug circuitry into the board, enabling users to develop and debug ZYNQ through a USB cable.
 
-## ○Boot Config
+### ○Boot Config
 
 ​	The Z7-Lite startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the table below.
 
@@ -188,7 +182,7 @@ Vivado 2018.3 is from Xilinx website
 | ![image-20240808174204499](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\image-20240808174204499.png) | QSPI |
 | ![image-20240808174212597](G:\MARKDOWN_DOC\DEV\Z7LITE\Z7Lite Reference Manual_ES1_240908.assets\image-20240808174212597.png) | JTAG |
 
-## ○Quad-SPI Flash
+### ○Quad-SPI Flash
 
 ​	The onboard 128M Quad-SPI Flash memory W25Q128JVSIQ is used for the storage of the initial FPGA configuration, user applications and data.
 
@@ -196,7 +190,7 @@ Vivado 2018.3 is from Xilinx website
 |:--------:|:------------:|:---------:|:-------:|
 |    U2    | W25Q128JVSIQ | 128M Byte | Winbond |
 
-## ○Oscillators/Clocks
+### ○Oscillators/Clocks
 
 ​	A 33.33 MHz active crystal oscillator provides a stable clock for the PS system, while the other 50 MHz active crystal oscillator provides additional clocks for the PL logic.
 
@@ -205,19 +199,19 @@ Vivado 2018.3 is from Xilinx website
 |    Y1    | PS_CLK_33d3 | 33.333Mhz |     E7     |
 |    U3    | PL_CLK_50M  |   50Mhz   |    N18     |
 
-## ○Reset
+### ○Reset
 
 ​	We provide a key (K1) which can be used as a 'reset' signal for designs running on FPGA.
 
-## ○Micro SD
+### ○Micro SD
 
 ​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides BOOT programs for storing ZYNQ chips, Linux operating system kernels, file systems, and other user data files.
 
-## ○HDMI
+### ○HDMI
 
 ​	One HDMI video output interface can realize 1080P video image.
 
-## ○LED
+### ○LED
 
 ​	We provided three LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
 
@@ -227,7 +221,7 @@ Vivado 2018.3 is from Xilinx website
 |    D4    |   PL_LED1   |    P15     | PL LED1 |
 |    D5    |  GPIO1_17N  |    U12     | PL LED2 |
 
-## ○Key
+### ○Key
 
 ​	We provide three keys for user to use. Once the key is pressed, it will be in the low level.
 
@@ -237,7 +231,7 @@ Vivado 2018.3 is from Xilinx website
 |    K3    |   PL_KEY1   |    P16     | PL KEY1 |
 |    K4    |  GPIO1_17P  |    T12     | PL KEY2 |
 
-## ○GPIO
+### ○GPIO
 
 ​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.
 
@@ -289,7 +283,7 @@ Vivado 2018.3 is from Xilinx website
 | 37  |  GPIO2_16P  |    K19     | 38  |  GPIO2_16N  |    J19     |
 | 39  |  GPIO2_17P  |    J20     | 40  |  GPIO2_17N  |    H20     |
 
-## ○Power
+### ○Power
 
 ​	The board is use the +5V supply from USB. The Figure shows the USB can use to provide power.
 

@@ -1,45 +1,40 @@
-**XME0724 Reference Manual**
+# **XME0724 Reference Manual**
 
-# Revision History
+## Revision History
 
 | Revision | Time       | Description   |
 | :------- | :--------- | :------------ |
 | Rev. 1.0 | 2024.08.17 | First Release |
 |          |            |               |
 
-# CopyRight Notice:
+## CopyRight Notice:
 
 Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
-# Development Environment:
+## Development Environment:
 
 Vivado 2018.3 is from Xilinx website
 
 <https://www.xilinx.com>
 
-# WeChat Public Number:
+## WeChat Public Number:
 
 ![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\image-20240808163724633.png)
 
 <div style="page-break-after:always;"></div>
 
-# Contents
 
-[TOC]
-
-<div style="page-break-after:always;"></div>
-
-# ●1. Overview
+## ●1. Overview
 
 ​	XME0724 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology. 
 
 ​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request. Refer to the model descriptions for details.
 
-## ○Board Layout
+### ○Board Layout
 
 ![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\1-0724标注图片原稿-01.png)
 
-## ○Key Features
+### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
 
@@ -67,17 +62,17 @@ Vivado 2018.3 is from Xilinx website
 
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system. 
 
-## ○Block diagram
+### ○Block diagram
 
 ​            ![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\0724_block.png)                   
 
-## ○Mechanical Spec
+### ○Mechanical Spec
 
 ![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\XME0724-尺寸示意图_20190301.jpg)
 
-# ●2. Function Resources
+## ●2. Function Resources
 
-## ○FPGA
+### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor
 
@@ -117,7 +112,7 @@ Vivado 2018.3 is from Xilinx website
 
   Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
-## ○DDR3
+### ○DDR3
 
 ​	The module uses two 16-bit DDR3 memory chips, 512MB for the XME0724-10 version and 1GB for the XME0724-20 version.
 
@@ -160,15 +155,15 @@ Vivado 2018.3 is from Xilinx website
 | PS_DDR3_D7    | E1         | PS_DDR3_NWE    | M5         |
 | PS_DDR3_D8    | E2         |                |            |
 
-## ○Giga ETH
+### ○Giga ETH
 
 ​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
 
-## ○USB Host
+### ○USB Host
 
 ​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
-## ○USB UART
+### ○USB UART
 
 ​	A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
@@ -177,7 +172,7 @@ Vivado 2018.3 is from Xilinx website
 |   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
 |   UART_RX   | PS_MIO14_500 |     C8     | UART data output |
 
-## ○eMMC
+### ○eMMC
 
 ​	he module includes an 8GB eMMC interface (PS_SDIO1) for system files or data storage. It can also serve as a secondary boot device alongside the QSPI flash. The interface is PS BANK501 MIO[46-51].
 
@@ -190,7 +185,7 @@ Vivado 2018.3 is from Xilinx website
 | MMC_DATA2   | B13        |
 | MMC_DATA3   | B9         |
 
-## ○JTAG
+### ○JTAG
 
 ​	The ZYNQ SoC's JTAG signals are connected to the expansion port, which also provides a 3.3V JTAG VREF voltage output signal
 
@@ -203,7 +198,7 @@ Vivado 2018.3 is from Xilinx website
 | FPGA_TMS |      Pin 156      | Input                                             |
 |   GND    |        ---        | Connect to the GND signal on the module           |
 
-## ○Boot Config
+### ○Boot Config
 
 ​	Configure the ZYNQ startup mode using core module pins PIN119 (MODE0) and PIN120 (MODE1). The ZYNQ configuration schematic is shown below.
 
@@ -215,7 +210,7 @@ Vivado 2018.3 is from Xilinx website
 | QSPI |        NC         | Connection to GND |
 |  SD  |        NC         |        NC         |
 
-## ○Quad-SPI Flash
+### ○Quad-SPI Flash
 
 ​	On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.
 
@@ -223,7 +218,7 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :---------: | :------: | :-----: |
 |    U7    | W25Q256FVEI | 256 Byte | Winbond |
 
-## ○Clock
+### ○Clock
 
 ​	The XME0724 core board provides a 33.3Mhz active clock for the PS system. 
 
@@ -233,13 +228,13 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :---------: | :-------: | :--------: |
 |    Y2    | PS_CLK_33d3 | 33.333Mhz |     E7     |
 
-## ○Power
+### ○Power
 
 ​	**Please note that the power input of XME0724 is +5V. We recommend using a 5V/2A power supply.** 
 
 ​	The module powers up in a cascading sequence: 1.0V > 1.8V > 1.5V > 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.
 
-## ○LED
+### ○LED
 
 ​	The XME0724 board includes four LEDs: a power indicator, an FPGA configuration status light, a PL-controlled user LED, and a PS-controlled user LED.
 
@@ -252,7 +247,7 @@ Vivado 2018.3 is from Xilinx website
 |  D4  | G14      | LED on when FPGA G14 output is low                           |
 |  D3  | E6       | LED on when FPGA E6 output is low                            |
 
-## ○GPIO
+### ○GPIO
 
 ​	The XME0724 features a 1.27mm pitch stamp hole connection, which ensures optimal electrical characteristics and anti-interference performance. Additionally, a single row of 1.27mm pitch holes is provided on the interior of the stamp hole, and the two-in-one structure of the stamp hole and the 1.27mm row of pins offers enhanced flexibility in the utilisation of the XME0724. The stamp holes can be used for soldering, while the row of pins can be connected according to the user's requirements.
 

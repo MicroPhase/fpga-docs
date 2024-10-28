@@ -1,35 +1,35 @@
-**XME0726 Reference Manual**
+# **XME0726 Reference Manual**
 
-# Revision History
+## Revision History
 
 | Revision | Time       | Description   |
 | :------- | :--------- | :------------ |
 | Rev. 1.0 | 2024.10.11 | First Release |
 |          |            |               |
 
-# CopyRight Notice:
+## CopyRight Notice:
 
 Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
-# Development Environment:
+## Development Environment:
 
 Vivado 2018.3 is from Xilinx website
 
 <https://www.xilinx.com>
 
-# WeChat Public Number:
+## WeChat Public Number:
 
 ![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\image-20240808163724633.png)
 
 <div style="page-break-after:always;"></div>
 
-# Contents
+## Contents
 
 [toc]
 
 <div style="page-break-after:always;"></div>
 
-# ●1. Overview
+## ●1. Overview
 
 ​	XME0726 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology. 
 
@@ -37,13 +37,13 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The core board extends 120 single-ended IOs on the PL side (can be configured as 60 pairs of differential IOs), with adjustable IO voltages; 32 IOs on the PS side, and a Gigabit Ethernet PHY, with equal-length differential processing of the FPGA pin-to-connector alignment, and impedance of 50 ohms single-ended and 100 ohms differential. This is very important for high-speed signal transmission application scenarios.
 
-## ○Board Layout
+### ○Board Layout
 
 ![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\0726.png)
 
 <div style="page-break-after:always;"></div>
 
-## ○Key Features
+### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
 
@@ -69,17 +69,17 @@ Vivado 2018.3 is from Xilinx website
 
 - Connectors: 2 * 120pin High Speed B2B Connectors
 
-## ○Block diagram
+### ○Block diagram
 
 ![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\XME0726.png)
 
-## ○Mechanical Spec
+### ○Mechanical Spec
 
 ![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\XME0726_MECH.png)
 
 
 
-## ○FPGA
+### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor
 
@@ -119,7 +119,7 @@ Vivado 2018.3 is from Xilinx website
 
   Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
-## ○DDR3
+### ○DDR3
 
 ​	The module uses two 16-bit DDR3 memory chips, with a capacity of 512MB for a single chip and 1GB for two chips.
 
@@ -162,11 +162,11 @@ Vivado 2018.3 is from Xilinx website
 | PS_DDR3_D7    | E1         | PS_DDR3_NWE    | M5         |
 | PS_DDR3_D8    | E2         |                | ****       |
 
-## ○Giga ETH
+### ○Giga ETH
 
 ​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
 
-## ○JTAG
+### ○JTAG
 
 ​	The JTAG signal link of the XME0726 is connected to the expansion connector.
 
@@ -177,7 +177,7 @@ Vivado 2018.3 is from Xilinx website
 | FPGA_TDO |     Pin101     | Output (3.3V) |
 | FPGA_TMS |     Pin105     | Output (3.3V) |
 
-## ○Boot Config
+### ○Boot Config
 
 ​	ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1), the core module ZYNQ configuration schematic is shown below.
 
@@ -189,7 +189,7 @@ Vivado 2018.3 is from Xilinx website
 | QSPI |        NC         | Connection to GND |
 |  SD  |        NC         |        NC         |
 
-## ○Quad-SPI Flash
+### ○Quad-SPI Flash
 
 ​	On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.
 
@@ -197,7 +197,7 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :---------: | :------: | :-----: |
 |    U7    | W25Q256FVEI | 256 Byte | Winbond |
 
-## ○Clock
+### ○Clock
 
 ​	The XME0726 core board provides a 33.3Mhz active clock for the PS system. 
 
@@ -207,13 +207,13 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :---------: | :-------: | :--------: |
 |    Y2    | PS_CLK_33d3 | 33.333Mhz |     E7     |
 
-## ○Power
+### ○Power
 
 ​	**Please note that the power input of XME0726 is +5V. We recommend using a 5V/2A power supply.** 
 
 ​	Once the module is powered up, it will be cascaded in order to complete the power-up process in the following sequence: 1.0V > 1.8V > 1.5V > 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.
 
-## ○LED
+### ○LED
 
 ​	The XME0726 board provides three LEDs, the power indicator, the FPGA configuration status light and  the PS-controlled user LED.
 
@@ -225,7 +225,7 @@ Vivado 2018.3 is from Xilinx website
 |  D2  |   R11    | FPGA configuration status LED, LED on when FPGA successful configuration |
 |  D3  |    E6    | LED on when Bank500 MIO0 output is                           |
 
-## ○Expansion Ports
+### ○Expansion Ports
 
 The XME0726 uses two sets of connectors, JM1 and JM3, for the FPGA IO signals and Ethernet interface.
 
