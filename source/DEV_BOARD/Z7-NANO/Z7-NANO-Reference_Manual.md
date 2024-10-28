@@ -19,7 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 # WeChat Public Number:
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
+![image](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -31,7 +31,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Board Layout
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/image-20240808165359943-1729651935117-4.png)
+![image](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/Z7NANO_BOARD_LAYOUT.png)
 
 ## ○Key Features
 
@@ -66,11 +66,11 @@ Vivado 2018.3 is from Xilinx website
 
 ## ○Block diagram
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/Z7_NANO-1729651977091-6.png)
+![image](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
 
 ## ○**Mechanical Spec**
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/Z7NANO_MECH.jpg)
+![image](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/Z7NANO_MECH.jpg)
 
 # ●2. Function Resources
 
@@ -158,7 +158,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
-![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/USB_HOST.png)
+![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/USB_HOST.png)
 
 ## ○USB UART
 
@@ -179,9 +179,9 @@ Vivado 2018.3 is from Xilinx website
 
 | Jumper cap position                                          | Mode |
 | ------------------------------------------------------------ | ---- |
-| ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/SD_MODE.png) | SD   |
-| ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/QSPI_MODE.png) | QSPI |
-| ![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/JTAG_MODE.png) | JTAG |
+| ![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/SD_MODE.png) | SD   |
+| ![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/QSPI_MODE.png) | QSPI |
+| ![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/JTAG_MODE.png) | JTAG |
 
 ## ○Quad-SPI Flash
 
@@ -232,7 +232,7 @@ Vivado 2018.3 is from Xilinx website
 ## ○GPIO
 
 ​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.  
-**JP1:**
+**JP1:**  
 | Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
 |:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
 |  1  |  GPIO1_0P   |    N17     |  2  |  GPIO1_0N   |    P18     |
@@ -257,7 +257,7 @@ Vivado 2018.3 is from Xilinx website
 | 39  |  GPIO1_17P  |    T12     | 40  |  GPIO1_17N  |    U12     |
 
 
-**JP2:**
+**JP2:**  
 | Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
 |:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
 |  1  |  GPIO2_0P   |    L16     |  2  |  GPIO2_0N   |    L17     |
@@ -285,5 +285,5 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The board is use a +5V supply from USB. The Figure shows the USB can use to provide power.  
 
-![](https://github.com/rabbitjiump/doc_test/blob/main/DEV_BOARD/Z7-NANO/Z7-NANO%20Reference%20Manual.assets/POWER_INTERFACE.png)
+![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/POWER_INTERFACE.png)
 
