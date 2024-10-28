@@ -19,7 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## WeChat Public Number:
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
+![](Picture/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
 
 <div style="page-break-after:always;"></div>
 
