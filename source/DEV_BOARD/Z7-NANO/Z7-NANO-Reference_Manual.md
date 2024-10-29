@@ -31,7 +31,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Board Layout
 
-![](./Z7-NANO_Reference_Manual_PIC/Z7NANO_BOARD_LAYOUT.png)
+![](./Z7-NANO_Reference_Manual.assets/Z7NANO_BOARD_LAYOUT.png)
 
 ### Key Features
 
@@ -66,11 +66,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### Block diagram
 
-![](Z7-NANO_Reference_Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
+![](./Z7-NANO_Reference_Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
 
 ### **Mechanical Spec**
 
-![image](Z7-NANO_Reference_Manual_PIC/Z7NANO_MECH.jpg)
+![](./Z7-NANO_Reference_Manual.assets/Z7NANO_MECH.jpg)
 
 ## ●2. Function Resources
 
@@ -158,7 +158,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
-![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/USB_HOST.png)
+![](./Z7-NANO_Reference_Manual.assets/USB_HOST.png)
 
 ### USB UART
 
@@ -177,11 +177,11 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The Z7-Nano startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the table below.
 
-| Jumper cap position                                          | Mode |
-| ------------------------------------------------------------ | ---- |
-| ![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/SD_MODE.png) | SD   |
-| ![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/QSPI_MODE.png) | QSPI |
-| ![](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/JTAG_MODE.png) | JTAG |
+| Jumper cap position                                  | Mode |
+| ---------------------------------------------------- | ---- |
+| ![](./Z7-NANO_Reference_Manual.assets/SD_MODE.png)   | SD   |
+| ![](./Z7-NANO_Reference_Manual.assets/QSPI_MODE.png) | QSPI |
+| ![](./Z7-NANO_Reference_Manual.assets/JTAG_MODE.png) | JTAG |
 
 ### Quad-SPI Flash
 
@@ -293,5 +293,5 @@ Vivado 2018.3 is from Xilinx website
 
 
 
-![](./Z7-NANO%20Reference%20Manual.assets/POWER_INTERFACE.png)
+![](./Z7-NANO_Reference_Manual.assets/POWER_INTERFACE.png)
 
