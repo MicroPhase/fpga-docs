@@ -19,7 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## WeChat Public Number:
 
-![](Picture/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
+![](/Picture/Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -31,7 +31,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Board Layout
 
-![](Z7-NANO%20Reference%20Manual.assets/Z7NANO_BOARD_LAYOUT.png)
+![](Picture/Z7-NANO%20Reference%20Manual.assets/Z7NANO_BOARD_LAYOUT.png)
 
 ### Key Features
 
