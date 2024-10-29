@@ -31,7 +31,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Board Layout
 
-![](Picture/Z7-NANO%20Reference%20Manual.assets/Z7NANO_BOARD_LAYOUT.png)
+![](./Z7-NANO%20Reference%20Manual.assets/Z7NANO_BOARD_LAYOUT.png)
 
 ### Key Features
 
