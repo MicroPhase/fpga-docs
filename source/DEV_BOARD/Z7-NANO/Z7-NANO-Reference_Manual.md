@@ -19,7 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## WeChat Public Number:
 
-![](Z7-NANO%20Reference%20Manual.assets/Wechat17.png)
+![](./Z7-NANO_Reference_Manual.assets/Wechat17.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -31,7 +31,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Board Layout
 
-![](./Z7-NANO%20Reference%20Manual.assets/Z7NANO_BOARD_LAYOUT.png)
+![](./Z7-NANO_Reference_Manual_PIC/Z7NANO_BOARD_LAYOUT.png)
 
 ### Key Features
 
@@ -66,11 +66,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### Block diagram
 
-![image](./Z7-NANO%20Reference%20Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
+![](Z7-NANO_Reference_Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
 
 ### **Mechanical Spec**
 
-![image](https://github.com/rabbitjiump/doc_test/blob/main/source/Picture/Z7-NANO%20Reference%20Manual.assets/Z7NANO_MECH.jpg)
+![image](Z7-NANO_Reference_Manual_PIC/Z7NANO_MECH.jpg)
 
 ## ●2. Function Resources
 
