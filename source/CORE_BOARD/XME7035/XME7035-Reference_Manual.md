@@ -1,4 +1,4 @@
-# **XME0724 Reference Manual**
+# **XME7035 Reference Manual**
 
 ## Revision History
 

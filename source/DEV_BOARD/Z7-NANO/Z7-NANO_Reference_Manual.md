@@ -287,3 +287,8 @@ Vivado 2018.3 is from Xilinx website
 
 ![](./Z7-NANO_Reference_Manual.assets/POWER_INTERFACE.png)
 
+## Related Documents 
+
+- [Z7-NANO_R21_Schematic]([doc_test/schematic/Z7-NANO_R21.pdf at main · rabbitjiump/doc_test](https://github.com/rabbitjiump/doc_test/blob/main/schematic/Z7-NANO_R21.pdf))(PDF)
+
+- [Z7NANO_R20_Dimensions]()(PDF)
