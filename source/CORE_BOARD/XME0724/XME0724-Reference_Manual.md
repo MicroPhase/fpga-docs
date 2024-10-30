@@ -257,4 +257,18 @@ Description:
 2. Bank35 IO level depends on Pin71 voltage input, input range 1.2V~3.3V.
 3. SD Signal (Pin139~Pin144) voltage is 1.8V.
 4. MIO9~MIO13, UART, JTAG, RESET(Pin145~Pin157) level is 3.3V.
-5. Please refer to the ‘[XME0724_Pinout _Table](https://swnatyr2ph.feishu.cn/file/JYwobURbmocF4DxAv3tciKDinBd?from=from_copylink)’ for detailed pin definitions of the XME0724.
+5. Please refer to the ‘[XME0724_Pinout _Table](https://github.com/rabbitjiump/doc_test/blob/main/others/XME0724_Pinout_Table.pdf)’ for detailed pin definitions of the XME0724.
+
+## Related Documents  
+### XME0724:  
+
+- [XME0724_R30 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724_R30.pdf) (PDF)
+- [XME0724_R30 Dimensions](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
+### XME0724CB:
+- [XME0724CB_Reference Manual]()(MD)-To be added
+- [XME0724CB_R21 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724CB_R21.pdf)(PDF)
+- [XME0724CB_R21 Dimensions](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/XME0724/XME0724CB_R21_Dimensions.pdf)(PDF)
+### XME0724CB-NET:
+- [XME0724CB-NET_Reference Manual]()(MD)-To be added
+- [XME0724CB-NET_R30 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724CB-NET_R30.pdf)(PDF)
+- [XME0724CB-NET_R30 Dimensions](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/XME0724/XME0724CB-NET_R30_Dimensions.pdf)(PDF)
