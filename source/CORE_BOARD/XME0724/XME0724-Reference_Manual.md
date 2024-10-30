@@ -19,7 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## WeChat Public Number:
 
-![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\image-20240808163724633.png)
+![](./XME0724_Reference_Manual.assets/VX.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -32,7 +32,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Board Layout
 
-![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\1-0724标注图片原稿-01.png)
+![](./XME0724_Reference_Manual.assets/layout.png)
 
 ### ○Key Features
 
@@ -64,11 +64,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Block diagram
 
-​            ![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\0724_block.png)                   
+​            ![](./XME0724_Reference_Manual.assets/0724_block.png)                   
 
 ### ○Mechanical Spec
 
-![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\XME0724-尺寸示意图_20190301.jpg)
+![](./XME0724_Reference_Manual.assets/MECH.jpg)
 
 ## ●2. Function Resources
 
@@ -202,7 +202,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	Configure the ZYNQ startup mode using core module pins PIN119 (MODE0) and PIN120 (MODE1). The ZYNQ configuration schematic is shown below.
 
-![](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\BOOT.png)
+![](./XME0724_Reference_Manual.assets/BOOT.png)
 
 | Mode |   MODE1(PIN120)   |   MODE0(PIN119)   |
 | :--: | :---------------: | :---------------: |
