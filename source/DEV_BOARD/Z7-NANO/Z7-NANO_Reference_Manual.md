@@ -27,7 +27,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	Z7 Nano is a commercial-grade development board based on Xilinx Zynq-7000 SoC (XC7Z010 or XC7Z020) with up to 4Gb of DDR3/L SDRAM, 128MB of SPI flash memory, Gigabit Ethernet PHY transceiver, a USB PHY transceiver and a simple way to provide power.
 
-​	It is suitable for both software verification and hardware development, helping to accelerate project progress.
+​	It is suitable for software verification and hardware development, helping to accelerate project progress.
 
 ### Board Layout
 
@@ -41,24 +41,24 @@ Vivado 2018.3 is from Xilinx website
 
 - DDR3: 1 4Gbit, DDR3 (MT41J256M16HA-125:K or equivalent)
 
-- KEY: 1 users key, which is controlled by PL.
+- KEY: 1 user key, which is controlled by PL.
 
 - LED: 2 users LED, 1 PS control, 1 PL control.
 
-- GPIO: 2 40 pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.
+- GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.
 
-- USB JTAG: 1 on board JTAG circuit, can debug and download the ZYNQ system through a USB cable.
+- USB JTAG: 1 on-board JTAG circuit, can debug and download the ZYNQ system through a USB cable.
 
 - HDMI: 1 HDMI video output interface, can realize 1080P video image
 
-- PHY ETH: 2 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.  
+- PHY ETH: 2 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other applications.  
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 PS control, 1 PL control.
 
 - USB Host: 1 USB Host.
 
 - SD Card: 1 SD Card is provided to store the operating system image and file system.
 
-- USB UART:1 USB UART interface, using for serial communication with PC.
+- USB UART:1 USB UART interface, used for serial communication with PC.
 
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.  
     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
@@ -80,7 +80,7 @@ Vivado 2018.3 is from Xilinx website
 
 - DDR3L memory controller with 8 DMA channels and 4 
 
-- High Performance AXI3 Slave ports
+- High-Performance AXI3 Slave ports
 
 - High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO
 
@@ -152,11 +152,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### Giga ETH
 
-​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
+​	The RTL8211F chip supports a 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It also supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation, and MDIO bus support for PHY register management.
 
 ### USB Host
 
-​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
+​	The USB 2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
 ![](./Z7-NANO_Reference_Manual.assets/USB_HOST.png)
 
@@ -189,7 +189,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Oscillators/Clocks
 
-​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other one 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
+​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
 
 | Position | Signal Name | Frequency | Pin Number |
 | :------: | :---------: | :-------: | :--------: |
@@ -198,19 +198,19 @@ Vivado 2018.3 is from Xilinx website
 
 ### Reset
 
-​	We provide a key (K1) which can be used as a 'reset' signal for designs running on FPGA.
+​	We provide a key (K1) that can be used as a 'reset' signal for designs running on FPGA.
 
 ### Micro SD
 
-​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides BOOT programs for storing ZYNQ chips, Linux operating system kernels, file systems, and other user data files.
+​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides storage for the ZYNQ chip's bootloader, Linux operating system kernels, file systems, and other user data files.
 
 ### HDMI
 
-​	One HDMI video output interface can realize 1080P video image.
+​	One HDMI video output interface can realize 1080P video images.
 
 ### LED
 
-​	We provided two LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
+​	We provide two LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
 
 | Position | Signal Name | Pin Number | Explain |
 | :------: | :---------: | :--------: | :-----: |
@@ -219,7 +219,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Key
 
-​	We provide one key for user to use. Once the key is pressed, it will be in the low level.
+​	We provide one key for user to use. Once the key is pressed, it will be on the low level.
 
 | Position | Signal Name | Pin Number | Explain |
 | :------: | :---------: | :--------: | :-----: |
@@ -227,7 +227,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### GPIO
 
-​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.  
+​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length-matched and can be used as differential pairs.  
 **JP1:**  
 
 | Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
@@ -281,7 +281,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### Power
 
-​	The board is use a +5V supply from USB. The Figure shows the USB can use to provide power.  
+​	The board uses a +5V supply from USB. The Figure shows the USB can be used to provide power.  
 
 
 
