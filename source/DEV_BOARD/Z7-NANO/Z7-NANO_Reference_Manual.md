@@ -29,11 +29,11 @@ Vivado 2018.3 is from Xilinx website
 
 ​	It is suitable for software verification and hardware development, helping to accelerate project progress.
 
-### Board Layout
+### ○Board Layout
 
 ![](./Z7-NANO_Reference_Manual.assets/Z7NANO_BOARD_LAYOUT.png)
 
-### Key Features
+### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
 
@@ -64,17 +64,17 @@ Vivado 2018.3 is from Xilinx website
     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
 
 
-### Block diagram
+### ○Block diagram
 
 ![](./Z7-NANO_Reference_Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
 
-### **Mechanical Spec**
+### ○**Mechanical Spec**
 
 ![](./Z7-NANO_Reference_Manual.assets/Z7NANO_MECH.jpg)
 
 ## ●2. Function Resources
 
-### FPGA
+### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor
 
@@ -114,7 +114,7 @@ Vivado 2018.3 is from Xilinx website
 
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
-### DDR3
+### ○DDR3
 
 ​	One on-board 16bit 512M DDR3/L SDRAM chips.
 
@@ -150,17 +150,17 @@ Vivado 2018.3 is from Xilinx website
 | PS_DDR3_DM0   | A1         | PS_DDR3_NWE    | M5         |
 | PS_DDR3_DM1   | F1         |                |            |
 
-### Giga ETH
+### ○Giga ETH
 
 ​	The RTL8211F chip supports a 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It also supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation, and MDIO bus support for PHY register management.
 
-### USB Host
+### ○USB Host
 
 ​	The USB 2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
 ![](./Z7-NANO_Reference_Manual.assets/USB_HOST.png)
 
-### USB UART
+### ○USB UART
 
 ​	A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
@@ -169,17 +169,17 @@ Vivado 2018.3 is from Xilinx website
 |   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
 |   UART_RX   | PS_MIO14_500 |     C8     | UART data output |
 
-### USB JTAG
+### ○USB JTAG
 
 ​	We have incorporated the JTAG download and debug circuitry into the board, enabling users to develop and debug ZYNQ through a USB cable.
 
-### Boot Config
+### ○Boot Config
 
 ​	The Z7-Nano startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the table below.
 
 ![](./Z7-NANO_Reference_Manual.assets/BOOTMODE.png)
 
-### Quad-SPI Flash
+### ○Quad-SPI Flash
 
 ​	On-board 128M Quad-SPI Flash memory W25Q128JVSIQ is used to store initial FPGA configuration and user’s application as well as data.
 
@@ -187,7 +187,7 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :----------: | :-------: | :-----: |
 |    U2    | W25Q128JVSIQ | 128M Byte | Winbond |
 
-### Oscillators/Clocks
+### ○Oscillators/Clocks
 
 ​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
 
@@ -196,19 +196,19 @@ Vivado 2018.3 is from Xilinx website
 |    Y1    | PS_CLK_33d3 | 33.333Mhz |     E7     |
 |    U3    | PL_CLK_50M  |   50Mhz   |    N18     |
 
-### Reset
+### ○Reset
 
 ​	We provide a key (K1) that can be used as a 'reset' signal for designs running on FPGA.
 
-### Micro SD
+### ○Micro SD
 
 ​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides storage for the ZYNQ chip's bootloader, Linux operating system kernels, file systems, and other user data files.
 
-### HDMI
+### ○HDMI
 
 ​	One HDMI video output interface can realize 1080P video images.
 
-### LED
+### ○LED
 
 ​	We provide two LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
 
@@ -217,7 +217,7 @@ Vivado 2018.3 is from Xilinx website
 |    D4    |   PS_LED1   |     E6     | PS LED1 |
 |    D3    |  GPIO1_17N  |    R14     | PL LED1 |
 
-### Key
+### ○Key
 
 ​	We provide one key for user to use. Once the key is pressed, it will be on the low level.
 
@@ -225,7 +225,7 @@ Vivado 2018.3 is from Xilinx website
 | :------: | :---------: | :--------: | :-----: |
 |    K2    |  GPIO1_17P  |    P14     | PL KEY1 |
 
-### GPIO
+### ○GPIO
 
 ​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length-matched and can be used as differential pairs.  
 **JP1:**  
@@ -279,7 +279,7 @@ Vivado 2018.3 is from Xilinx website
 | 37  |  GPIO2_16P  |    K19     | 38  |  GPIO2_16N  |    J19     |
 | 39  |  GPIO2_17P  |    J20     | 40  |  GPIO2_17N  |    H20     |
 
-### Power
+### ○Power
 
 ​	The board uses a +5V supply from USB. The Figure shows the USB can be used to provide power.  
 
@@ -289,6 +289,6 @@ Vivado 2018.3 is from Xilinx website
 
 ## Related Documents 
 
-- [Z7-NANO_R21_Schematic]([doc_test/schematic/Z7-NANO_R21.pdf at main · rabbitjiump/doc_test](https://github.com/rabbitjiump/doc_test/blob/main/schematic/Z7-NANO_R21.pdf))(PDF)
-
-- [Z7NANO_R20_Dimensions]()(PDF)
+- [Z7-NANO_R21_Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/Z7-NANO_R21.pdf)(PDF)
+- [Z7NANO_R20_Dimensions](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/Z7-NANO/Z7-Nano_R20_Dimensions.pdf)(PDF)
+- [Z7NANO_R20_Dimensions source file](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/Z7-NANO/Z7-Nano_R20_Dimensions.dxf) (DXF) 
