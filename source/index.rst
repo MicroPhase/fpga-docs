@@ -5,7 +5,7 @@ Welcome to Microphase Project's Documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   BASED_BOARD/BASED_BOARD
    SoM/SoM
+   BASED_BOARD/BASED_BOARD
    DEV_BOARD/DEV_BOARD
 
