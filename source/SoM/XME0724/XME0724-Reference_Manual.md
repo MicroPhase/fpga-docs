@@ -28,7 +28,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	XME0724 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology. 
 
-​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request. Refer to the model descriptions for details.
+​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: sales@microphase.cn.
 
 ### ○Board Layout
 
@@ -38,17 +38,17 @@ Vivado 2018.3 is from Xilinx website
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
 
-​	Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).
+&ensp;&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).
 
 - DDR3: 512MB DDR3 RAM((7010 Version Only), 
 
-  ​	    1GB DDR3 RAM(7020 Version Only).
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).
 
 - Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.
 
 - LED: 1 Power LED, 1 FPGA Done LED;
 
-  ​	  2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.
 
 - GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.
 
@@ -108,9 +108,9 @@ Vivado 2018.3 is from Xilinx website
 
   ​           		    4.9Mb (7020)
 
-  Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
+- Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 
-  Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
+- Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3
 

@@ -25,9 +25,9 @@ Vivado 2018.3 is from Xilinx website
 
 ## ●1. Overview
 
-​	Z7 Lite is a commercial-grade SoM (System on Module) based on Xilinx Zynq-7000 SoC (XC7Z010 or XC7Z020) with up to 4Gb of DDR3/L SDRAM, 128MB of SPI flash memory, Gigabit Ethernet PHY transceiver, a USB PHY transceiver and an easy way to support power.
+​	Z7 Lite is a commercial-grade development board based on Xilinx Zynq-7000 SoCs (XC7Z010 or XC7Z020) with up to 4Gb of DDR3/L SDRAM, 128MB of SPI flash memory, Gigabit Ethernet PHY transceiver, a USB PHY transceiver and an easy way to support power. With customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: sales@microphase.cn.
 
-​	It's not only suitable for the software verification staff, but also suitable for the hardware design of the hardware developer, according to the cooperation of software and hardware to help you speed up the development process of the project.
+​	It is suitable for software verification and hardware development, helping to accelerate project progress.
 
 ### ○Board Layout
 
@@ -36,14 +36,13 @@ Vivado 2018.3 is from Xilinx website
 ### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG484C (7010 Version Only),
+Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
 
-&ensp;&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
+- DDR3: 1 4Gbit,DDR3.(MT41J256M16HA-125:K or equivalent)
 
-- DDR3: 1 4Gbit,1066Mbs DDR3.
+- KEY: 3 user's keys, 1 PS control, 2 PL control.
 
-- KEY: 3 users key, 1 PS control, 2 PL control.
-
-- LED: 3 users LED, 1 PS control, 2 PL control.
+- LED: 3 user's LEDs, 1 PS control, 2 PL control.
 
 - GPIO: 2 40 pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.
 
@@ -51,16 +50,16 @@ Vivado 2018.3 is from Xilinx website
 
 - HDMI: 1 HDMI video output interface, can realize 1080P video image.
 
-- PHY ETH: 1 10/100/1000M Ethernet RJ45 interface, which can be use for Ethernet data exchange or other application.
+- PHY ETH: 1 10/100 Ethernet RJ45 interface, which can be use for Ethernet data exchange or other application.
 
 - USB Host: 1 USB Host.
 
 - SD Card: 1 SD Card is provided to store the operating system image and file system.
 
-- USB UART:1 USB UART interface, using for serial communication with PC.
+- USB UART: 1 USB UART interface, using for serial communication with PC.
 
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.   
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1 50Mhz active crystal oscillator provides additional clocks for the PL logic.
 
 ### ○Block diagram
 
@@ -198,19 +197,19 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Reset
 
-​	We provide a key (K1) which can be used as a 'reset' signal for designs running on FPGA.
+​	We provide a key (K1) that can be used as a 'reset' signal for designs running on FPGA.
 
 ### ○Micro SD
 
-​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides BOOT programs for storing ZYNQ chips, Linux operating system kernels, file systems, and other user data files.
+​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides storage for the ZYNQ chip's bootloader, Linux operating system kernels, file systems, and other user data files.
 
 ### ○HDMI
 
-​	One HDMI video output interface can realize 1080P video image.
+​	One HDMI video output interface can realize 1080P video images.
 
 ### ○LED
 
-​	We provided three LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
+​	We provide three LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
 
 | Position | Signal Name | Pin Number | Explain |
 |:--------:|:-----------:|:----------:|:-------:|
@@ -220,7 +219,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Key
 
-​	We provide three keys for user to use. Once the key is pressed, it will be in the low level.
+​	We provide three keys for user to use. Once the key is pressed, it will be on the low level.
 
 | Position | Signal Name | Pin Number | Explain |
 |:--------:|:-----------:|:----------:|:-------:|
@@ -230,9 +229,9 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○GPIO
 
-​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.  
+​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length matched and can be used as differential pairs.   
 
-**JP1**  
+**JP1:**
 
 | Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
 | :--: | :---------: | :--------: | :--: | :---------: | :--------: |
@@ -284,11 +283,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Power
 
-​	The board is use the +5V supply from USB. The Figure shows the USB can use to provide power.
+​	The board uses a +5V supply from USB. The Figure shows the USB can be used to provide power. 
 
 ![](./Z7-Lite_Reference_Manual.assets/POWER.png)
 
-### ○Related Documents 
+### ●3.Related Documents 
 - [Z7-Lite_R11 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/Z7-LITE_R11.pdf) (PDF)
 - [Z7-Lite_R11 Dimensions](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/Z7-LITE/Z7-LITE_R11_Dimensions.pdf) (PDF)  
 - [Z7-Lite_R11 Dimensions source file](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/Z7-LITE/Z7-LITE_R11__Dimensions.dxf) (DXF) 
