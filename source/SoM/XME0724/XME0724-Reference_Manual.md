@@ -36,42 +36,24 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Key Features
 
-- Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
-
-&ensp;&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).
-
-- DDR3: 512MB DDR3 RAM((7010 Version Only), 
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).
-
-- Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.
-
-- LED: 1 Power LED, 1 FPGA Done LED;
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.
-
-- GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.
-
-- USB JTAG: 1 on board JTAG circuit, can debug and download the ZYNQ system through a USB cable.
-
-- HDMI: 1 HDMI video output interface, can realize 1080P video image
-
-- Giga ETH: 10/100/1000M Adaptive
-
-- USB Host: USB2.0 PHY(USB3320)
-
-- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system. 
-
+- Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
+  &ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).  
+- DDR3: 512MB DDR3 RAM((7010 Version Only),   
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).  
+- Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
+- LED: 1 Power LED, 1 FPGA Done LED;  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.  
+- GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.  
+- USB JTAG: 1 on board JTAG circuit, can debug and download the ZYNQ system through a USB cable.  
+- HDMI: 1 HDMI video output interface, can realize 1080P video image.  
+- Giga ETH: 10/100/1000M Adaptive.  
+- USB Host: USB2.0 PHY(USB3320)  
+- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.   
 ### ○Block diagram
-
 ​            ![](./XME0724_Reference_Manual.assets/0724_block.png)                   
-
 ### ○Mechanical Spec
-
 ![](./XME0724_Reference_Manual.assets/MECH.jpg)
-
 ## ●2. Function Resources
-
 ### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor
@@ -89,24 +71,24 @@ Vivado 2018.3 is from Xilinx website
 - Programmable logic equivalent to Artix-7 FPGA
 
   LUTs: 17,600 (7010)
-
-  ​	   53,200(7020)
+  
+  ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)
 
   DSP Slices: 80 (7010) 
 
-  ​    		220 (7020)
+  ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)
 
   Logic Cells: 28K (7010)
 
-  ​		     85K(7020)
+  ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)
 
   Flip-Flops: 35,200 (7010) 
 
-  ​    	       106,400 (7020)
+  ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
 
   Total Block RAM: 2.1Mb (7010) 
 
-  ​           		    4.9Mb (7020)
+  ​       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
 
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 
@@ -114,7 +96,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○DDR3
 
-​	The module uses two 16-bit DDR3 memory chips, 512MB for the XME0724-10 version and 1GB for the XME0724-20 version.
+The module uses two 16-bit DDR3 memory chips, 512MB for the XME0724-10 version and 1GB for the XME0724-20 version.
 
 | Signal Name   | PIN Number | Signal Name    | PIN Number |
 | ------------- | ---------- | -------------- | ---------- |
@@ -157,15 +139,15 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Giga ETH
 
-​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
+The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
 
 ### ○USB Host
 
-​	The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
+The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
 ### ○USB UART
 
-​	A USB to UART chip, the CH340, is provided for user connection to the host PC.
+A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
 | Signal Name |   Pin Name   | Pin Number |     Explain      |
 | :---------: | :----------: | :--------: | :--------------: |
@@ -174,7 +156,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○eMMC
 
-​	he module includes an 8GB eMMC interface (PS_SDIO1) for system files or data storage. It can also serve as a secondary boot device alongside the QSPI flash. The interface is PS BANK501 MIO[46-51].
+The module includes an 8GB eMMC interface (PS_SDIO1) for system files or data storage. It can also serve as a secondary boot device alongside the QSPI flash. The interface is PS BANK501 MIO[46-51].
 
 | Signal Name | Pin Number |
 | ----------- | ---------- |
@@ -187,7 +169,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○JTAG
 
-​	The ZYNQ SoC's JTAG signals are connected to the expansion port, which also provides a 3.3V JTAG VREF voltage output signal
+The ZYNQ SoC's JTAG signals are connected to the expansion port, which also provides a 3.3V JTAG VREF voltage output signal
 
 |  Signal  | Module Pin Number | Explain                                           |
 | :------: | :---------------: | ------------------------------------------------- |
@@ -200,7 +182,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Boot Config
 
-​	Configure the ZYNQ startup mode using core module pins PIN119 (MODE0) and PIN120 (MODE1). The ZYNQ configuration schematic is shown below.
+Configure the ZYNQ startup mode using core module pins PIN119 (MODE0) and PIN120 (MODE1). The ZYNQ configuration schematic is shown below.
 
 ![](./XME0724_Reference_Manual.assets/BOOT.png)
 
@@ -212,7 +194,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Quad-SPI Flash
 
-​	On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.
+On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.
 
 | Position |    Model    | Capacity | Factory |
 | :------: | :---------: | :------: | :-----: |
@@ -220,9 +202,8 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Clock
 
-​	The XME0724 core board provides a 33.3Mhz active clock for the PS system. 
-
-​	The clock for the PL section can be generated by the PLL in the PS section, or the user can use it as a clock input to the PL section by connecting an external clock source to the dedicated clock pin of the module.
+The XME0724 core board provides a 33.3Mhz active clock for the PS system.   
+The clock for the PL section can be generated by the PLL in the PS section, or the user can use it as a clock input to the PL section by connecting an external clock source to the dedicated clock pin of the module.
 
 | Position | Signal Name | Frequency | Pin Number |
 | :------: | :---------: | :-------: | :--------: |
@@ -236,9 +217,8 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○LED
 
-​	The XME0724 board includes four LEDs: a power indicator, an FPGA configuration status light, a PL-controlled user LED, and a PS-controlled user LED.
-
-​	The LED signals are described in the following table.
+​	The XME0724 board includes four LEDs: a power indicator, an FPGA configuration status light, a PL-controlled user LED, and a PS-controlled user LED.  
+​	The LED signals are described in the following table.  
 
 | LED  | ZYNQ Pin | Note                                                         |
 | :--: | -------- | ------------------------------------------------------------ |
@@ -251,8 +231,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	The XME0724 features a 1.27mm pitch stamp hole connection, which ensures optimal electrical characteristics and anti-interference performance. Additionally, a single row of 1.27mm pitch holes is provided on the interior of the stamp hole, and the two-in-one structure of the stamp hole and the 1.27mm row of pins offers enhanced flexibility in the utilisation of the XME0724. The stamp holes can be used for soldering, while the row of pins can be connected according to the user's requirements.
 
-Description:
-
+Description:  
 1. Bank34 IO level depends on Pin31 voltage input, input range 1.2V~3.3V.
 2. Bank35 IO level depends on Pin71 voltage input, input range 1.2V~3.3V.
 3. SD Signal (Pin139~Pin144) voltage is 1.8V.
@@ -261,7 +240,6 @@ Description:
 
 ## ●Related Documents  
 ### ○XME0724:  
-
 - [XME0724_R30 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724_R30.pdf) (PDF)
 - [XME0724_R30 Dimensions](../../../mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
 ### ○XME0724CB:
