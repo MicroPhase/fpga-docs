@@ -1,4 +1,4 @@
-BASED_BOARD Documentation
+BASED_BOARD
 =========================
 
 .. toctree::

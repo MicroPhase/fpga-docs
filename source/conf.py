@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'SPDOC'
+project = 'Microphase_Board_DOC'
 copyright = '2024, EAR'
 author = 'EAR'
 release = '1.0'

@@ -1,4 +1,4 @@
-CORE_BOARD Documentation
+SoM
 ========================
 
 .. toctree::

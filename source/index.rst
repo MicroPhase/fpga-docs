@@ -6,6 +6,6 @@ Welcome to Microphase Project's Documentation!
    :caption: Contents:
 
    BASED_BOARD/BASED_BOARD
-   CORE_BOARD/CORE_BOARD
+   SoM/SoM
    DEV_BOARD/DEV_BOARD
 
