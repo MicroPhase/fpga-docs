@@ -225,7 +225,7 @@ Description:
 3. Bank13 IO level depends on JM3 Pin89&90 voltage input, input range 1.2V~3.3V.
 4. MIO8~MIO15 (JM1 Pin111~Pin118), JTAG,RESET (JM1 Pin99~Pin108) level is 3.3V.
 5. MIO28~MIO51 (JM1 Pin81~Pin108)level is 1.8V.
-6. Please refer to the ‘[XME0726_Pinout _Table]’ () for detailed pin definitions of the XME0726.  
+6. Please refer to the ‘[XME0726_Pinout _Table]()’ for detailed pin definitions of the XME0726.  
 
 ## ●3. Related Documents  
 ### ○XME0726:  
