@@ -38,25 +38,14 @@ Vivado 2018.3 is from Xilinx website
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
   Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).    
-  
 - DDR3: 512MB DDR3 RAM((7010 Version Only),   
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).  
-  
 - Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
-  
 - LED: 1 Power LED, 1 FPGA Done LED;  
   &ensp;&ensp;&ensp;&ensp;&ensp;2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.  
-  
 - GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.  
-  
-- USB JTAG: 1 on board JTAG circuit, can debug and download the ZYNQ system through a USB cable.  
-  
-- HDMI: 1 HDMI video output interface, can realize 1080P video image.  
-  
 - Giga ETH: 10/100/1000M Adaptive.  
-  
 - USB Host: USB2.0 PHY(USB3320)  
-  
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.   
 
 ### ○Block diagram
@@ -146,7 +135,7 @@ The RTL8211F chip supports 10/100/1000M network transfer rate and communicates w
 
 ### ○USB Host
 
-The USB2.0 transceiver on-board is the USB3320C-EZK, which is supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
+The USB2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
 
 ### ○USB UART
 

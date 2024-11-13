@@ -1,4 +1,4 @@
-Welcome to Microphase Project's Documentation!
+Documentation of Microphase FPGA Board
 ========================================
 
 .. toctree::

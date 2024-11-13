@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Microphase_Board_DOC'
-copyright = '2024, EAR'
-author = 'EAR'
-release = '1.0'
+project = 'Microphase_FPGA_Board_DOC'
+copyright = '2024, Microphase'
+author = 'Microphase'
+release = 'V1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
