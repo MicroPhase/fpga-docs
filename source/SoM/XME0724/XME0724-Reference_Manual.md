@@ -83,15 +83,15 @@ Vivado 2018.3 is from Xilinx website
 
 - Programmable logic equivalent to Artix-7 FPGA
   LUTs: 17,600 (7010)  
-  ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
+  	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
   DSP Slices: 80 (7010)   
-  ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
+      	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
   Logic Cells: 28K (7010)  
-  ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)  
+  		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)  
   Flip-Flops: 35,200 (7010)   
-  ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
-  ​	  Total Block RAM: 2.1Mb (7010)    
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+      	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
+  Total Block RAM: 2.1Mb (7010)    
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
   
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 
@@ -177,10 +177,10 @@ The ZYNQ SoC's JTAG signals are connected to the expansion port, which also prov
 |  Signal  | Module Pin Number | Explain                                           |
 | :------: | :---------------: | ------------------------------------------------- |
 | VCC_3V3  |      Pin 152      | **Module voltage output**, JTAG reference voltage |
-| FPGA_TDI |      Pin 153      | Input                                             |
-| FPGA_TDO |      Pin 154      | Output                                            |
-| FPGA_TCK |      Pin 155      | Input                                             |
-| FPGA_TMS |      Pin 156      | Input                                             |
+| FPGA_TDI |      Pin 153      | Input (3.3V)                                      |
+| FPGA_TDO |      Pin 154      | Output (3.3V)                                     |
+| FPGA_TCK |      Pin 155      | Input (3.3V)                                      |
+| FPGA_TMS |      Pin 156      | Input (3.3V)                                      |
 |   GND    |        ---        | Connect to the GND signal on the module           |
 
 ### ○Boot Config

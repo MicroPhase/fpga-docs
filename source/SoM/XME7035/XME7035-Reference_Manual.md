@@ -36,14 +36,14 @@ The core board features 138 single-ended IOs (configurable as 69 differential pa
 
 - Xilinx Zynq™ XC7Z035-FFG676 Soc  
 - DDR3: PS 8Gbit DDR3 RAM, 32Bit;  
-&ensp;&ensp;&ensp;PL 8Gbit DDR3 RAM, 32Bit  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PL 8Gbit DDR3 RAM, 32Bit  
 - Flash: Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
 - LED: 1 Power LED, 1 FPGA Done LED;  
-&ensp;&ensp;&ensp;&ensp;2 users LED,1 PS control, 1 PL control.  
+&ensp;&ensp;&ensp;&ensp;&ensp;2 users LED,1 PS control, 1 PL control.  
 - GTX: 8
 - MIO: 21 MIOs, 3 IO at 3.3V, 18 IOs at 1.8V  
 - PL GPIO: 138, Adjustable Voltage, 46 for HR BANK, 92 for HP BANK,  
-&ensp;&ensp;Can be configured as 69 differential pairs  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Can be configured as 69 differential pairs  
 - Connectors: 3 x 120pin High Speed B2B Connectors  
 
 ### ○Block diagram
@@ -59,24 +59,36 @@ The core board features 138 single-ended IOs (configurable as 69 differential pa
 ### ○FPGA  
 
 - Up to 1GHz MHz dual-core Cortex-A9 processor
+
 - DDR3L memory controller with 8 DMA channels and 4
+
 - High Performance AXI3 Slave ports
+
 - High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO
+
 - Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C
+
 - Programmable from JTAG, Quad-SPI flash, and microSD card
+
 - Programmable logic equivalent to Kintex-7 FPGA
-- LUTs: 171,900
-- DSP Slices: 900
-- Logic Cells: 275K
-- Flip-Flops: 343,800
-- Total Block RAM: 17.6Mb
+
+  LUTs: 171,900
+
+  DSP Slices: 900
+
+  Logic Cells: 275K
+
+  Flip-Flops: 343,800
+
+  Total Block RAM: 17.6Mb
+
 - Analog Mixed Signal (AMS) / XADC: 2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
+
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Configs  
 
 ### ○DDR3  
 
-The PS of the module uses two 16-bit DDR3 memory chips, with a capacity of 512MB for a
-single chip and 1GB for two chips.
+The PS of the module uses two 16-bit DDR3 memory chips, with a capacity of 512MB for a single chip and 1GB for two chips.
 
 | Signal Name   | PIN Number | Signal Name    | PIN Number |
 | ------------- | ---------- | -------------- | ---------- |
