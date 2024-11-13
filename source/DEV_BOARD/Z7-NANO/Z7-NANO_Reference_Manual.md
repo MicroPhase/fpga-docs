@@ -36,7 +36,7 @@ Vivado 2018.3 is from Xilinx website
 ### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
-&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
+Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 
 - DDR3: 1 4Gbit, DDR3. (MT41J256M16HA-125:K or equivalent)  
   
@@ -60,7 +60,7 @@ Vivado 2018.3 is from Xilinx website
 - USB UART:1 USB UART interface, used for serial communication with PC.  
   
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
 
 
 ### ○Block diagram
@@ -89,28 +89,17 @@ Vivado 2018.3 is from Xilinx website
   
 - Programmable logic equivalent to Artix-7 FPGA  
 
-  LUTs: 17,600 (7010)
-
+  LUTs: 17,600 (7010
   ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)
-
   DSP Slices: 80 (7010) 
-
   ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)
-
   Logic Cells: 28K (7010)
-
   ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)
-
   Flip-Flops: 35,200 (7010) 
-
   ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
-
   Total Block RAM: 2.1Mb (7010) 
-
-  ​       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
-
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
-  
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3

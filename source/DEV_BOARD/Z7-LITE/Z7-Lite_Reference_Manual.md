@@ -39,25 +39,15 @@ Vivado 2018.3 is from Xilinx website
 Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).  
 
 - DDR3: 1 4Gbit,DDR3.(MT41J256M16HA-125:K or equivalent)  
-
 - KEY: 3 user's keys, 1 PS control, 2 PL control.  
-
 - LED: 3 user's LEDs, 1 PS control, 2 PL control.  
-
 - GPIO: 2 40 pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.  
-
 - USB JTAG: 1 on board JTAG circuit, can debug and download the ZYNQ system through the USB cable.  
-
 - HDMI: 1 HDMI video output interface, can realize 1080P video image.  
-
 - PHY ETH: 1 10/100 Ethernet RJ45 interface, which can be use for Ethernet data exchange or other application.  
-
 - USB Host: 1 USB Host.  
-
 - SD Card: 1 SD Card is provided to store the operating system image and file system.  
-
 - USB UART: 1 USB UART interface, using for serial communication with PC.  
-
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.   
     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
 
@@ -74,41 +64,22 @@ Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
 ### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor  
-
 - DDR3L memory controller with 8 DMA channels and 4   
-
 - High Performance AXI3 Slave ports  
-
 - High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO  
-
 - Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C  
-
 - Programmable from JTAG, Quad-SPI flash, and microSD card  
-
 - Programmable logic equivalent to Artix-7 FPGA 
-
   LUTs: 17,600 (7010)
-  
   ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)
-
   DSP Slices: 80 (7010) 
-
   ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)
-
   Logic Cells: 28K (7010)
-
   ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)
-
   Flip-Flops: 35,200 (7010) 
-
   ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
-
-  Total Block RAM: 2.1Mb (7010) 
-
-  ​       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
-
+  Total Block RAM: 2.1Mb (7010)    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
-
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3
