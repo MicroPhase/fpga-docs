@@ -4,7 +4,7 @@
 
 | Revision | Time       | Description   |
 | :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.10.11 | First Release |
+| Rev. 1.0 | 2024.10.13 | First Release |
 |          |            |               |
 
 ## CopyRight Notice:
@@ -39,18 +39,18 @@ The core board extends 120 single-ended IOs on the PL side (can be configured as
 
 ### ○Key Features
 
-- Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
-​	Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).
-- DDR3: PS 1GB DDR3 RAM.
-- Flash: 256Mbit QSPI Flash.
-- LED: 1 Power LED, 1 FPGA Done LED;
-  ​	 1 PS users LED.
-- MIO: 32 MIOs, 8 IOs at 3.3V, 24 IOs at 1.8V.
-- PL GPIO: 120, Adjustable Voltage, 60 LVDS Pairs.
-- Giga ETH: 10/100/1000M Adaptive
-- USB Host: USB2.0 PHY(USB3320)
-- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system. 
-- Connectors: 2 * 120pin High Speed B2B Connectors
+- Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
+Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).  
+- DDR3: PS 1GB DDR3 RAM.  
+- Flash: 256Mbit QSPI Flash.  
+- LED: 1 Power LED, 1 FPGA Done LED;  
+1 PS users LED.  
+- MIO: 32 MIOs, 8 IOs at 3.3V, 24 IOs at 1.8V.  
+- PL GPIO: 120, Adjustable Voltage, 60 LVDS Pairs.  
+- Giga ETH: 10/100/1000M Adaptive  
+- USB Host: USB2.0 PHY(USB3320)  
+- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.   
+- Connectors: 2 * 120pin High Speed B2B Connectors  
 
 ### ○Block diagram
 
@@ -64,25 +64,33 @@ The core board extends 120 single-ended IOs on the PL side (can be configured as
 
 ### ○FPGA
 
-- 667 MHz dual-core Cortex-A9 processor
-- DDR3L memory controller with 8 DMA channels and 4 
-- High Performance AXI3 Slave ports
-- High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO
-- Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C
-- Programmable from JTAG, Quad-SPI flash, and microSD card
-- Programmable logic equivalent to Artix-7 FPGA
+- 667 MHz dual-core Cortex-A9 processor  
+- DDR3L me  mory controller with 8 DMA channels and 4   
+
+- High-Performance AXI3 Slave ports  
+
+- High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO  
+
+- Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C  
+
+- Programmable from JTAG, Quad-SPI flash, and microSD card  
+
+- Programmable logic equivalent to Artix-7 FPGA  
+
   LUTs: 17,600 (7010)  
-  ​	   53,200(7020)  
+  ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
   DSP Slices: 80 (7010)   
-  ​    		220 (7020)  
+  ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
   Logic Cells: 28K (7010)  
-  ​		     85K(7020)  
+  ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)  
   Flip-Flops: 35,200 (7010)   
-  ​    	       106,400 (7020)  
+  ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
   Total Block RAM: 2.1Mb (7010)   
-  ​           		    4.9Mb (7020)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
-- Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config  
+
+- Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3
 

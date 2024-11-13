@@ -76,7 +76,7 @@ Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
 - Programmable from JTAG, Quad-SPI flash, and microSD card  
 
 - Programmable logic equivalent to Artix-7 FPGA  
-  LUTs: 17,600 (7010)  
+  ​	  LUTs: 17,600 (7010)  
   ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
   DSP Slices: 80 (7010)   
   ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
@@ -85,7 +85,7 @@ Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
   Flip-Flops: 35,200 (7010)   
   ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
   Total Block RAM: 2.1Mb (7010)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
   
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
 
