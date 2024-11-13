@@ -91,7 +91,7 @@ Vivado 2018.3 is from Xilinx website
   Flip-Flops: 35,200 (7010)   
   ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
   ​	  Total Block RAM: 2.1Mb (7010)    
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
   
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
 
@@ -242,14 +242,15 @@ Description:
 5. Please refer to the ‘[XME0724_Pinout _Table](https://github.com/rabbitjiump/doc_test/blob/main/others/XME0724_Pinout_Table.pdf)’ for detailed pin definitions of the XME0724.
 
 ## ●3. Related Documents  
-### ○XME0724:  
+### ○XME0724
 - [XME0724_R30 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724_R30.pdf) (PDF)
 - [XME0724_R30 Dimensions](../../../mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
-### ○XME0724CB:
-- XME0724CB_Reference Manual(MD)-To be added
+- [XME0724_R30 Dimensions source file]() (DXF)  
+### ○XME0724CB
+- XME0724CB Reference Manual(MD)-To be added
 - [XME0724CB_R21 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724CB_R21.pdf)(PDF)
 - [XME0724CB_R21 Dimensions](../../../mechanical/XME0724/XME0724CB_R21_Dimensions.pdf)(PDF)
-### ○XME0724CB-NET:
-- XME0724CB-NET_Reference Manual(MD)-To be added
+### ○XME0724CB-NET
+- XME0724CB-NET Reference Manual(MD)-To be added
 - [XME0724CB-NET_R30 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724CB-NET_R30.pdf)(PDF)
 - [XME0724CB-NET_R30 Dimensions](../../../mechanical/XME0724/XME0724CB-NET_R30_Dimensions.pdf)(PDF)
