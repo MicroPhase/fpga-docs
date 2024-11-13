@@ -36,29 +36,29 @@ Vivado 2018.3 is from Xilinx website
 ### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
-&ensp;&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
+&ensp;&ensp;&ensp;Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 
 - DDR3: 1 4Gbit, DDR3. (MT41J256M16HA-125:K or equivalent)  
-
+  
 - KEY: 1 user's key, which is controlled by PL.  
-
+  
 - LED: 2 user's LEDs, 1 PS control, 1 PL control.  
-
+  
 - GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.  
-
+  
 - USB JTAG: 1 on-board JTAG circuit, can debug and download the ZYNQ system through a USB cable.  
-
+  
 - HDMI: 1 HDMI video output interface, can realize 1080P video image  
-
+  
 - PHY ETH: 2 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other applications.  
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 PS control, 1 PL control.
-
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 PS control, 1 PL control.  
+  
 - USB Host: 1 USB Host.  
-
+  
 - SD Card: 1 SD Card is provided to store the operating system image and file system.  
-
+  
 - USB UART:1 USB UART interface, used for serial communication with PC.  
-
+  
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.  
     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
 
@@ -76,17 +76,17 @@ Vivado 2018.3 is from Xilinx website
 ### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor  
-
-- DDR3L memory controller with 8 DMA channels and 4   
-
+  
+- DDR3L me  mory controller with 8 DMA channels and 4   
+  
 - High-Performance AXI3 Slave ports  
-
+  
 - High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO  
-
+  
 - Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C  
-
+  
 - Programmable from JTAG, Quad-SPI flash, and microSD card  
-
+  
 - Programmable logic equivalent to Artix-7 FPGA  
 
   LUTs: 17,600 (7010)
@@ -110,7 +110,7 @@ Vivado 2018.3 is from Xilinx website
   ​       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
 
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
-
+  
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3
