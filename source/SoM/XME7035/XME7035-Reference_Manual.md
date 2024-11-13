@@ -266,13 +266,13 @@ Description:
 
 ## ●3. Related Documents  
 
-### ○XME7035:  
+### ○XME7035  
 
 - [XME7035_R10 Schematic]() (PDF)
 - [XME7035_R10 Dimensions]() (PDF)  
 - [XME7035_R10 Dimensions source file]() (DXF)  
 
-### ○PE500:   
+### ○PE500   
 - PE500 Reference_Manual(MD)-To be added
 - [PE500_R10 Schematic]()(PDF)
 - [PE500_R10 Dimensions]()(PDF)
