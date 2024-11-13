@@ -40,12 +40,12 @@ Vivado 2018.3 is from Xilinx website
   Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).    
   
 - DDR3: 512MB DDR3 RAM((7010 Version Only),   
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).  
   
 - Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
   
 - LED: 1 Power LED, 1 FPGA Done LED;  
-&ensp;&ensp;&ensp;&ensp;&ensp;2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.  
+  &ensp;&ensp;&ensp;&ensp;&ensp;2 user's LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.  
   
 - GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.  
   
@@ -84,27 +84,15 @@ Vivado 2018.3 is from Xilinx website
 - Programmable logic equivalent to Artix-7 FPGA
 
   LUTs: 17,600 (7010)
-  
   ​	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)
-
   DSP Slices: 80 (7010) 
-
   ​    	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)
-
   Logic Cells: 28K (7010)
-
   ​		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)
-
   Flip-Flops: 35,200 (7010) 
-
   ​    	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)
-
-  Total Block RAM: 2.1Mb (7010) 
-
-  ​       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
-
+  Total Block RAM: 2.1Mb (7010)     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
-  
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3

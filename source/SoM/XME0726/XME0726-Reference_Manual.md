@@ -25,11 +25,11 @@ Vivado 2018.3 is from Xilinx website
 
 ## ●1. Overview
 
-​	XME0726 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology. 
+XME0726 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology. 
 
-​	It integrates 1GByte DDR3 RAM, 32MByte SPI flash, Gigabit Ethernet PHY transceiver and a large number of configurable I/Os expandable via high-speed connectors. With a size of only 4.5 x 3.5cm, the module is small and flexible enough to be used in a wide range of applications.
+It integrates 1GByte DDR3 RAM, 32MByte SPI flash, Gigabit Ethernet PHY transceiver and a large number of configurable I/Os expandable via high-speed connectors. With a size of only 4.5 x 3.5cm, the module is small and flexible enough to be used in a wide range of applications.
 
-​	The core board extends 120 single-ended IOs on the PL side (can be configured as 60 pairs of differential IOs), with adjustable IO voltages; 32 IOs on the PS side, and a Gigabit Ethernet PHY, with equal-length differential processing of the FPGA pin-to-connector alignment, and impedance of 50 ohms single-ended and 100 ohms differential. This is very important for high-speed signal transmission application scenarios.
+The core board extends 120 single-ended IOs on the PL side (can be configured as 60 pairs of differential IOs), with adjustable IO voltages; 32 IOs on the PS side, and a Gigabit Ethernet PHY, with equal-length differential processing of the FPGA pin-to-connector alignment, and impedance of 50 ohms single-ended and 100 ohms differential. This is very important for high-speed signal transmission application scenarios.
 
 ### ○Board Layout
 
@@ -40,27 +40,16 @@ Vivado 2018.3 is from Xilinx website
 ### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),
-
 ​	Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).
-
 - DDR3: PS 1GB DDR3 RAM.
-
-  Flash: 256Mbit QSPI Flash.
-
+- Flash: 256Mbit QSPI Flash.
 - LED: 1 Power LED, 1 FPGA Done LED;
-
   ​	 1 PS users LED.
-
-  MIO: 32 MIOs, 8 IOs at 3.3V, 24 IOs at 1.8V.
-
+- MIO: 32 MIOs, 8 IOs at 3.3V, 24 IOs at 1.8V.
 - PL GPIO: 120, Adjustable Voltage, 60 LVDS Pairs.
-
 - Giga ETH: 10/100/1000M Adaptive
-
 - USB Host: USB2.0 PHY(USB3320)
-
 - CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system. 
-
 - Connectors: 2 * 120pin High Speed B2B Connectors
 
 ### ○Block diagram
@@ -76,46 +65,28 @@ Vivado 2018.3 is from Xilinx website
 ### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor
-
 - DDR3L memory controller with 8 DMA channels and 4 
-
 - High Performance AXI3 Slave ports
-
 - High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO
-
 - Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C
-
 - Programmable from JTAG, Quad-SPI flash, and microSD card
-
 - Programmable logic equivalent to Artix-7 FPGA
-
-  LUTs: 17,600 (7010)
-
-  ​	   53,200(7020)
-
-  DSP Slices: 80 (7010) 
-
-  ​    		220 (7020)
-
-  Logic Cells: 28K (7010)
-
-  ​		     85K(7020)
-
-  Flip-Flops: 35,200 (7010) 
-
-  ​    	       106,400 (7020)
-
-  Total Block RAM: 2.1Mb (7010) 
-
-  ​           		    4.9Mb (7020)
-
-  Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs
-
-  Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
+  LUTs: 17,600 (7010)  
+  ​	   53,200(7020)  
+  DSP Slices: 80 (7010)   
+  ​    		220 (7020)  
+  Logic Cells: 28K (7010)  
+  ​		     85K(7020)  
+  Flip-Flops: 35,200 (7010)   
+  ​    	       106,400 (7020)  
+  Total Block RAM: 2.1Mb (7010)   
+  ​           		    4.9Mb (7020)  
+- Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
+- Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config  
 
 ### ○DDR3
 
-​	The module uses two 16-bit DDR3 memory chips, with a capacity of 512MB for a single chip and 1GB for two chips.
+The module uses two 16-bit DDR3 memory chips, with a capacity of 512MB for a single chip and 1GB for two chips.
 
 | Signal Name   | PIN Number | Signal Name    | PIN Number |
 | ------------- | ---------- | -------------- | ---------- |
@@ -158,11 +129,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Giga ETH
 
-​	The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
+The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.
 
 ### ○JTAG
 
-​	The JTAG signal link of the XME0726 is connected to the expansion connector.
+The JTAG signal link of the XME0726 is connected to the expansion connector.
 
 |  Signal  | JM3 Pin Number | Explain       |
 | :------: | :------------: | ------------- |
@@ -173,7 +144,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Boot Config
 
-​	ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1), the core module ZYNQ configuration schematic is shown below.
+ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1), the core module ZYNQ configuration schematic is shown below.
 
 ![](./assets/BOOT.png)
 
@@ -185,7 +156,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Quad-SPI Flash
 
-​	On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.
+On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.
 
 | Position |    Model    | Capacity | Factory |
 | :------: | :---------: | :------: | :-----: |
@@ -193,9 +164,9 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Clock
 
-​	The XME0726 core board provides a 33.3Mhz active clock for the PS system. 
+The XME0726 core board provides a 33.3Mhz active clock for the PS system. 
 
-​	The clock for the PL section can be generated by the PLL in the PS section, or the user can use it as a clock input to the PL section by connecting an external clock source to the dedicated clock pin of the module.
+The clock for the PL section can be generated by the PLL in the PS section, or the user can use it as a clock input to the PL section by connecting an external clock source to the dedicated clock pin of the module.
 
 | Position | Signal Name | Frequency | Pin Number |
 | :------: | :---------: | :-------: | :--------: |
@@ -203,15 +174,15 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Power
 
-​	**Please note that the power input of XME0726 is +5V. We recommend using a 5V/2A power supply.** 
+**Please note that the power input of XME0726 is +5V. We recommend using a 5V/2A power supply.** 
 
-​	Once the module is powered up, it will be cascaded in order to complete the power-up process in the following sequence: 1.0V > 1.8V > 1.5V > 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.
+Once the module is powered up, it will be cascaded in order to complete the power-up process in the following sequence: 1.0V > 1.8V > 1.5V > 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.
 
 ### ○LED
 
-​	The XME0726 board provides three LEDs, the power indicator, the FPGA configuration status light and  the PS-controlled user LED.
+The XME0726 board provides three LEDs, the power indicator, the FPGA configuration status light and  the PS-controlled user LED.
 
-​	The LED signals are described in the following table.
+The LED signals are described in the following table.
 
 | LED  | FPGA Pin | Explain                                                      |
 | :--: | :------: | ------------------------------------------------------------ |
