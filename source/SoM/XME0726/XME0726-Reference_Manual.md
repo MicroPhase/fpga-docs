@@ -19,13 +19,7 @@ Vivado 2018.3 is from Xilinx website
 
 ## WeChat Public Number:
 
-![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\image-20240808163724633.png)
-
-<div style="page-break-after:always;"></div>
-
-## Contents
-
-[toc]
+![](./assets/vx.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -39,7 +33,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Board Layout
 
-![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\0726.png)
+![](./assets/layout.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -71,11 +65,11 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Block diagram
 
-![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\XME0726.png)
+![](./assets/block_diagram.png)
 
 ### ○Mechanical Spec
 
-![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\XME0726_MECH.png)
+![](./assets/XME0726_MECH.png)
 
 
 
@@ -181,7 +175,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1), the core module ZYNQ configuration schematic is shown below.
 
-![](G:\MARKDOWN_DOC\DEV\XME0726\XME0726_Reference Manual_REV1.0_240909.assets\BOOT.png)
+![](./assets/BOOT.png)
 
 | Mode | MODE1(JM3 PIN108) | MODE0(JM3 PIN106) |
 | :--: | :---------------: | :---------------: |
@@ -252,5 +246,12 @@ Description:
 3. Bank13 IO level depends on JM3 Pin89&90 voltage input, input range 1.2V~3.3V.
 4. MIO8~MIO15 (JM1 Pin111~Pin118), JTAG,RESET (JM1 Pin99~Pin108) level is 3.3V.
 5. MIO28~MIO51 (JM1 Pin81~Pin108)level is 1.8V.
-6. Please refer to the ‘XME0726_Pinout _Table’ for detailed pin definitions of the XME0726.  
+6. Please refer to the ‘[XME0726_Pinout _Table]’ () for detailed pin definitions of the XME0726.  
 
+## ●3. Related Documents  
+### ○XME0726:  
+- [XME0726_R10 Schematic]() (PDF)
+- [XME0726_R10 Dimensions]() (PDF)  
+### ○XME0726CB:   
+- [XME0726CB_R10 Schematic]()(PDF)
+- [XME0726CB_R10 Dimensions]()(PDF)

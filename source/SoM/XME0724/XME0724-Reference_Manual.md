@@ -251,7 +251,7 @@ Description:
 4. MIO9~MIO13, UART, JTAG, RESET(Pin145~Pin157) level is 3.3V.
 5. Please refer to the ‘[XME0724_Pinout _Table](https://github.com/rabbitjiump/doc_test/blob/main/others/XME0724_Pinout_Table.pdf)’ for detailed pin definitions of the XME0724.
 
-## ●Related Documents  
+## ●3. Related Documents  
 ### ○XME0724:  
 - [XME0724_R30 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/XME0724_R30.pdf) (PDF)
 - [XME0724_R30 Dimensions](../../../mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
