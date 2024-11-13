@@ -13,7 +13,7 @@ Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are r
 
 ## Development Environment:
 
-Vivado 2018.3 is from Xilinx website
+Vivado 2021.1 is from Xilinx website
 
 <https://www.xilinx.com>
 
@@ -24,17 +24,12 @@ Vivado 2018.3 is from Xilinx website
 
 ## ●1. Overview
 
-XME7035 is a system module based on Xilinx Zynq-SoC from Microphase Technology.
+XME7035 is a system module based on Xilinx Zynq-SoC from Microphase Technology.  
 It integrates 4 DDR3 SDRAM chips, with two forming a 32-bit data bus and 8Gbit capacity. The
 read/write data clock frequency between the PS(Processing System) and the DDR3 is up to
-533MHz, and the read/write data clock frequency between the PL(Programmable Logic) and the
-DDR3 is up to 800MHz, which can satisfy the system's demand for high-bandwidth data
-processing.
-At the same time, a REALTEK RTL8211F Gigabit Ethernet PHY chip is integrated on the core
-board, which can be easily used by users to realise Ethernet related applications.
-The core board features 138 single-ended IOs (configurable as 69 differential pairs),
-adjustable IO voltages, 8 GTX high-speed RX/TX pairs, and equal-length differential alignments
-with 50-ohm single-ended and 100-ohm differential impedance.
+533MHz, and the read/write data clock frequency between the PL(Programmable Logic) and the DR3 is up to 800MHz, which can satisfy the system's demand for high-bandwidth data
+processing.At the same time, a REALTEK RTL8211F Gigabit Ethernet PHY chip is integrated on the core oard, which can be easily used by users to realise Ethernet related applications.  
+The core board features 138 single-ended IOs (configurable as 69 differential pairs), djustable IO voltages, 8 GTX high-speed RX/TX pairs, and equal-length differential alignments with 50-ohm single-ended and 100-ohm differential impedance.
 
 ### ○Board Layout
 
@@ -42,26 +37,16 @@ with 50-ohm single-ended and 100-ohm differential impedance.
 
 ### ○Key Features
 
-- Xilinx Zynq™ XC7Z035-FFG676 Soc
-
-- DDR3: PS 8Gbit DDR3 RAM, 32Bit;
-
-       PL 8Gbit DDR3 RAM, 32Bit
-
-- Flash: Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.
-
-- LED: 1 Power LED, 1 FPGA Done LED;
-
-   2 users LED,1 PS control, 1 PL control.
-
+- Xilinx Zynq™ XC7Z035-FFG676 Soc  
+- DDR3: PS 8Gbit DDR3 RAM, 32Bit;  
+&ensp;&ensp;&ensp;PL 8Gbit DDR3 RAM, 32Bit  
+- Flash: Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
+- LED: 1 Power LED, 1 FPGA Done LED;  
+&ensp;&ensp;&ensp;&ensp;2 users LED,1 PS control, 1 PL control.  
 - GTX: 8
-
-- MIO: 21 MIOs, 3 IO at 3.3V, 18 IOs at 1.8V
-
-- PL GPIO: 138, Adjustable Voltage, 46 for HR BANK, 92 for HP BANK,
-
-  	 Can be configured as 69 differential pairs
-
+- MIO: 21 MIOs, 3 IO at 3.3V, 18 IOs at 1.8V  
+- PL GPIO: 138, Adjustable Voltage, 46 for HR BANK, 92 for HP BANK,  
+&ensp;&ensp;Can be configured as 69 differential pairs  
 - Connectors: 3 x 120pin High Speed B2B Connectors  
 
 ### ○Block diagram
@@ -211,10 +196,9 @@ The JTAG signal link of the XME7035 is connected to the expansion connector.
 
 ### ○Boot Config  
 
-ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1),
-the core module ZYNQ configuration schematic is shown below.  
+ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1),the core module ZYNQ configuration schematic is shown below.  
 
-![image-20241022102650859](G:\MARKDOWN_DOC\GIT\CORE_BOARD\XME7035\XME7035_Reference Manual_REV1.0_241022.assets\image-20241022102650859.png)
+![](./assets/boot.png)
 
 | Mode | MODE1(JM1 PIN19)  | MODE0(JM1 PIN17)  |
 | ---- | ----------------- | ----------------- |
@@ -224,8 +208,7 @@ the core module ZYNQ configuration schematic is shown below.
 
 ### ○Quad-SPI Flash  
 
-On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA
-configuration and user’s application as well as data.  
+On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.  
 
 | Position | Model       | Capacity | Factory |
 | -------- | ----------- | -------- | ------- |
@@ -233,8 +216,7 @@ configuration and user’s application as well as data.
 
 ### ○Clock  
 
-The XME7035 core board provides a 33.3Mhz active clock for the PS system and a 200Mhz
-active clock for the PL system.  
+The XME7035 core board provides a 33.3Mhz active clock for the PS system and a 200Mhz active clock for the PL system.  
 
 | Position | Signal Name | Frequency | Pin Number |
 | -------- | ----------- | --------- | ---------- |
@@ -245,13 +227,13 @@ active clock for the PL system.
 ### ○Power  
 
 **Please note that the power input of XME7035 is +5V. We recommend using a 5V/2A power supply.**  
+
 The module requires a 5V input, and it automatically follows a cascading power-up sequence:1.0V -> 1.8V -> 1.5V -> 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.  
 
 ### ○LED  
 
-The XME7035 board provides four LEDs, the power indicator, the FPGA configuration status
-light, the PL-controlled user LED, and the PS user-controlled LED.
-The LED signals are described in the following table.  
+The XME7035 board provides four LEDs, the power indicator, the FPGA configuration status light, the PL-controlled user LED, and the PS user-controlled LED.  
+The LED signals are described in the following table.    
 
 | LED  | ZYNQ Pin | Note                                                         |
 | ---- | -------- | ------------------------------------------------------------ |
@@ -262,15 +244,14 @@ The LED signals are described in the following table.
 
 ### ○Expansion Ports  
 
-The XME7035 uses three sets of connectors, JM1, JM3 and JM4, for the FPGA IO signals and
-Ethernet interface.
-3 x AXK5A2137YG, 120Pin, 0.5mm Pitch  
+The XME7035 uses three sets of connectors, JM1, JM3 and JM4, for the FPGA IO signals and Ethernet interface.  
+3 x AXK5A2137YG, 120Pin, 0.5mm Pitch    
 
 | Core Board Connector Models | Based Board Connector Models | Manufacturers | Mated height |
 | --------------------------- | ---------------------------- | ------------- | ------------ |
 | AXK5A2137YG                 | AXK6A2337YG                  | Panasonic     | 3mm          |
 
-FPGA Bank, Number of IOs vs. B2B Connector Table  
+FPGA Bank, Number of IOs vs. B2B Connector Table   
 
 | FPGA Bank | B2B Connector | IO Number | Voltage    | Explain                                                |
 | --------- | ------------- | --------- | ---------- | ------------------------------------------------------ |
@@ -289,7 +270,7 @@ Description:
 3. Bank13 IO level depends on JM3 Pin89&90 voltage input, input range 1.2V~3.3V.
 4. MIO8,MIO14 and MIO15 (JM1 Pin20,55,57), JTAG,RESET (JM1 Pin18, Pin23~Pin29) level is 3.3V.
 5. MIO28~MIO45 (JM1 Pin24,26,28···~Pin108) level is 1.8V.
-6. Please refer to the ‘XME7035_Pinout _Table’ for detailed pin definitions of the XME7035.  
+6. Please refer to the ‘[XME7035_Pinout _Table]()’ for detailed pin definitions of the XME7035.  
 
 ## ●3. Related Documents  
 
