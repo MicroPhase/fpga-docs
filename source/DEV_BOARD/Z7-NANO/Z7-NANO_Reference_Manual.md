@@ -278,5 +278,5 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 ## ●3.Related Documents 
 
 - [Z7-NANO_R21_Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Z7-NANO_R21.pdf)(PDF)
-- [Z7NANO_R20_Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-Nano_R20_Dimensions.pdf)(PDF)
-- [Z7NANO_R20_Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-NANO_R20_Dimensions.dxf) (DXF) 
+- [Z7-NANO_R20_Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-Nano_R20_Dimensions.pdf)(PDF)
+- [Z7-NANO_R20_Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-NANO_R20_Dimensions.dxf) (DXF) 
