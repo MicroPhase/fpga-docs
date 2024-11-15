@@ -223,8 +223,8 @@ Description:
 1. Bank35 IO level depends on JM1 Pin29&30 voltage input, input range 1.2V~3.3V.
 2. Bank34 IO level depends on JM3 Pin29&30 voltage input, input range 1.2V~3.3V.
 3. Bank13 IO level depends on JM3 Pin89&90 voltage input, input range 1.2V~3.3V.
-4. MIO8~MIO15 (JM1 Pin111~Pin118), JTAG,RESET (JM1 Pin99~Pin108) level is 3.3V.
-5. MIO28~MIO51 (JM1 Pin81~Pin108) level is 1.8V.
+4. MIO8-MIO15 (JM1 Pin111-Pin118), JTAG,RESET (JM1 Pin99~Pin108) level is 3.3V.
+5. MIO28-MIO51 (JM1 Pin81-Pin108) level is 1.8V.
 6. Please refer to the ‘[XME0726_Pinout _Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0726_Pinout_Table.pdf)’ for detailed pin definitions of the XME0726.  
 
 ## ●3. Related Documents  
@@ -235,5 +235,5 @@ Description:
 ### ○XME0726CB 
 - [XME0726CB_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0726CB_R10.pdf)(PDF)
 - [XME0726CB_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726CB_R10_Dimensions.pdf)(PDF)
-- [XME0726CB_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/othersl/XME0726CB_R10_Board_source_file.BRD)(Brd)
+- [XME0726CB_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0726CB_R10_Board_source_file.BRD)(Brd)
 

@@ -224,10 +224,10 @@ The LED signals are described in the following table.
 The XME0724 features a 1.27mm pitch stamp hole connection, which ensures optimal electrical characteristics and anti-interference performance. Additionally, a single row of 1.27mm pitch holes is provided on the interior of the stamp hole, and the two-in-one structure of the stamp hole and the 1.27mm row of pins offers enhanced flexibility in the utilisation of the XME0724. The stamp holes can be used for soldering, while the row of pins can be connected according to the user's requirements.
 
 Description:  
-1. Bank34 IO level depends on Pin31 voltage input, input range 1.2V~3.3V.
-2. Bank35 IO level depends on Pin71 voltage input, input range 1.2V~3.3V.
-3. SD Signal (Pin139~Pin144) voltage is 1.8V.
-4. MIO9~MIO13, UART, JTAG, RESET(Pin145~Pin157) level is 3.3V.
+1. Bank34 IO level depends on Pin31 voltage input, input range 1.2V-3.3V.
+2. Bank35 IO level depends on Pin71 voltage input, input range 1.2V-3.3V.
+3. SD Signal (Pin139-Pin144) voltage is 1.8V.
+4. MIO9-MIO13, UART, JTAG, RESET(Pin145-Pin157) level is 3.3V.
 5. Please refer to the ‘[XME0724_Pinout _Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724_Pinout_Table.pdf)’ for detailed pin definitions of the XME0724.
 
 ## ●3. Related Documents  
@@ -239,7 +239,7 @@ Description:
 - XME0724CB Reference Manual(MD)-To be added
 - [XME0724CB_R21 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB_R21.pdf)(PDF)
 - [XME0724CB_R21 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB_R21_Dimensions.pdf)(PDF)
-- [XME0724CB_R21 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/othersXME0724CB_R21_4C.brd)(Brd)
+- [XME0724CB_R21 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724CB_R21_4C.brd)(Brd)
 ### ○XME0724CB-NET
 - XME0724CB-NET Reference Manual(MD)-To be added
 - [XME0724CB-NET_R30 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB-NET_R30.pdf)(PDF)
