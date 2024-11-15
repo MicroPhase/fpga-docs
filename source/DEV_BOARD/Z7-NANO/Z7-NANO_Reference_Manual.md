@@ -9,7 +9,7 @@
 
 ## CopyRight Notice
 
-Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
+Copyright ©2024 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
 ## Development Environment
 

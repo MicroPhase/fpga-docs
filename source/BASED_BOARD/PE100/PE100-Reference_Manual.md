@@ -9,11 +9,11 @@
 
 ## CopyRight Notice:
 
-Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
+Copyright ©2024 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
 ## WeChat Public Number:
 
-![image-20240808164018087](G:\MARKDOWN_DOC\DEV\XME0724\XME0724_Reference Manual_ES1_240908.assets\image-20240808163724633.png)
+
 
 <div style="page-break-after:always;"></div>
 
@@ -26,7 +26,7 @@ Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are r
 
 ### ○Board Layout
 
-![pe100_LAYOUT](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\pe100_LAYOUT.png)
+
 
 ### ○Key Features
 
@@ -43,11 +43,11 @@ Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are r
 
 ### ○Block diagram
 
-![](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\BLOCKDIAGRAM.png)
+
 
 ### ○Mechanical Spec
 
-![](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\Allegro.png)
+
 
 ### ○Core Board Matching Description
 
@@ -81,7 +81,7 @@ Copyright ©2015 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are r
 
 ​	Diagram of connecting the core board and two Ethernet phy chips.
 
-![image-20241018143117373](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\image-20241018143117373.png)
+
 
 The pin connection assignment table for ETH0 and XME0715 is as follows.
 
@@ -129,7 +129,7 @@ The pin connection assignment table for ETH1 and XME0715 is as follows.
 
 ​	Diagram of connecting the core board and two Ethernet phy chips.
 
-​	![image-20241018151127056](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\image-20241018151127056.png)
+
 
 The pin connection assignment table for USB and XME0715 is as follows.
 
@@ -144,7 +144,7 @@ The pin connection assignment table for USB and XME0715 is as follows.
 
 ​	The base board provide a USB to UART interface, the chip is Silicon Labs CP2102. The USB is Micro USB.
 
-![image-20241018160356753](G:\MARKDOWN_DOC\BASEDBOARD\PE100\PE100_Reference Manual_Rev1.0_241016.assets\image-20241018160356753.png)
+
 
 The pin connection assignment table for UART and XME0715 is as follows.
 
