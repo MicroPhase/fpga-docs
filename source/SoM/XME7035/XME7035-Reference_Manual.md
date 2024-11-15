@@ -274,18 +274,18 @@ Description:
 3. Bank13 IO level depends on JM3 Pin89&90 voltage input, input range 1.2V~3.3V.
 4. MIO8,MIO14 and MIO15 (JM1 Pin20,55,57), JTAG,RESET (JM1 Pin18, Pin23~Pin29) level is 3.3V.
 5. MIO28~MIO45 (JM1 Pin24,26,28···~Pin108) level is 1.8V.
-6. Please refer to the ‘[XME7035_Pinout _Table]()’ for detailed pin definitions of the XME7035.  
+6. Please refer to the ‘[XME7035_Pinout _Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME7035_Pinout_Table.pdf)’ for detailed pin definitions of the XME7035.  
 
 ## ●3. Related Documents  
 
 ### ○XME7035  
 
-- [XME7035_R10 Schematic]() (PDF)
-- [XME7035_R10 Dimensions]() (PDF)  
-- [XME7035_R10 Dimensions source file]() (DXF)  
+- [XME7035_R12 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME7035_R12) (PDF)
+- [XME7035_R12 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035/XME7035_R12_Dimensions.pdf) (PDF)  
+- [XME7035_R12 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035_R12_Dimensions_source_file.dxf) (DXF)  
 
 ### ○PE500   
 - PE500 Reference_Manual(MD)-To be added
-- [PE500_R10 Schematic]()(PDF)
-- [PE500_R10 Dimensions]()(PDF)
-- [PE500_R10 Board source file]()(Brd)
+- [PE500_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10)(PDF)
+- [PE500_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035/PE500_R10_Dimensions.pdf)(PDF)
+- [PE500_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)

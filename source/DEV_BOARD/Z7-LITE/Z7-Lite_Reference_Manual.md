@@ -77,7 +77,7 @@ Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
 
 - Programmable logic equivalent to Artix-7 FPGA  
   	  LUTs: 17,600 (7010)  
-  	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
+    	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
   DSP Slices: 80 (7010)   
       	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
   Logic Cells: 28K (7010)  
@@ -268,6 +268,6 @@ Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).
 ![](./Z7-Lite_Reference_Manual.assets/POWER.png)
 
 ### ●3.Related Documents 
-- [Z7-Lite_R11 Schematic](https://github.com/rabbitjiump/doc_test/blob/main/schematic/Z7-LITE_R11.pdf) (PDF)
-- [Z7-Lite_R11 Dimensions](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/Z7-LITE/Z7-LITE_R11_Dimensions.pdf) (PDF)  
-- [Z7-Lite_R11 Dimensions source file](https://github.com/rabbitjiump/doc_test/blob/main/mechanical/Z7-LITE/Z7-LITE_R11__Dimensions.dxf) (DXF) 
+- [Z7-Lite_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Z7-LITE_R11.pdf) (PDF)
+- [Z7-Lite_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-LITE/Z7-LITE_R11_Dimensions.pdf) (PDF)  
+- [Z7-Lite_R11 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-LITE/Z7-LITE_R11__Dimensions.dxf) (DXF) 
