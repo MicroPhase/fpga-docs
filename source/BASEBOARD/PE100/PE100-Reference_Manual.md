@@ -62,7 +62,7 @@ For now, it supports XME0712、XME0715 and XME0720. It is most recommended to us
 | PE100    | XME0715    | XME0712-35T | XME0712-75T/100T/200T | XME0720    |
 | -------- | ---------- | ----------- | --------------------- | ---------- |
 | PCIE x1  | ✔️          | ✔️           | ✔️                     | ❌          |
-| ETH0     | ✔️(PS side) | ❌(PS side)  | ✔️                     | ✔️(PS side) |
+| ETH0     | ✔️(PS side) | ❌           | ✔️                     | ✔️(PS side) |
 | ETH1     | ✔️          | ✔️           | ✔️                     | ✔️          |
 | HDMI TX  | ✔️          | ✔️           | ✔️                     | ✔️          |
 | SFP x2   | ✔️          | ✔️           | ✔️                     | ❌          |
