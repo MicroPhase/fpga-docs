@@ -1,0 +1,49 @@
+\t (00:00:04) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:04)     Journal start - Mon Nov 25 09:09:58 2024
+\t (00:00:04)         Host=DESKTOP-JMUN5I6 User=EAR Pid=29068 CPUs=16
+\t (00:00:04) 
+\t (00:00:06) Opening existing design...
+\w (00:00:06) WARNING(SPMHDB-214): Allegro PCB Designer (was Performance L) opening an Allegro Editor {Layout} design.
+\w (00:00:06) WARNING(SPMHDB-213): DRC set to "out of date". This product supports a different DRC set than last product used on drawing.
+\w (00:00:06) WARNING(SPMHOD-33): Design was last saved by a different product (Allegro Editor {þ^_w}). Constraints and other design data may not be available with this product. Functionality between two products may also be equivalent, you should consult the product functionality matrix to determine differences.
+\i (00:00:08) fillin confirm
+\d (00:00:08) Database opened: G:/MARKDOWN_DOC/GIT/push/others/PE500_R10_Board_source_file.brd
+\i (00:00:09) trapsize 42834
+\i (00:00:09) trapsize 40936
+\i (00:00:09) trapsize 43168
+\i (00:00:09) trapsize 43168
+\i (00:00:09) generaledit 
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 1511.072 3411.595
+\i (00:00:18) trapsize 86336
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 1286.599 3497.931
+\i (00:00:18) trapsize 172672
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 2633.441 251.700
+\i (00:00:19) trapsize 86336
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 2633.441 251.701
+\i (00:00:19) trapsize 43168
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 2693.876 182.633
+\i (00:00:19) trapsize 21584
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 2693.877 182.633
+\i (00:00:19) trapsize 10792
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out 2607.541 156.733
+\i (00:00:20) trapsize 21584
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out 2607.541 156.733
+\i (00:00:20) trapsize 43168
+\i (00:00:21) exit 
+\t (00:00:22)     Journal end - Mon Nov 25 09:10:15 2024
