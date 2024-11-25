@@ -6,6 +6,6 @@ Documentation of Microphase FPGA Board
    :caption: Contents:
 
    SoM/SoM
-   BASED_BOARD/BASED_BOARD
+   BASEBOARD/BASEBOARD
    DEV_BOARD/DEV_BOARD
 
