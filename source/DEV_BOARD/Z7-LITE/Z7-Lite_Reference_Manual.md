@@ -35,8 +35,8 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Key Features
 
-- Xilinx Zynq™ XC7Z010-1CLG484C (7010 Version Only),  
-Xilinx Zynq™ XC7Z020-1CLG484C (7020 Version Only).  
+- Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
+Xilinx Zynq™ XC7Z020-1CLG400C (7020 Version Only).  
 
 - DDR3: 1 4Gbit,DDR3.(MT41J256M16HA-125:K or equivalent)  
 - KEY: 3 user's keys, 1 PS control, 2 PL control.  

@@ -262,7 +262,6 @@ The baseboard provides two IDC40 GPIO expansion ports, JP1 and JP2, which allow 
 
 | Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
 | :--: | :---------: | :--------: | :--: | :---------: | :--------: |
-| Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
 |  1   |  GPIO2_0P   |     G8     |  2   |  GPIO2_0N   |     G7     |
 |  3   |  GPIO2_1P   |     F5     |  4   |  GPIO2_1N   |     E5     |
 |  5   |  GPIO2_2P   |     G6     |  6   |  GPIO2_2N   |     F6     |
@@ -282,6 +281,7 @@ The baseboard provides two IDC40 GPIO expansion ports, JP1 and JP2, which allow 
 |  33  |  GPIO2_14P  |    U13     |  34  |  GPIO2_14N  |    U14     |
 |  35  |  GPIO2_15P  |    V15     |  36  |  GPIO2_15N  |    W15     |
 |  37  |  GPIO2_16P  |    AB16    |  38  |  GPIO2_16N  |    AB17    |
+|  39  |  GPIO2_17P  |    W12     |  40  |  GPIO2_17N  |    W13     |
 
 ### ○Power
 
