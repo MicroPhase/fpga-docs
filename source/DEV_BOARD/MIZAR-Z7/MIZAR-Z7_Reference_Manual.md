@@ -34,39 +34,69 @@ Mizar-Z7 is a commercial-grade SoC development board based on the Xilinx Zynq-70
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
   Xilinx Zynq™ XC7Z020-1CLG400C (7020 Version Only).  
 
+  
+  
 - DDR3: 512MB DDR3 RAM(7010 Version Only),   
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM(7020 Version Only).    
+  
+  
 
 
-- Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
+- Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.    
 
-- Wi-Fi/BT: 1 channel Wi-Fi integrated BT, can be used for wireless transmission, IoT applications. (7020 Version Only)
+  
 
-- MIPI CSI: 1 MIPI CSI for camera applications. (7020 Version Only)
+- Wi-Fi/BT: 1 channel Wi-Fi integrated BT, can be used for wireless transmission, IoT applications. (7020 Version Only)  
 
-- KEY: 6 user's keys, 2 PS control, 4 PL control.  
+  
 
-- LED: 6 user's LEDs, 2 PS control, 4 PL control.  
+- MIPI CSI: 1 MIPI CSI for camera applications. (7020 Version Only)  
 
-- GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.  
+  
 
-- USB JTAG: 1 onboard JTAG circuit, can debug and download the ZYNQ system through the USB cable. 
+- KEY: 6 user's keys, 2 PS control, 4 PL control.   
 
-- USB UART:1 USB UART interface, used for serial communication with PC.  
+  
 
-- USB Host: 1 USB Host, supporting high-speed USB 2.0 communication. 
+- LED: 6 user's LEDs, 2 PS control, 4 PL control.
 
-- USB Slave:1 USB Slave, provided for direct connection to a host device.
+  ​    
+
+- GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs in total, 48 voltage-adjustable IOs, all IOs are 3.3V by default.  
+
+  
+
+- USB JTAG: 1 onboard JTAG circuit, can debug and download the ZYNQ system through the USB cable.  
+
+   
+
+- USB UART:1 USB UART interface, used for serial communication with PC.    
+
+  
+
+- USB Host: 1 USB Host, supporting high-speed USB 2.0 communication.   
+
+  
+
+- USB Slave:1 USB Slave, provided for direct connection to a host device.  
+
+  
 
 - HDMI: 
 
-  HDMI1: HDMI video output interface, can be configured as. 
+  HDMI1: HDMI video output interface, can be configured as HDMI RX. 
 
-  HDMI2: Video input interface. (7020 Version Only)
+  HDMI2: Video input interface, can be configured as HDMI TX (7020 Version Only)  
 
-- PHY ETH: 1 10/100 Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.  
+  
 
-- SD Card: 1 SD Card slot for storing the operating system image, file system, and user data.
+- PHY ETH: 1 10/100 Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.    
+
+  
+
+- SD Card: 1 SD Card slot for storing the operating system image, file system, and user data.  
+
+  
 
 - CLOCK: 1 33.33MHz active crystal oscillator provides a stable clock for the PS system.   
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1 50MHz active crystal oscillator provides additional clocks for the PL logic.  

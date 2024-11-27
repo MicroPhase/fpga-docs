@@ -127,8 +127,7 @@ The pin connection assignment table for UART and XME0715 is as follows.
 ### ○JTAG
 
 PE100 provides IDC10 JTAG interface. Through the JTAG port, users can download FPGA programs, curing FLASH programs, and online simulation. The JTAG circuit includes diode protection to ensure FPGA signal voltage compliance. However, users are advised to avoid hot-plugging to prevent potential chip damage.
-
-<img src="./PE100-Reference_Manual.assets/JTAG.png" style="zoom: 80%;" />
+![](./PE100-Reference_Manual.assets/JTAG.png)
 
 ### ○Reset
 
@@ -200,9 +199,7 @@ One HDMI video output interface can realize 1080P video images.
 
 The physical diagram of the HDMI interface on the baseboard is shown below.
 
-
-
-<img src="./PE100-Reference_Manual.assets/HDMI.png" style="zoom:50%;" />
+![](./PE100-Reference_Manual.assets/HDMI.png)
 
 ### ○PCIe
 The PE100 baseboard is a standard PCI-Express card, it's mechanical dimensions meet the requirements of the standard PCle card electrical specification, it provides a standard PCle x4 slot card, and supports four TX channels and RX channels to PCle gold finger slots, single channel communication rate up to 5Gbps bandwidth, to meet the PCle Gen2 data transfer capacity. The PCIe reference clock is provided to the development board from the PCle slot of the PCle ROOT device (usually a PC) with a reference clock frequency of 100MHz.
@@ -287,7 +284,7 @@ The baseboard provides two IDC40 GPIO expansion ports, JP1 and JP2, which allow 
 
 The development board requires a DC12V power supply. Please use the specified power supply to avoid damage. The development board also supports the power supply from the PCle interface. The structure of the power supply is as follows.
 
-<img src="./PE100-Reference_Manual.assets/Power_structure.png" style="zoom:50%;" />
+![](./PE100-Reference_Manual.assets/Power_structure.png)
 
 ## ●3. Related Documents  
 
