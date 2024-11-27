@@ -6,3 +6,4 @@ DEV_BOARD
 
    Z7-NANO/Z7-NANO_Reference_Manual.md
    Z7-LITE/Z7-Lite_Reference_Manual.md
+   MIZAR-Z7/MIZAR-Z7_Reference_Manual.md
