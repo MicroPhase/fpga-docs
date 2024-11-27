@@ -1,4 +1,4 @@
-CARRYBOARD
+CARRIER_BOARD
 =========================
 
 .. toctree::

@@ -6,6 +6,6 @@ Documentation of Microphase FPGA Board
    :caption: Contents:
 
    SoM/SoM
-   CARRYBOARD/CARRYBOARD
+   CARRIER_BOARD/CARRIER_BOARD
    DEV_BOARD/DEV_BOARD
 
