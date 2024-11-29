@@ -75,7 +75,7 @@ For now, it supports XME0712、XME0715 and XME0720. It is most recommended to us
 
 ### ○Giga ETH
 
-The baseboard provides 2 Gigabit Ethernet interfaces. The phy IC of ETH0 is integrated in the core board. It's connected with core board according to the signs of MDI. More information of the ETH0 PHY, please reference the  corresponding core board document.
+The carrier board provides 2 Gigabit Ethernet interfaces. The phy IC of ETH0 is integrated in the core board. It's connected with core board according to the signs of MDI. More information of the ETH0 PHY, please reference the  corresponding core board document.
 
 The PHY of ETH1 is Marvell Alaska 88E1512, connected to the core board via the RGMII interface. The 88E1512 is a robust PHY that supports RGMII to RJ45 and SGMII to RJ45, with MDI/MDIX and 10/100/1000 Mbps auto-negotiation capabilities. It supports RGMII to RJ45 and SGMII to RJ45, with MDI/MDIX and 10/100/1000M auto-negotiation.
 
@@ -87,7 +87,7 @@ Diagram of connecting the core board and two Ethernet phy chips.
 
 ### ○USB HOST
 
-PE100 provides four USB Hosts interfaces. **For XME0712, the USB Host is not supported.** The  USB 3320 is  integrated in the core board. The baseboard expansion four USB Host according to the USB HUB IC USB2514. The interface of USB host is TYPE-A, it can connected with different USB Slave peripheral, such as USB mouse, USB keyboard, USB WIFI and so on.
+PE100 provides four USB Hosts interfaces. **For XME0712, the USB Host is not supported.** The  USB 3320 is  integrated in the core board. The carrier board expansion four USB Host according to the USB HUB IC USB2514. The interface of USB host is TYPE-A, it can connected with different USB Slave peripheral, such as USB mouse, USB keyboard, USB WIFI and so on.
 
 Diagram of connecting the core board and two Ethernet phy chips.
 
@@ -113,7 +113,7 @@ The pin connection assignment table for USB and XME0715 is as follows.
 
 ### ○USB UART
 
-The baseboard provides a USB to UART interface, the chip is Silicon Labs CP2102. The USB interface is Micro USB.
+The carrier board provides a USB to UART interface, the chip is Silicon Labs CP2102. The USB interface is Micro USB.
 
 ![](./PE100-Reference_Manual.assets/2102.png)
 
@@ -151,13 +151,13 @@ Each SFP interface includes the following signals:
 - **Transceiver**: Provides one channel for data transmission up to 6.52 Gbps.
 - **SMBUS (I2C)**: 3.3V signal for module management.
 - **Control signals**: Includes status control.
-- **Reference clock**: A 125 MHz differential clock from the baseboard.
+- **Reference clock**: A 125 MHz differential clock from the carrier board.
 
 Diagram of connecting the core board and SFP.
 
 ![](./PE100-Reference_Manual.assets/SFP.png)
 
-The physical diagram of the SFP interface on the baseboard is shown below.
+The physical diagram of the SFP interface on the carrier board is shown below.
 
 <img src="./PE100-Reference_Manual.assets/SFP_R.png" style="zoom:50%;" />
 
@@ -197,12 +197,12 @@ One HDMI video output interface can realize 1080P video images.
 
 ![](./PE100-Reference_Manual.assets/HDMI_B.png)
 
-The physical diagram of the HDMI interface on the baseboard is shown below.
+The physical diagram of the HDMI interface on the carrier board is shown below.
 
 ![](./PE100-Reference_Manual.assets/HDMI.png)
 
 ### ○PCIe
-The PE100 baseboard is a standard PCI-Express card, it's mechanical dimensions meet the requirements of the standard PCle card electrical specification, it provides a standard PCle x4 slot card, and supports four TX channels and RX channels to PCle gold finger slots, single channel communication rate up to 5Gbps bandwidth, to meet the PCle Gen2 data transfer capacity. The PCIe reference clock is provided to the development board from the PCle slot of the PCle ROOT device (usually a PC) with a reference clock frequency of 100MHz.
+The PE100 carrier board is a standard PCI-Express card, it's mechanical dimensions meet the requirements of the standard PCle card electrical specification, it provides a standard PCle x4 slot card, and supports four TX channels and RX channels to PCle gold finger slots, single channel communication rate up to 5Gbps bandwidth, to meet the PCle Gen2 data transfer capacity. The PCIe reference clock is provided to the development board from the PCle slot of the PCle ROOT device (usually a PC) with a reference clock frequency of 100MHz.
 
 ![](./PE100-Reference_Manual.assets/PCIe_B.png)
 
@@ -228,7 +228,7 @@ We provide two keys for user to use. Once the key is pressed, the corresponding 
 
 ### ○GPIO
 
-The baseboard provides two IDC40 GPIO expansion ports, JP1 and JP2, which allow connection to Microphase Technology modules or additional peripherals. **When using the IOs, be sure to ensure that the voltage of the connected signal is consistent.**
+The carrier board provides two IDC40 GPIO expansion ports, JP1 and JP2, which allow connection to Microphase Technology modules or additional peripherals. **When using the IOs, be sure to ensure that the voltage of the connected signal is consistent.**
 
 **JP1:**  
 

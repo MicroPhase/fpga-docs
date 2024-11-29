@@ -205,7 +205,7 @@ A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
 ### ○USB JTAG
 
-​	We have incorporated the JTAG download and debug circuitry into the board, enabling users to develop and debug ZYNQ through a USB cable.
+​	We have incorporated the JTAG download and debug circuitry into the board, enabling users to develop and debUIug ZYNQ through a USB cable.
 
 ### ○Boot Config
 
@@ -240,11 +240,11 @@ The board features a Micro SD slot interface for storing the ZYNQ chip's bootloa
 
 ### ○HDMI
 
-- #### HDMI1
+#### HDMI1
 
 One HDMI video output interface can realize 1080P video images. Can be configured as HDMI output.
 
-- #### HDMI2
+#### HDMI2
 
 **This HDMI interface is supported only by the 7020 version and can also be configured as an HDMI output.**
 
