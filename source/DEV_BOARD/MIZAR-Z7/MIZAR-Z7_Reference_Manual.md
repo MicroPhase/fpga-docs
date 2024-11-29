@@ -58,9 +58,7 @@ Mizar-Z7 is a commercial-grade SoC development board based on the Xilinx Zynq-70
 
   
 
-- LED: 6 user's LEDs, 2 PS control, 4 PL control.
-
-  ​    
+- LED: 6 user's LEDs, 2 PS control, 4 PL control.      
 
 - GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs in total, 48 voltage-adjustable IOs, all IOs are 3.3V by default.  
 
