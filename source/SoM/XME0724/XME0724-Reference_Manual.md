@@ -70,7 +70,7 @@ Vivado 2018.3 is from Xilinx website
 
 - Programmable from JTAG, Quad-SPI flash, and microSD card
 
-- Programmable logic equivalent to Artix-7 FPGA
+- Programmable logic equivalent to Artix-7 FPGA  
   LUTs: 17,600 (7010)  
   	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
   DSP Slices: 80 (7010)   
@@ -236,11 +236,11 @@ Description:
 - [XME0724_R30 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
 - [XME0724_R30 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions_source_file.dxf) (DXF)  
 ### ○XME0724CB
-- XME0724CB Reference Manual(MD)-To be added
+- [XME0724CB Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/DEV_BPARD/XME0724CB/XME0724CB-Reference_Manual.html)(HTML)
 - [XME0724CB_R21 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB_R21.pdf)(PDF)
 - [XME0724CB_R21 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB_R21_Dimensions.pdf)(PDF)
 - [XME0724CB_R21 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724CB_R21_4C.brd)(Brd)
 ### ○XME0724CB-NET
-- XME0724CB-NET Reference Manual(MD)-To be added
+- XME0724CB-NET Reference Manual(HTML)-To be added
 - [XME0724CB-NET_R30 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB-NET_R30.pdf)(PDF)
 - [XME0724CB-NET_R30 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB-NET_R30_Dimensions.pdf)(PDF)

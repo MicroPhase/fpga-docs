@@ -232,8 +232,11 @@ Description:
 - [XME0726_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0726_R10.pdf) (PDF)
 - [XME0726_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726_R10_Dimensions.pdf) (PDF) 
 - [XME0726_R10 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726_R10_Dimensions_source_file.dxf) (DXF) 
-### ○XME0726CB 
-- [XME0726CB_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0726CB_R10.pdf)(PDF)
-- [XME0726CB_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726CB_R10_Dimensions.pdf)(PDF)
-- [XME0726CB_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0726CB_R10_Board_source_file.BRD)(Brd)
+### ○Dev_XME0726 
+
+- Dev_XME0726 Reference Manual(HTML)-To be added
+
+- [Dev_XME0726_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Dev_XME0726_R10.pdf)(PDF)
+- [Dev_XME0726_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/Dev_XME0726_R10_Dimensions.pdf)(PDF)
+- [Dev_XME0726_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/Dev_XME0726_R10_Board_source_file.BRD)(Brd)
 
