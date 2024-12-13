@@ -292,9 +292,9 @@ The development board requires a DC12V power supply. Please use the specified po
 
 - [PE100_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
 - [PE100_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
-- [PE100_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Board_source_file.brd) (Brd)  
+- [PE100_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd)  
 
 ### ○Microphase's 5*6 XME Series SoM
 - XME0712 Reference Manual(HTML)-To be added
-- XME0715 Reference Manual(HTML)-To be added
+- [XME0715 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
 - XME0720 Reference Manual(HTML)-To be added
