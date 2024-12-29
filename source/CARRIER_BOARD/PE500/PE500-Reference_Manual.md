@@ -32,7 +32,7 @@ For now, it supports XME7035 XME7100. The following is based on the XME7100 unle
 
 - 1 PCIe x1
 
-- 2 Giga ETH supports 10/100/1000M network transfer rate,\
+- 2 Giga ETH supports 10/100/1000M network transfer rate,
 
   1 for PS, 1 for PL
 
@@ -144,7 +144,7 @@ The pin connection assignment table for UART and XM7100 is as follows.
 ### ○JTAG
 
 PE500 provides IDC10 JTAG interface. Through the JTAG port, users can download FPGA programs, curing FLASH programs, and online simulation. The JTAG circuit includes diode protection to ensure FPGA signal voltage compliance. However, users are advised to avoid hot-plugging to prevent potential chip damage.
-![](./PE100-Reference_Manual.assets/JTAG.png)
+![](./PE500-Reference_Manual.assets/JTAG.png)
 
 ### ○Reset
 
@@ -290,7 +290,7 @@ The carrier board provides two IDC40 GPIO expansion ports, JP1 and JP2, which al
 
 The development board requires a DC12V power supply. Please use the specified power supply to avoid damage. The development board also supports the power supply from the PCle interface. The structure of the power supply is as follows.
 
-![](./PE100-Reference_Manual.assets/Power_structure.png)
+![](./PE500-Reference_Manual.assets/Power_structure.png)
 
 ## ●3. Related Documents  
 
