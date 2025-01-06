@@ -42,7 +42,7 @@ The core board features 138 single-ended IOs (configurable as 69 differential pa
 &ensp;&ensp;&ensp;&ensp;&ensp;2 users LED,1 PS control, 1 PL control.  
 - GTX: 8
 - MIO: 21 MIOs, 3 IO at 3.3V, 18 IOs at 1.8V  
-- PL GPIO: 138, Adjustable Voltage, 46 for HR BANK, 92 for HP BANK,  
+- PL GPIO: 138, Adjustable Voltage, 46 for HP BANK, 92 for HR BANK,  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Can be configured as 69 differential pairs  
 - Connectors: 3 x 120pin High Speed B2B Connectors  
 
