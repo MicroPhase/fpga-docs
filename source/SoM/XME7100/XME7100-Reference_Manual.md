@@ -24,7 +24,7 @@ Vivado 2021.1 is from Xilinx website
 
 ## ●1. Overview
 
-XME7100 is a industrial-grade system module based on Xilinx Zynq-SoC from Microphase Technology. With customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: sales@microphase.cn.  
+XME7100 is a industrial-grade system module based on Xilinx Zynq-SoC from Microphase Technology. With customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: [sales@microphase.cn](sales@microphase.cn).  
 It integrates 4 DDR3 SDRAM chips, with two forming a 32-bit data bus and 8Gbit capacity. The read/write data clock frequency between the PS(Processing System) and the DDR3 is up to 533MHz, and the read/write data clock frequency between the PL(Programmable Logic) and the DDR3 is up to 800MHz, which can satisfy the system's demand for high-bandwidth data processing. At the same time, a REALTEK RTL8211F Gigabit Ethernet PHY chip is integrated on the core board, which can be easily used by users to realised Ethernet related applications.  
 The core board features 230 single-ended IOs (configurable as 115 differential pairs), adjustable IO voltages, 8 GTX high-speed RX/TX pairs, and equal-length differential alignments with 50-ohm single-ended and 100-ohm differential impedance.
 

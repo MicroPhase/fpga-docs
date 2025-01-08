@@ -28,7 +28,7 @@ Vivado 2018.3 is from Xilinx website
 
 ​	XME0724 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology.   
 
-​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: sales@microphase.cn.
+​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: [sales@microphase.cn](sales@microphase.cn).
 
 ### ○Board Layout
 
