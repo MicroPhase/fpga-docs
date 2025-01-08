@@ -9,5 +9,6 @@ SoM
    XME0724/XME0724-Reference_Manual.md
    XME0726/XME0726-Reference_Manual.md
    XME7035/XME7035-Reference_Manual.md
+   XME7100/XME7100-Reference_Manual.md
 
 

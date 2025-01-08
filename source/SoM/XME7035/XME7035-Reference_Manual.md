@@ -285,7 +285,7 @@ Description:
 - [XME7035_R12 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035/XME7035_R12_Dimensions_source_file.dxf) (DXF)  
 
 ### ○PE500   
-- PE500 Reference_Manual(HTML)-To be added
+- [PE500 Reference_Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
 - [PE500_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
-- [PE500_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035/PE500_R10_Dimensions.pdf)(PDF)
+- [PE500_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE500/PE500_R10_Dimensions.pdf)(PDF)
 - [PE500_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)

@@ -1,4 +1,4 @@
-# Mizar-Z7_Reference_Manual
+# **Mizar-Z7_Reference_Manual**
 
 ## Revision History
 
