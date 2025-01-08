@@ -4,12 +4,12 @@
 
 | Revision | Time       | Description   |
 | :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.10.22 | First Release |
+| Rev. 1.0 | 2025.01.08 | First Release |
 |          |            |               |
 
 ## CopyRight Notice:
 
-Copyright ©2024 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
+Copyright ©2025 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
 ## Development Environment:
 
@@ -197,7 +197,7 @@ The JTAG signal link of the XME7100 is connected to the expansion connector.
 
 ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1),the core module ZYNQ configuration schematic is shown below.  
 
-![](./assets/boot.png)
+![](./XME7100-Reference_Manual.assets/boot.png)
 
 | Mode | MODE1(JM1 PIN19)  | MODE0(JM1 PIN17)  |
 | ---- | ----------------- | ----------------- |
