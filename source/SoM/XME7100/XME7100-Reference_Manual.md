@@ -274,7 +274,7 @@ Description:
 5. Bank11 IO level depends on JM3 Pin57&59 voltage input, input range 1.2V-3.3V.
 6. MIO8,MIO14 and MIO15 (JM1 Pin20,55,57), JTAG,RESET (JM1 Pin18, Pin23-Pin29) level is 3.3V.
 7. MIO28~MIO45 (JM1 Pin24,26,28···-Pin108) level is 1.8V.
-8. Please refer to the ‘[XME7100_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME7100_Pinout_Table.pdf)’ for detailed pin definitions of the XME7100.  
+8. Please refer to the ‘[XME7100_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME7100_Pinout_Table_R11.xlsx)’ for detailed pin definitions of the XME7100.  
 
 ## ●3. Related Documents  
 
