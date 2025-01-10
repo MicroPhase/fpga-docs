@@ -212,7 +212,7 @@ Description:
 2. Bank35 IO level depends on JM2 Pin91,93 voltage input, input range 1.2V-3.3V.
 3. SD Signal (JM3 Pin73,75,77-Pin85) voltage is 1.8V.
 4. MIO9-MIO13, UART, JTAG, RESET level is 3.3V.
-5. Please refer to the ‘[XME0720_Pinout_Table_R10](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0720_Pinout_Table_R20.xlsx)’ for detailed pin definitions of the XME0720 and its carrier board.
+5. Please refer to the ‘[XME0720_Pinout_Table_R10](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0720_Pinout_Table_R10.xlsx)’ for detailed pin definitions of the XME0720 and its carrier board.
 6. **The XME0720 is only compatible with the older versions (black connector version) of the PE100 and PE300. When purchasing a matching carrier board, please consult the sales staff to confirm the availability of this version in stock.**
 
 ## ●3. Related Documents  
