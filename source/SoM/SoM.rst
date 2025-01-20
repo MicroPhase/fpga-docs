@@ -11,5 +11,6 @@ SoM
    XME0726/XME0726-Reference_Manual.md
    XME7035/XME7035-Reference_Manual.md
    XME7100/XME7100-Reference_Manual.md
+   XME0803/XME0803-Reference_Manual.md
 
 
