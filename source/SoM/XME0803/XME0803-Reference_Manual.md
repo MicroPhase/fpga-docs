@@ -212,7 +212,7 @@ Description:
 5. Bank11 IO level depends on JM3 Pin57&59 voltage input, input range 1.2V-3.3V.
 6. MIO8,MIO14 and MIO15 (JM1 Pin20,55,57), JTAG,RESET (JM1 Pin18, Pin23-Pin29) level is 3.3V.
 7. MIO28~MIO45 (JM1 Pin24,26,28···-Pin108) level is 1.8V.
-8. Please refer to the ‘[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R11.xlsx)’ for detailed pin definitions of the XME0803(4EV).  
+8. Please refer to the ‘[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R10.xlsx)’ for detailed pin definitions of the XME0803(4EV).  
 
 ## ●3. Related Documents  
 
@@ -223,7 +223,7 @@ Description:
 - [XME0803_R20 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)  
 
 ### ○XPE-ZU100 
-- XPE-ZU100 Reference_Manual
-- [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
-- [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/PE500_R10_Dimensions.pdf)(PDF)
-- [XPE-ZU100_R40 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)
+- XPE-ZU100 Reference_Manual(HTML)
+- XPE-ZU100_R40 Schematic(PDF)
+- XPE-ZU100_R40 Dimensions(PDF)
+- XPE-ZU100_R40 Board source file(Brd)
