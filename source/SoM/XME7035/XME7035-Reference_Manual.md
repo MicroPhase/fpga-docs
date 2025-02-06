@@ -58,7 +58,7 @@ The core board features 138 single-ended IOs (configurable as 69 differential pa
 
 ### ○FPGA  
 
-- Up to 1GHz dual-core Cortex-A9 processor
+- Up to 1GHz MHz dual-core Cortex-A9 processor
 
 - DDR3L memory controller with 8 DMA channels and 4
 

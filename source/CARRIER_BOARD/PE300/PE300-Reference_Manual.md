@@ -215,4 +215,4 @@ The development board requires a DC12V power supply. Please use the specified po
 
 - [XME0712 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)(HTML)
 - [XME0715 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
-- XME0720 Reference Manual(HTML)-To be added
+- [XME0720 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)(HTML)

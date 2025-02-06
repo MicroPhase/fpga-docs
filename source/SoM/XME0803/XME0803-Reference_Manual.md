@@ -180,7 +180,7 @@ The XME0803(4EV) board provides two LEDs, the power indicator and the FPGA confi
 
 ### ○Expansion Ports  
 
-The XME0803(4EV) uses four sets of connectors, JM1, JM2, JM3 and JM4, for the FPGA IO signals and Ethernet interface.  
+The XME0803(4EV) uses three sets of connectors, JM1, JM3 and JM4, for the FPGA IO signals and Ethernet interface.  
 3 x AXK5A2137YG, 120Pin, 0.5mm Pitch    
 
 | Core Board Connector Models | Based Board Connector Models | Manufacturers | Mated height |
@@ -191,28 +191,24 @@ FPGA Bank, Number of IOs vs. B2B Connector Table
 
 | FPGA Bank | B2B Connector | IO Number | Voltage    | Explain                                                |
 | --------- | ------------- | --------- | ---------- | ------------------------------------------------------ |
-| Bank35    | JM1           | 46        | Adjustable | 46 single-ended, can be mated to 23 differential pairs |
-| BANK12    | JM3           | 36        | Adjustable | 36 single-ended, can be mated to 18 differential pairs |
-| Bank35    | JM1           | 46        | Adjustable | 46 single-ended, can be mated to 23 differential pairs |
-| Bank12    | JM2           | 46        | Adjustable | 46 single-ended, can be mated to 23 differential pairs |
-| Bank13    | JM2           | 46        | Adjustable | 46 single-ended, can be mated to 23 differential pairs |
-| Bank10    | JM3           | 46        | Adjustable | 46 single-ended, can be mated to 23 differential pairs |
-| Bank11    | JM3           | 46        | Adjustable | 46 single-ended, can be mated to 23 differential pairs |
-| BANK109   | JM4           | 20        | -          | 2 pairs of CLK, 4 pairs of TX and RX                   |
-| BANK110   | JM4           | 20        | -          | 2 pairs of CLK, 4 pairs of TX and RX                   |
-| BANK111   | JM4           | 20        | -          | 2 pairs of CLK, 4 pairs of TX and RX                   |
-| BANK112   | JM4           | 20        | -          | 2 pairs of CLK, 4 pairs of TX and RX                   |
+| BANK505   | JM1           | 24        | -          | 4 pairs of CLK, 4 pairs of TX and RX                   |
+| BANK502   | JM1           | 26        | 1.8V       | 26 single-ended, can be mated to 13 differential pairs |
+| BANK501   | JM1           | 26        | 1.8V       | 26 single-ended, can be mated to 13 differential pairs |
+| BANK45    | JM1           | 24        | 3.3V       | 24 single-ended, can be mated to 12 differential pairs |
+| BANK44    | JM3           | 24        | Adjustable | 24 single-ended, can be mated to 12 differential pairs |
+| BANK43    | JM3           | 24        | Adjustable | 24 single-ended, can be mated to 12 differential pairs |
+| BANK224   | JM3           | 20        | -          | 2 pairs of CLK, 4 pairs of TX and RX                   |
+| BANK66    | JM4           | 48        | Adjustable | 48 single-ended, can be mated to 24 differential pairs |
+| BANK65    | JM4           | 48        | Adjustable | 48 single-ended, can be mated to 24 differential pairs |
 
 Description:  
 
-1. Bank35 IO level depends on JM1 Pin117&119 voltage input, input range 1.2V-1.8V.
-2. Bank12 IO level depends on JM2 Pin117&119 voltage input, input range 1.2V-3.3V.
-3. Bank13 IO level depends on JM2 Pin57&59 voltage input, input range 1.2V-3.3V.
-4. Bank10 IO level depends on JM3 Pin117&119 voltage input, input range 1.2V-3.3V.
-5. Bank11 IO level depends on JM3 Pin57&59 voltage input, input range 1.2V-3.3V.
-6. MIO8,MIO14 and MIO15 (JM1 Pin20,55,57), JTAG,RESET (JM1 Pin18, Pin23-Pin29) level is 3.3V.
-7. MIO28~MIO45 (JM1 Pin24,26,28···-Pin108) level is 1.8V.
-8. Please refer to the ‘[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R10.xlsx)’ for detailed pin definitions of the XME0803(4EV).  
+1. Bank44、43 IO level depends on JM1 Pin61&62 voltage input, input range 1.2V-1.8V.
+2. Bank66 IO level depends on JM4 Pin31&32 voltage input, input range 1.2V-3.3V.
+3. Bank65 IO level depends on JM4 Pin91&92 voltage input, input range 1.2V-3.3V.
+4. MIO8,MIO9,MIO10,MIO11,MIO24 and MIO25 (JM1 Pin20,55,57) level is 1.8V.
+5.  JTAG,RESET (JM1 Pin18, Pin23-Pin29)
+6. Please refer to the ‘[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R11.xlsx)’ for detailed pin definitions of the XME0803(4EV).  
 
 ## ●3. Related Documents  
 
@@ -223,7 +219,7 @@ Description:
 - [XME0803_R20 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)  
 
 ### ○XPE-ZU100 
-- XPE-ZU100 Reference_Manual(HTML)
-- XPE-ZU100_R40 Schematic(PDF)
-- XPE-ZU100_R40 Dimensions(PDF)
-- XPE-ZU100_R40 Board source file(Brd)
+- [XPE-ZU100 Reference_Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
+- [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
+- [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
+- [XPE-ZU100_R40 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XPE-ZU100_R40 Board source file.brd)(Brd)

@@ -159,7 +159,7 @@ Diagram of connecting the core board and SFP.
 
 The physical diagram of the SFP interface on the carrier board is shown below.
 
-<img src="./PE100-Reference_Manual.assets/SFP_R.png" style="zoom:50%;" />
+![](./PE100-Reference_Manual.assets/SFP_R.png)
 
 The pin connection assignment table for SFP1 and XME0715 is as follows.
 

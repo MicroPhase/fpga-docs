@@ -302,4 +302,4 @@ The development board requires a DC12V power supply. Please use the specified po
 
 ### ○Microphase's 6*8 XME Series SoM
 - [XME7035 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME7035/XME7035-Reference_Manual.html)(HTML)
-- XME7100 Reference Manual(HTML)-To be added
+- [XME7100 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME7100/XME7100-Reference_Manual.html)(HTML)

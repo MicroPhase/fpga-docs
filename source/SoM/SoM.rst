@@ -13,4 +13,3 @@ SoM
    XME7100/XME7100-Reference_Manual.md
    XME0803/XME0803-Reference_Manual.md
 
-
