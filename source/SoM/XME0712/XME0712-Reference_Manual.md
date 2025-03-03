@@ -7,9 +7,7 @@
 | Rev. 1.0 | 2024.12.30 | First Release |
 |          |            |               |
 
-### CopyRight Notice:
 
-Copyright ©2024 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
 
 ### Development Environment:
 

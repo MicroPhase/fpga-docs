@@ -7,10 +7,6 @@
 | Rev. 1.0 | 2025.01.08 | First Release |
 |          |            |               |
 
-## CopyRight Notice:
-
-Copyright ©2025 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
-
 ## Development Environment:
 
 Vivado 2022.2 is from Xilinx website

@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Microphase_FPGA_Board_DOC'
-copyright = '2024, Microphase'
+copyright = '2025, Microphase'
 author = 'Microphase'
 release = 'V1.0'
 
@@ -15,8 +15,8 @@ release = 'V1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'recommonmark',
-    'sphinx_markdown_tables'	     
+    'myst_parser',
+    'sphinx_markdown_tables'	  
 ]
 templates_path = ['_templates']
 exclude_patterns = []

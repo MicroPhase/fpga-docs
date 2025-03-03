@@ -7,10 +7,6 @@
 | Rev. 1.0 | 2025.01.08 | First Release |
 |          |            |               |
 
-## CopyRight Notice:
-
-Copyright ©2025 by MicroPhase Technologies (Shanghai) Co. Ltd. All rights are reserved.
-
 ## WeChat Public Number:
 
 ![](./XPE_ZU100-Reference_Manual.assets/Wechat.png)
