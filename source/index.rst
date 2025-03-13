@@ -1,6 +1,6 @@
 Documentation of Microphase FPGA Board
 ========================================
- `英文 <https://microphase-doc.readthedocs.io/en/latest/>`_.
+ `[English] <https://microphase-doc.readthedocs.io/en/latest/>`_
 
 .. toctree::
    :maxdepth:3
