@@ -1,4 +1,5 @@
 :link_to_translation:`en: [English]`
+
 Artix7 Series
 ========================
 
