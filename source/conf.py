@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = '微相科技FPGA手册'
+project = '微相科技FPGA用户手册'
 copyright = '2025, Microphase'
 author = 'Microphase'
 release = 'V1.0'

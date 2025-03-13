@@ -1,4 +1,4 @@
-:link_to_translation:`en: [English]`
+ `[English] <https://microphase-doc.readthedocs.io/en/latest/SoM/SoM.html>`_
 
 Artix7 Series
 ========================

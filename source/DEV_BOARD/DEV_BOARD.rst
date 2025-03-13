@@ -1,3 +1,5 @@
+ `[English] <https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/DEV_BOARD.html>`_
+
 Artix7 Series
 =======================
 
