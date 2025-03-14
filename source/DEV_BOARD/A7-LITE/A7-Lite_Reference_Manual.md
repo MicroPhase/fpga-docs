@@ -14,7 +14,7 @@
 
 ## ●1. 概述
 
-A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L 和 XC7A200T-2FGG484L）的商业级 SoC 开发板，配备高达 4Gb 的 DDR3/L SDRAM、128MB 的 SPI 闪存、千兆以太网 PHY 收发器、USB接口以及简单的供电方式。
+A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L 和 XC7A200T-2FGG484L）的商业级 SoC 开发板，配备高达 4Gb 的 DDR3/L SDRAM、128MB 的 SPI 闪存、千兆以太网 PHY 收发器、USB接口以及简单的供电方式。可根据需求提供定制版本，定制需求可能需要满足最低订购量，请联系我们的销售团队获取更多信息：<sales@microphase.cn>。
 
 ### ○板卡布局
 
@@ -166,7 +166,7 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○千兆以太网
 
-RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口与 Artix-7 的 MAC 层通信。它支持 MDI/MDX 自适应、多种速率自适应、主/从自适应以及 MDIO 总线支持 HY 寄存器管理。
+RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 GMII 接口与 Artix-7 的 MAC 层通信。它支持MDI/MDX自适应、多种速率自适应、主/从自适应以及MDIO总线支持，用于PHY寄存器管理。
 
 ### ○USB UART
 
@@ -189,7 +189,7 @@ RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
 | :--: | :-----------: | :-------: | :--: |
 |  U2  | IS25L128FJBLE | 128M 字节 | ISSI |
 
-### ○Clocks
+### ○时钟
 
 一个 50MHz 的有源晶振为系统提供时钟。
 

@@ -1,81 +1,80 @@
-# **Z7-Nano Reference Manual**
+# **Z7-Nano 用户手册**
 
-## Development Environment
+[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/Z7-Nano/Z7-Nano_Reference_Manual.html)
 
-Vivado 2018.3 is from Xilinx website
+## 开发环境
+
+赛灵思Vivado 2018.3 
 
 <https://www.xilinx.com>
 
-## WeChat Public Number
+## 微信公众号
 
 ![](./Z7-NANO_Reference_Manual.assets/Wechat17.png)
 
 <div style="page-break-after:always;"></div>
 
-## ●1. Overview
+## ●1. 概述
 
-​	Z7 Nano is a development board based on Xilinx Zynq-7000 SoCs (XC7Z010 or XC7Z020) with up to 4Gb of DDR3/L SDRAM, 128MB of SPI flash memory, Gigabit Ethernet PHY transceiver, a USB PHY transceiver and a simple way to provide power. And it is available in commercial (XC7Z010、XC7Z020) and industrial (XC7Z020) versions, with customizable variants available upon request，customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: sales@microphase.cn.
+Z7 Nano 是一款基于 Xilinx Zynq-7000 SoC（XC7Z010 或 XC7Z020）的开发板，配备高达 4Gb 的 DDR3/L SDRAM、128MB SPI 闪存、千兆以太网 PHY 收发器、USB PHY 收发器以及简单的 供电方式。该开发板提供商业版（XC7Z010、XC7Z020）和工业版（XC7Z020），可根据需求提供定制版本，定制需求可能需要满足最低订购量，请联系我们的销售团队获取更多信息：<sales@microphase.cn>。
 
-​	It is suitable for software verification and hardware development, helping to accelerate project progress.
-
-### ○Board Layout
+### ○板卡布局
 
 ![](./Z7-NANO_Reference_Manual.assets/Z7NANO_BOARD_LAYOUT.png)
 
-### ○Key Features
+### ○主要特性
 
-- Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
-Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
+- Xilinx Zynq™ XC7Z010-1CLG400C（仅限 7010 版本），  
+Xilinx Zynq™ XC7Z020-2CLG400C（仅限 7020 版本）
 
-- DDR3: 1 4Gbit, DDR3. (MT41J256M16HA-125:K or equivalent)  
+- DDR3：1 个 4Gbit DDR3（MT41J256M16HA-125:K 或等效型号）。  
   
-- KEY: 1 user's key, which is controlled by PL.  
+- 按键：1 个用户按键，由 PL 控制。  
   
-- LED: 2 user's LEDs, 1 PS control, 1 PL control.  
+- LED：2 个用户 LED，1 个 PS 控制，1 个 PL 控制。  
   
-- GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs of 3.3V voltage.  
+- GPIO：2 个 40 针扩展端口（2.54mm 间距），72 个 3.3V 电压的 IO。  
   
-- USB JTAG: 1 on-board JTAG circuit, can debug and download the ZYNQ system through a USB cable.  
+- USB JTAG：1 个板载 JTAG 电路，可通过 USB 电缆调试和下载 ZYNQ 系统。  
   
-- HDMI: 1 HDMI video output interface, can realize 1080P video image  
+- HDMI：1 个 HDMI 视频输出接口，可实现 1080P 视频图像。  
   
-- PHY ETH: 2 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other applications.  
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 PS control, 1 PL control.  
+- PHY ETH：2 个 10/100/1000M 以太网 RJ45 接口，可用于以太网数据交换或其他应用。  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 个 PS 控制，1 个 PL 控制。  
   
-- USB Host: 1 USB Host.  
+- USB Host：1 个 USB Host。  
   
-- SD Card: 1 SD Card is provided to store the operating system image and file system.  
+- SD 卡：1 个 SD 卡，用于存储操作系统镜像和文件系统。  
   
-- USB UART:1 USB UART interface, used for serial communication with PC.  
+- USB UART：1 个 USB UART 接口，用于与 PC 进行串行通信。  
   
-- CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 50Mhz active crystal oscillator provides additional clocks for the PL logic.  
+- 时钟：1 个 33.33MHz 有源晶振，为 PS 系统提供稳定时钟。  
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 个 50MHz 有源晶振，为 PL 逻辑提供额外时钟。  
 
-
-### ○Block diagram
+### ○系统框图
 
 ![](./Z7-NANO_Reference_Manual.assets/Z7_NANO-BLOCK_DIAGRAM.png)
 
-### ○**Mechanical Spec**
+### ○**机械尺寸**
 
 ![](./Z7-NANO_Reference_Manual.assets/Z7NANO_MECH.jpg)
 
-## ●2. Function Resources
+## ●2. 硬件资源
 
 ### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor  
   
 - DDR3L memory controller with 8 DMA channels and 4   
-  
+
 - High-Performance AXI3 Slave ports  
-  
+
 - High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO  
-  
+
 - Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C  
-  
+
 - Programmable from JTAG, Quad-SPI flash, and microSD card  
-  
+
 - Programmable logic equivalent to Artix-7 FPGA  
 
   LUTs: 17,600 (7010)  
@@ -87,185 +86,170 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
   Flip-Flops: 35,200 (7010)   
       	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
   Total Block RAM: 2.1Mb (7010)   
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
+
 - Security: AES & SHA 256b Decryption & Authentication for Secure Programmable Logic Config
 
 ### ○DDR3
 
-​	One on-board 16bit 512M DDR3/L SDRAM chips.
+板载 1 个 16bit 512M DDR3/L SDRAM 芯片。
 
-| Position |    Model    |   Capacity   | Factory |
-| :------: | :---------: | :----------: | :-----: |
-|    U4    | MT41K256M16 | 256M x 16bit | Micron  |
+| 位置 |    型号     |     容量     | 制造商 |
+| :--: | :---------: | :----------: | :----: |
+|  U4  | MT41K256M16 | 256M x 16bit |  美光  |
 
-| Signal Name   | PIN Number | Signal Name    | PIN Number |
-| ------------- | ---------- | -------------- | ---------- |
-| PS_DDR3_A0    | N2         | PS_DDR3_D0     | C3         |
-| PS_DDR3_A1    | K2         | PS_DDR3_D1     | B3         |
-| PS_DDR3_A2    | M3         | PS_DDR3_D2     | A2         |
-| PS_DDR3_A3    | K3         | PS_DDR3_D3     | A4         |
-| PS_DDR3_A4    | M4         | PS_DDR3_D4     | D3         |
-| PS_DDR3_A5    | L1         | PS_DDR3_D5     | D1         |
-| PS_DDR3_A6    | L4         | PS_DDR3_D6     | C1         |
-| PS_DDR3_A7    | K4         | PS_DDR3_D7     | E1         |
-| PS_DDR3_A8    | K1         | PS_DDR3_D8     | E2         |
-| PS_DDR3_A9    | J4         | PS_DDR3_D9     | E3         |
-| PS_DDR3_A10   | F5         | PS_DDR3_D10    | G3         |
-| PS_DDR3_A11   | G4         | PS_DDR3_D11    | H3         |
-| PS_DDR3_A12   | E4         | PS_DDR3_D12    | J3         |
-| PS_DDR3_A13   | D4         | PS_DDR3_D13    | H2         |
-| PS_DDR3_A14   | F4         | PS_DDR3_D14    | H1         |
-| PS_DDR3_BA0   | L5         | PS_DDR3_D15    | J1         |
-| PS_DDR3_BA1   | R4         | PS_DDR3_DQS_N0 | B2         |
-| PS_DDR3_BA2   | J5         | PS_DDR3_DQS_N1 | F2         |
-| PS_DDR3_NCAS  | P5         | PS_DDR3_DQS_P0 | C2         |
-| PS_DDR3_CKE   | N3         | PS_DDR3_DQS_P1 | G2         |
-| PS_DDR3_CLK_N | M2         | PS_DDR3_NRST   | B4         |
-| PS_DDR3_CLK_P | L2         | PS_DDR3_ODT    | N5         |
-| PS_DDR3_NCS   | N1         | PS_DDR3_NRAS   | P4         |
-| PS_DDR3_DM0   | A1         | PS_DDR3_NWE    | M5         |
-| PS_DDR3_DM1   | F1         |                |            |
+| 信号名称      | 引脚编号 | 信号名称       | 引脚编号 |
+| ------------- | -------- | -------------- | -------- |
+| PS_DDR3_A0    | N2       | PS_DDR3_D0     | C3       |
+| PS_DDR3_A1    | K2       | PS_DDR3_D1     | B3       |
+| PS_DDR3_A2    | M3       | PS_DDR3_D2     | A2       |
+| PS_DDR3_A3    | K3       | PS_DDR3_D3     | A4       |
+| PS_DDR3_A4    | M4       | PS_DDR3_D4     | D3       |
+| PS_DDR3_A5    | L1       | PS_DDR3_D5     | D1       |
+| PS_DDR3_A6    | L4       | PS_DDR3_D6     | C1       |
+| PS_DDR3_A7    | K4       | PS_DDR3_D7     | E1       |
+| PS_DDR3_A8    | K1       | PS_DDR3_D8     | E2       |
+| PS_DDR3_A9    | J4       | PS_DDR3_D9     | E3       |
+| PS_DDR3_A10   | F5       | PS_DDR3_D10    | G3       |
+| PS_DDR3_A11   | G4       | PS_DDR3_D11    | H3       |
+| PS_DDR3_A12   | E4       | PS_DDR3_D12    | J3       |
+| PS_DDR3_A13   | D4       | PS_DDR3_D13    | H2       |
+| PS_DDR3_A14   | F4       | PS_DDR3_D14    | H1       |
+| PS_DDR3_BA0   | L5       | PS_DDR3_D15    | J1       |
+| PS_DDR3_BA1   | R4       | PS_DDR3_DQS_N0 | B2       |
+| PS_DDR3_BA2   | J5       | PS_DDR3_DQS_N1 | F2       |
+| PS_DDR3_NCAS  | P5       | PS_DDR3_DQS_P0 | C2       |
+| PS_DDR3_CKE   | N3       | PS_DDR3_DQS_P1 | G2       |
+| PS_DDR3_CLK_N | M2       | PS_DDR3_NRST   | B4       |
+| PS_DDR3_CLK_P | L2       | PS_DDR3_ODT    | N5       |
+| PS_DDR3_NCS   | N1       | PS_DDR3_NRAS   | P4       |
+| PS_DDR3_DM0   | A1       | PS_DDR3_NWE    | M5       |
+| PS_DDR3_DM1   | F1       |                |          |
 
-### ○Giga ETH
+### ○千兆以太网
 
-​	The RTL8211F chip supports a 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It also supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation, and MDIO bus support for PHY register management.
+RTL8211F芯片支持10/100/1000M网络传输速率，并通过RGMII接口与Zynq7000 PS的MAC层通信。它支持MDI/MDX自适应、多种速率自适应、主/从自适应以及MDIO总线支持，用于PHY寄存器管理。
 
 ### ○USB Host
 
-​	The USB 2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI standard interface. It's connected with ZYNQ's bus interface to enable high-speed USB2.0 Host mode data communications.
+板载 USB 2.0 收发器为 USB3320C-EZK，支持 ULPI 标准接口。它与 ZYNQ 的总线接口连接，以实现高速 USB2.0 Host 模式数据通信。
 
 ![](./Z7-NANO_Reference_Manual.assets/USB_HOST.png)
 
 ### ○USB UART
 
-​	A USB to UART chip, the CH340, is provided for user connection to the host PC.
+提供了一个 USB 转 UART 芯片 CH340，用于用户连接到主机 PC。
 
-| Signal Name |   Pin Name   | Pin Number |     Explain      |
-| :---------: | :----------: | :--------: | :--------------: |
-|   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
-|   UART_RX   | PS_MIO14_500 |     C8     | UART data output |
+| 信号名称 |   引脚名称   | 引脚编号 |     说明      |
+| :------: | :----------: | :------: | :-----------: |
+| UART_TX  | PS_MIO15_500 |    C5    | UART 数据输出 |
+| UART_RX  | PS_MIO14_500 |    C8    | UART 数据输出 |
 
 ### ○USB JTAG
 
-​	We have incorporated the JTAG download and debug circuitry into the board, enabling users to develop and debug ZYNQ through a USB cable.
+我们在板上集成了 JTAG 下载和调试电路，使用户能够通过 USB 线开发和调试 ZYNQ。
 
-### ○Boot Config
+### ○启动配置
 
-​	The Z7-Nano startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the table below.
+Z7-Nano 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的 MODE 输入信号控制。用户可以通过跳线帽更改模式。启动模式配置如下表所示。
 
 ![](./Z7-NANO_Reference_Manual.assets/BOOTMODE.png)
 
-### ○Quad-SPI Flash
+### ○Quad-SPI 闪存
 
-​	On-board 128M Quad-SPI Flash memory W25Q128JVSIQ is used to store initial FPGA configuration and user’s application as well as data.
+板载 128M Quad-SPI 闪存 W25Q128JVSIQ，用于存储 FPGA 初始配置、用户应用程序和数据。
 
-| Position |    Model     | Capacity  | Factory |
-| :------: | :----------: | :-------: | :-----: |
-|    U2    | W25Q128JVSIQ | 128M Byte | Winbond |
+| 位置 |     型号     |   容量    | 制造商 |
+| :--: | :----------: | :-------: | :----: |
+|  U2  | W25Q128JVSIQ | 128M 字节 |  华邦  |
 
-### ○Oscillators/Clocks
+### ○时钟
 
-​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
+一个 33.33 MHz 有源晶振为 PS 系统提供稳定时钟，另一个 50 MHz 有源晶振为 PL 逻辑提供额外时钟。
 
-| Position | Signal Name | Frequency | Pin Number |
-| :------: | :---------: | :-------: | :--------: |
-|    Y1    | PS_CLK_33d3 | 33.333Mhz |     E7     |
-|    U3    | PL_CLK_50M  |   50Mhz   |    N18     |
+| 位置 |  信号名称   |   频率    | 引脚编号 |
+| :--: | :---------: | :-------: | :------: |
+|  Y1  | PS_CLK_33d3 | 33.333MHz |    E7    |
+|  U3  | PL_CLK_50M  |   50MHz   |   N18    |
 
-### ○Reset
+### ○复位
 
-​	We provide a key (K1) that can be used as a 'reset' signal for designs running on FPGA.
+我们提供了一个按键（K1），可用作 FPGA 上运行的设计的“复位”信号。
 
 ### ○Micro SD
 
-​	The board provides a Micro SD card interface, allowing users to access the SD card memory. It also provides storage for the ZYNQ chip's bootloader, Linux operating system kernels, file systems, and other user data files.
+板卡提供了一个 Micro SD 卡接口，允许用户访问 SD 卡存储器。它还提供了 ZYNQ 芯片的引导加载程序、Linux 操作系统内核、文件系统和其他用户数据文件的存储。
 
 ### ○HDMI
 
-​	One HDMI video output interface can realize 1080P video images.
+一个 HDMI 视频输出接口，可实现 1080P 视频图像。
 
 ### ○LED
 
-​	We provide two LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.
+我们提供了两个 LED 供用户使用。当 FPGA 的相应引脚处于低电平时，LED 会亮起。
 
-| Position | Signal Name | Pin Number | Explain |
-| :------: | :---------: | :--------: | :-----: |
-|    D4    |   PS_LED1   |     E6     | PS LED1 |
-|    D3    |  GPIO1_17N  |    R14     | PL LED1 |
+| 位置 | 信号名称  | 引脚编号 |  说明   |
+| :--: | :-------: | :------: | :-----: |
+|  D4  |  PS_LED1  |    E6    | PS LED1 |
+|  D3  | GPIO1_17N |   R14    | PL LED1 |
 
-### ○Key
+### ○按键
 
-​	We provide one key for user to use. Once the key is pressed, it will be on the low level.
+我们提供了一个按键供用户使用。按下按键时，对应引脚将处于低电平。
 
-| Position | Signal Name | Pin Number | Explain |
-| :------: | :---------: | :--------: | :-----: |
-|    K2    |  GPIO1_17P  |    P14     | PL KEY1 |
+| 位置 | 信号名称  | 引脚编号 |  说明   |
+| :--: | :-------: | :------: | :-----: |
+|  K2  | GPIO1_17P |   P14    | PL KEY1 |
 
 ### ○GPIO
 
-​	This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length-matched and can be used as differential pairs.  
+该设备配备了最多 72 个用户 IO 引脚，可用于各种自定义应用。所有用户 IO 都经过长度匹配，可用作差分对。  
+
 **JP1:**  
 
-| Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
-|:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
-|  1  |  GPIO1_0P   |    N17     |  2  |  GPIO1_0N   |    P18     |
-|  3  |  GPIO1_1P   |    R16     |  4  |  GPIO1_1N   |    R17     |
-|  5  |  GPIO1_2P   |    T16     |  6  |  GPIO1_2N   |    U17     |
-|  7  |  GPIO1_3P   |    W18     |  8  |  GPIO1_3N   |    W19     |
-|  9  |  GPIO1_4P   |    Y18     | 10  |  GPIO1_4N   |    Y19     |
-| 11  |   VCC_5V    |     \-     | 12  |     GND     |     \-     |
-| 13  |  GPIO1_5P   |    Y16     | 14  |  GPIO1_5N   |    Y17     |
-| 15  |  GPIO1_6P   |    V17     | 16  |  GPIO1_6N   |    V18     |
-| 17  |  GPIO1_7P   |    W14     | 18  |  GPIO1_7N   |    Y14     |
-| 19  |  GPIO1_8P   |    V16     | 20  |  GPIO1_8N   |    W16     |
-| 21  |  GPIO1_9P   |    T17     | 22  |  GPIO1_9N   |    R18     |
-| 23  |  GPIO1_10P  |    V12     | 24  |  GPIO1_10N  |    W13     |
-| 25  |  GPIO1_11P  |    T14     | 26  |  GPIO1_11N  |    T15     |
-| 27  |  GPIO1_12P  |    T11     | 28  |  GPIO1_12N  |    T10     |
-| 29  |   VCC_3V3   |     \-     | 30  |     GND     |     \-     |
-| 31  |  GPIO1_13P  |    V15     | 32  |  GPIO1_13N  |    W15     |
-| 33  |  GPIO1_14P  |    P14     | 34  |  GPIO1_14N  |    R14     |
-| 35  |  GPIO1_15P  |    U14     | 36  |  GPIO1_15N  |    U15     |
-| 37  |  GPIO1_16P  |    U13     | 38  |  GPIO1_16N  |    V13     |
-| 39  |  GPIO1_17P  |    T12     | 40  |  GPIO1_17N  |    U12     |
+| 引脚 | 信号名称  | 引脚编号 | 引脚 | 信号名称  | 引脚编号 |
+| :--: | :-------: | :------: | :--: | :-------: | :------: |
+|  1   | GPIO1_0P  |   N17    |  2   | GPIO1_0N  |   P18    |
+|  3   | GPIO1_1P  |   R16    |  4   | GPIO1_1N  |   R17    |
+|  5   | GPIO1_2P  |   T16    |  6   | GPIO1_2N  |   U17    |
+|  7   | GPIO1_3P  |   W18    |  8   | GPIO1_3N  |   W19    |
+|  9   | GPIO1_4P  |   Y18    |  10  | GPIO1_4N  |   Y19    |
+|  11  |  VCC_5V   |    \-    |  12  |    GND    |    \-    |
+|  13  | GPIO1_5P  |   Y16    |  14  | GPIO1_5N  |   Y17    |
+|  15  | GPIO1_6P  |   V17    |  16  | GPIO1_6N  |   V18    |
+|  17  | GPIO1_7P  |   W14    |  18  | GPIO1_7N  |   Y14    |
+|  19  | GPIO1_8P  |   V16    |  20  | GPIO1_8N  |   W16    |
+|  21  | GPIO1_9P  |   T17    |  22  | GPIO1_9N  |   R18    |
+|  23  | GPIO1_10P |   V12    |  24  | GPIO1_10N |   W13    |
+|  25  | GPIO1_11P |   T14    |  26  | GPIO1_11N |   T15    |
+|  27  | GPIO1_12P |   T11    |  28  | GPIO1_12N |   T10    |
+|  29  |  VCC_3V3  |    \-    |  30  |    GND    |    \-    |
+|  31  | GPIO1_13P |   V15    |  32  | GPIO1_13N |   W15    |
+|  33  | GPIO1_14P |   P14    |  34  | GPIO1_14N |   R14    |
+|  35  | GPIO1_15P |   U14    |  36  | GPIO1_15N |   U15    |
+|  37  | GPIO1_16P |   U13    |  38  | GPIO1_16N |   V13    |
+|  39  | GPIO1_17P |   T12    |  40  | GPIO1_17N |   U12    |
 
 
 **JP2:**  
 
-| Pin | Signal Name | Pin Number | Pin | Signal Name |  Pin Number|
-|:---:|:-----------:|:----------:|:---:|:-----------:|:----------:|
-|  1  |  GPIO2_0P   |    L16     |  2  |  GPIO2_0N   |    L17     |
-|  3  |  GPIO2_1P   |    H15     |  4  |  GPIO2_1N   |    G15     |
-|  5  |  GPIO2_2P   |    F16     |  6  |  GPIO2_2N   |    F17     |
-|  7  |  GPIO2_3P   |    E18     |  8  |  GPIO2_3N   |    E19     |
-|  9  |  GPIO2_4P   |    B19     | 10  |  GPIO2_4N   |    A20     |
-| 11  |   VCC_5V    |     \-     | 12  |     GND     |     \-     |
-| 13  |  GPIO2_5P   |    D19     | 14  |  GPIO2_5N   |    D20     |
-| 15  |  GPIO2_6P   |    E17     | 16  |  GPIO2_6N   |    D18     |
-| 17  |  GPIO2_7P   |    H16     | 18  |  GPIO2_7N   |    H17     |
-| 19  |  GPIO2_8P   |    G19     | 20  |  GPIO2_8N   |    G20     |
-| 21  |  GPIO2_9P   |    J18     | 22  |  GPIO2_9N   |    H18     |
-| 23  |  GPIO2_10P  |    K16     | 24  |  GPIO2_10N  |    J16     |
-| 25  |  GPIO2_11P  |    C20     | 26  |  GPIO2_11N  |    B20     |
-| 27  |  GPIO2_12P  |    G17     | 28  |  GPIO2_12N  |    G18     |
-| 29  |   VCC_3V3   |     \-     | 30  |     GND     |     \-     |
-| 31  |  GPIO2_13P  |    L19     | 32  |  GPIO2_13N  |    L20     |
-| 33  |  GPIO2_14P  |    F19     | 34  |  GPIO2_14N  |    F20     |
-| 35  |  GPIO2_15P  |    M19     | 36  |  GPIO2_15N  |    M20     |
-| 37  |  GPIO2_16P  |    K19     | 38  |  GPIO2_16N  |    J19     |
-| 39  |  GPIO2_17P  |    J20     | 40  |  GPIO2_17N  |    H20     |
-
-### ○Power
-
-​	The board uses a +5V supply from USB. The Figure shows the USB can be used to provide power.  
-
-
-
-![](./Z7-NANO_Reference_Manual.assets/POWER_INTERFACE.png)
-
-## ●3.Related Documents 
-
-- [Z7-NANO_R21_Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Z7-NANO_R21.pdf)(PDF)
-- [Z7-NANO_R20_Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-Nano_R20_Dimensions.pdf)(PDF)
-- [Z7-NANO_R20_Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-NANO_R20_Dimensions.dxf) (DXF) 
+| 引脚 | 信号名称  | 引脚编号 | 引脚 | 信号名称  | 引脚编号 |
+| :--: | :-------: | :------: | :--: | :-------: | :------: |
+|  1   | GPIO2_0P  |   L16    |  2   | GPIO2_0N  |   L17    |
+|  3   | GPIO2_1P  |   H15    |  4   | GPIO2_1N  |   G15    |
+|  5   | GPIO2_2P  |   F16    |  6   | GPIO2_2N  |   F17    |
+|  7   | GPIO2_3P  |   E18    |  8   | GPIO2_3N  |   E19    |
+|  9   | GPIO2_4P  |   B19    |  10  | GPIO2_4N  |   A20    |
+|  11  |  VCC_5V   |    \-    |  12  |    GND    |    \-    |
+|  13  | GPIO2_5P  |   D19    |  14  | GPIO2_5N  |   D20    |
+|  15  | GPIO2_6P  |   E17    |  16  | GPIO2_6N  |   D18    |
+|  17  | GPIO2_7P  |   H16    |  18  | GPIO2_7N  |   H17    |
+|  19  | GPIO2_8P  |   G19    |  20  | GPIO2_8N  |   G20    |
+|  21  | GPIO2_9P  |   J18    |  22  | GPIO2_9N  |   H18    |
+|  23  | GPIO2_10P |   K16    |  24  | GPIO2_10N |   J16    |
+|  25  | GPIO2_11P |   C20    |  26  | GPIO2_11N |   B20    |
+|  27  | GPIO2_12P |   G17    |  28  | GPIO2_12N |   G18    |
+|  29  |  VCC_3V3  |    \-    |  30  |    GND    |    \-    |
+|  31  | GPIO2_13P |   L19    |      |           |          |
