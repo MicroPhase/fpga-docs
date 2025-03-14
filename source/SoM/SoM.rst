@@ -1,6 +1,6 @@
- `[English] <https://microphase-doc.readthedocs.io/en/latest/SoM/SoM.html>`_
+`[English] <https://microphase-doc.readthedocs.io/en/latest/SoM/SoM.html>`_
 
-Artix7 Series
+Artix7 系列
 ========================
 
 .. toctree::
@@ -8,7 +8,7 @@ Artix7 Series
 
    XME0712/XME0712-Reference_Manual
 
-ZYNQ7000 Series
+ZYNQ7000 系列
 ========================
 
 .. toctree::
@@ -21,7 +21,7 @@ ZYNQ7000 Series
    XME7035/XME7035-Reference_Manual
    XME7100/XME7100-Reference_Manual
 
-Zynq UltraScale+ Series
+Zynq UltraScale+ 系列
 ========================
 
 .. toctree::

@@ -1,5 +1,7 @@
 # **PE100 用户手册**
 
+[English](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
+
 ## 微信公众号：
 
 ![](./PE100-Reference_Manual.assets/Wechat.png)
@@ -295,6 +297,6 @@ PE100 包括五个 LED，一个电源指示灯，一个 PS 侧的用户 LED 和�
 - [PE100_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd)  
 
 ### ○微相科技的 5*6 XME 系列 SoM
-- XME0712 用户手册(HTML)
-- [XME0715 用户手册](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
-- XME0720 用户手册(HTML)
+- [XME0712 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)(HTML)
+- [XME0715 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
+- [XME0720 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)(HTML)

@@ -1,5 +1,7 @@
 # **A7-LITE 用户手册**
 
+[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/A7-LITE/A7-Lite_Reference_Manual.html)
+
 ## 开发环境：
 
 赛灵思Vivado 2021.1
@@ -58,77 +60,77 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○FPGA
 
-- 逻辑单元：33,280（35T）
+- Logic Cells: 33,280(35T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;101,440（100T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;101,440(100T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;215,360（200T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;215,360(200T)
 
-- 切片：5,200（35T）
+- Slices: 5,200(35T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;15,850（100T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;15,850(100T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;33,650（200T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;33,650(200T)
 
-- CLB 触发器：41,600（35T）  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;126,800（100T）  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;269,200（200T）
+- CLB Flip-Flops: 41,600(35T)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;126,800(100T)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;269,200(200T)
 
-- 最大分布式 RAM（Kb）：400（35T）
+- Maximum Distributed RAM(Kb): 400(35T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1,188（100T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1,188(100T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2,888（200T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2,888(200T)
 
-- 带 ECC 的块 RAM/FIFO（每个 36 Kb）：50（35T）
+- Block RAM/FIFO w/ ECC (36 Kb each): 50(35T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;135（100T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;135(100T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;365（200T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;365(200T)
 
-- 总块 RAM（Kb）：1,800（35T）
+- Total Block RAM (Kb): 1,800(35T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4,860（100T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4,860(100T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;13,140（200T）
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;13,140(200T)
 
-- CMTs（1 MMCM + 1 PLL）：5（35T）  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  &ensp; &ensp; &ensp; &ensp;6（100T）  
-&ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;10（200T）
+- CMTs (1 MMCM + 1 PLL): 5(35T)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  &ensp; &ensp; &ensp; &ensp;6(100T)  
+  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;10(200T)
 
-- 最大单端 I/O：250（35T）
+- Maximum Single-Ended I/O:250(35T)
 
-  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;300（100T）
-  
-  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;500（200T）
-  
-- 最大差分 I/O 对：120（35T）
+  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;300(100T)
 
-  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;144（100T）
+  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;500(200T)
 
-  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;240（200T）
+- Maximum Differential I/O Pairs: 120(35T)
 
-- DSP 切片：90（35T）
+  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;144(100T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;240（100T）
+  &ensp; &ensp;  &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;240(200T)
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;740（200T）
+- DSP Slices: 90(35T)
 
-- PCIe® Gen2：1
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;240(100T)
 
-- 模拟混合信号（AMS）/ XADC：1
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;740(200T)
 
-- 配置 AES / HMAC 块：1
+- PCIe® Gen2: 1
 
-- GTP 收发器（最大速率 6.6 Gb/s）：4（35T）
+- Analog Mixed Signal (AMS) / XADC: 1
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;8（100T）
+- Configuration AES / HMAC Blocks: 1
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;16（200T）
+- GTP Transceivers (6.6 Gb/s Max Rate): 4(35T)
+
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;8(100T)
+
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;16(200T)
 
 ### ○DDR3
 
-	板载一个 16bit 512M DDR3/L SDRAM 芯片。
+板载一个 16bit 512M DDR3/L SDRAM 芯片。
 
 | 位置 |    型号     |     容量     | 厂商 |
 | :--: | :---------: | :----------: | :--: |
@@ -164,11 +166,11 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○千兆以太网
 
-	RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口与 Artix-7 的 MAC 层通信。它支持 MDI/MDX 自适应、多种速率自适应、主/从自适应以及 MDIO 总线支持 HY 寄存器管理。
+RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口与 Artix-7 的 MAC 层通信。它支持 MDI/MDX 自适应、多种速率自适应、主/从自适应以及 MDIO 总线支持 HY 寄存器管理。
 
 ### ○USB UART
 
-	提供了一个 USB 转 UART 芯片 CH340，用于用户连接到主机 PC。
+提供了一个 USB 转 UART 芯片 CH340，用于用户连接到主机 PC进行通信。
 
 | 信号名称 |   引脚名称   | 引脚号 |     说明      |
 | :------: | :----------: | :----: | :-----------: |
@@ -177,19 +179,19 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○USB JTAG
 
-	我们在板上集成了 JTAG 下载和调试电路，用户可以通过 USB 电缆进行开发和调试。
+我们在板上集成了 JTAG 下载和调试电路，用户可以通过 USB线进行开发和调试。
 
-### ○四路 SPI 闪存
+### ○Quad-SPI Flash
 
-	板载 128M 四路 SPI 闪存 IS25L128F-JBLE-TR，用于存储 FPGA 的初始配置、用户应用程序和数据。
+板载 128M 四路 SPI 闪存 IS25L128F-JBLE-TR，用于存储 FPGA 的初始配置、用户应用程序和数据。
 
 | 位置 |     型号      |   容量    | 厂商 |
 | :--: | :-----------: | :-------: | :--: |
 |  U2  | IS25L128FJBLE | 128M 字节 | ISSI |
 
-### ○振荡器/时钟
+### ○Clocks
 
-	一个 50MHz 的有源晶振为系统提供额外的时钟。
+一个 50MHz 的有源晶振为系统提供时钟。
 
 | 位置 | 信号名称 | 频率  | 引脚号 |
 | :--: | :------: | :---: | :----: |
@@ -197,19 +199,19 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○复位
 
-	A7-Lite 提供了一个按键（K3），可用作 FPGA 上运行设计的“复位”信号。
+A7-Lite 提供了一个按键（K3），可用作 FPGA 上运行设计的“复位”信号。
 
 ### ○Micro SD
 
-	板卡提供了一个 Micro SD 卡接口，用户可以通过该接口访问 SD 卡存储器，存储 FPGA 芯片的 BOOT 程序、Linux 操作系统内核、文件系统和其他用户数据文件。
+板卡提供了一个 Micro SD 卡接口，用户可以通过该接口访问 SD 卡存储器，存储 FPGA 芯片的 BOOT 程序、Linux 操作系统内核、文件系统和其他用户数据文件。
 
 ### ○HDMI
 
-	一个 HDMI 视频输出接口，可实现 1080P 视频图像。
+一个 HDMI 视频输出接口，可实现 1080P 视频图像。
 
 ### ○LED
 
-	我们提供了两个 LED 供用户使用。
+我们提供了两个 LED 供用户使用。
 
 | 位置 | 信号名称 | 引脚号 | 说明 |
 | :--: | :------: | :----: | :--: |
@@ -218,7 +220,7 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○按键
 
-	我们提供了两个按键供用户使用。
+我们提供了两个按键供用户使用。
 
 | 位置 | 信号名称 | 引脚号 | 说明 |
 | :--: | :------: | :----: | :--: |
@@ -227,7 +229,16 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○GPIO
 
-	该设备配备了最大数量的用户 IO 引脚，可用于各种自定义应用。所有用户 IO 均经过长度匹配，并可用作差分对。
+该开发板引出了大量的用户 IO ，可用于各种自定义应用。FPGA 引脚到连接器的走线经过等长差分处理，单端阻抗为 50 欧姆，差分阻抗为 100 欧姆。
+
+说明：
+
+1. JP1的IO电平默认为3.3V，但通过修改硬件可实现电平调整。
+
+```
+具体方法为：卸下B8，焊接B9，然后向VCCIO_A输入需要的电平。输入范围1.2-3.3V。
+```
+2. JP2的IO电平为3.3V。
 
 **JP1:**
 
@@ -291,7 +302,7 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
 ### ○电源
 
-板卡使用 USB 提供的 +5V 电源。
+本板通过USB接口5V供电。图示的两个USB接口都可以用于供电。
 
 ![](./A7-Lite_Reference_Manual.assets/power.png)
 

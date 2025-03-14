@@ -1,211 +1,212 @@
-# **XPE_ZU100 Reference Manual**
+# **XPE_ZU100 用户手册**
 
-## WeChat Public Number:
+[English](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)
+
+## 微信公众号：
 
 ![](./XPE_ZU100-Reference_Manual.assets/Wechat.png)
 
+## ●1. 概述
 
-## ●1. Overview
+使用 XPE_ZU100，您可以快速测试、开发和评估 XME0803 的功能。它为 XME0803 提供了多种接口，如 HDMI TX、千兆以太网、SFP、PCIe 3.0 x2、USB3.0 x4 等。**以下内容基于 XME00803(4EV)，除非另有说明。**
 
-Using XPE_ZU100, you can quickly test, develop, and evaluate the function of XME0803. It provides various interfaces for XME0803, such as HDMI TX, Giga ETH, SFP, PCIe 3.0 x2, USB3.0 x4 and so on. The following is based on the XME00803(4EV) unless noted.
-
-### ○Board Layout
+### ○板卡布局
 
 ![](./XPE_ZU100-Reference_Manual.assets/zu100-BL.png)
 
-### ○Key Features
+### ○资源特性
 
-- 1 PCIe3.0 x2
+- 1 个 PCIe3.0 x2 接口
 
-- 2 Giga ETH supports 10/100/1000M network transfer rate,
+- 2 个千兆以太网接口，支持 10/100/1000M 网络传输速率，
 
-  1 for PS, 1 for PL
+  1 个用于 PS，1 个用于 PL
 
-- 1 SFP x2	
+- 1 个 SFP x2 接口
 
-- 1 USB3.0 x4
+- 1 个 USB3.0 x4 接口
 
-- 1 NVME M.2
+- 1 个 NVME M.2 接口
 
-- 1 2-Lanes MIPI
+- 1 个 2 通道 MIPI 接口
 
-- 1 HDMI TX
+- 1 个 HDMI TX 接口
 
-- 1 Mini DP
+- 1 个 Mini DP 接口
 
-- 1 RS485 x2
+- 1 个 RS485 x2 接口
 
-- 1 CAN x2
+- 1 个 CAN x2 接口
 
-- 1 USB UART&JTAG
+- 1 个 USB UART&JTAG 接口
 
-- 1 SD
+- 1 个 SD 卡接口
 
-- 1 40-Pin Extension Port
+- 1 个 40 针扩展接口
 
-- 1 System Rest Key, 3 User's Keys
+- 1 个系统复位按键，3 个用户按键
 
-- 4 User's LEDs
+- 4 个用户 LED
 
-### ○Mechanical Spec  
+  **注：因核心板不同，以上接口可能不完全支持，使用时请确认细节。**
+
+### ○机械尺寸
 
 ![](./XPE_ZU100-Reference_Manual.assets/XPE_ZU100_MECH.png)
 
-### ○Core Board Matching Description
+### ○核心板匹配说明
 
-✔️：Support
+✔️：支持
 
-❌：Not support
+❌：不支持
 
-⚠️ : Pay attention when using
+⚠️ : 使用时需注意
 
-⭐ : Not fully supported
+⭐ : 不完全支持
 
-| XPE_ZU100             | XME0803(3EG) | XME0803(4EV) |
-| --------------------- | ------------ | ------------ |
-| PCIE3.0 x2            | ❌            | ✔️            |
-| PS ETH                | ✔️            | ✔️            |
-| PL ETH                | ✔️            | ✔️            |
-| SFP x2                | ❌            | ✔️            |
-| USB3.0 x4             | ✔️            | ✔️            |
-| NVME M.2              | ✔️            | ✔️            |
-| MIPI                  | ✔️            | ✔️            |
-| HDMI TX               | ✔️            | ✔️            |
-| Mini DP               | ✔️            | ✔️            |
-| RS485 x2              | ✔️            | ✔️            |
-| CAN x2                | ✔️            | ✔️            |
-| USB UART&JTAG         | ✔️            | ✔️            |
-| SD                    | ✔️            | ✔️            |
-| 40-Pin Extension Port | ✔️            | ✔️            |
+| XPE_ZU100       | XME0803(3EG) | XME0803(4EV) |
+| --------------- | ------------ | ------------ |
+| PCIE3.0 x2      | ❌            | ✔️            |
+| PS ETH          | ✔️            | ✔️            |
+| PL ETH          | ✔️            | ✔️            |
+| SFP x2          | ❌            | ✔️            |
+| USB3.0 x4       | ✔️            | ✔️            |
+| NVME M.2        | ✔️            | ✔️            |
+| MIPI            | ✔️            | ✔️            |
+| HDMI TX         | ✔️            | ✔️            |
+| Mini DP         | ✔️            | ✔️            |
+| RS485 x2        | ✔️            | ✔️            |
+| CAN x2          | ✔️            | ✔️            |
+| USB UART&JTAG   | ✔️            | ✔️            |
+| SD              | ✔️            | ✔️            |
+| 40-Pin 扩展接口 | ✔️            | ✔️            |
 
-## ●2. Function Resources  
+## ●2. 功能资源
 
 ### ○PCIe
 
-The XPE_ZU100 features a PCIe x2 interface, supporting 2 TX and RX channels connected to the PCIe edge connector. It enables PCIe 3.0 (backward compatible with 2.0) data communication. A single channel achieves a communication rate of up to 8 Gbps, meeting the data transfer capabilities of PCIe Gen 3.
+XPE_ZU100 具有一个 PCIe x2 接口，支持 2 个 TX 和 RX 通道连接到 PCIe 边缘连接器。它支持 PCIe 3.0（向后兼容 2.0）数据通信。单个通道的通信速率高达 8 Gbps，满足 PCIe Gen 3 的数据传输能力。
 
-The PCIe reference clock is provided by the PCIe ROOT device (typically a PC) through the PCIe slot to the development board. The reference clock frequency is 100 MHz.
+PCIe 参考时钟由 PCIe ROOT 设备（通常是 PC）通过 PCIe 插槽提供给开发板。参考时钟频率为 100 MHz。
 
-The hardware connection diagram of the PCIe interface is as follows:
+PCIe 接口的硬件连接图如下：
 
 ![](./XPE_ZU100-Reference_Manual.assets/PCIe.png)
 
-### ○Giga ETH
+### ○千兆以太网
 
-The carrier board provides 2 Gigabit Ethernet interfaces. The phy IC of ETH0 is integrated in the core board. It's connected with core board according to the signs of MDI. More information of the ETH0 PHY, please reference the  corresponding core board document.
+载板提供 2 个千兆以太网接口。ETH0通过MDI信号与核心板连接。有关 ETH0 PHY 的更多信息，请参考相应的核心板文档。
 
-The RTL8211F chip supports a 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It also supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation, and MDIO bus support for PHY register management.
+RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口与 Zynq7000 PS 系统的 MAC 层通信。它还支持 MDI/MDX 自适应、多种速率自适应、主/从自适应以及 MDIO 总线支持 PHY 寄存器管理。
 
-Diagram of connecting the core board and two Ethernet phy chips.
+核心板与两个以太网 PHY 芯片的连接图如下：
 
 ![](./XPE_ZU100-Reference_Manual.assets/ETH.png)
 
 ### ○SFP
 
-The ZU100 provides two SFP interfaces, each SFP using one transceiver channel. According to it user can use SFP hot plug optical module to fibre optic data communications.
+ZU100 提供两个 SFP 接口，每个 SFP 使用一个收发器通道。用户可以使用 SFP 热插拔光模块进行光纤数据通信。
 
-Each SFP interface includes the following signals:
+每个 SFP 接口包括以下信号：
 
-- **Transceiver**: Provides one channel for data transmission up to 12.5 Gb/s.
-- **SMBUS (I2C)**: 3.3V signal for module management.
-- **Control signals**: Includes status control.
-- **Reference clock**: A 125 MHz differential clock from the carrier board.
+- **收发器**：提供一个通道，数据传输速率高达 12.5 Gb/s。
+- **SMBUS (I2C)**：3.3V 信号，用于模块管理。
+- **控制信号**：包括状态控制。
+- **参考时钟**：来自载板的 125 MHz 差分时钟。
 
 ### ○USB3.0
 
-The ZU100 features four Type-A USB 3.0 host ports, offering data transfer speeds of up to 5.0 Gb/s. USB 3.0 is connected through the PIPE3 interface, while USB 2.0 is connected to the external USB3320C chip via the ULPI interface, enabling high-speed data communication for both USB 3.0 and USB 2.0. 
+ZU100 具有四个 Type-A USB 3.0 Host端口，提供高达 5.0 Gb/s 的数据传输速度。USB 3.0 通过 PIPE3 接口连接，而 USB 2.0 通过 ULPI 接口连接到外部 USB3320C 芯片，实现 USB 3.0 和 USB 2.0 的高速数据通信。
 
 ![](./XPE_ZU100-Reference_Manual.assets/USB30.png)
 
+### ○USB UART&JTAG
 
-
-### ○USB UART&JTAG  
-
-The carrier board provides a USB to UART and JTAG interface, the chip is FTDI FT2232H. The USB interface is TYPE-C.
+底板提供了一个 USB 转 UART 和 JTAG 接口，芯片为 FTDI FT2232H。USB 接口为 TYPE-C。
 
 ### ○NVME M.2
 
-The development board is equipped with a PCIe x1 standard M.2 interface for connecting M.2 SSDs, supporting communication speeds of up to 6Gbps. The M.2 interface utilizes an M key slot and supports only PCIe, not SATA. When selecting an SSD, users must choose a PCIe-based SSD. The PCIe signals are directly connected to the ZU15EG’s BANK505 PS MGT transceiver, with one TX signal and one RX signal connected as differential signals to LANE1 of the MGT. The PCIe clock is provided by the Si5332 chip, with a frequency of 100MHz. 
+开发板配备了一个 PCIe x1 标准的 M.2 接口，用于连接 M.2 SSD，支持高达 6Gbps 的通信速度。M.2 接口使用 M 键槽，仅支持 PCIe，不支持 SATA。选择 SSD 时，用户必须选择基于 PCIe 的 SSD。PCIe 信号直接连接到 ZU15EG 的 BANK505 PS MGT 收发器，一个 TX 信号和一个 RX 信号作为差分信号连接到 MGT 的 LANE1。PCIe 时钟由 Si5332 芯片提供，频率为 100MHz。
 
 ### ○MIPI
 
-The MIPI CSI port on the board is a 15-pin, 1 mm pitch top contact FPC connector designed to connect a MIPI interface camera. The MIPI FPC connector pinout is compatible with Raspberry Pi cameras.
+板上的 MIPI CSI 端口是一个 15 针、1 mm 间距的顶部接触 FPC 连接器，设计用于连接 MIPI 接口摄像头。MIPI FPC 连接器的引脚排列与 Raspberry Pi 摄像头兼容。
 
-The MIPI CSI-2 receiver IP core is available from Xilinx and includes embedded Linux support. It requires a licence to use, but it is possible to obtain an evaluation licence from Xilinx at no cost.
+MIPI CSI-2 接收器 IP 核可从 Xilinx 获取，并包含嵌入式 Linux 支持。它需要许可证才能使用，但可能可以从 Xilinx 免费获取评估许可证。
 
 ### ○HDMI TX
 
-One HDMI video output interface can realize 1080P video images. Can be configured as HDMI input.
+一个 HDMI 视频输出接口，可实现 1080P 视频图像。可配置为 HDMI 输入。
 
 ### ○Mini DP
 
-1 mini DisplayPort output display interface for video image display. The DisplayPort data transmission channel is driven directly by the BANK505 PS MGT on the SoM board, with the MGT signal transmitted to the DP connector in a differential signal format. The DisplayPort auxiliary channel is connected to the MIO pins of the PS. It supports a maximum output of 4K @30Hz or 1080P @60Hz.
+1 个 mini DisplayPort 输出显示接口，用于视频图像显示。DisplayPort 数据传输通道由核心板上的 BANK505 PS MGT 直接驱动，MGT 信号以差分信号格式传输到 DP 连接器。DisplayPort 辅助通道连接到 PS 的 MIO 引脚。它支持最大输出 4K @30Hz 或 1080P @60Hz。
 
-### ○Power  
+### ○电源
 
-**Please note that the power input of XPE_ZU100 is +12V. We recommend using a 12V/2A power supply.**  
+**请注意，XPE_ZU100 的电源输入为 +12V。我们建议使用 12V/2A 电源。**
 
 ![](./XPE_ZU100-Reference_Manual.assets/Power_structure.png)
 
 ### ○LED
 
-The XPE_ZU100 board provides five LEDs, a power indicator and four user's LEDs. When the corresponding pin of the FPGA is in a high state, the LED is illuminated.
+XPE_ZU100 板提供了五个 LED，一个电源指示灯和四个用户 LED。当 FPGA 的相应引脚处于高电平时，LED 点亮。
 
-| Position | Signal Name | Pin Number |
-| -------- | ----------- | ---------- |
-| D6       | PS_LED1     | H18        |
-| D3       | PL_LED1     | E1         |
-| D4       | PL_LED2     | D1         |
-| D5       | PL_LED3     | G1         |
+| 位置 | 信号名称 | 引脚号 |
+| ---- | -------- | ------ |
+| D6   | PS_LED1  | H18    |
+| D3   | PL_LED1  | E1     |
+| D4   | PL_LED2  | D1     |
+| D5   | PL_LED3  | G1     |
 
-### ○Key
+### ○按键
 
-We provide three keys for user to use. Once the key is pressed, the corresponding pin of the FPGA will be on the low level.
+我们提供了三个按键供用户使用。按下按键时，FPGA 的相应引脚将变为低电平。
 
-| Position | Signal Name | Pin Number |
-| -------- | ----------- | ---------- |
-| K3       | PS_KEY1     | H19        |
-| K1       | PL_KEY1     | A2         |
-| K2       | PL_KEY2     | A1         |
+| 位置 | 信号名称 | 引脚号 |
+| ---- | -------- | ------ |
+| K3   | PS_KEY1  | H19    |
+| K1   | PL_KEY1  | A2     |
+| K2   | PL_KEY2  | A1     |
 
 ### ○GPIO
 
-The carrier board provides one IDC40 GPIO expansion ports, JP1, which allows connection to Microphase Technology modules or additional peripherals. **When using the IOs, be sure to ensure that the voltage of the connected signal is consistent.**
+底板提供了一个 IDC40 GPIO 扩展接口 JP1，允许连接到微相科技的模块或其他外设。**使用 IO 时，请确保连接的信号电压一致。**
 
-| Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
-| ---- | ----------- | ---------- | ---- | ----------- | ---------- |
-| 1    | GPIO1_0P    | AH12       | 2    | GPIO1_0N    | AH11       |
-| 3    | GPIO1_1P    | AE12       | 4    | GPIO1_1N    | AF12       |
-| 5    | GPIO1_2P    | AG10       | 6    | GPIO1_2N    | AH10       |
-| 7    | GPIO1_3P    | W12        | 8    | GPIO1_3N    | W11        |
-| 9    | GPIO1_4P    | AE15       | 10   | GPIO1_4N    | AE14       |
-| 11   | VCC_5V      | -          | 12   | GND         | -          |
-| 13   | GPIO1_5P    | W14        | 14   | GPIO1_5N    | W13        |
-| 15   | GPIO1_6P    | AD15       | 16   | GPIO1_6N    | AD14       |
-| 17   | GPIO1_7P    | AC14       | 18   | GPIO1_7N    | AC13       |
-| 19   | GPIO1_8P    | AA13       | 20   | GPIO1_8N    | AB13       |
-| 21   | GPIO1_9P    | AD11       | 22   | GPIO1_9N    | AD10       |
-| 23   | GPIO1_10P   | AA11       | 24   | GPIO1_10N   | AA10       |
-| 25   | GPIO1_11P   | W10        | 26   | GPIO1_11N   | Y10        |
-| 27   | GPIO1_12P   | Y12        | 28   | GPIO1_12N   | AA12       |
-| 29   | VCC_3V3     | -          | 30   | GND         | -          |
-| 31   | GPIO1_13P   | Y14        | 32   | GPIO1_13N   | Y13        |
-| 33   | GPIO1_14P   | AG13       | 34   | GPIO1_14N   | AH13       |
-| 35   | GPIO1_15P   | AG14       | 36   | GPIO1_15N   | AH14       |
-| 37   | GPIO1_16P   | AE13       | 38   | GPIO1_16N   | AF13       |
-| 39   | GPIO1_17P   | AB15       | 40   | GPIO1_17N   | AB14       |
+| 引脚 | 信号名称  | 引脚号 | 引脚 | 信号名称  | 引脚号 |
+| ---- | --------- | ------ | ---- | --------- | ------ |
+| 1    | GPIO1_0P  | AH12   | 2    | GPIO1_0N  | AH11   |
+| 3    | GPIO1_1P  | AE12   | 4    | GPIO1_1N  | AF12   |
+| 5    | GPIO1_2P  | AG10   | 6    | GPIO1_2N  | AH10   |
+| 7    | GPIO1_3P  | W12    | 8    | GPIO1_3N  | W11    |
+| 9    | GPIO1_4P  | AE15   | 10   | GPIO1_4N  | AE14   |
+| 11   | VCC_5V    | -      | 12   | GND       | -      |
+| 13   | GPIO1_5P  | W14    | 14   | GPIO1_5N  | W13    |
+| 15   | GPIO1_6P  | AD15   | 16   | GPIO1_6N  | AD14   |
+| 17   | GPIO1_7P  | AC14   | 18   | GPIO1_7N  | AC13   |
+| 19   | GPIO1_8P  | AA13   | 20   | GPIO1_8N  | AB13   |
+| 21   | GPIO1_9P  | AD11   | 22   | GPIO1_9N  | AD10   |
+| 23   | GPIO1_10P | AA11   | 24   | GPIO1_10N | AA10   |
+| 25   | GPIO1_11P | W10    | 26   | GPIO1_11N | Y10    |
+| 27   | GPIO1_12P | Y12    | 28   | GPIO1_12N | AA12   |
+| 29   | VCC_3V3   | -      | 30   | GND       | -      |
+| 31   | GPIO1_13P | Y14    | 32   | GPIO1_13N | Y13    |
+| 33   | GPIO1_14P | AG13   | 34   | GPIO1_14N | AH13   |
+| 35   | GPIO1_15P | AG14   | 36   | GPIO1_15N | AH14   |
+| 37   | GPIO1_16P | AE13   | 38   | GPIO1_16N | AF13   |
+| 39   | GPIO1_17P | AB15   | 40   | GPIO1_17N | AB14   |
 
-## ●3. Related Documents  
+## ●3. 相关文档
 
-### ○XPE-ZU100 
-- [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
-- [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/PE500_R10_Dimensions.pdf)(PDF)
-- [XPE-ZU100_R40 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)
+### ○XPE-ZU100
+
+- [XPE-ZU100_R40 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
+- [XPE-ZU100_R40 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/PE500_R10_Dimensions.pdf)(PDF)
+- [XPE-ZU100_R40 板卡源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)
 
 ### ○XME0803
 
-- [XME0803_Reference_Manual](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf) (PDF)
-
-- [XME0803_R20 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf) (PDF)
-- [XME0803_R20 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions.pdf) (PDF)  
-- [XME0803_R20 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)  
+- [XME0803_用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0803/XME0803-Reference_Manual.html) (HTML)
+- [XME0803_R20 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf) (PDF)
+- [XME0803_R20 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions.pdf) (PDF)  
+- [XME0803_R20 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)

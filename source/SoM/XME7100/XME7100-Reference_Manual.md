@@ -1,5 +1,7 @@
 # **XME7100 用户手册**
 
+[English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME7100/XME7100-Reference_Manual.html)
+
 ## 开发环境：
 
 赛灵思Vivado 2021.1
@@ -273,7 +275,7 @@ FPGA Bank、IO 数量与 B2B 连接器表
 - [XME7100_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7100/XME7100_R11_Dimensions_source_file.dxf) (DXF)  
 
 ### ○PE500    
-- [PE500 用户手册](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
+- [PE500 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
 - [PE500_R10 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
 - [PE500_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE500/PE500_R10_Dimensions.pdf)(PDF)
 - [PE500_R10 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)

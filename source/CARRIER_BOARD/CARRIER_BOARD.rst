@@ -1,5 +1,3 @@
- `[English] <https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/CARRIER_BOARD.html>`_
-
 =========================
 
 .. toctree::

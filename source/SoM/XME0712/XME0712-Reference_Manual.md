@@ -1,5 +1,7 @@
 # **XME0712用户手册**
 
+[English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)
+
 ### 开发环境:
 
 赛灵思Vivado 2018.3
@@ -268,20 +270,20 @@ XME0712 使用三组连接器 JM1、JM2 和 JM3，用于拓展 FPGA IO 和以太
 
 #### ○XME0712
 
-- [XME0712_R12 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0712_R12.pdf) (PDF)
-- [XME0712_R12 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0712/XME0712_R12_Dimensions.pdf) (PDF)  
-- [XME0712_R12 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0712/XME0712_R12_Dimensions_source_file.dxf) (DXF)  
+- [XME0712_R12 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0712_R12.pdf) (PDF)
+- [XME0712_R12 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0712/XME0712_R12_Dimensions.pdf) (PDF)  
+- [XME0712_R12 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0712/XME0712_R12_Dimensions_source_file.dxf) (DXF)  
 
 #### ○PE100
 
-- [PE100 用户手册](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
-- [PE100_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
-- [PE100_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
-- [PE100_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
+- [PE100 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
+- [PE100_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
+- [PE100_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
+- [PE100_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
 
 #### ○PE300
 
-- [PE300 用户手册](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
-- [PE300_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
-- [PE300_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
-- [PE300_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 
+- [PE300 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
+- [PE300_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
+- [PE300_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
+- [PE300_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 

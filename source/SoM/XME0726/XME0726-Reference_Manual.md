@@ -1,5 +1,7 @@
 # **XME0726 用户手册**
 
+[English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0726/XME0726-Reference_Manual.html)
+
 ## 开发环境：
 
   赛灵思Vivado 2018.3

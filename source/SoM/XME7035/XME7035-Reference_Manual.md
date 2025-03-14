@@ -1,48 +1,50 @@
-- # **XME7035 参考手册**
+# **XME7035 参考手册**
 
-  ## 开发环境：
+[English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME7035/XME7035-Reference_Manual.html)
 
-  赛灵思Vivado 2021.1
+## 开发环境：
 
-  <https://www.xilinx.com>
+赛灵思Vivado 2021.1
 
-  ## 微信公众号：
+<https://www.xilinx.com>
 
-  ![](./assets/vx.png)
+## 微信公众号：
 
-  ## ●1. 概述
+![](./assets/vx.png)
 
-  XME7035 是微相科技基于 Xilinx Zynq-SoC 的工业级系统模块。可根据需求定制，定制需求可能需要满足最小订单量，请联系我们的销售团队获取更多信息：<sales@microphase.cn>。  
-  该模块集成了 4 个 DDR3 SDRAM 芯片，其中两个形成一个 32 位数据总线，容量为 8Gbit。PS与 DDR3 之间的数据读写时钟频率最高可达 533MHz，PL与 DDR3 之间的数据读写时钟频率最高可达 800MHz，能够满足系统对高带宽数据处理的需求。同时，核心板上集成了 REALTEK RTL8211F 千兆以太网 PHY 芯片，用户可以轻松实现以太网相关应用。  
-  核心板有 138 个单端 IO（可配置为 69 对差分对），IO 电压均可调，8 对 GTX 高速 RX/TX 对，FPGA Pin到连接器的走线都做了等长差分处理，阻抗单端50欧姆，差分100欧姆。
+## ●1. 概述
 
-  ### ○板卡布局
+XME7035 是微相科技基于 Xilinx Zynq-SoC 的工业级系统模块。可根据需求定制，定制需求可能需要满足最小订单量，请联系我们的销售团队获取更多信息：<sales@microphase.cn>。  
+该模块集成了 4 个 DDR3 SDRAM 芯片，其中两个形成一个 32 位数据总线，容量为 8Gbit。PS与 DDR3 之间的数据读写时钟频率最高可达 533MHz，PL与 DDR3 之间的数据读写时钟频率最高可达 800MHz，能够满足系统对高带宽数据处理的需求。同时，核心板上集成了 REALTEK RTL8211F 千兆以太网 PHY 芯片，用户可以轻松实现以太网相关应用。  
+核心板有 138 个单端 IO（可配置为 69 对差分对），IO 电压均可调，8 对 GTX 高速 RX/TX 对，FPGA Pin到连接器的走线都做了等长差分处理，阻抗单端50欧姆，差分100欧姆。
 
-  ![](./assets/layout.png)
+### ○板卡布局
 
-  ### ○主要特性
+![](./assets/layout.png)
 
-  - Xilinx Zynq™ XC7Z035-FFG676 Soc  
-  - DDR3：PS 8Gbit DDR3 RAM，32 位；  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PL 8Gbit DDR3 RAM，32 位  
-  - 闪存：256Mbit QSPI 闪存，8GB eMMC 闪存。  
-  - LED：1 个电源 LED，1个FPGA 配置状态指示灯；  
-    &ensp;&ensp;&ensp;&ensp;&ensp;2 个用户 LED，1 个由 PS 控制，1 个由 PL 控制。  
-  - GTX：8  
-  - MIO：21 个 MIO，3 个 IO 为 3.3V，18 个 IO 为 1.8V  
-  - PL GPIO：138 个，电压均可调，46HP BANK，92 HR BANK，  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;共可配置为 69 对差分对  
-  - 连接器：3 x 120pin 高速 B2B 连接器  
+### ○主要特性
 
-  ### ○框图
+- Xilinx Zynq™ XC7Z035-FFG676 Soc  
+- DDR3：PS 8Gbit DDR3 RAM，32 位；  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PL 8Gbit DDR3 RAM，32 位  
+- 闪存：256Mbit QSPI 闪存，8GB eMMC 闪存。  
+- LED：1 个电源 LED，1个FPGA 配置状态指示灯；  
+  &ensp;&ensp;&ensp;&ensp;&ensp;2 个用户 LED，1 个由 PS 控制，1 个由 PL 控制。  
+- GTX：8  
+- MIO：21 个 MIO，3 个 IO 为 3.3V，18 个 IO 为 1.8V  
+- PL GPIO：138 个，电压均可调，46HP BANK，92 HR BANK，  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;共可配置为 69 对差分对  
+- 连接器：3 x 120pin 高速 B2B 连接器  
 
-  ![](./assets/XME7035_DIAGRAM-01.png)
+### ○框图
 
-  ### ○机械尺寸
+![](./assets/XME7035_DIAGRAM-01.png)
 
-  ![](./assets/mech.png)
+### ○机械尺寸
 
-  ## ●2. 硬件资源
+![](./assets/mech.png)
+
+## ●2. 硬件资源
 
 ### ○FPGA
 
@@ -273,7 +275,7 @@ RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
   - [XME7035_R12 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035/XME7035_R12_Dimensions_source_file.dxf) (DXF)  
 
   ### ○PE500    
-  - [PE500 用户手册](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
+  - [PE500 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
   - [PE500_R10 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
   - [PE500_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE500/PE500_R10_Dimensions.pdf)(PDF)
   - [PE500_R10 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)

@@ -1,4 +1,4 @@
-微相科技FPGA用户手册
+微相科技用户手册
 ========================================
  `[English] <https://microphase-doc.readthedocs.io/en/latest/>`_
 

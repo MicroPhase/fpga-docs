@@ -1,6 +1,6 @@
- `[English] <https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/DEV_BOARD.html>`_
+`[English] <https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/DEV_BOARD.html>`_
 
-Artix7 Series
+Artix7 系列
 =======================
 
 .. toctree::
@@ -8,7 +8,7 @@ Artix7 Series
 
    A7-LITE/A7-Lite_Reference_Manual.md
 
-ZYNQ7000 Series
+ZYNQ7000 系列
 ========================
 
 .. toctree::

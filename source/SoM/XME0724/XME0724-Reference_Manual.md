@@ -1,5 +1,7 @@
 # **XME0724 参考手册**
 
+[English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0724/XME0724-Reference_Manual.html)
+
   ## 开发环境：
 
   赛灵思Vivado 2018.3
@@ -22,7 +24,7 @@
 
   ![](./XME0724_Reference_Manual.assets/layout.png)
 
-### ○主要特性
+### ○资源特性
 
   - Xilinx Zynq™ XC7Z010-1CLG400C（仅 7010 版本），  
     Xilinx Zynq™ XC7Z020-2CLG400C（仅 7020 版本）。    
@@ -226,7 +228,7 @@ XME0724 采用 1.27mm 间距邮票孔连接，确保最佳电气特性和抗干�
   - [XME0724_R30 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
   - [XME0724_R30 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions_source_file.dxf) (DXF)  
   ### ○XME0724CB
-  - [XME0724CB 用户手册](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/DEV_BPARD/XME0724CB/XME0724CB-Reference_Manual.html)(HTML)
+  - [XME0724CB 用户手册](https://microphase-doc.readthedocs.io/en/latest/DEV_BPARD/XME0724CB/XME0724CB-Reference_Manual.html)(HTML)
   - [XME0724CB_R21 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB_R21.pdf)(PDF)
   - [XME0724CB_R21 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB_R21_Dimensions.pdf)(PDF)
   - [XME0724CB_R21 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724CB_R21_4C.brd)(Brd)
