@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Microphase_FPGA_Board_DOC'
+project = 'Microphase_FPGA_DOC'
 copyright = '2025, Microphase'
 author = 'Microphase'
 release = 'V1.0'
@@ -21,7 +21,7 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-
+language = 'en'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

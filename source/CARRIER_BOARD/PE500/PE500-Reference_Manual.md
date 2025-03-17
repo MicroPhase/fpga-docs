@@ -1,11 +1,6 @@
 # **PE500 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.12.21 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)
 
 ## WeChat Public Number:
 
@@ -16,7 +11,7 @@
 
 ## ●1. Overview
 
-Using PE500, you can quickly test, develop, and evaluate the function of the Microphase's 6*8 XME series SoM. It provides various interfaces for XME series SoM, such as HDMI TX, Giga ETH, SFP ,PCIe 2.0 x1 and so on.
+Using PE500, you can quickly test, develop, and evaluate the function of the Microphase's 6*8 XME series SoM. It provides various interfaces for XME series SoM, such as HDMI TX, Giga ETH, SFP ,PCIe 2.0 x4 and so on.
 
 For now, it supports XME7035 XME7100. The following is based on the XME7100 unless noted.
 
@@ -51,10 +46,6 @@ For now, it supports XME7035 XME7100. The following is based on the XME7100 unle
 - 1 system reset key, 4 user's keys
 
 - 4 user's LEDs
-
-### ○Block diagram
-
-
 
 ### ○Mechanical Spec
 
@@ -297,5 +288,5 @@ The development board requires a DC12V power supply. Please use the specified po
 - [PE500_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd) (Brd)  
 
 ### ○Microphase's 6*8 XME Series SoM
-- [XME7035 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME7035/XME7035-Reference_Manual.html)(HTML)
-- [XME7100 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME7100/XME7100-Reference_Manual.html)(HTML)
+- [XME7035 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME7035/XME7035-Reference_Manual.html)(HTML)
+- [XME7100 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME7100/XME7100-Reference_Manual.html)(HTML)

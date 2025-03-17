@@ -1,3 +1,5 @@
+`[中文] <https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/DEV_BOARD.html>`_
+
 Artix7 Series
 =======================
 

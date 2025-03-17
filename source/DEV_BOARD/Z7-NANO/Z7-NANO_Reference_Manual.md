@@ -1,11 +1,6 @@
 # **Z7-Nano Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.10.28 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Z7-Nano/Z7-Nano_Reference_Manual.html)
 
 ## Development Environment
 

@@ -1,11 +1,6 @@
 # **PE100 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.11.22 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
 
 ## WeChat Public Number:
 
@@ -291,6 +286,6 @@ The development board requires a DC12V power supply. Please use the specified po
 - [PE100_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd)  
 
 ### ○Microphase's 5*6 XME Series SoM
-- XME0712 Reference Manual(HTML)-To be added
+- [XME0712 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)(HTML)
 - [XME0715 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
-- XME0720 Reference Manual(HTML)-To be added
+- [XME0720 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0720/XME0712-Reference_Manual.html)(HTML)

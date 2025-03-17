@@ -1,11 +1,6 @@
 # **XME0720 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2025.01.09 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0720/XME0720-Reference_Manual.html)
 
 ## Development Environment:
 
@@ -178,7 +173,7 @@ The XME0720 core board provides a 33.3Mhz active clock for the PS system and a 5
 
 ### ○Power
 
-**Please note that the power input of XME0720 is +5V. We recommend using a 5V/2A power supply.** 
+**The XME0720 supports a wide range of power input (5V~15V), with a recommended design power input of +12V.** 
 
 The module powers up in a cascading sequence: 1.0V- > 1.8V -> 1.5V- > 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.
 
@@ -218,12 +213,12 @@ Description:
 - [XME0720_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0720/XME0720_R10_Dimensions.pdf) (PDF)  
 - [XME0720_R10 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0720/XME0720_R10_Dimensions_source_file.dxf) (DXF)  
 ### ○PE100
-- [PE100 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
+- [PE100 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
 - [PE100_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
 - [PE100_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
 - [PE100_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
 ### ○PE300
-- [PE300 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
+- [PE300 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
 - [PE300_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
 - [PE300_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
 - [PE300_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 

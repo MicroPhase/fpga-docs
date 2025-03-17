@@ -1,11 +1,6 @@
 # **XPE_ZU100 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2025.01.08 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)
 
 ## WeChat Public Number:
 
@@ -211,7 +206,7 @@ The carrier board provides one IDC40 GPIO expansion ports, JP1, which allows con
 
 ### ○XME0803
 
-- [XME0803_Reference_Manual](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf) (PDF)
+- [XME0803_Reference_Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0803/XME0803-Reference_Manual.html) (HTML)
 
 - [XME0803_R20 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf) (PDF)
 - [XME0803_R20 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions.pdf) (PDF)  

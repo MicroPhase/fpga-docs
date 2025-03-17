@@ -1,11 +1,6 @@
 # **A7-LITE Reference Manual**
 
-## Revision History
-
-| Revision | Time        | Description   |
-| :------- | :---------- | :------------ |
-| Rev. 1.0 | 2024\.12.27 | First Release |
-|          |             |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/A7-LITE/A7-Lite_Reference_Manual.html)
 
 ## Development Environment:
 
@@ -196,9 +191,9 @@ Vivado 2021.1 is from Xilinx website
 | :------: | :-----------: | :-------: | :-----: |
 |    U2    | IS25L128FJBLE | 128M Byte |  ISSI   |
 
-### ○Oscillators/Clocks
+### ○Clocks
 
-​	A 50 MHz active crystal oscillator provides additional clocks for the system.
+​	A 50 MHz active crystal oscillator provides clocks for the system.
 
 | Position | Signal Name | Frequency | Pin Number |
 | :------: | :---------: | :-------: | :--------: |

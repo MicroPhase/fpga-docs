@@ -1,5 +1,6 @@
-Documentation of Microphase FPGA Board
+Microphase Doc
 ========================================
+ `[中文] <https://microphase-doc.readthedocs.io/zh-cn/latest/>`_
 
 .. toctree::
    :maxdepth:3

@@ -1,11 +1,6 @@
 # **XME7100 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2025.01.08 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME7100/XME7100-Reference_Manual.html)
 
 ## Development Environment:
 
@@ -281,7 +276,7 @@ Description:
 - [XME7100_R11 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7100/XME7100_R11_Dimensions_source_file.dxf) (DXF)  
 
 ### ○PE500   
-- [PE500 Reference_Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
+- [PE500 Reference_Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
 - [PE500_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
 - [PE500_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE500/PE500_R10_Dimensions.pdf)(PDF)
 - [PE500_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)

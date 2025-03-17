@@ -1,13 +1,6 @@
 # **XME0712 Reference Manual**
 
-### Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.12.30 | First Release |
-|          |            |               |
-
-
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0712/XME0712-Reference_Manual.html)
 
 ### Development Environment:
 
@@ -42,8 +35,6 @@ Vivado 2018.3 is from Xilinx website
 - LED: 1 Power LED,1 FPGA Done LED, 1 user's LED,
 
 - Flash: 128Mbit QSPI Flash.
-
-- PHY ETH: 10/100/1000M Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.
 
 - Giga ETH: 10/100/1000M Adaptive.
 
@@ -199,7 +190,7 @@ Vivado 2018.3 is from Xilinx website
 
 ### ○Watchdog  Reset
 
-​	RESET_N low level is effective, the Reset signal from the baseplate, the reset signal through the power supply and reset monitoring chip output signal to the FPGA pin, of course, when the POR_nRST is low, it means that there is a reset signal or the 3.3V power supply is lower than 2.93V, if the reset signal is not used, it can be suspended.
+​	RESET_N low level is effective, the Reset signal from the carrier board, the reset signal through the power supply and reset monitoring chip output signal to the FPGA pin, when the POR_nRST is low, it means that there is a reset signal or the 3.3V power supply is lower than 2.93V, if the reset signal is not used, it can be suspended.
 
 ### ○JTAG
 
@@ -285,14 +276,14 @@ Description:
 
 #### ○PE100
 
-- [PE100 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
+- [PE100 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
 - [PE100_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
 - [PE100_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
 - [PE100_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
 
 #### ○PE300
 
-- [PE300 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
+- [PE300 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
 - [PE300_R11 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
 - [PE300_R11 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
 - [PE300_R11 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 

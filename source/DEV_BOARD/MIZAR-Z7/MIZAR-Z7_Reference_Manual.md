@@ -1,11 +1,6 @@
 # **Mizar-Z7_Reference_Manual**
 
-## Revision History
-
-| Revision | Time        | Description   |
-| :------- | :---------- | :------------ |
-| Rev. 1.0 | 2024\.11.26 | First Release |
-|          |             |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Mizar-Z7/Mizar-Z7_Reference_Manual.html)
 
 ## Development Environment:
 

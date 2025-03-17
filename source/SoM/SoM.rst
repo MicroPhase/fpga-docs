@@ -1,3 +1,5 @@
+`[中文] <https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/SoM.html>`_
+
 Artix7 Series
 ========================
 

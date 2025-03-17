@@ -1,11 +1,6 @@
 # **Z7-LITE Reference Manual**
 
-## Revision History
-
-| Revision | Time        | Description   |
-| :------- | :---------- | :------------ |
-| Rev. 1.0 | 2024\.10.29 | First Release |
-|          |             |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Z7-LITE/Z7-LITE_Reference_Manual.html)
 
 ## Development Environment:
 

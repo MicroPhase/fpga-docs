@@ -1,11 +1,6 @@
 # **XME0726 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.10.13 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0726/XME0726-Reference_Manual.html)
 
 ## Development Environment:
 
@@ -56,7 +51,7 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).
 
 ![](./assets/XME0726_MECH.png)
 
-
+## ●2. Function Resources
 
 ### ○FPGA
 

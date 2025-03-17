@@ -1,11 +1,6 @@
 # **XME0803(4EV) Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2025.01.08 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0803/XME0803-Reference_Manual.html)
 
 ## Development Environment:
 
@@ -153,7 +148,7 @@ One-board 256M Quad-SPI Flash memory MT25QU256ABA1EW9-0SIT is used to store init
 
 ### ○Clock  
 
-The XME0803(4EV) core board provides a 33.3Mhz active clock for the PS system, a 200Mhz active clock for the PL system and  a 50MHz active clock as local clock.  
+The XME0803(4EV) core board provides a 33.3Mhz active clock for the PS system, a 200Mhz active clock for the PL system.  
 
 | Position | Signal Name | Frequency | Pin Number |
 | -------- | ----------- | --------- | ---------- |
@@ -215,7 +210,7 @@ Description:
 - [XME0803_R20 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)  
 
 ### ○XPE-ZU100 
-- [XPE-ZU100 Reference_Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
+- [XPE-ZU100 Reference_Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
 - [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
 - [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
 - [XPE-ZU100_R40 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XPE-ZU100_R40 Board source file.brd)(Brd)

@@ -1,11 +1,6 @@
 # **PE300 Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.12.31 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)
 
 ## WeChat Public Number:
 
@@ -15,7 +10,7 @@
 
 ## ●1. Overview
 
-Using PE300, you can quickly test, develop, and evaluate the function of the Microphase's 5*6 XME series SoM. It provides various interfaces for XME series SoM, such as HDMI TX, Giga ETH, SFP ,PCIe 2.0 x1 and so on.
+Using PE300, you can quickly test, develop, and evaluate the function of the Microphase's 5*6 XME series SoM. It provides various interfaces for XME series SoM, such as HDMI TX, Giga ETH, SFP ,PCIe 2.0 x4 and so on.
 
 For now, it supports XME0712、XME0715 and XME0720. It is most recommended to use it with XME0712. **The following is based on the XME0712 unless noted..**
 
@@ -33,7 +28,7 @@ For now, it supports XME0712、XME0715 and XME0720. It is most recommended to us
 - USB : 1 USB UART communication port.
 - SD: 1 SD card supports only ZYNQ core board.
 - JTAG: Debugging interface.
-- KEY: 3 individual user Keys.
+- KEY: 2 user Keys.
 - LED: 2 user LEDS.
 
 ### ○Block diagram
@@ -209,6 +204,6 @@ The development board requires a DC12V power supply. Please use the specified po
 
 ### ○Microphase's 5*6 XME Series SoM
 
-- [XME0712 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)(HTML)
-- [XME0715 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
-- [XME0720 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)(HTML)
+- [XME0712 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)(HTML)
+- [XME0715 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
+- [XME0720 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)(HTML)

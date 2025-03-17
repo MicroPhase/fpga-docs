@@ -1,3 +1,5 @@
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/About_Us/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html)
+
 ## Company Introduction
 
 Microphase Technology (Shanghai) Co., Ltd. (hereinafter referred to as Microphase Technology, English: MicroPhase) is located in Shanghai, the Pearl of the Oriental World. It focuses on the development and solution provision of embedded software and hardware systems. Our products are module products and system-level boards with FPGA and ARM processors as the core. We pay attention to the application of customers, take the application as the orientation, and listen to the strict application requirements of customers, to provide customers with high reliability and stability of embedded systems and customized solutions. We believe that our customers' success is our success.

@@ -1,11 +1,6 @@
 # **XME0724CB Reference Manual**
 
-## Revision History
-
-| Revision | Time       | Description   |
-| :------- | :--------- | :------------ |
-| Rev. 1.0 | 2024.12.05 | First Release |
-|          |            |               |
+[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/XME0724CB/XME0724CB_Reference_Manual.html)
 
 ## Development Environment:
 
@@ -205,7 +200,7 @@ The base board provides 3 expansion IO ports, 2 40-Pin expansion ports JP1 and J
 
 ### ○XME0724
 
-- [XME0724 Reference Manual](https://documentation-of-microphase-fpga-board.readthedocs.io/en/latest/SoM/XME0724/XME0724-Reference_Manual.html)(HTML)
+- [XME0724 Reference Manual](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0724/XME0724-Reference_Manual.html)(HTML)
 
 - [XME0724_R30 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724_R30.pdf) (PDF)
 - [XME0724_R30 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
