@@ -23,7 +23,7 @@ XME0803(4EV) 是微相科技基于 Xilinx Zynq UltraScale+ SoC 的工业级系�
 
 ![](./XME0803-Reference_Manual.assets/0803-BL.png)
 
-### ○主要特性
+### ○资源特性
 
 - Xilinx Zynq™ XCZU4EV-SFVC784 Soc  
 - DDR4：PS 2GB DDR4 RAM，64 位；  

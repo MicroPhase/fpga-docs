@@ -23,7 +23,7 @@ Z7 Lite 是一款基于 Xilinx Zynq-7000 SoC（XC7Z010 或 XC7Z020）的商业�
 
 ![](./Z7-Lite_Reference_Manual.assets/LAYOUT.png)
 
-### ○主要特性
+### ○资源特性
 
 - Xilinx Zynq™ XC7Z010-1CLG400C（仅限 7010 版本），  
 Xilinx Zynq™ XC7Z020-1CLG400C（仅限 7020 版本）。  

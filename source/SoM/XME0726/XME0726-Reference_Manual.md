@@ -28,7 +28,7 @@ XME0726 是微相科技基于 Xilinx Zynq-SoC（XC7Z010 或 XC7Z020）开发的�
 
 <div style="page-break-after:always;"></div>
 
-### ○主要特性
+### ○资源特性
 
 - Xilinx Zynq™ XC7Z010-1CLG400C（仅 7010 版本），  
   Xilinx Zynq™ XC7Z020-2CLG400C（仅 7020 版本）。  

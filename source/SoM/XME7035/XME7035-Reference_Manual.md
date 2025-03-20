@@ -1,4 +1,4 @@
-# **XME7035 参考手册**
+# **XME7035 用户手册**
 
 [English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME7035/XME7035-Reference_Manual.html)
 
@@ -22,7 +22,7 @@ XME7035 是微相科技基于 Xilinx Zynq-SoC 的工业级系统模块。可根�
 
 ![](./assets/layout.png)
 
-### ○主要特性
+### ○资源特性
 
 - Xilinx Zynq™ XC7Z035-FFG676 Soc  
 - DDR3：PS 8Gbit DDR3 RAM，32 位；  

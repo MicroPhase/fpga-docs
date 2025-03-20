@@ -24,7 +24,7 @@ XME0720是微相科技推出的一款基于Xilinx Zynq-7000的SoC工业级系统
 
 ![](./XME0720-Reference_Manual.assets/0720_bl.jpg)
 
-### ○主要特性
+### ○资源特性
 
 - Xilinx XC7Z020-2CLG484I
 - DDR3: 1GB DDR3 RAM 

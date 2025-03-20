@@ -22,7 +22,7 @@ XME7100 是微相科技基于 Xilinx Zynq-SoC 的工业级系统模块。可根�
 
 ![](./XME7100-Reference_Manual.assets/layout.jpg)
 
-### ○主要特性
+### ○资源特性
 
 - Xilinx Zynq™ XC7Z100-2FFG900I Soc  
 - DDR3：PS 8Gbit DDR3 RAM，32 位；  
