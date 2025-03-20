@@ -233,6 +233,16 @@ Vivado 2021.1 is from Xilinx website
 
 ​	This device is equipped with a maximum of user IO pins that can be used for various ustom applications. All user IOs are length matched and can be used as differential pairs.
 
+Description:
+
+1. The IO level of JP1 defaults to 3.3V, but it can be adjusted by modifying the hardware.
+
+```
+Method: Remove B8, solder B9, and then input the required voltage level to VCCIO_A. The input range is 1.2V to 3.3V.
+```
+
+2. The IO level of JP2 is 3.3V.
+
 **JP1:**
 
 | Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
