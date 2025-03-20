@@ -10,7 +10,7 @@
 
 
 .. toctree::
-   :caption: CARRIER_BOARD:
+   :caption: 底板:
    :maxdepth: 1
 
    CARRIER_BOARD/CARRIER_BOARD
