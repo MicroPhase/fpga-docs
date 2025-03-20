@@ -1,27 +1,27 @@
-Microphase FPGA Doc
+微相科技FPGA用户手册
 ========================================
-`[中文] <https://microphase-doc.readthedocs.io/zh-cn/latest/>`_
+ `[English] <https://microphase-doc.readthedocs.io/en/latest/>`_
 
 .. toctree::
    :maxdepth: 2
-   :caption: SoM:
+   :caption: 核心板:
 
    SoM/SoM
 
 .. toctree::
-   :caption: CARRIER_BOARD:
+   :caption:底板:
    :maxdepth: 1
 
    CARRIER_BOARD/CARRIER_BOARD
 
 .. toctree::
    :maxdepth: 2
-   :caption: DEV_BOARD:
+   :caption: 开发板:
 
    DEV_BOARD/DEV_BOARD
 
 .. toctree::
    :maxdepth: 2
-   :caption: About Us:
+   :caption: 关于我们:
 
    About_Us/About_Us
