@@ -8,8 +8,9 @@
 
    SoM/SoM
 
+
 .. toctree::
-   :caption:底板:
+   :caption: CARRIER_BOARD:
    :maxdepth: 1
 
    CARRIER_BOARD/CARRIER_BOARD
