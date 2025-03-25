@@ -1,6 +1,6 @@
 # **XME0724CB 用户手册**
 
-[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/XME0724CB/XME0724CB-Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/XME0724CB/XME0724CB-Reference_Manual.html)
 
 ## 开发环境：
 

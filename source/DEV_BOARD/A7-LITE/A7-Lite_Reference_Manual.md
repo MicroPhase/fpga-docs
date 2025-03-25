@@ -1,6 +1,6 @@
 # **A7-LITE 用户手册**
 
-[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/A7-LITE/A7-Lite_Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/A7-LITE/A7-Lite_Reference_Manual.html)
 
 ## 开发环境：
 

@@ -1,6 +1,6 @@
 # **PE100 用户手册**
 
-[English](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
 
 ## 微信公众号：
 

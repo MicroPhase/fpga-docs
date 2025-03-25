@@ -1,6 +1,6 @@
 # **XME0720用户手册**
 
-[English](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)
 
 ## 开发环境:
 

@@ -1,6 +1,6 @@
 # **Z7-Nano 用户手册**
 
-[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/Z7-Nano/Z7-Nano_Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/Z7-Nano/Z7-Nano_Reference_Manual.html)
 
 ## 开发环境
 

@@ -1,6 +1,6 @@
 # **MIZAR-Z7 用户手册**
 
-[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/MIZAR-Z7/MIZAR-Z7_Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/MIZAR-Z7/MIZAR-Z7_Reference_Manual.html)
 
 ## 开发环境：
 
