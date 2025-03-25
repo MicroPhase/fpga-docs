@@ -1,6 +1,6 @@
 # **Z7-Nano Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Z7-Nano/Z7-Nano_Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Z7-NANO/Z7-NANO_Reference_Manual.html)
 
 ## Development Environment
 
@@ -166,7 +166,7 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 | :------: | :----------: | :-------: | :-----: |
 |    U2    | W25Q128JVSIQ | 128M Byte | Winbond |
 
-### ○Oscillators/Clocks
+### ○Clock
 
 ​	One 33.33Mhz active crystal oscillator provides a stable clock for the PS system. The other 50Mhz active  crystal oscillator provides additional clocks for the PL logic.
 

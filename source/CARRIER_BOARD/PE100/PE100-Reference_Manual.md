@@ -1,6 +1,6 @@
 # **PE100 Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
 
 ## WeChat Public Number:
 

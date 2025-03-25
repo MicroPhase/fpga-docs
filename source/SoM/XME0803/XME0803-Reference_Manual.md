@@ -1,6 +1,6 @@
 # **XME0803(4EV) Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0803/XME0803-Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0803/XME0803-Reference_Manual.html)
 
 ## Development Environment:
 

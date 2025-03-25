@@ -1,6 +1,6 @@
 # **XME0724CB Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/XME0724CB/XME0724CB_Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/XME0724CB/XME0724CB-Reference_Manual.html)
 
 ## Development Environment:
 
@@ -43,6 +43,8 @@ The XME0724CB is a commercial-grade dedicated carrier board designed for the eva
 ### ○Mechanical Spec
 
 ![](./XME0724CB-Reference_Manual.assets/XME0724CB_R21_4C_Mechanical.jpg)
+
+## ●2.Function Resources 
 
 ### ○Giga ETH
 
@@ -196,7 +198,7 @@ The base board provides 3 expansion IO ports, 2 40-Pin expansion ports JP1 and J
 
 ![](./XME0724CB-Reference_Manual.assets/UART.png)
 
-## ●2.Related Documents 
+## ●3.Related Documents 
 
 ### ○XME0724
 

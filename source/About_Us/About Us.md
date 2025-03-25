@@ -1,4 +1,4 @@
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/About_Us/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/About_Us/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html)
 
 ## Company Introduction
 

@@ -1,6 +1,6 @@
 # **XPE_ZU100 Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)
 
 ## WeChat Public Number:
 

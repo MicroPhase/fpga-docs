@@ -1,6 +1,6 @@
 # **A7-LITE Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/A7-LITE/A7-Lite_Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/A7-LITE/A7-Lite_Reference_Manual.html)
 
 ## Development Environment:
 

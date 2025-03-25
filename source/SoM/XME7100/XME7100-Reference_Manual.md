@@ -1,6 +1,6 @@
 # **XME7100 Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME7100/XME7100-Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME7100/XME7100-Reference_Manual.html)
 
 ## Development Environment:
 

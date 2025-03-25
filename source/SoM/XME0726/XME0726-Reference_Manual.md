@@ -1,6 +1,6 @@
 # **XME0726 Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0726/XME0726-Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0726/XME0726-Reference_Manual.html)
 
 ## Development Environment:
 

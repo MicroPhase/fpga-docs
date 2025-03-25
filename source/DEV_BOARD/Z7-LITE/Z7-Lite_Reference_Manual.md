@@ -1,6 +1,6 @@
 # **Z7-LITE Reference Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Z7-LITE/Z7-LITE_Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Z7-LITE/Z7-Lite_Reference_Manual.html)
 
 ## Development Environment:
 
@@ -157,7 +157,7 @@ Xilinx Zynq™ XC7Z020-1CLG400C (7020 Version Only).
 |:--------:|:------------:|:---------:|:-------:|
 |    U2    | W25Q128JVSIQ | 128M Byte | Winbond |
 
-### ○Oscillators/Clocks
+### ○Clock
 
 ​	A 33.33 MHz active crystal oscillator provides a stable clock for the PS system, while the other 50 MHz active crystal oscillator provides additional clocks for the PL logic.
 

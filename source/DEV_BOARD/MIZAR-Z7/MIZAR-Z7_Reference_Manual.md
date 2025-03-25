@@ -1,6 +1,6 @@
 # **Mizar-Z7_Reference_Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/Mizar-Z7/Mizar-Z7_Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/MIZAR-Z7/MIZAR-Z7_Reference_Manual.html)
 
 ## Development Environment:
 
@@ -210,7 +210,7 @@ The onboard 256M Quad-SPI Flash memory W25Q256FVEI is used for the storage of th
 | :------: | :---------: | :-------: | :-----: |
 |    U3    | W25Q256FVEI | 256M Byte | Winbond |
 
-### ○Oscillators/Clocks
+### ○Clock
 
 A 33.33 MHz active crystal oscillator provides a stable clock for the PS system, while a 50 MHz active crystal oscillator provides additional clocks for the PL logic.
 

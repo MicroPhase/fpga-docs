@@ -1,6 +1,6 @@
 # **XME0837 User Manual**
 
-[中文](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0837/XME0837-Reference_Manual.html)
+[[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0837/XME0837-Reference_Manual.html)
 
 ## Development Environment:
 
