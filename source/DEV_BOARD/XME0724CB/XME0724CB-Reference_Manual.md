@@ -1,6 +1,6 @@
 # **XME0724CB 用户手册**
 
-
+[English](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/XME0724CB/XME0724CB-Reference_Manual.html)
 
 ## 开发环境：
 
@@ -43,6 +43,8 @@ XME0724CB 为评估 XME0724 核心板而设计的专用底板。底板为 ZYNQ P
 ### ○机械尺寸
 
 ![](./XME0724CB-Reference_Manual.assets/XME0724CB_R21_4C_Mechanical.jpg)
+
+## ●2. 硬件资源
 
 ### ○千兆以太网
 
@@ -198,7 +200,7 @@ CAN 信号连接到 J12 扩展端口，可以通过跳线在 CAN 信号线上添
 
 ![](./XME0724CB-Reference_Manual.assets/UART.png)
 
-## ●2. 相关文档
+## ●3. 相关文档
 
 ### ○XME0724
 
