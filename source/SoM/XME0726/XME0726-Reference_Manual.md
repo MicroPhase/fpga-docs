@@ -10,7 +10,7 @@
 
 ## 微信公众号：
 
-![](./XME0726-Reference_Manual.assets/vx.png)
+![](./assets/vx.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -24,7 +24,7 @@ XME0726 是微相科技基于 Xilinx Zynq-SoC（XC7Z010 或 XC7Z020）开发的�
 
 ### ○板卡布局
 
-![](./XME0726-Reference_Manual.assets/layout.png)
+![](./assets/layout.png)
 
 <div style="page-break-after:always;"></div>
 
@@ -45,11 +45,11 @@ XME0726 是微相科技基于 Xilinx Zynq-SoC（XC7Z010 或 XC7Z020）开发的�
 
 ### ○系统框图
 
-![](./XME0726-Reference_Manual.assets/block_diagram.png)
+![](./assets/block_diagram.png)
 
 ### ○机械尺寸
 
-![](./XME0726-Reference_Manual.assets/XME0726_MECH.png)
+![](./assets/XME0726_MECH.png)
 
 ## ●2. 硬件资源
 
@@ -143,9 +143,9 @@ XME0726 的 JTAG 信号链路连接到扩展连接器。
 
 ### ○启动配置
 
-通过配置核心模块引脚 PIN119（MODE0）、PIN120（MODE1）来设置 ZYNQ 启动模式，核心模块 ZYNQ 配置原理图如下所示。
+通过配置MODE1(JM3 PIN108)、MODE01(JM3 PIN106)来设置 ZYNQ 启动模式，核心模块 ZYNQ 配置原理图如下所示。
 
-![](./XME0726-Reference_Manual.assets/BOOT.png)
+![](./assets/BOOT.png)
 
 | 模式 | MODE1（JM3 PIN108） | MODE0（JM3 PIN106） |
 | :--: | :-----------------: | :-----------------: |

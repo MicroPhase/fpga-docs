@@ -190,7 +190,7 @@ RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
 
   ### ○启动配置
 
-  通过配置核心模块引脚 PIN119（MODE0）、PIN120（MODE1）来设置 ZYNQ 启动模式，核心模块 ZYNQ 配置原理图如下所示。  
+  通过配置MODE1(JM1 PIN19) , MODE0(JM1 PIN17)来设置 ZYNQ 启动模式，核心模块 ZYNQ 配置原理图如下所示。  
 
   ![](./assets/boot.png)
 
@@ -275,7 +275,7 @@ RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
   - [XME7035_R12 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7035/XME7035_R12_Dimensions_source_file.dxf) (DXF)  
 
   ### ○PE500    
-  - [PE500 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
+  - [PE500 用户手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
   - [PE500_R10 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
   - [PE500_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE500/PE500_R10_Dimensions.pdf)(PDF)
   - [PE500_R10 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)

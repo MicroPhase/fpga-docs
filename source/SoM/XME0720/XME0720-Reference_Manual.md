@@ -27,14 +27,23 @@ XME0720是微相科技推出的一款基于Xilinx Zynq-7000的SoC工业级系统
 ### ○资源特性
 
 - Xilinx XC7Z020-2CLG484I
+
 - DDR3: 1GB DDR3 RAM 
+
 - Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
-- LED: 1个电源 LED,1个FPGA 配置状态指示灯， 
+
+- LED: 1个电源 LED,1个FPGA 配置状态指示灯，  
+
   &ensp;&ensp;&ensp;&ensp;&ensp;2个用户LED, 1个PS侧控制, 1个PL侧控制。  
-- PL GPIO: 164, 144个电压可调的GPIO, 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;可配置为82对差分对。  
+
+- PL GPIO: 164, 144个电压可调的GPIO,  
+  
+   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;可配置为82对差分对。  
+  
 - Giga ETH: 10/100/1000M自适应。  
+
 - USB Host: USB2.0 PHY(USB3320)  
+
 - CLOCK: 1 33.33Mhz 有源晶振为 PS 系统提供稳定的时钟。  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1 50Mhz 有源晶振为 PL 逻辑提供额外的时钟信号。    
 
@@ -204,7 +213,7 @@ Description:
 2. Bank35 IO level depends on JM2 Pin91,93 的电压输入, 输入范围为1.2V-3.3V.
 3. SD Signal (JM3 Pin73,75,77-Pin85) 为 1.8V.
 4. MIO9-MIO13, UART, JTAG, RESET l为 3.3V.
-5. 请参阅《[XME0720_Pinout_Table_R10](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0720_Pinout_Table_R20.xlsx)》 以获取详细的引脚定义信息。
+5. 请参阅《[XME0720_Pinout_Table_R10](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0720_Pinout_Table_R10.xlsx)》 以获取详细的引脚定义信息。
 6. **XME0720 仅兼容旧版本（黑色连接器版本）PE100 和 PE300的 。在购买配套的底板时，请咨询销售人员以确认库存中是否有此版本**
 
 ## ●3. 相关文档  
@@ -214,12 +223,12 @@ Description:
 - [XME0720_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0720/XME0720_R10_Dimensions.pdf) (PDF)  
 - [XME0720_R10 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0720/XME0720_R10_Dimensions_source_file.dxf) (DXF)  
 ### ○PE100
-- [PE100 用户手册](https://microphase-doc.readthedocs.io/cn/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
+- [PE100 用户手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
 - [PE100_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
 - [PE100_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
 - [PE100_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
 ### ○PE300
-- [PE300 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
+- [PE300 用户手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
 - [PE300_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
 - [PE300_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
 - [PE300_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 

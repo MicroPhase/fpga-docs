@@ -138,11 +138,11 @@ XME0803 支持四种启动模式：JTAG 启动、QSPI 启动、SD 卡启动和 e
 
 ### ○Quad-SPI 
 
-板载 256M Quad-SPI 闪存 MT25QU256ABA1EW9-0SIT 用于存储初始 FPGA 配置和用户应用程序及数据。  
+板载 256M Quad-SPI 闪存 MT25QU256ABA1EW9-0SIT (或IS25WP256D)用于存储初始 FPGA 配置和用户应用程序及数据。  
 
 | 位置 | 型号                  | 容量  | 厂商   |
 | ---- | --------------------- | ----- | ------ |
-| U4   | MT25QU256ABA1EW9-0SIT | 256MB | Micron |
+| U3   | MT25QU256ABA1EW9-0SIT | 256MB | Micron |
 
 ### ○时钟
 
@@ -196,8 +196,8 @@ FPGA Bank、IO 数量与 B2B 连接器表
 2. Bank66 IO 电平取决于 JM4 Pin31&32 电压输入，输入范围 1.2V-3.3V。
 3. Bank65 IO 电平取决于 JM4 Pin91&92 电压输入，输入范围 1.2V-3.3V。
 4. MIO8、MIO9、MIO10、MIO11、MIO24 和 MIO25（JM1 Pin20、55、57）电平为 1.8V。
-5. JTAG、RESET（JM1 Pin18、Pin23-Pin29）
-6. 请参考 《[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R11.xlsx)》 获取 XME0803(4EV) 的详细引脚定义。  
+5. JTAG、RESET（JM1 Pin18、Pin23-Pin29）电平为3.3V。
+6. 请参考 《[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R10.xlsx)》 获取 XME0803(4EV) 的详细引脚定义。  
 
 ## ●3. 相关文档  
 
@@ -208,7 +208,7 @@ FPGA Bank、IO 数量与 B2B 连接器表
 - [XME0803_R20 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)  
 
 ### ○XPE-ZU100 
-- [XPE-ZU100 参考手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
+- [XPE-ZU100 参考手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
 - [XPE-ZU100_R40 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
 - [XPE-ZU100_R40 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
 - [XPE-ZU100_R40 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/XPE-ZU100_R40 Board source file.brd)(Brd)

@@ -26,16 +26,24 @@
 ### ○资源特性
 
 - Xilinx XC7Z015-2CLG485I  
+
 - DDR3: 1GB DDR3 RAM 
+
 - Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.  
+
 - LED: 1个电源 指示灯,1个FPGA 配置状态指示灯;  
   &ensp;&ensp;&ensp;&ensp;&ensp;2 个用户LED, 1个由PS侧控制, 1个由PL侧控制. 。
+  
 - PL GPIO: 142, 96个电压可调的GPIO,  
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;可配置为71对差分对。  
+  
 - Giga ETH: 10/100/1000M 自适应。  
+
 - USB Host: USB2.0 PHY(USB3320)  
-- CLOCK: 1 个 33.33MHz 有源晶振为 PS 系统提供稳定的时钟。
-        1 个 50MHz 有源晶振为 PL 逻辑提供额外的时钟信号。  
+
+- CLOCK: 1 个 33.33MHz 有源晶振为 PS 系统提供稳定的时钟。  
+
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  1 个 50MHz 有源晶振为 PL 逻辑提供额外的时钟信号。  
 
 ### ○系统框图
 ![XME0715_Block-01](./XME0715-Reference_Manual.assets/XME0715_Block-01.png)
