@@ -198,8 +198,8 @@ Description:
 2. Bank66 IO level depends on JM4 Pin31&32 voltage input, input range 1.2V-3.3V.
 3. Bank65 IO level depends on JM4 Pin91&92 voltage input, input range 1.2V-3.3V.
 4. MIO8,MIO9,MIO10,MIO11,MIO24 and MIO25 (JM1 Pin20,55,57) level is 1.8V.
-5.  JTAG,RESET (JM1 Pin18, Pin23-Pin29)
-6. Please refer to the ‘[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R11.xlsx)’ for detailed pin definitions of the XME0803(4EV).  
+5.  JTAG,RESET (JM1 Pin18, Pin23-Pin29)level is 3.3V.
+6. Please refer to the ‘[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R10.xlsx)’ for detailed pin definitions of the XME0803(4EV).  
 
 ## ●3. Related Documents  
 
@@ -213,4 +213,4 @@ Description:
 - [XPE-ZU100 Reference_Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
 - [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
 - [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
-- [XPE-ZU100_R40 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XPE-ZU100_R40 Board source file.brd)(Brd)
+- [XPE-ZU100_R40 Board  source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XPE-ZU100_R40 Board source file.brd)(Brd)

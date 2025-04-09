@@ -143,7 +143,7 @@ The JTAG signal link of the XME0726 is connected to the expansion connector.
 
 ### ○Boot Config
 
-ZYNQ startup mode by configuring the core module pins PIN119 (MODE0), PIN120 (MODE1), the core module ZYNQ configuration schematic is shown below.
+ZYNQ startup mode by configuring the MODE1(JM3 PIN108), MODE0(JM3 PIN106), the core module ZYNQ configuration schematic is shown below.
 
 ![](./assets/BOOT.png)
 

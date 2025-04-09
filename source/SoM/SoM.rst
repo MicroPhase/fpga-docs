@@ -31,3 +31,12 @@ Zynq UltraScale+ Series
    :titlesonly:
 
    XME0803/XME0803-Reference_Manual
+
+Kintex UltraScale+ Series
+========================
+
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+
+   XME0835/XME0835-Reference_Manual
