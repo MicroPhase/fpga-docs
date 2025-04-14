@@ -28,7 +28,7 @@ Vivado 2018.3 is from Xilinx website
 
   Xilinx Artix-7 XC7A100T-2FGG484, 
 
-  Xilinx Artix-7 XC7A200T-2FGG484.
+  Xilinx Artix-7 XC7A200T-2FBG484.
 
 - DDR3: 8Gbit, DDR3 (MT41K256M16TW-107 IT:P).
 
