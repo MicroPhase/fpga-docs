@@ -28,7 +28,7 @@ Vivado 2021.1 is from Xilinx website
 
   Xilinx Artix-7 XC7A100T-2FGG484(100T Version Only)
 
-  Xilinx Artix-7 XC7A200T-2FGG484(200T Version Only)
+  Xilinx Artix-7 XC7A200T-2FBG484(200T Version Only)
 
 - DDR3: 1 4Gbit,1066Mbs DDR3.
 
