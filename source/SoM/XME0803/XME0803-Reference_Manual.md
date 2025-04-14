@@ -213,4 +213,4 @@ Description:
 - [XPE-ZU100 Reference_Manual](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
 - [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
 - [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
-- [XPE-ZU100_R40 Board  source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/XPE-ZU100_R40 Board source file.brd)(Brd)
+- [XPE-ZU100_R40 Dimensions  source file](https://github.com/MicroPhase/fpga-docs/tree/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.dxf)(DXF)
