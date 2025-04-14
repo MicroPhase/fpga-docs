@@ -26,7 +26,7 @@ A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L �
 
   Xilinx Artix-7 XC7A100T-2FGG484（仅 100T 版本）
 
-  Xilinx Artix-7 XC7A200T-2FGG484（仅 200T 版本）
+  Xilinx Artix-7 XC7A200T-2FBG484（仅 200T 版本）
 
 - DDR3：1 个 4Gbit，1066Mbps DDR3。
 
