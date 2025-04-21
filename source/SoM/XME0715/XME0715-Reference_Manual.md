@@ -131,7 +131,7 @@ RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
 
 ### ○USB UART
 
-A USB to UART chip, the CH340, is provided for user connection to the host PC.
+通过一个 USB 转 UART 芯片 CH340连接到主机 PC。
 
 | Signal Name |   Pin Name   | Pin Number |    Explain    |
 | :---------: | :----------: | :--------: | :-----------: |
@@ -220,21 +220,21 @@ Description:
 2. Bank35 IO 电平取决于 JM2 Pin91,93 的电压输入, 输入范围为 1.2V-3.3V.
 3. SD 信号 (JM3 Pin73,75,77-Pin85) 电压为1.8V.
 4. MIO9-MIO13, UART, JTAG, RESET 电压为3.3V.
-5. 请参阅《[XME0715_Pinout_Table_R20](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0715_Pinout_Table_R20.xlsx)》 以获取详细的引脚定义信息。
+5. 请参阅《[XME0715_Pinout_Table_R20](https://swnatyr2ph.feishu.cn/file/Dh7sbYwwuooN15xUwYvcY5JmnOc)》 以获取详细的引脚定义信息。
 
 ## ●3. 相关文档
 
 ### ○XME0715
-- [XME0715_R20 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0715_R20.pdf) (PDF)
-- [XME0715_R20 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0715/XME0715_R20_Dimensions.pdf) (PDF)  
-- [XME0715_R20 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0715/XME0715_R20_Dimensions_source_file.dxf) (DXF)  
+- [XME0715_R20 原理图](https://swnatyr2ph.feishu.cn/file/XkhObWznGojhsYxdiBmcv0d6nze) (PDF)
+- [XME0715_R20 尺寸](https://swnatyr2ph.feishu.cn/file/Cbnybq7U8oOv4ox2OK8cf1jTnIh) (PDF)  
+- [XME0715_R20 尺寸源文件](https://swnatyr2ph.feishu.cn/file/DKAXb2sTZoQJ4kxxrMhcQ93mnMh) (DXF)  
 ### ○PE100
 - [PE100 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
-- [PE100_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
-- [PE100_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
-- [PE100_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
+- [PE100_R11 原理图](https://swnatyr2ph.feishu.cn/file/Fm2rb5mJ7otdLAxOoRVcpSgxnph) (PDF)
+- [PE100_R11 尺寸](https://swnatyr2ph.feishu.cn/file/Vl5obIknwotyyOxTbFKcsKtTnLh) (PDF)  
+- [PE100_R11 板源文件](https://swnatyr2ph.feishu.cn/file/INtobXEK6osHGlxoBA9c111HnOh) (Brd) 
 ### ○PE300
 - [PE300 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
-- [PE300_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
-- [PE300_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
-- [PE300_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 
+- [PE300_R11 原理图](https://swnatyr2ph.feishu.cn/file/G8KEbUPXLodnT3xnoNgcoRinnCe)(PDF)
+- [PE300_R11 尺寸](https://swnatyr2ph.feishu.cn/file/U8pNboEMmowM2gxE04scYYLpn9d) (PDF)  
+- [PE300_R11 板源文件](https://swnatyr2ph.feishu.cn/file/PirvbL1b6opvmIxGWYLc98vmn9e) (Brd) 

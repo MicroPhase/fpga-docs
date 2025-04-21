@@ -264,18 +264,18 @@ FPGA Bank、IO 数量与 B2B 连接器表
 5. Bank11 IO 电平取决于 JM3 Pin57&59 电压输入，输入范围 1.2V-3.3V。
 6. MIO8、MIO14 和 MIO15（JM1 Pin20、55、57），JTAG、RESET（JM1 Pin18、Pin23-Pin29）电平为 3.3V。
 7. MIO28~MIO45（JM1 Pin24、26、28···-Pin108）电平为 1.8V。
-8. 请参阅 < [XME7100_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME7100_Pinout_Table_R11.xlsx)> 获取 XME7100 的详细引脚定义。  
+8. 请参阅 < [XME7100_Pinout Table](https://swnatyr2ph.feishu.cn/file/LQhlb3Llbo5ZIMx7pHqcVZxFnkc)> 获取 XME7100 的详细引脚定义。  
 
 ## ●3. 相关文档  
 
 ### ○XME7100  
 
-- [XME7100_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME7100_R11.pdf) (PDF)
-- [XME7100_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7100/XME7100_R11_Dimensions.pdf) (PDF)  
-- [XME7100_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME7100/XME7100_R11_Dimensions_source_file.dxf) (DXF)  
+- [XME7100_R11 原理图](https://swnatyr2ph.feishu.cn/file/Elc1bp2PHoTfDex55yGcusNanDd) (PDF)
+- [XME7100_R11 尺寸](https://swnatyr2ph.feishu.cn/file/MyvDbpjIgoHkCpxJCaKcezClnnf) (PDF)  
+- [XME7100_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/UaaGbiuygoekg6xOBfAcnhmhnPg) (DXF)  
 
 ### ○PE500    
 - [PE500 用户手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/PE500/PE500-Reference_Manual.html)(HTML)
-- [PE500_R10 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
-- [PE500_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE500/PE500_R10_Dimensions.pdf)(PDF)
-- [PE500_R10 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)
+- [PE500_R10 原理图](https://swnatyr2ph.feishu.cn/file/Hqe3byQrYoHNccxbiAcc8xDJnRh)(PDF)
+- [PE500_R10 尺寸](https://swnatyr2ph.feishu.cn/file/OS7obS91jo4SvaxxvLdca6Dfnsd)(PDF)
+- [PE500_R10 板源文件](https://swnatyr2ph.feishu.cn/file/CUElb07ThouSh9xCOhUc6PwMnEb)(Brd)

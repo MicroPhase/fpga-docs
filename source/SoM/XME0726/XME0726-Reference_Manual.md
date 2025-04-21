@@ -20,7 +20,7 @@ XME0726 是微相科技基于 Xilinx Zynq-SoC（XC7Z010 或 XC7Z020）开发的�
 
 它集成了 1GB DDR3 RAM、32MB SPI 闪存、千兆以太网 PHY 收发器以及大量通过高速连接器扩展的可配置 I/O。模块尺寸仅为 4.5 x 3.5cm，小巧灵活，适用于广泛的应用场景。
 
-核心板在 PL 侧扩展了 120 个单端 IO（可配置为 60 对差分 IO），IO 电压可调；PS 侧有 32 个 IO 和一个千兆以太网 PHY，FPGA 引脚到连接器的走线经过等长差分处理，单端阻抗为 50 欧姆，差分阻抗为 100 欧姆。这对于高速信号传输应用场景非常重要。
+核心板在 PL 侧扩展了 120 个单端 IO（XC7Z010版本为96个），可配置为 60 对差分 IO，IO 电压均可调；PS 侧有 32 个 IO 和一个千兆以太网 PHY，FPGA 引脚到连接器的走线经过等长差分处理，单端阻抗为 50 欧姆，差分阻抗为 100 欧姆。这对于高速信号传输应用场景非常重要。
 
 ### ○板卡布局
 
@@ -201,13 +201,13 @@ XME0726 使用两组连接器 JM1 和 JM3 用于 拓展FPGA IO 和以太网接�
 
 FPGA Bank、IO 数量与 B2B 连接器表
 
-| FPGA Bank | B2B 连接器 | IO 数量 | 电压 |              说明               |
-| :-------: | :--------: | :-----: | :--: | :-----------------------------: |
-|  Bank500  |    JM1     |    8    | 3.3V |             8个MIO              |
-|  BANK501  |    JM1     |   24    | 1.8V |             24个MIO             |
-|  Bank35   |    JM1     |   48    | 可调 | 48 个单端，可配对为 24 对差分对 |
-|  Bank12   |    JM3     |   48    | 可调 | 48 个单端，可配对为 24 对差分对 |
-|  Bank13   |    JM3     |   24    | 可调 | 24 个单端，可配对为 12 对差分对 |
+| FPGA Bank | B2B 连接器 | IO 数量 | 电压 |                          说明                          |
+| :-------: | :--------: | :-----: | :--: | :----------------------------------------------------: |
+|  Bank500  |    JM1     |    8    | 3.3V |                         8个MIO                         |
+|  BANK501  |    JM1     |   24    | 1.8V |                        24个MIO                         |
+|  Bank35   |    JM1     |   48    | 可调 |            48 个单端，可配对为 24 对差分对             |
+|  Bank12   |    JM3     |   48    | 可调 |            48 个单端，可配对为 24 对差分对             |
+|  Bank13   |    JM3     |   24    | 可调 | 24 个单端，可配对为 12 对差分对<br />**XC7Z010版本NC** |
 
 说明：
 
@@ -215,16 +215,16 @@ FPGA Bank、IO 数量与 B2B 连接器表
 2. Bank34 IO 电平取决于 JM3 Pin29&30 电压输入，输入范围 1.2V~3.3V。
 3. Bank13 IO 电平取决于 JM3 Pin89&90 电压输入，输入范围 1.2V~3.3V。
 4. MIO8-MIO15（JM1 Pin111-Pin118）、JTAG、RESET（JM1 Pin99~Pin108）电平为 3.3V。
-5. MIO28-MIO51（JM1 Pin81-Pin108）电平为 1.8V。
-6. 请参阅 《[XME0726_Pinout_Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0726_Pinout_Table.pdf)》 获取 XME0726 的详细引脚定义。
+5. MIO28-MIO51（JM1 Pin81-Pin108）电平为 1.8V。 
+6. 请参阅 《[XME0726_Pinout_Table](https://swnatyr2ph.feishu.cn/file/UGbib53x6omyPLxGveNcer72n4f)》 获取 XME0726 的详细引脚定义。
 
 ## ●3. 相关文档  
 ### ○XME0726
-- [XME0726_R10 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0726_R10.pdf) (PDF)
-- [XME0726_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726_R10_Dimensions.pdf) (PDF) 
-- [XME0726_R10 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726_R10_Dimensions_source_file.dxf) (DXF) 
+- [XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/SC2jb9N9goKYPdxtRgKcDXzenmh) (PDF)
+- [XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/CZwUbxJLbo3I30xRQhhckySDnof) (PDF) 
+- [XME0726_R10 尺寸源文件](https://swnatyr2ph.feishu.cn/file/CZwUbxJLbo3I30xRQhhckySDnof) (DXF) 
 ### ○Dev_XME0726 
 - Dev_XME0726 用户手册（HTML）- 待添加
-- [Dev_XME0726_R10 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Dev_XME0726_R10.pdf) (PDF)
-- [Dev_XME0726_R10 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/Dev_XME0726_R10_Dimensions.pdf) (PDF)
-- [Dev_XME0726_R10 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/Dev_XME0726_R10_Board_source_file.BRD) (Brd)
+- [Dev_XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/ZjEWbcSZ7oQiRsxASgvckJ2Xnwb) (PDF)
+- [Dev_XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/L3PXb4KOqoXBOSxMrqDcdwxhnYq) (PDF)
+- [Dev_XME0726_R10 板源文件](https://swnatyr2ph.feishu.cn/file/DTwxbHI3yo4M3dxVCWxcR1FKnlc) (Brd)

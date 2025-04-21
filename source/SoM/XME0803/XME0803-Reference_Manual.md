@@ -197,18 +197,18 @@ FPGA Bank、IO 数量与 B2B 连接器表
 3. Bank65 IO 电平取决于 JM4 Pin91&92 电压输入，输入范围 1.2V-3.3V。
 4. MIO8、MIO9、MIO10、MIO11、MIO24 和 MIO25（JM1 Pin20、55、57）电平为 1.8V。
 5. JTAG、RESET（JM1 Pin18、Pin23-Pin29）电平为3.3V。
-6. 请参考 《[XME0803_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0803_Pinout_Table_R10.xlsx)》 获取 XME0803的详细引脚定义。  
+6. 请参考 《[XME0803_Pinout Table](https://swnatyr2ph.feishu.cn/file/BxTLbPJpXoLORZxDSnAcyErBnke)》 获取 XME0803的详细引脚定义。  
 
 ## ●3. 相关文档  
 
 ### ○XME0803
 
-- [XME0803_R20 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf) (PDF)
-- [XME0803_R20 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions.pdf) (PDF)  
-- [XME0803_R20 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf) (DXF)  
+- [XME0803_R20 原理图](https://swnatyr2ph.feishu.cn/file/OgFQb9tXCoilthxCq5jc3EyLnwh) (PDF)
+- [XME0803_R20 尺寸](https://swnatyr2ph.feishu.cn/file/Vi8VbiVeNoCY7gxU6E5c6E45nkb) (PDF)  
+- [XME0803_R20 尺寸源文件](https://swnatyr2ph.feishu.cn/file/Eo4tbCQTeofpVlxnxbPcOEXEncd) (DXF)  
 
 ### ○XPE-ZU100 
-- [XPE-ZU100 参考手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
-- [XPE-ZU100_R40 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
-- [XPE-ZU100_R40 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
-- [XPE-ZU100_R40 尺寸源文件](https://github.com/MicroPhase/fpga-docs/tree/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.dxf)(DXF)
+- [XPE-ZU100 用户手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html)(HTML)
+- [XPE-ZU100_R40 原理图](https://swnatyr2ph.feishu.cn/file/Te1pbJMjloVoEpxvlimceoOrnzc)(PDF)
+- [XPE-ZU100_R40 尺寸](https://swnatyr2ph.feishu.cn/file/ZcWZbqNO9oIdjgxMFlMccNOPnrr)(PDF)
+- [XPE-ZU100_R40 尺寸源文件](https://swnatyr2ph.feishu.cn/file/IpPDbgjdhoGpZtxrEaacuNhDnce)(DXF)

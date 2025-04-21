@@ -264,26 +264,26 @@ XME0712 使用三组连接器 JM1、JM2 和 JM3，用于拓展 FPGA IO 和以太
 1. Bank15 IO 电平取决于 JM1 Pin11,13的电压输入, 输入范围为1.2V-3.3V.
 2. Bank16 IO 电平取决于 JM2 Pin91,93 的电压输入, 输入范围为1.2V-3.3V.
 3. Bank13,14 为 3.3V.
-4. 请参阅《[XME0712_Pinout_Table_R12](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0712_Pinout_Table_R12.xlsx)》 以获取详细的引脚定义信息。
+4. 请参阅《[XME0712_Pinout_Table_R12](https://swnatyr2ph.feishu.cn/file/RcZPbu9Qio1N3Ux32fyc1dJInCf)》 以获取详细的引脚定义信息。
 
 ## ●3. 相关文档
 
 #### ○XME0712
 
-- [XME0712_R12 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0712_R12.pdf) (PDF)
-- [XME0712_R12 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0712/XME0712_R12_Dimensions.pdf) (PDF)  
-- [XME0712_R12 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0712/XME0712_R12_Dimensions_source_file.dxf) (DXF)  
+- [XME0712_R12 原理图](https://swnatyr2ph.feishu.cn/file/O9PGbsDdooOvqexW11wcC1Wnnae) (PDF)
+- [XME0712_R12 尺寸](https://swnatyr2ph.feishu.cn/file/U5UDbGwhlokeXhxkm0NcPKEPnWc) (PDF)  
+- [XME0712_R12 尺寸源文件](https://swnatyr2ph.feishu.cn/file/SOlvbOQN2oYwcQxJ6fAcu6SDnAg) (DXF)  
 
 #### ○PE100
 
 - [PE100 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)(HTML)
-- [PE100_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
-- [PE100_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
-- [PE100_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd) 
+- [PE100_R11 原理图](https://swnatyr2ph.feishu.cn/file/Fm2rb5mJ7otdLAxOoRVcpSgxnph) (PDF)
+- [PE100_R11 尺寸](https://swnatyr2ph.feishu.cn/file/Vl5obIknwotyyOxTbFKcsKtTnLh) (PDF)  
+- [PE100_R11 板源文件](https://swnatyr2ph.feishu.cn/file/INtobXEK6osHGlxoBA9c111HnOh) (Brd) 
 
 #### ○PE300
 
 - [PE300 用户手册](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE300/PE300-Reference_Manual.html)(HTML)
-- [PE300_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE300_R11.pdf)(PDF)
-- [PE300_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE300/PE300_R11_Dimensions.pdf) (PDF)  
-- [PE300_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE300_R11_Board_source_file.brd) (Brd) 
+- [PE300_R11 原理图](https://swnatyr2ph.feishu.cn/file/G8KEbUPXLodnT3xnoNgcoRinnCe)(PDF)
+- [PE300_R11 尺寸](https://swnatyr2ph.feishu.cn/file/U8pNboEMmowM2gxE04scYYLpn9d) (PDF)  
+- [PE300_R11 板源文件](https://swnatyr2ph.feishu.cn/file/PirvbL1b6opvmIxGWYLc98vmn9e) (Brd) 
