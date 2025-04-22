@@ -204,20 +204,20 @@ CAN 信号连接到 J12 扩展端口，可以通过跳线在 CAN 信号线上添
 
 ### ○XME0724
 
-- [XME0724 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0724/XME0724-Reference_Manual.html)(HTML)
+- [XME0724 用户手册](https://fpga-docs.microphase.cn/zh-cn/latest/SoM/XME0724/XME0724-Reference_Manual.html)(HTML)
 
-- [XME0724_R30 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724_R30.pdf) (PDF)
-- [XME0724_R30 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions.pdf) (PDF)  
-- [XME0724_R30 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions_source_file.dxf) (DXF)  
+- [XME0724_R30 原理图](https://swnatyr2ph.feishu.cn/file/JYtybEyWooePwTxUEAUcTfqvndb) (PDF)
+- [XME0724_R30 尺寸](https://swnatyr2ph.feishu.cn/file/MfFQbcd7mo0FpAxEpNhcsMGcnYe) (PDF)  
+- [XME0724_R30 尺寸源文件](https://swnatyr2ph.feishu.cn/file/EOf2bN3Vbo2krnxNALScAfBWnEd) (DXF)  
 
 ### ○XME0724CB
 
-- [XME0724CB_R21 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB_R21.pdf)(PDF)
-- [XME0724CB_R21 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB_R21_Dimensions.pdf)(PDF)
-- [XME0724CB_R21 板卡源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724CB_R21_4C.brd)(Brd)
+- [XME0724CB_R21 原理图](https://swnatyr2ph.feishu.cn/file/RTkTb8JuXo0QBAxfMYEckDqbnlb)(PDF)
+- [XME0724CB_R21 尺寸](https://swnatyr2ph.feishu.cn/file/VMQ4bcZNvojPVWxrjJBc6RgIn4g)(PDF)
+- [XME0724CB_R21 板卡源文件](https://swnatyr2ph.feishu.cn/file/FoCXbJ2IKo3Y6UxgFPDcF4vSndf)(Brd)
 
 ### ○XME0724CB-NET
 
 - XME0724CB-NET 用户手册(HTML)-待添加
-- [XME0724CB-NET_R30 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB-NET_R30.pdf)(PDF)
-- [XME0724CB-NET_R30 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB-NET_R30_Dimensions.pdf)(PDF)
+- [XME0724CB-NET_R30 原理图](https://swnatyr2ph.feishu.cn/file/SP7lbSA1ooeMTTxbMJ3cKlJInbg)(PDF)
+- [XME0724CB-NET_R30 尺寸](https://swnatyr2ph.feishu.cn/file/VMQ4bcZNvojPVWxrjJBc6RgIn4g)(PDF)

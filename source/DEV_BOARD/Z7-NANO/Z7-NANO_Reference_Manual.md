@@ -256,6 +256,6 @@ Z7-Nano 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的
 
 ## ●3.相关文档
 
-- [Z7-NANO_R21_Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Z7-NANO_R21.pdf)(PDF)
-- [Z7-NANO_R20_Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-Nano_R20_Dimensions.pdf)(PDF)
-- [Z7-NANO_R20_Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-NANO/Z7-NANO_R20_Dimensions.dxf) (DXF) 
+- [Z7-NANO_R21_Schematic](https://swnatyr2ph.feishu.cn/file/IiZKbjNpJonjHPx8bZfcs4knn1g)(PDF)
+- [Z7-NANO_R20_Dimensions](https://swnatyr2ph.feishu.cn/file/SYtxb0NBPo8P9Wxwc2OcRDtdnXb)(PDF)
+- [Z7-NANO_R20_Dimensions source file](https://swnatyr2ph.feishu.cn/file/LsOnbJD3LoSD3uxNIXKcnt3cneh) (DXF) 

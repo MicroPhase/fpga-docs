@@ -255,6 +255,6 @@ Z7-Lite 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的
 ![](./Z7-Lite_Reference_Manual.assets/POWER.png)
 
 ## ●3. 相关文档 
-- [Z7-Lite_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Z7-LITE_R11.pdf) (PDF)
-- [Z7-Lite_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-LITE/Z7-LITE_R11_Dimensions.pdf) (PDF)  
-- [Z7-Lite_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Z7-LITE/Z7-LITE_R11__Dimensions.dxf) (DXF)
+- [Z7-Lite_R11 原理图](https://swnatyr2ph.feishu.cn/file/Ka2wbiF3hoHUFVxuvu4cEH4GnuR) (PDF)
+- [Z7-Lite_R11 尺寸](https://swnatyr2ph.feishu.cn/file/SYtxb0NBPo8P9Wxwc2OcRDtdnXb) (PDF)  
+- [Z7-Lite_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/LsOnbJD3LoSD3uxNIXKcnt3cneh) (DXF)

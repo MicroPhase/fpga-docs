@@ -308,6 +308,6 @@ A7-Lite 提供了一个按键（K3），可用作 FPGA 上运行设计的“复�
 
 ## ●3. 相关文档
 
-- [A7-Lite_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/A7-LITE_R11.pdf) (PDF)
-- [A7-Lite_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/A7-LITE/A7-LITE_R11_Dimensions.pdf) (PDF)  
-- [A7-Lite_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/A7-LITE/A7-LITE_R11__Dimensions.dxf) (DXF)
+- [A7-Lite_R11 原理图](https://swnatyr2ph.feishu.cn/file/YpYJbQJq3oj42LxMYr4cdm0mneg) (PDF)
+- [A7-Lite_R11 尺寸](https://swnatyr2ph.feishu.cn/file/YOCNbeMFmo3jz4xwcORc9qV0nvg) (PDF)  
+- [A7-Lite_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/DpAObockPopsCGxFne4culVFnpg) (DXF)

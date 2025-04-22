@@ -342,6 +342,6 @@ Mizar Z7 提供 Wi-Fi 和 BLE 无线通信，系统开发时可通过 EMIO 接�
 
 ## ●3. 相关文档
 
-- [Mizar-Z7_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Mizar-Z7_R11.pdf) (PDF)
-- [Mizar-Z7_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Mizar-Z7/Mizar-Z7_R11_Dimensions.pdf) (PDF)  
-- [Mizar-Z7_R11 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Mizar-Z7/Mizar-Z7_R11_Dimensions.dxf) (DXF)
+- [Mizar-Z7_R11 原理图](https://swnatyr2ph.feishu.cn/file/YO2gbb9W0oPK6KxnUwJcpLrPnpb) (PDF)
+- [Mizar-Z7_R11 尺寸](https://swnatyr2ph.feishu.cn/file/DPvabETNrouEixx3TtWcmR2Enjb) (PDF)  
+- [Mizar-Z7_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/Obaobtz3jo0J0ZxPo23cqIcanDe) (DXF)
