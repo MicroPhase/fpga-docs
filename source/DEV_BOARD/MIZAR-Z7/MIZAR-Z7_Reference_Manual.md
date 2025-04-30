@@ -1,4 +1,4 @@
-# **Mizar-Z7_Reference_Manual**
+# **Mizar-Z7 Reference Manual**
 
 [[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/MIZAR-Z7/MIZAR-Z7_Reference_Manual.html)
 
