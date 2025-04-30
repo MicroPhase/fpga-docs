@@ -30,4 +30,5 @@ Zynq UltraScale+ 系列
    :maxdepth: 1
    :titlesonly:
 
-   XME0803/XME0803-Reference_Manual
+   XME0803/XME0803_3EG-Reference_Manual
+   XME0803/XME0803_4EV-Reference_Manual
