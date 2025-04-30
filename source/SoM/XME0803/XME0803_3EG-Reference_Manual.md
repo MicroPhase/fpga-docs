@@ -1,6 +1,6 @@
 # **XME0803(3EG) 用户手册**
 
-[[English]](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0803/XME0803-Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0803/XME0803_3EG-Reference_Manual.html)
 
 ## 开发环境：
 
