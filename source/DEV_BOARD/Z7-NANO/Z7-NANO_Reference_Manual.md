@@ -1,6 +1,6 @@
 # **Z7-Nano 用户手册**
 
-[[English]](https://microphase-doc.readthedocs.io/en/latest/DEV_BOARD/Z7-Nano/Z7-Nano_Reference_Manual.html)
+[[English]](https://fpga-docs.microphase.cn/en/latest/DEV_BOARD/Z7-NANO/Z7-NANO_Reference_Manual.html)
 
 ## 开发环境
 
@@ -252,7 +252,11 @@ Z7-Nano 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的
 |  25  | GPIO2_11P |   C20    |  26  | GPIO2_11N |   B20    |
 |  27  | GPIO2_12P |   G17    |  28  | GPIO2_12N |   G18    |
 |  29  |  VCC_3V3  |    \-    |  30  |    GND    |    \-    |
-|  31  | GPIO2_13P |   L19    |      |           |          |
+|  31  | GPIO2_13P |   L19    |  32  | GPIO2_13N |   L20    |
+|  33  | GPIO2_14P |   F19    |  34  | GPIO2_14N |   F20    |
+|  35  | GPIO2_15P |   M19    |  36  | GPIO2_15N |   M20    |
+|  37  | GPIO2_16P |   K19    |  38  | GPIO2_16N |   J19    |
+|  39  | GPIO2_17P |   J20    |  40  | GPIO2_17N |   H20    |
 
 ## ●3.相关文档
 
