@@ -32,3 +32,13 @@ Zynq UltraScale+ 系列
 
    XME0803/XME0803_3EG-Reference_Manual
    XME0803/XME0803_4EV-Reference_Manual
+
+
+Kintex UltraScale+ 系列
+========================
+
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+
+   XME0835/XME0835-Reference_Manual
