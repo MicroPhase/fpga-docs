@@ -235,7 +235,7 @@ The 125M differential clock input assignments are shown in the table below:
 
 ### ○Power
 
-**Please note that the power input of XME0712 is 5~12V. We therefore recommend using a 12V power supply.** 
+**Please note that the power input of XME0712 is 5~15V. We therefore recommend using a 12V power supply.** 
 
 Once the module is powered up, it will be cascaded in order to complete the power-up process in the following sequence: 1.0V -> 1.8V -> 1.5V -> 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.
 
