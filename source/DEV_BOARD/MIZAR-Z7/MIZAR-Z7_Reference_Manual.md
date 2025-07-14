@@ -198,7 +198,7 @@ A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
 ### ○Boot Config
 
-​	The Mizar-Z7 startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the figure below.
+​	The Mizar-Z7 provides three boot modes: SD card boot, QSPI boot, and JTAG boot. Users can change the boot mode by toggling the SW4 dip switch to change the voltage of the mode pin.
 
 ![](./MIZAR-Z7_Reference_Manual.assets/BOOTMODE.png)
 
