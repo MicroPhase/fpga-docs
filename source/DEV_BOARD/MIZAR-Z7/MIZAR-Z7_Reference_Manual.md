@@ -167,7 +167,7 @@ RTL8211E 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
 
 ### ○启动配置
 
-Mizar-Z7 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的 MODE 输入信号控制。用户可以通过跳线帽更改模式。启动模式配置如下图所示。
+Mizar-Z7 提供三种启动模式：SD 卡启动、QSPI 启动和 JTAG 启动。用户可以通过拨动 SW4 拨码开关来改变模式引脚的电压以更改启动模式。
 
 ![](./MIZAR-Z7_Reference_Manual.assets/BOOTMODE.png)
 
