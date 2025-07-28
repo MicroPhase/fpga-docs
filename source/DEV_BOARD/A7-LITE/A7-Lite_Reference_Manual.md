@@ -270,6 +270,7 @@ A7-Lite 提供了一个按键（K3），可用作 FPGA 上运行设计的“复�
 | 47   | GPIO1_20P |  D21   |  48  | GPIO1_20N |  G21   |
 | 49   | GPIO1_21P |  C22   |  50  | GPIO1_21N |  B22   |
 
+注：GPIO1_20P/N只能作为单端使用。
 **JP2**
 
 | 引脚 | 信号名称  | 引脚号 | 引脚 | 信号名称  | 引脚号 |
@@ -308,6 +309,6 @@ A7-Lite 提供了一个按键（K3），可用作 FPGA 上运行设计的“复�
 
 ## ●3. 相关文档
 
-- [A7-Lite_R11 原理图](https://swnatyr2ph.feishu.cn/file/YpYJbQJq3oj42LxMYr4cdm0mneg) (PDF)
+- [A7-Lite_R11 原理图](https://swnatyr2ph.feishu.cn/file/TK56bzHwToLKwEx32WpcGsLxnCb) (PDF)
 - [A7-Lite_R11 尺寸](https://swnatyr2ph.feishu.cn/file/YOCNbeMFmo3jz4xwcORc9qV0nvg) (PDF)  
 - [A7-Lite_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/DpAObockPopsCGxFne4culVFnpg) (DXF)
