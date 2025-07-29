@@ -42,3 +42,4 @@ Kintex UltraScale+ 系列
    :titlesonly:
 
    XME0835/XME0835-Reference_Manual
+   XME0837/XME0837-Reference_Manual

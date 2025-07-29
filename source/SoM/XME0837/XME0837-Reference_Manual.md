@@ -20,19 +20,19 @@ XME0837 是微相科技基于 Xilinx Kintex UltraScale+ SoC 推出的工业级�
 
 ### ○板卡布局
 
-
+![image-20250729111403073](./XME0837-Reference_Manual.assets/image-20250729111403073.png)
 
 ### ○资源特性
 
 - FPGA：Xilinx XCKU15P- 2FFVB1517I
 - DDR4：5GB DDR4 RAM, 80Bit
-- 时钟：1 100MHz系统单端时钟
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3 200MHz系统差分时钟
+- 时钟：1 100MHz系统单端时钟<br>
+   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3 200MHz系统差分时钟
 - Flash：2 128MB QSPI Flash
 - LED：2个LED, 1个显示配置状态，1个显示电源状态
 - 收发器：GTY: 24; GTH: 12
-- GPIO：HD IO: 96, 48对LVDS，电压均可调
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;HP IO: 226, 113对LVDS, 95对电压可调, 18对1.8V
+- GPIO：HD IO: 96, 48对LVDS，电压均可调<br>
+   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;HP IO: 226, 113对LVDS, 95对电压可调, 18对1.8V
 - 连接器：4 x 240pin 高速B2B连接器
 
    
@@ -269,12 +269,12 @@ FPGA Bank，IO数量与B2B连接器的关系表
    5. Bank70电平取决于JM4 A20电压输入，输入范围1.0-1.8V
    6. Bank71电平取决于JM4 A40电压输入，输入范围1.0-1.8V
    7. Bank93、94电平取决于JM4 A50电压输入，输入范围1.2-3.3V
-   8. XME0837的管脚详细定义请查看《XME0837_Pinout Table》文档
+   8. XME0837的管脚详细定义请查看[《XME0837_Pinout Table》](https://swnatyr2ph.feishu.cn/file/ORW3brdGnoCayqxH9gkcLBa5nVh)文档
 
 ## ●3. 相关文档  
 
 ### ○XME0837  
 
-- XME0837_R10 Schematic(PDF)
-- XME0837_R10 Dimensions(PDF)  
-- XME0837_R10 Dimensions Source File (DXF)  
+- [XME0837_R10 Schematic](https://swnatyr2ph.feishu.cn/file/KUBzbjcALolD8yxVxLDcUybEnDc)(PDF)
+- [XME0837_R10 Dimensions](https://swnatyr2ph.feishu.cn/file/FlXtb1hhro0svixC6Zrcms0Enke)(PDF)  
+- [XME0837_R10 Dimensions Source File](https://swnatyr2ph.feishu.cn/file/HzdCbBopromAKPxjqSrc8bB4ntd) (DXF)  
