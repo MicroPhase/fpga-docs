@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XME0724 Reference Manual &mdash; Microphase_FPGA_DOC V1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ff4c0a58" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=d43430bd"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="XME0726 Reference Manual" href="../XME0726/XME0726-Reference_Manual.html" />
+    <link rel="prev" title="XME0720 Reference Manual" href="../XME0720/XME0720-Reference_Manual.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: none" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Microphase_FPGA_DOC
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SoM:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../SoM.html">Artix7 Series</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SoM.html#zynq7000-series">ZYNQ7000 Series</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../XME0715/XME0715-Reference_Manual.html"><strong>XME0715 Reference Manual</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../XME0720/XME0720-Reference_Manual.html"><strong>XME0720 Reference Manual</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><strong>XME0724 Reference Manual</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment">Development Environment:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wechat-public-number">WeChat Public Number:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#overview">●1. Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#board-layout">○Board Layout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key-features">○Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-diagram">○Block diagram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mechanical-spec">○Mechanical Spec</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#function-resources">●2. Function Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fpga">○FPGA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ddr3">○DDR3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#giga-eth">○Giga ETH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-host">○USB Host</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-uart">○USB UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#emmc">○eMMC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jtag">○JTAG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-config">○Boot Config</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quad-spi-flash">○Quad-SPI Flash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clock">○Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power">○Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#led">○LED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gpio">○GPIO</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#related-documents">●3. Related Documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#xme0724">○XME0724</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#xme0724cb">○XME0724CB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#xme0724cb-net">○XME0724CB-NET</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../XME0726/XME0726-Reference_Manual.html"><strong>XME0726 Reference Manual</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../XME7035/XME7035-Reference_Manual.html"><strong>XME7035 Reference Manual</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../XME7100/XME7100-Reference_Manual.html"><strong>XME7100 Reference Manual</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../SoM.html#zynq-ultrascale-series">Zynq UltraScale+ Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SoM.html#kintex-ultrascale-series">Kintex UltraScale+ Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CARRIER_BOARD:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/PE100/PE100-Reference_Manual.html">PE100 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/PE300/PE300-Reference_Manual.html">PE300 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/PE500/PE500-Reference_Manual.html">PE500 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/DEV_XME0726/DEV_XME0726-Reference_Manual.html">DEV_XME0726 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html">XPE_ZU100 Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DEV_BOARD:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html">Artix7 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html#zynq7000-series">ZYNQ7000 Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html">Company Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html#contact-us">Contact Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: none" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Microphase_FPGA_DOC</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../SoM.html">Artix7 Series</a></li>
+      <li class="breadcrumb-item active"><strong>XME0724 Reference Manual</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/SoM/XME0724/XME0724-Reference_Manual.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="xme0724-reference-manual">
+<h1><strong>XME0724 Reference Manual</strong><a class="headerlink" href="#xme0724-reference-manual" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0724/XME0724-Reference_Manual.html">[中文]</a></p>
+<section id="development-environment">
+<h2>Development Environment:<a class="headerlink" href="#development-environment" title="Link to this heading"></a></h2>
+<p>Vivado 2018.3 is from Xilinx website</p>
+<p><a class="reference external" href="https://www.xilinx.com">https://www.xilinx.com</a></p>
+</section>
+<section id="wechat-public-number">
+<h2>WeChat Public Number:<a class="headerlink" href="#wechat-public-number" title="Link to this heading"></a></h2>
+<p><img alt="../../_images/VX6.png" src="../../_images/VX6.png" /></p>
+<div style="page-break-after:always;"></div></section>
+<section id="overview">
+<h2>●1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>​	XME0724 is a system module based on Xilinx Zynq-SoC (XC7Z010 or XC7Z020) from Microphase Technology.</p>
+<p>​	It integrates 1GB DDR3 RAM, 32MB SPI flash, 8GB eMMC flash, Gigabit Ethernet PHY transceiver, USB PHY transceiver, and the XME0724 core board is available in commercial (XC7Z010) and industrial (XC7Z020) versions, with customizable variants available upon request, customised requirements may be subject to minimum order quantities,  please contact our sales team for more information: <a class="reference external" href="sales&#64;microphase.cn">sales&#64;microphase.cn</a>.</p>
+<section id="board-layout">
+<h3>○Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/layout.png" src="../../_images/layout.png" /></p>
+</section>
+<section id="key-features">
+<h3>○Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),<br />Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).</p></li>
+<li><p>DDR3: 512MB DDR3 RAM((7010 Version Only),<br />      1GB DDR3 RAM(7020 Version Only).</p></li>
+<li><p>Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.</p></li>
+<li><p>LED: 1 Power LED, 1 FPGA Done LED;<br />     2 user’s LED, 1 PS(Processing System ) control, 1 PL(Programmable Logic) control.</p></li>
+<li><p>GPIO: 160 Pin, 1.27mm Pin Pitch Stamp Hole, Compatible with 160pin, 1.27mm Pin Extension.</p></li>
+<li><p>Giga ETH: 10/100/1000M Adaptive.</p></li>
+<li><p>USB Host: USB2.0 PHY(USB3320)</p></li>
+<li><p>CLOCK: 1 33.33Mhz active crystal oscillator provides a stable clock for the PS system.</p></li>
+</ul>
+</section>
+<section id="block-diagram">
+<h3>○Block diagram<a class="headerlink" href="#block-diagram" title="Link to this heading"></a></h3>
+<p>​            <img alt="../../_images/0724_block.png" src="../../_images/0724_block.png" /></p>
+</section>
+<section id="mechanical-spec">
+<h3>○Mechanical Spec<a class="headerlink" href="#mechanical-spec" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/MECH.jpg" src="../../_images/MECH.jpg" /></p>
+</section>
+</section>
+<section id="function-resources">
+<h2>●2. Function Resources<a class="headerlink" href="#function-resources" title="Link to this heading"></a></h2>
+<section id="fpga">
+<h3>○FPGA<a class="headerlink" href="#fpga" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>667 MHz dual-core Cortex-A9 processor</p></li>
+<li><p>DDR3L memory controller with 8 DMA channels and 4</p></li>
+<li><p>High Performance AXI3 Slave ports</p></li>
+<li><p>High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO</p></li>
+<li><p>Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C</p></li>
+<li><p>Programmable from JTAG, Quad-SPI flash, and microSD card</p></li>
+<li><p>Programmable logic equivalent to Artix-7 FPGA<br />LUTs: 17,600 (7010)<br />     53,200(7020)<br />DSP Slices: 80 (7010)<br />          220 (7020)<br />Logic Cells: 28K (7010)<br />          85K(7020)<br />Flip-Flops: 35,200 (7010)<br />         106,400 (7020)<br />Total Block RAM: 2.1Mb (7010)<br />                4.9Mb (7020)</p></li>
+<li><p>Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs</p></li>
+<li><p>Security: AES &amp; SHA 256b Decryption &amp; Authentication for Secure Programmable Logic Config</p></li>
+</ul>
+</section>
+<section id="ddr3">
+<h3>○DDR3<a class="headerlink" href="#ddr3" title="Link to this heading"></a></h3>
+<p>The module uses two 16-bit DDR3 memory chips, 512MB for the XME0724-10 version and 1GB for the XME0724-20 version.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>PIN Number</th>
+<th>Signal Name</th>
+<th>PIN Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PS_DDR3_A0</td>
+<td>N2</td>
+<td>PS_DDR3_D9</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A1</td>
+<td>K2</td>
+<td>PS_DDR3_D10</td>
+<td>G3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A2</td>
+<td>M3</td>
+<td>PS_DDR3_D11</td>
+<td>H3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A3</td>
+<td>K3</td>
+<td>PS_DDR3_D12</td>
+<td>J3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A4</td>
+<td>M4</td>
+<td>PS_DDR3_D13</td>
+<td>H2</td>
+</tr>
+<tr>
+<td>PS_DDR3_A5</td>
+<td>L1</td>
+<td>PS_DDR3_D14</td>
+<td>H1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A6</td>
+<td>L4</td>
+<td>PS_DDR3_D15</td>
+<td>J1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A7</td>
+<td>K4</td>
+<td>PS_DDR3_D16</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A8</td>
+<td>K1</td>
+<td>PS_DDR3_D17</td>
+<td>P3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A9</td>
+<td>J4</td>
+<td>PS_DDR3_D18</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A10</td>
+<td>F5</td>
+<td>PS_DDR3_D19</td>
+<td>R1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A11</td>
+<td>G4</td>
+<td>PS_DDR3_D20</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>PS_DDR3_A12</td>
+<td>E4</td>
+<td>PS_DDR3_D21</td>
+<td>U4</td>
+</tr>
+<tr>
+<td>PS_DDR3_A13</td>
+<td>D4</td>
+<td>PS_DDR3_D22</td>
+<td>U2</td>
+</tr>
+<tr>
+<td>PS_DDR3_A14</td>
+<td>F4</td>
+<td>PS_DDR3_D23</td>
+<td>U3</td>
+</tr>
+<tr>
+<td>PS_DDR3_BA0</td>
+<td>L5</td>
+<td>PS_DDR3_D24</td>
+<td>V1</td>
+</tr>
+<tr>
+<td>PS_DDR3_BA1</td>
+<td>R4</td>
+<td>PS_DDR3_D25</td>
+<td>Y3</td>
+</tr>
+<tr>
+<td>PS_DDR3_BA2</td>
+<td>J5</td>
+<td>PS_DDR3_D26</td>
+<td>W1</td>
+</tr>
+<tr>
+<td>PS_DDR3_NCAS</td>
+<td>P5</td>
+<td>PS_DDR3_D27</td>
+<td>Y4</td>
+</tr>
+<tr>
+<td>PS_DDR3_CKE</td>
+<td>N3</td>
+<td>PS_DDR3_D28</td>
+<td>Y2</td>
+</tr>
+<tr>
+<td>PS_DDR3_CLK_N</td>
+<td>M2</td>
+<td>PS_DDR3_D29</td>
+<td>W3</td>
+</tr>
+<tr>
+<td>PS_DDR3_CLK_P</td>
+<td>L2</td>
+<td>PS_DDR3_D30</td>
+<td>V2</td>
+</tr>
+<tr>
+<td>PS_DDR3_NCS</td>
+<td>N1</td>
+<td>PS_DDR3_D31</td>
+<td>V3</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM0</td>
+<td>A1</td>
+<td>PS_DDR3_DQS_N0</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM1</td>
+<td>F1</td>
+<td>PS_DDR3_DQS_N1</td>
+<td>F2</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM2</td>
+<td>T1</td>
+<td>PS_DDR3_DQS_N2</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM3</td>
+<td>Y1</td>
+<td>PS_DDR3_DQS_N3</td>
+<td>W4</td>
+</tr>
+<tr>
+<td>PS_DDR3_D0</td>
+<td>C3</td>
+<td>PS_DDR3_DQS_P0</td>
+<td>C2</td>
+</tr>
+<tr>
+<td>PS_DDR3_D1</td>
+<td>B3</td>
+<td>PS_DDR3_DQS_P1</td>
+<td>G2</td>
+</tr>
+<tr>
+<td>PS_DDR3_D2</td>
+<td>A2</td>
+<td>PS_DDR3_DQS_P2</td>
+<td>R2</td>
+</tr>
+<tr>
+<td>PS_DDR3_D3</td>
+<td>A4</td>
+<td>PS_DDR3_DQS_P3</td>
+<td>W5</td>
+</tr>
+<tr>
+<td>PS_DDR3_D4</td>
+<td>D3</td>
+<td>PS_DDR3_NRST</td>
+<td>B4</td>
+</tr>
+<tr>
+<td>PS_DDR3_D5</td>
+<td>D1</td>
+<td>PS_DDR3_ODT</td>
+<td>N5</td>
+</tr>
+<tr>
+<td>PS_DDR3_D6</td>
+<td>C1</td>
+<td>PS_DDR3_NRAS</td>
+<td>P4</td>
+</tr>
+<tr>
+<td>PS_DDR3_D7</td>
+<td>E1</td>
+<td>PS_DDR3_NWE</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>PS_DDR3_D8</td>
+<td>E2</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></section>
+<section id="giga-eth">
+<h3>○Giga ETH<a class="headerlink" href="#giga-eth" title="Link to this heading"></a></h3>
+<p>The RTL8211F chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.</p>
+</section>
+<section id="usb-host">
+<h3>○USB Host<a class="headerlink" href="#usb-host" title="Link to this heading"></a></h3>
+<p>The USB2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI standard interface. It’s connected with ZYNQ’s bus interface to enable high-speed USB2.0 Host mode data communications.</p>
+</section>
+<section id="usb-uart">
+<h3>○USB UART<a class="headerlink" href="#usb-uart" title="Link to this heading"></a></h3>
+<p>A USB to UART chip, the CH340, is provided for user connection to the host PC.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Signal Name</th>
+<th style="text-align: center;">Pin Name</th>
+<th style="text-align: center;">Pin Number</th>
+<th style="text-align: center;">Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">UART_TX</td>
+<td style="text-align: center;">PS_MIO15_500</td>
+<td style="text-align: center;">C5</td>
+<td style="text-align: center;">UART data output</td>
+</tr>
+<tr>
+<td style="text-align: center;">UART_RX</td>
+<td style="text-align: center;">PS_MIO14_500</td>
+<td style="text-align: center;">C8</td>
+<td style="text-align: center;">UART data output</td>
+</tr>
+</tbody>
+</table></section>
+<section id="emmc">
+<h3>○eMMC<a class="headerlink" href="#emmc" title="Link to this heading"></a></h3>
+<p>The module includes an 8GB eMMC interface (PS_SDIO1) for system files or data storage. It can also serve as a secondary boot device alongside the QSPI flash. The interface is PS BANK501 MIO[46-51].</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MMC_CLK</td>
+<td>B12</td>
+</tr>
+<tr>
+<td>MMC_CMD</td>
+<td>B14</td>
+</tr>
+<tr>
+<td>MMC_DATA0</td>
+<td>D16</td>
+</tr>
+<tr>
+<td>MMC_DATA1</td>
+<td>C12</td>
+</tr>
+<tr>
+<td>MMC_DATA2</td>
+<td>B13</td>
+</tr>
+<tr>
+<td>MMC_DATA3</td>
+<td>B9</td>
+</tr>
+</tbody>
+</table></section>
+<section id="jtag">
+<h3>○JTAG<a class="headerlink" href="#jtag" title="Link to this heading"></a></h3>
+<p>The ZYNQ SoC’s JTAG signals are connected to the expansion port, which also provides a 3.3V JTAG VREF voltage output signal</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Signal</th>
+<th style="text-align: center;">Module Pin Number</th>
+<th>Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">VCC_3V3</td>
+<td style="text-align: center;">Pin 152</td>
+<td><strong>Module voltage output</strong>, JTAG reference voltage</td>
+</tr>
+<tr>
+<td style="text-align: center;">FPGA_TDI</td>
+<td style="text-align: center;">Pin 153</td>
+<td>Input (3.3V)</td>
+</tr>
+<tr>
+<td style="text-align: center;">FPGA_TDO</td>
+<td style="text-align: center;">Pin 154</td>
+<td>Output (3.3V)</td>
+</tr>
+<tr>
+<td style="text-align: center;">FPGA_TCK</td>
+<td style="text-align: center;">Pin 155</td>
+<td>Input (3.3V)</td>
+</tr>
+<tr>
+<td style="text-align: center;">FPGA_TMS</td>
+<td style="text-align: center;">Pin 156</td>
+<td>Input (3.3V)</td>
+</tr>
+<tr>
+<td style="text-align: center;">GND</td>
+<td style="text-align: center;">---</td>
+<td>Connect to the GND signal on the module</td>
+</tr>
+</tbody>
+</table></section>
+<section id="boot-config">
+<h3>○Boot Config<a class="headerlink" href="#boot-config" title="Link to this heading"></a></h3>
+<p>Configure the ZYNQ startup mode using core module pins PIN119 (MODE0) and PIN120 (MODE1). The ZYNQ configuration schematic is shown below.</p>
+<p><img alt="../../_images/BOOT2.png" src="../../_images/BOOT2.png" /></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Mode</th>
+<th style="text-align: center;">MODE1(PIN120)</th>
+<th style="text-align: center;">MODE0(PIN119)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">JTAG</td>
+<td style="text-align: center;">Connection to GND</td>
+<td style="text-align: center;">Connection to GND</td>
+</tr>
+<tr>
+<td style="text-align: center;">QSPI</td>
+<td style="text-align: center;">NC</td>
+<td style="text-align: center;">Connection to GND</td>
+</tr>
+<tr>
+<td style="text-align: center;">SD</td>
+<td style="text-align: center;">NC</td>
+<td style="text-align: center;">NC</td>
+</tr>
+</tbody>
+</table></section>
+<section id="quad-spi-flash">
+<h3>○Quad-SPI Flash<a class="headerlink" href="#quad-spi-flash" title="Link to this heading"></a></h3>
+<p>On-board 256M Quad-SPI Flash memory W25Q256FVEI is used to store initial FPGA configuration and user’s application as well as data.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Position</th>
+<th style="text-align: center;">Model</th>
+<th style="text-align: center;">Capacity</th>
+<th style="text-align: center;">Factory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">U7</td>
+<td style="text-align: center;">W25Q256FVEI</td>
+<td style="text-align: center;">256 Byte</td>
+<td style="text-align: center;">Winbond</td>
+</tr>
+</tbody>
+</table></section>
+<section id="clock">
+<h3>○Clock<a class="headerlink" href="#clock" title="Link to this heading"></a></h3>
+<p>The XME0724 core board provides a 33.3Mhz active clock for the PS system.<br />The clock for the PL section can be generated by the PLL in the PS section, or the user can use it as a clock input to the PL section by connecting an external clock source to the dedicated clock pin of the module.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Position</th>
+<th style="text-align: center;">Signal Name</th>
+<th style="text-align: center;">Frequency</th>
+<th style="text-align: center;">Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Y2</td>
+<td style="text-align: center;">PS_CLK_33d3</td>
+<td style="text-align: center;">33.333Mhz</td>
+<td style="text-align: center;">E7</td>
+</tr>
+</tbody>
+</table></section>
+<section id="power">
+<h3>○Power<a class="headerlink" href="#power" title="Link to this heading"></a></h3>
+<p><strong>Please note that the power input of XME0724 is +5V. We recommend using a 5V/2A power supply.</strong></p>
+<p>The module powers up in a cascading sequence: 1.0V- &gt; 1.8V -&gt; 1.5V- &gt; 3.3V. The 3.3V output will be powered up last, and at the same time, it will provide the PG signal of system power status.</p>
+</section>
+<section id="led">
+<h3>○LED<a class="headerlink" href="#led" title="Link to this heading"></a></h3>
+<p>The XME0724 board includes four LEDs: a power indicator, an FPGA configuration status light, a PL-controlled user LED, and a PS-controlled user LED.<br />The LED signals are described in the following table.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">LED</th>
+<th>ZYNQ Pin</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">D5</td>
+<td>--</td>
+<td>Power LED</td>
+</tr>
+<tr>
+<td style="text-align: center;">D2</td>
+<td>R11</td>
+<td>FPGA configuration status LED, lit after successful FPGA configuration</td>
+</tr>
+<tr>
+<td style="text-align: center;">D4</td>
+<td>G14</td>
+<td>LED on when FPGA G14 output is low</td>
+</tr>
+<tr>
+<td style="text-align: center;">D3</td>
+<td>E6</td>
+<td>LED on when FPGA E6 output is low</td>
+</tr>
+</tbody>
+</table></section>
+<section id="gpio">
+<h3>○GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
+<p>The XME0724 features a 1.27mm pitch stamp hole connection, which ensures optimal electrical characteristics and anti-interference performance. Additionally, a single row of 1.27mm pitch holes is provided on the interior of the stamp hole, and the two-in-one structure of the stamp hole and the 1.27mm row of pins offers enhanced flexibility in the utilisation of the XME0724. The stamp holes can be used for soldering, while the row of pins can be connected according to the user’s requirements.</p>
+<p>Description:</p>
+<ol class="simple">
+<li><p>Bank34 IO level depends on Pin31 voltage input, input range 1.2V-3.3V.</p></li>
+<li><p>Bank35 IO level depends on Pin71 voltage input, input range 1.2V-3.3V.</p></li>
+<li><p>SD Signal (Pin139-Pin144) voltage is 1.8V.</p></li>
+<li><p>MIO9-MIO13, UART, JTAG, RESET(Pin145-Pin157) level is 3.3V.</p></li>
+<li><p>Please refer to the ‘<a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724_Pinout_Table.pdf">XME0724_Pinout _Table</a>’ for detailed pin definitions of the XME0724.</p></li>
+</ol>
+</section>
+</section>
+<section id="related-documents">
+<h2>●3. Related Documents<a class="headerlink" href="#related-documents" title="Link to this heading"></a></h2>
+<section id="xme0724">
+<h3>○XME0724<a class="headerlink" href="#xme0724" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724_R30.pdf">XME0724_R30 Schematic</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions.pdf">XME0724_R30 Dimensions</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724_R30_Dimensions_source_file.dxf">XME0724_R30 Dimensions source file</a> (DXF)</p></li>
+</ul>
+</section>
+<section id="xme0724cb">
+<h3>○XME0724CB<a class="headerlink" href="#xme0724cb" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://microphase-doc.readthedocs.io/en/latest/DEV_BPARD/XME0724CB/XME0724CB-Reference_Manual.html">XME0724CB Reference Manual</a>(HTML)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB_R21.pdf">XME0724CB_R21 Schematic</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB_R21_Dimensions.pdf">XME0724CB_R21 Dimensions</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724CB_R21_4C.brd">XME0724CB_R21 Board source file</a>(Brd)</p></li>
+</ul>
+</section>
+<section id="xme0724cb-net">
+<h3>○XME0724CB-NET<a class="headerlink" href="#xme0724cb-net" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>XME0724CB-NET Reference Manual(HTML)-To be added</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0724CB-NET_R30.pdf">XME0724CB-NET_R30 Schematic</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0724/XME0724CB-NET_R30_Dimensions.pdf">XME0724CB-NET_R30 Dimensions</a>(PDF)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../XME0720/XME0720-Reference_Manual.html" class="btn btn-neutral float-left" title="XME0720 Reference Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../XME0726/XME0726-Reference_Manual.html" class="btn btn-neutral float-right" title="XME0726 Reference Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Microphase.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

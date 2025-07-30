@@ -20,19 +20,19 @@ The core board extends 322 single-ended IOs (configurable as 161 pairs of differ
 
 ### ○Board Layout
 
-
+![image-20250729111403073](./XME0837-Reference_Manual.assets/image-20250729111403073.png)
 
 ### ○Resource Features
 
 - FPGA: Xilinx XCKU15P- 2FFVB1517I
 - DDR4: 5GB DDR4 RAM, 80Bit
-- Clock: 1 100MHz system single-ended clock
+- Clock: 1 100MHz system single-ended clock<br>
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3 200MHz system differential clocks
 - Flash: 2 128MB QSPI Flash
 - LED: 1 Power LED, 1 FPGA Done LED  
 - Transceivers: GTY: 24; GTH: 12
-- GPIO: HD IO: 96, 48 pairs of LVDS, voltage adjustable
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;HP IO: 226, 113 pairs of LVDS, 95 pairs with adjustable voltage, 18 pairs at 1.8V
+- GPIO: HD IO: 96, 48 pairs of LVDS, voltage adjustable<br>
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;HP IO: 226, 113 pairs of LVDS, 95 pairs with adjustable voltage, 18 pairs at 1.8V
 - Connectors: 4 x 240pin high-speed B2B connectors
 
 ### ○Mechanical Dimensions
@@ -261,12 +261,13 @@ Notes:
    5. Bank70 level depends on JM4 A20 voltage input, input range 1.0-1.8V
    6. Bank71 level depends on JM4 A40 voltage input, input range 1.0-1.8V
    7. Bank93, 94 level depends on JM4 A50 voltage input, input range 1.2-3.3V
-   8. For detailed pin definitions of XME0837, please refer to the "XME0837_Pinout Table" document.
+   8. For detailed pin definitions of XME0837, please refer to the '[XME0837_Pinout Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0837_Pinout_Table_R10.xlsx) ' document.
 
 ## ●3. Related Documents  
 
 ### ○XME0837  
 
-- XME0837_R10 Schematic(PDF)
-- XME0837_R10 Dimensions(PDF)  
-- XME0837_R10 Dimensions Source File (DXF)  
+- [XME0837_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0837_R10.pdf)(PDF)
+- [XME0837_R10 Length](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0837_Length_R10.pdf)(PDF) 
+- [XME0837_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0837/XME0837_R10_Dimensions.pdf)(PDF) 
+- [XME0837_R10 Dimensions Source File](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0837/XME0837_R10_Dimensions_source_file.dxf) (DXF) 

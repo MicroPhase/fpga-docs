@@ -1,0 +1,608 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XPE_ZU100 Reference Manual &mdash; Microphase_FPGA_DOC V1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ff4c0a58" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=d43430bd"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Artix7 Series" href="../../DEV_BOARD/DEV_BOARD.html" />
+    <link rel="prev" title="DEV_XME0726 Reference Manual" href="../DEV_XME0726/DEV_XME0726-Reference_Manual.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: none" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Microphase_FPGA_DOC
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SoM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html">Artix7 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#zynq7000-series">ZYNQ7000 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#zynq-ultrascale-series">Zynq UltraScale+ Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#kintex-ultrascale-series">Kintex UltraScale+ Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CARRIER_BOARD:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PE100/PE100-Reference_Manual.html">PE100 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PE300/PE300-Reference_Manual.html">PE300 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PE500/PE500-Reference_Manual.html">PE500 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DEV_XME0726/DEV_XME0726-Reference_Manual.html">DEV_XME0726 Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">XPE_ZU100 Reference Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wechat-public-number">WeChat Public Number:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">●1. Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#board-layout">○Board Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-features">○Key Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mechanical-spec">○Mechanical Spec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#core-board-matching-description">○Core Board Matching Description</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#function-resources">●2. Function Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pcie">○PCIe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giga-eth">○Giga ETH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sfp">○SFP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb3-0">○USB3.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-uart-jtag">○USB UART&amp;JTAG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nvme-m-2">○NVME M.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mipi">○MIPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hdmi-tx">○HDMI TX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mini-dp">○Mini DP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power">○Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led">○LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key">○Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">○GPIO</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#related-documents">●3. Related Documents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xpe-zu100">○XPE-ZU100</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xme0803">○XME0803</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DEV_BOARD:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html">Artix7 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html#zynq7000-series">ZYNQ7000 Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html">Company Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html#contact-us">Contact Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: none" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Microphase_FPGA_DOC</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../CARRIER_BOARD.html">&lt;no title&gt;</a></li>
+      <li class="breadcrumb-item active"><strong>XPE_ZU100 Reference Manual</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="xpe-zu100-reference-manual">
+<h1><strong>XPE_ZU100 Reference Manual</strong><a class="headerlink" href="#xpe-zu100-reference-manual" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html">[中文]</a></p>
+<section id="wechat-public-number">
+<h2>WeChat Public Number:<a class="headerlink" href="#wechat-public-number" title="Link to this heading"></a></h2>
+<p><img alt="../../_images/Wechat3.png" src="../../_images/Wechat3.png" /></p>
+</section>
+<section id="overview">
+<h2>●1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Using XPE_ZU100, you can quickly test, develop, and evaluate the function of XME0803. It provides various interfaces for XME0803, such as HDMI TX, Giga ETH, SFP, PCIe 3.0 x2, USB3.0 x4 and so on. The following is based on the XME00803(4EV) unless noted.</p>
+<section id="board-layout">
+<h3>○Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/zu100-BL.png" src="../../_images/zu100-BL.png" /></p>
+</section>
+<section id="key-features">
+<h3>○Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
+<ul>
+<li><p>1 PCIe3.0 x2</p></li>
+<li><p>2 Giga ETH supports 10/100/1000M network transfer rate,</p>
+<p>1 for PS, 1 for PL</p>
+</li>
+<li><p>1 SFP x2</p></li>
+<li><p>1 USB3.0 x4</p></li>
+<li><p>1 NVME M.2</p></li>
+<li><p>1 2-Lanes MIPI</p></li>
+<li><p>1 HDMI TX</p></li>
+<li><p>1 Mini DP</p></li>
+<li><p>1 RS485 x2</p></li>
+<li><p>1 CAN x2</p></li>
+<li><p>1 USB UART&amp;JTAG</p></li>
+<li><p>1 SD</p></li>
+<li><p>1 40-Pin Extension Port</p></li>
+<li><p>1 System Rest Key, 3 User’s Keys</p></li>
+<li><p>4 User’s LEDs</p></li>
+</ul>
+</section>
+<section id="mechanical-spec">
+<h3>○Mechanical Spec<a class="headerlink" href="#mechanical-spec" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/XPE_ZU100_MECH.png" src="../../_images/XPE_ZU100_MECH.png" /></p>
+</section>
+<section id="core-board-matching-description">
+<h3>○Core Board Matching Description<a class="headerlink" href="#core-board-matching-description" title="Link to this heading"></a></h3>
+<p>✔️：Support</p>
+<p>❌：Not support</p>
+<p>⚠️ : Pay attention when using</p>
+<p>⭐ : Not fully supported</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>XPE_ZU100</th>
+<th>XME0803(3EG)</th>
+<th>XME0803(4EV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCIE3.0 x2</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>PS ETH</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>PL ETH</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>SFP x2</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>USB3.0 x4</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>NVME M.2</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>MIPI</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>HDMI TX</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Mini DP</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>RS485 x2</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>CAN x2</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>USB UART&amp;JTAG</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>SD</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>40-Pin Extension Port</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table></section>
+</section>
+<section id="function-resources">
+<h2>●2. Function Resources<a class="headerlink" href="#function-resources" title="Link to this heading"></a></h2>
+<section id="pcie">
+<h3>○PCIe<a class="headerlink" href="#pcie" title="Link to this heading"></a></h3>
+<p>The XPE_ZU100 features a PCIe x2 interface, supporting 2 TX and RX channels connected to the PCIe edge connector. It enables PCIe 3.0 (backward compatible with 2.0) data communication. A single channel achieves a communication rate of up to 8 Gbps, meeting the data transfer capabilities of PCIe Gen 3.</p>
+<p>The PCIe reference clock is provided by the PCIe ROOT device (typically a PC) through the PCIe slot to the development board. The reference clock frequency is 100 MHz.</p>
+<p>The hardware connection diagram of the PCIe interface is as follows:</p>
+<p><img alt="../../_images/PCIe.png" src="../../_images/PCIe.png" /></p>
+</section>
+<section id="giga-eth">
+<h3>○Giga ETH<a class="headerlink" href="#giga-eth" title="Link to this heading"></a></h3>
+<p>The carrier board provides 2 Gigabit Ethernet interfaces. The phy IC of ETH0 is integrated in the core board. It’s connected with core board according to the signs of MDI. More information of the ETH0 PHY, please reference the  corresponding core board document.</p>
+<p>The RTL8211F chip supports a 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It also supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation, and MDIO bus support for PHY register management.</p>
+<p>Diagram of connecting the core board and two Ethernet phy chips.</p>
+<p><img alt="../../_images/ETH3.png" src="../../_images/ETH3.png" /></p>
+</section>
+<section id="sfp">
+<h3>○SFP<a class="headerlink" href="#sfp" title="Link to this heading"></a></h3>
+<p>The ZU100 provides two SFP interfaces, each SFP using one transceiver channel. According to it user can use SFP hot plug optical module to fibre optic data communications.</p>
+<p>Each SFP interface includes the following signals:</p>
+<ul class="simple">
+<li><p><strong>Transceiver</strong>: Provides one channel for data transmission up to 12.5 Gb/s.</p></li>
+<li><p><strong>SMBUS (I2C)</strong>: 3.3V signal for module management.</p></li>
+<li><p><strong>Control signals</strong>: Includes status control.</p></li>
+<li><p><strong>Reference clock</strong>: A 125 MHz differential clock from the carrier board.</p></li>
+</ul>
+</section>
+<section id="usb3-0">
+<h3>○USB3.0<a class="headerlink" href="#usb3-0" title="Link to this heading"></a></h3>
+<p>The ZU100 features four Type-A USB 3.0 host ports, offering data transfer speeds of up to 5.0 Gb/s. USB 3.0 is connected through the PIPE3 interface, while USB 2.0 is connected to the external USB3320C chip via the ULPI interface, enabling high-speed data communication for both USB 3.0 and USB 2.0.</p>
+<p><img alt="../../_images/USB30.png" src="../../_images/USB30.png" /></p>
+</section>
+<section id="usb-uart-jtag">
+<h3>○USB UART&amp;JTAG<a class="headerlink" href="#usb-uart-jtag" title="Link to this heading"></a></h3>
+<p>The carrier board provides a USB to UART and JTAG interface, the chip is FTDI FT2232H. The USB interface is TYPE-C.</p>
+</section>
+<section id="nvme-m-2">
+<h3>○NVME M.2<a class="headerlink" href="#nvme-m-2" title="Link to this heading"></a></h3>
+<p>The development board is equipped with a PCIe x1 standard M.2 interface for connecting M.2 SSDs, supporting communication speeds of up to 6Gbps. The M.2 interface utilizes an M key slot and supports only PCIe, not SATA. When selecting an SSD, users must choose a PCIe-based SSD. The PCIe signals are directly connected to the ZU15EG’s BANK505 PS MGT transceiver, with one TX signal and one RX signal connected as differential signals to LANE1 of the MGT. The PCIe clock is provided by the Si5332 chip, with a frequency of 100MHz.</p>
+</section>
+<section id="mipi">
+<h3>○MIPI<a class="headerlink" href="#mipi" title="Link to this heading"></a></h3>
+<p>The MIPI CSI port on the board is a 15-pin, 1 mm pitch top contact FPC connector designed to connect a MIPI interface camera. The MIPI FPC connector pinout is compatible with Raspberry Pi cameras.</p>
+<p>The MIPI CSI-2 receiver IP core is available from Xilinx and includes embedded Linux support. It requires a licence to use, but it is possible to obtain an evaluation licence from Xilinx at no cost.</p>
+</section>
+<section id="hdmi-tx">
+<h3>○HDMI TX<a class="headerlink" href="#hdmi-tx" title="Link to this heading"></a></h3>
+<p>One HDMI video output interface can realize 1080P video images. Can be configured as HDMI input.</p>
+</section>
+<section id="mini-dp">
+<h3>○Mini DP<a class="headerlink" href="#mini-dp" title="Link to this heading"></a></h3>
+<p>1 mini DisplayPort output display interface for video image display. The DisplayPort data transmission channel is driven directly by the BANK505 PS MGT on the SoM board, with the MGT signal transmitted to the DP connector in a differential signal format. The DisplayPort auxiliary channel is connected to the MIO pins of the PS. It supports a maximum output of 4K &#64;30Hz or 1080P &#64;60Hz.</p>
+</section>
+<section id="power">
+<h3>○Power<a class="headerlink" href="#power" title="Link to this heading"></a></h3>
+<p><strong>Please note that the power input of XPE_ZU100 is +12V. We recommend using a 12V/2A power supply.</strong></p>
+<p><img alt="../../_images/Power_structure3.png" src="../../_images/Power_structure3.png" /></p>
+</section>
+<section id="led">
+<h3>○LED<a class="headerlink" href="#led" title="Link to this heading"></a></h3>
+<p>The XPE_ZU100 board provides five LEDs, a power indicator and four user’s LEDs. When the corresponding pin of the FPGA is in a high state, the LED is illuminated.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Position</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D6</td>
+<td>PS_LED1</td>
+<td>H18</td>
+</tr>
+<tr>
+<td>D3</td>
+<td>PL_LED1</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>D4</td>
+<td>PL_LED2</td>
+<td>D1</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>PL_LED3</td>
+<td>G1</td>
+</tr>
+</tbody>
+</table></section>
+<section id="key">
+<h3>○Key<a class="headerlink" href="#key" title="Link to this heading"></a></h3>
+<p>We provide three keys for user to use. Once the key is pressed, the corresponding pin of the FPGA will be on the low level.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Position</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K3</td>
+<td>PS_KEY1</td>
+<td>H19</td>
+</tr>
+<tr>
+<td>K1</td>
+<td>PL_KEY1</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>K2</td>
+<td>PL_KEY2</td>
+<td>A1</td>
+</tr>
+</tbody>
+</table></section>
+<section id="gpio">
+<h3>○GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
+<p>The carrier board provides one IDC40 GPIO expansion ports, JP1, which allows connection to Microphase Technology modules or additional peripherals. <strong>When using the IOs, be sure to ensure that the voltage of the connected signal is consistent.</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPIO1_0P</td>
+<td>AH12</td>
+<td>2</td>
+<td>GPIO1_0N</td>
+<td>AH11</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPIO1_1P</td>
+<td>AE12</td>
+<td>4</td>
+<td>GPIO1_1N</td>
+<td>AF12</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GPIO1_2P</td>
+<td>AG10</td>
+<td>6</td>
+<td>GPIO1_2N</td>
+<td>AH10</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPIO1_3P</td>
+<td>W12</td>
+<td>8</td>
+<td>GPIO1_3N</td>
+<td>W11</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPIO1_4P</td>
+<td>AE15</td>
+<td>10</td>
+<td>GPIO1_4N</td>
+<td>AE14</td>
+</tr>
+<tr>
+<td>11</td>
+<td>VCC_5V</td>
+<td>-</td>
+<td>12</td>
+<td>GND</td>
+<td>-</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GPIO1_5P</td>
+<td>W14</td>
+<td>14</td>
+<td>GPIO1_5N</td>
+<td>W13</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GPIO1_6P</td>
+<td>AD15</td>
+<td>16</td>
+<td>GPIO1_6N</td>
+<td>AD14</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GPIO1_7P</td>
+<td>AC14</td>
+<td>18</td>
+<td>GPIO1_7N</td>
+<td>AC13</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GPIO1_8P</td>
+<td>AA13</td>
+<td>20</td>
+<td>GPIO1_8N</td>
+<td>AB13</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GPIO1_9P</td>
+<td>AD11</td>
+<td>22</td>
+<td>GPIO1_9N</td>
+<td>AD10</td>
+</tr>
+<tr>
+<td>23</td>
+<td>GPIO1_10P</td>
+<td>AA11</td>
+<td>24</td>
+<td>GPIO1_10N</td>
+<td>AA10</td>
+</tr>
+<tr>
+<td>25</td>
+<td>GPIO1_11P</td>
+<td>W10</td>
+<td>26</td>
+<td>GPIO1_11N</td>
+<td>Y10</td>
+</tr>
+<tr>
+<td>27</td>
+<td>GPIO1_12P</td>
+<td>Y12</td>
+<td>28</td>
+<td>GPIO1_12N</td>
+<td>AA12</td>
+</tr>
+<tr>
+<td>29</td>
+<td>VCC_3V3</td>
+<td>-</td>
+<td>30</td>
+<td>GND</td>
+<td>-</td>
+</tr>
+<tr>
+<td>31</td>
+<td>GPIO1_13P</td>
+<td>Y14</td>
+<td>32</td>
+<td>GPIO1_13N</td>
+<td>Y13</td>
+</tr>
+<tr>
+<td>33</td>
+<td>GPIO1_14P</td>
+<td>AG13</td>
+<td>34</td>
+<td>GPIO1_14N</td>
+<td>AH13</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GPIO1_15P</td>
+<td>AG14</td>
+<td>36</td>
+<td>GPIO1_15N</td>
+<td>AH14</td>
+</tr>
+<tr>
+<td>37</td>
+<td>GPIO1_16P</td>
+<td>AE13</td>
+<td>38</td>
+<td>GPIO1_16N</td>
+<td>AF13</td>
+</tr>
+<tr>
+<td>39</td>
+<td>GPIO1_17P</td>
+<td>AB15</td>
+<td>40</td>
+<td>GPIO1_17N</td>
+<td>AB14</td>
+</tr>
+</tbody>
+</table></section>
+</section>
+<section id="related-documents">
+<h2>●3. Related Documents<a class="headerlink" href="#related-documents" title="Link to this heading"></a></h2>
+<section id="xpe-zu100">
+<h3>○XPE-ZU100<a class="headerlink" href="#xpe-zu100" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf">XPE-ZU100_R40 Schematic</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/PE500_R10_Dimensions.pdf">XPE-ZU100_R40 Dimensions</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd">XPE-ZU100_R40 Board source file</a>(Brd)</p></li>
+</ul>
+</section>
+<section id="xme0803">
+<h3>○XME0803<a class="headerlink" href="#xme0803" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://microphase-doc.readthedocs.io/en/latest/SoM/XME0803/XME0803-Reference_Manual.html">XME0803_Reference_Manual</a> (HTML)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0803_R20.pdf">XME0803_R20 Schematic</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions.pdf">XME0803_R20 Dimensions</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0803/XME0803_R20_Dimensions_source_file.dxf">XME0803_R20 Dimensions source file</a> (DXF)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../DEV_XME0726/DEV_XME0726-Reference_Manual.html" class="btn btn-neutral float-left" title="DEV_XME0726 Reference Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../DEV_BOARD/DEV_BOARD.html" class="btn btn-neutral float-right" title="Artix7 Series" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Microphase.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

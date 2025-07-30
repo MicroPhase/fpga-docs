@@ -1,0 +1,1106 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizar-Z7 Reference Manual &mdash; Microphase_FPGA_DOC V1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ff4c0a58" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=d43430bd"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="XME0724CB Reference Manual" href="../XME0724CB/XME0724CB-Reference_Manual.html" />
+    <link rel="prev" title="Z7-Nano Reference Manual" href="../Z7-NANO/Z7-NANO_Reference_Manual.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: none" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Microphase_FPGA_DOC
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SoM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html">Artix7 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#zynq7000-series">ZYNQ7000 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#zynq-ultrascale-series">Zynq UltraScale+ Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#kintex-ultrascale-series">Kintex UltraScale+ Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CARRIER_BOARD:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/PE100/PE100-Reference_Manual.html">PE100 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/PE300/PE300-Reference_Manual.html">PE300 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/PE500/PE500-Reference_Manual.html">PE500 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/DEV_XME0726/DEV_XME0726-Reference_Manual.html">DEV_XME0726 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CARRIER_BOARD/XPE_ZU100/XPE_ZU100-Reference_Manual.html">XPE_ZU100 Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DEV_BOARD:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../DEV_BOARD.html">Artix7 Series</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../DEV_BOARD.html#zynq7000-series">ZYNQ7000 Series</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Z7-LITE/Z7-Lite_Reference_Manual.html"><strong>Z7-LITE Reference Manual</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Z7-NANO/Z7-NANO_Reference_Manual.html"><strong>Z7-Nano Reference Manual</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><strong>Mizar-Z7 Reference Manual</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#development-environment">Development Environment:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wechat-public-number">WeChat Public Number:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#overview">●1. Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#board-layout">○Board Layout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key-features">○Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-diagram">○Block diagram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mechanical-spec">○<strong>Mechanical Spec</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#function-resources">●2. Function Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fpga">○FPGA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ddr3">○DDR3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#giga-eth">○Giga ETH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-host">○USB Host</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-uart">○USB UART</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usb-jtag">○USB JTAG</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boot-config">○Boot Config</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quad-spi-flash">○Quad-SPI Flash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clock">○Clock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reset">○Reset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#micro-sd">○Micro SD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hdmi">○HDMI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mipi-csi">○MIPI CSI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wi-fi">○Wi-Fi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#led">○LED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key">○Key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gpio">○GPIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#power">○Power</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#related-documents">●3. Related Documents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../XME0724CB/XME0724CB-Reference_Manual.html"><strong>XME0724CB Reference Manual</strong></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html">Company Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html#contact-us">Contact Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: none" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Microphase_FPGA_DOC</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../DEV_BOARD.html">Artix7 Series</a></li>
+      <li class="breadcrumb-item active"><strong>Mizar-Z7 Reference Manual</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/DEV_BOARD/MIZAR-Z7/MIZAR-Z7_Reference_Manual.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mizar-z7-reference-manual">
+<h1><strong>Mizar-Z7 Reference Manual</strong><a class="headerlink" href="#mizar-z7-reference-manual" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://microphase-doc.readthedocs.io/zh-cn/latest/DEV_BOARD/MIZAR-Z7/MIZAR-Z7_Reference_Manual.html">[中文]</a></p>
+<section id="development-environment">
+<h2>Development Environment:<a class="headerlink" href="#development-environment" title="Link to this heading"></a></h2>
+<p>Vivado 2018.3 is from Xilinx website</p>
+<p><a class="reference external" href="https://www.xilinx.com">https://www.xilinx.com</a></p>
+</section>
+<section id="wechat-public-number">
+<h2>WeChat Public Number:<a class="headerlink" href="#wechat-public-number" title="Link to this heading"></a></h2>
+<p><img alt="../../_images/VX1.png" src="../../_images/VX1.png" /></p>
+</section>
+<section id="overview">
+<h2>●1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Mizar-Z7 is a commercial-grade SoC development board based on the Xilinx Zynq-7000 series from Microphase Technology. It features up to 8Gb DDR3/L SDRAM, 128MB QSPI FLASH, onboard Gigabit Ethernet, USB OTG, UART serial ports, HDMI interface, MIPI-CSI interface, Wi-Fi with Bluetooth, and two 40-pin expansion interfaces.</p>
+<section id="board-layout">
+<h3>○Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/LAYOUT.png" src="../../_images/LAYOUT.png" /></p>
+</section>
+<section id="key-features">
+<h3>○Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
+<ul>
+<li><p>Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),<br />Xilinx Zynq™ XC7Z020-1CLG400C (7020 Version Only).</p></li>
+<li><p>DDR3: 512MB DDR3 RAM(7010 Version Only),<br />      1GB DDR3 RAM(7020 Version Only).</p></li>
+<li><p>Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.</p></li>
+<li><p>Wi-Fi/BT: 1 channel Wi-Fi integrated BT, can be used for wireless transmission, IoT applications. (7020 Version Only)</p></li>
+<li><p>MIPI CSI: 1 MIPI CSI for camera applications. (7020 Version Only)</p></li>
+<li><p>KEY: 6 user’s keys, 2 PS control, 4 PL control.</p></li>
+<li><p>LED: 6 user’s LEDs, 2 PS control, 4 PL control.</p></li>
+<li><p>GPIO: 2 40-pin expansion ports (2.54mm pitch), 72 IOs in total, 48 voltage-adjustable IOs, all IOs are 3.3V by default.</p></li>
+<li><p>USB JTAG: 1 onboard JTAG circuit, can debug and download the ZYNQ system through the USB cable.</p></li>
+<li><p>USB UART:1 USB UART interface, used for serial communication with PC.</p></li>
+<li><p>USB Host: 1 USB Host, supporting high-speed USB 2.0 communication.</p></li>
+<li><p>USB Slave:1 USB Slave, provided for direct connection to a host device.</p></li>
+<li><p>HDMI:</p>
+<p>HDMI1: HDMI video output interface, can be configured as HDMI RX.</p>
+<p>HDMI2: Video input interface, can be configured as HDMI TX (7020 Version Only)</p>
+</li>
+<li><p>PHY ETH: 1 10/100 Ethernet RJ45 interface, which can be used for Ethernet data exchange or other application.</p></li>
+<li><p>SD Card: 1 SD Card slot for storing the operating system image, file system, and user data.</p></li>
+<li><p>CLOCK: 1 33.33MHz active crystal oscillator provides a stable clock for the PS system.<br />        1 50MHz active crystal oscillator provides additional clocks for the PL logic.</p></li>
+</ul>
+</section>
+<section id="block-diagram">
+<h3>○Block diagram<a class="headerlink" href="#block-diagram" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/BLOCK_DIAGRAM.png" src="../../_images/BLOCK_DIAGRAM.png" /></p>
+</section>
+<section id="mechanical-spec">
+<h3>○<strong>Mechanical Spec</strong><a class="headerlink" href="#mechanical-spec" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/MECH1.png" src="../../_images/MECH1.png" /></p>
+</section>
+</section>
+<section id="function-resources">
+<h2>●2. Function Resources<a class="headerlink" href="#function-resources" title="Link to this heading"></a></h2>
+<section id="fpga">
+<h3>○FPGA<a class="headerlink" href="#fpga" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>667 MHz dual-core Cortex-A9 processor</p></li>
+<li><p>DDR3L memory controller with 8 DMA channels and 4</p></li>
+<li><p>High Performance AXI3 Slave ports</p></li>
+<li><p>High-bandwidth peripheral controllers: 1G Ethernet, USB 2.0, SDIO</p></li>
+<li><p>Low-bandwidth peripheral controllers: SPI, UART, CAN, I2C</p></li>
+<li><p>Programmable from JTAG, Quad-SPI flash, and microSD card</p></li>
+<li><p>Programmable logic equivalent to Artix-7 FPGA<br />LUTs: 17,600 (7010)<br />     53,200(7020)<br />DSP Slices: 80 (7010)<br />          220 (7020)<br />Logic Cells: 28K (7010)<br />          85K(7020)<br />Flip-Flops: 35,200 (7010)<br />         106,400 (7020)<br />Total Block RAM: 2.1Mb (7010)<br />                4.9Mb (7020)</p></li>
+<li><p>Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs</p></li>
+<li><p>Security: AES &amp; SHA 256b Decryption &amp; Authentication for Secure Programmable Logic Config</p></li>
+</ul>
+</section>
+<section id="ddr3">
+<h3>○DDR3<a class="headerlink" href="#ddr3" title="Link to this heading"></a></h3>
+<p>The module incorporates two 16-bit DDR3 memory chips: 512MB for the 7010 version and 1GB for the 7020 version..</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>PIN Number</th>
+<th>Signal Name</th>
+<th>PIN Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PS_DDR3_A0</td>
+<td>N2</td>
+<td>PS_DDR3_D9</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A1</td>
+<td>K2</td>
+<td>PS_DDR3_D10</td>
+<td>G3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A2</td>
+<td>M3</td>
+<td>PS_DDR3_D11</td>
+<td>H3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A3</td>
+<td>K3</td>
+<td>PS_DDR3_D12</td>
+<td>J3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A4</td>
+<td>M4</td>
+<td>PS_DDR3_D13</td>
+<td>H2</td>
+</tr>
+<tr>
+<td>PS_DDR3_A5</td>
+<td>L1</td>
+<td>PS_DDR3_D14</td>
+<td>H1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A6</td>
+<td>L4</td>
+<td>PS_DDR3_D15</td>
+<td>J1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A7</td>
+<td>K4</td>
+<td>PS_DDR3_D16</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A8</td>
+<td>K1</td>
+<td>PS_DDR3_D17</td>
+<td>P3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A9</td>
+<td>J4</td>
+<td>PS_DDR3_D18</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>PS_DDR3_A10</td>
+<td>F5</td>
+<td>PS_DDR3_D19</td>
+<td>R1</td>
+</tr>
+<tr>
+<td>PS_DDR3_A11</td>
+<td>G4</td>
+<td>PS_DDR3_D20</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>PS_DDR3_A12</td>
+<td>E4</td>
+<td>PS_DDR3_D21</td>
+<td>U4</td>
+</tr>
+<tr>
+<td>PS_DDR3_A13</td>
+<td>D4</td>
+<td>PS_DDR3_D22</td>
+<td>U2</td>
+</tr>
+<tr>
+<td>PS_DDR3_A14</td>
+<td>F4</td>
+<td>PS_DDR3_D23</td>
+<td>U3</td>
+</tr>
+<tr>
+<td>PS_DDR3_BA0</td>
+<td>L5</td>
+<td>PS_DDR3_D24</td>
+<td>V1</td>
+</tr>
+<tr>
+<td>PS_DDR3_BA1</td>
+<td>R4</td>
+<td>PS_DDR3_D25</td>
+<td>Y3</td>
+</tr>
+<tr>
+<td>PS_DDR3_BA2</td>
+<td>J5</td>
+<td>PS_DDR3_D26</td>
+<td>W1</td>
+</tr>
+<tr>
+<td>PS_DDR3_NCAS</td>
+<td>P5</td>
+<td>PS_DDR3_D27</td>
+<td>Y4</td>
+</tr>
+<tr>
+<td>PS_DDR3_CKE</td>
+<td>N3</td>
+<td>PS_DDR3_D28</td>
+<td>Y2</td>
+</tr>
+<tr>
+<td>PS_DDR3_CLK_N</td>
+<td>M2</td>
+<td>PS_DDR3_D29</td>
+<td>W3</td>
+</tr>
+<tr>
+<td>PS_DDR3_CLK_P</td>
+<td>L2</td>
+<td>PS_DDR3_D30</td>
+<td>V2</td>
+</tr>
+<tr>
+<td>PS_DDR3_NCS</td>
+<td>N1</td>
+<td>PS_DDR3_D31</td>
+<td>V3</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM0</td>
+<td>A1</td>
+<td>PS_DDR3_DQS_N0</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM1</td>
+<td>F1</td>
+<td>PS_DDR3_DQS_N1</td>
+<td>F2</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM2</td>
+<td>T1</td>
+<td>PS_DDR3_DQS_N2</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>PS_DDR3_DM3</td>
+<td>Y1</td>
+<td>PS_DDR3_DQS_N3</td>
+<td>W4</td>
+</tr>
+<tr>
+<td>PS_DDR3_D0</td>
+<td>C3</td>
+<td>PS_DDR3_DQS_P0</td>
+<td>C2</td>
+</tr>
+<tr>
+<td>PS_DDR3_D1</td>
+<td>B3</td>
+<td>PS_DDR3_DQS_P1</td>
+<td>G2</td>
+</tr>
+<tr>
+<td>PS_DDR3_D2</td>
+<td>A2</td>
+<td>PS_DDR3_DQS_P2</td>
+<td>R2</td>
+</tr>
+<tr>
+<td>PS_DDR3_D3</td>
+<td>A4</td>
+<td>PS_DDR3_DQS_P3</td>
+<td>W5</td>
+</tr>
+<tr>
+<td>PS_DDR3_D4</td>
+<td>D3</td>
+<td>PS_DDR3_NRST</td>
+<td>B4</td>
+</tr>
+<tr>
+<td>PS_DDR3_D5</td>
+<td>D1</td>
+<td>PS_DDR3_ODT</td>
+<td>N5</td>
+</tr>
+<tr>
+<td>PS_DDR3_D6</td>
+<td>C1</td>
+<td>PS_DDR3_NRAS</td>
+<td>P4</td>
+</tr>
+<tr>
+<td>PS_DDR3_D7</td>
+<td>E1</td>
+<td>PS_DDR3_NWE</td>
+<td>M5</td>
+</tr>
+<tr>
+<td>PS_DDR3_D8</td>
+<td>E2</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></section>
+<section id="giga-eth">
+<h3>○Giga ETH<a class="headerlink" href="#giga-eth" title="Link to this heading"></a></h3>
+<p>The RTL8211E chip supports 10/100/1000M network transfer rate and communicates with the MAC layer of the Zynq7000 PS system via the RGMII interface. It supports MDI/MDX adaptation, multiple speed adaptation, master/slave adaptation and MDIO bus support for PHY register management.</p>
+</section>
+<section id="usb-host">
+<h3>○USB Host<a class="headerlink" href="#usb-host" title="Link to this heading"></a></h3>
+<p>The USB2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI standard interface. It’s connected with ZYNQ’s bus interface to enable high-speed USB2.0 Host mode data communications.</p>
+<p><img alt="../../_images/USB_HOST.jpg" src="../../_images/USB_HOST.jpg" /></p>
+</section>
+<section id="usb-uart">
+<h3>○USB UART<a class="headerlink" href="#usb-uart" title="Link to this heading"></a></h3>
+<p>A USB to UART chip, the CH340, is provided for user connection to the host PC.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Signal Name</th>
+<th style="text-align: center;">Pin Name</th>
+<th style="text-align: center;">Pin Number</th>
+<th style="text-align: center;">Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">UART_TX</td>
+<td style="text-align: center;">PS_MIO15_500</td>
+<td style="text-align: center;">C5</td>
+<td style="text-align: center;">UART data output</td>
+</tr>
+<tr>
+<td style="text-align: center;">UART_RX</td>
+<td style="text-align: center;">PS_MIO14_500</td>
+<td style="text-align: center;">C8</td>
+<td style="text-align: center;">UART data input</td>
+</tr>
+</tbody>
+</table></section>
+<section id="usb-jtag">
+<h3>○USB JTAG<a class="headerlink" href="#usb-jtag" title="Link to this heading"></a></h3>
+<p>​	We have incorporated the JTAG download and debug circuitry into the board, enabling users to develop and debUIug ZYNQ through a USB cable.</p>
+</section>
+<section id="boot-config">
+<h3>○Boot Config<a class="headerlink" href="#boot-config" title="Link to this heading"></a></h3>
+<p>​	The Mizar-Z7 startup settings include JTAG, QSPI and SD modes, which are controlled by the MODE input signal from the J1. The user has the option to change mode through the jumper cap. The startup mode is configured as shown in the figure below.</p>
+<p><img alt="../../_images/BOOTMODE.png" src="../../_images/BOOTMODE.png" /></p>
+</section>
+<section id="quad-spi-flash">
+<h3>○Quad-SPI Flash<a class="headerlink" href="#quad-spi-flash" title="Link to this heading"></a></h3>
+<p>The onboard 256M Quad-SPI Flash memory W25Q256FVEI is used for the storage of the initial FPGA configuration, user applications and data.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Position</th>
+<th style="text-align: center;">Model</th>
+<th style="text-align: center;">Capacity</th>
+<th style="text-align: center;">Factory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">U3</td>
+<td style="text-align: center;">W25Q256FVEI</td>
+<td style="text-align: center;">256M Byte</td>
+<td style="text-align: center;">Winbond</td>
+</tr>
+</tbody>
+</table></section>
+<section id="clock">
+<h3>○Clock<a class="headerlink" href="#clock" title="Link to this heading"></a></h3>
+<p>A 33.33 MHz active crystal oscillator provides a stable clock for the PS system, while a 50 MHz active crystal oscillator provides additional clocks for the PL logic.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">Position</th>
+<th style="text-align: center;">Signal Name</th>
+<th style="text-align: center;">Frequency</th>
+<th style="text-align: center;">Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Y1</td>
+<td style="text-align: center;">PS_CLK_33d3</td>
+<td style="text-align: center;">33.333MHz</td>
+<td style="text-align: center;">E7</td>
+</tr>
+<tr>
+<td style="text-align: center;">U19</td>
+<td style="text-align: center;">PL_CLK_50M</td>
+<td style="text-align: center;">50MHz</td>
+<td style="text-align: center;">H16</td>
+</tr>
+</tbody>
+</table></section>
+<section id="reset">
+<h3>○Reset<a class="headerlink" href="#reset" title="Link to this heading"></a></h3>
+<p>A dedicated key (K1) is available to generate a ‘reset’ signal for designs running on the FPGA.</p>
+</section>
+<section id="micro-sd">
+<h3>○Micro SD<a class="headerlink" href="#micro-sd" title="Link to this heading"></a></h3>
+<p>The board features a Micro SD slot interface for storing the ZYNQ chip’s bootloader, Linux operating system kernels, file systems, and user data.</p>
+</section>
+<section id="hdmi">
+<h3>○HDMI<a class="headerlink" href="#hdmi" title="Link to this heading"></a></h3>
+<section id="hdmi1">
+<h4>HDMI1<a class="headerlink" href="#hdmi1" title="Link to this heading"></a></h4>
+<p>One HDMI video output interface can realize 1080P video images. Can be configured as HDMI output.</p>
+</section>
+<section id="hdmi2">
+<h4>HDMI2<a class="headerlink" href="#hdmi2" title="Link to this heading"></a></h4>
+<p><strong>This HDMI interface is supported only by the 7020 version and can also be configured as an HDMI output.</strong></p>
+<p>HDMI and ZYNQ connection diagram as shown in the figure.</p>
+<p><img alt="../../_images/HDMI2.png" src="../../_images/HDMI2.png" /></p>
+</section>
+</section>
+<section id="mipi-csi">
+<h3>○MIPI CSI<a class="headerlink" href="#mipi-csi" title="Link to this heading"></a></h3>
+<p><strong>This interface is only supported on the 7020 version.</strong></p>
+<p>The MIPI CSI port on the Mizar-Z7 is a 15-pin, 1 mm pitch top contact FPC connector designed to connect a MIPI interface camera. The MIPI FPC connector pinout is compatible with Raspberry Pi cameras.</p>
+<p>The MIPI CSI-2 bus is connected to the ZYNQ PL IOs, enabling the implementation of compatible D-PHY receivers using the Zynq. The interface is tested to operate at up to 672 Mbps per channel. Up to 950 Mbps per Lane based on Zynq-7000 chip specifications.</p>
+<p>The MIPI CSI-2 receiver IP core is available from Xilinx and includes embedded Linux support. It requires a licence to use, but it is possible to obtain an evaluation licence from Xilinx at no cost.</p>
+<p><img alt="../../_images/MIPI.png" src="../../_images/MIPI.png" /></p>
+</section>
+<section id="wi-fi">
+<h3>○Wi-Fi<a class="headerlink" href="#wi-fi" title="Link to this heading"></a></h3>
+<p><strong>This module is only supported on the 7020 version.</strong></p>
+<p>Mizar Z7 provides Wi-Fi &amp; BLE wireless communication, which can be supported by the wireless module during system development by connecting BLE under ARM via EMIO interface:</p>
+<ul class="simple">
+<li><p>Wi-Fi 802.11b/g/n</p></li>
+<li><p>Bluetooth V4.0</p></li>
+</ul>
+<p>There are two kinds of antennas provided on the board, one is ceramic antenna and the other is IPEX antenna, ceramic antenna is used by default, and users can choose what kind of antenna by soldering capacitor C127,C128.</p>
+<ul class="simple">
+<li><p>PCM interface is mainly used for Bluetooth voice transmission, no connection is made on this board.</p></li>
+</ul>
+<p><img alt="../../_images/WIFI.png" src="../../_images/WIFI.png" /></p>
+</section>
+<section id="led">
+<h3>○LED<a class="headerlink" href="#led" title="Link to this heading"></a></h3>
+<p>We provide six LEDs for user to use. When the corresponding pin of the FPGA is in a low state, the LED is illuminated.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Position</th>
+<th>Signal Name</th>
+<th>FPGA Number</th>
+<th>Pin Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D4</td>
+<td>PS_LED1</td>
+<td>B13</td>
+<td>PS_MIO50_500</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>PS_LED2</td>
+<td>B9</td>
+<td>PS_MIO51_501</td>
+</tr>
+<tr>
+<td>D6</td>
+<td>PL_LED1</td>
+<td>G14</td>
+<td>IO_0_35</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>PL_LED2</td>
+<td>C20</td>
+<td>IO_L1P_T0_AD0P_35</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>PL_LED3</td>
+<td>B20</td>
+<td>IO_L1N_T0_AD0N_35</td>
+</tr>
+<tr>
+<td>D9</td>
+<td>PL_LED4</td>
+<td>H17</td>
+<td>IO_L13N_T2_MRCC_35</td>
+</tr>
+</tbody>
+</table></section>
+<section id="key">
+<h3>○Key<a class="headerlink" href="#key" title="Link to this heading"></a></h3>
+<p>We provide six keys for user to use. When a key is pressed, the corresponding FPGA pin goes to a low level.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Position</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+<th>Pin Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K2</td>
+<td>PS_KEY1</td>
+<td>E6</td>
+<td>PS_MIO40_500</td>
+</tr>
+<tr>
+<td>K3</td>
+<td>PS_KEY2</td>
+<td>B14</td>
+<td>PS_MIO47_501</td>
+</tr>
+<tr>
+<td>K4</td>
+<td>PL_KEY1</td>
+<td>R19</td>
+<td>IO_0_34</td>
+</tr>
+<tr>
+<td>K5</td>
+<td>PL_KEY2</td>
+<td>T19</td>
+<td>IO_25_34</td>
+</tr>
+<tr>
+<td>K6</td>
+<td>PL_KEY3</td>
+<td>J15</td>
+<td>IO_25_35</td>
+</tr>
+<tr>
+<td>K7</td>
+<td>PL_KEY4</td>
+<td>B19</td>
+<td>IO_L2P_T0_AD8P_35</td>
+</tr>
+</tbody>
+</table></section>
+<section id="gpio">
+<h3>○GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
+<p>This device is equipped with a maximum of 72 user IO pins that can be used for various custom applications. All user IOs are length-matched and can be used as differential pairs.<br />48 IOs are voltage-adjustable, they are configured to 3.3V by factory default. If users want to adjust the voltage of these IOs, they can adjust the voltage of IOs by changing the voltage of VCCIO34 by selectively mounting 0 ohm resistors to R208,R209,R210.</p>
+<p><strong>Solder only one of R208, R209, or R210.</strong></p>
+<p><img alt="../../_images/voltage_adjust.png" src="../../_images/voltage_adjust.png" /></p>
+<p>Adjust the IO voltage and resistor mounting correspondence table as follows</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Resistors</th>
+<th>BANK34 Voltage</th>
+<th>IO Voltage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R208</td>
+<td>3.3V</td>
+<td>3.3V(default state)</td>
+</tr>
+<tr>
+<td>R209</td>
+<td>2.5V</td>
+<td>2.5V</td>
+</tr>
+<tr>
+<td>R210</td>
+<td>1.8V</td>
+<td>1.8V</td>
+</tr>
+<tr>
+<td>Replace R205 resistance, R208 short</td>
+<td>0.6*(1+R205/10k)</td>
+<td>The adjusted voltage range must be1.2V-3.3V.</td>
+</tr>
+</tbody>
+</table><p>All IOs use differential alignments in the PCB design and are grouped in equal lengths.</p>
+<p><strong>JP1:</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>FPGA Pin No.</th>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>FPGA Pin No.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPIO1_0P</td>
+<td>N18</td>
+<td>2</td>
+<td>GPIO1_0N</td>
+<td>P19</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPIO1_1P</td>
+<td>N17</td>
+<td>4</td>
+<td>GPIO1_1N</td>
+<td>P18</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GPIO1_2P</td>
+<td>N20</td>
+<td>6</td>
+<td>GPIO1_2N</td>
+<td>P20</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPIO1_3P</td>
+<td>T17</td>
+<td>8</td>
+<td>GPIO1_3N</td>
+<td>R18</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPIO1_4P</td>
+<td>T20</td>
+<td>10</td>
+<td>GPIO1_4N</td>
+<td>U20</td>
+</tr>
+<tr>
+<td>11</td>
+<td>VCC_5V</td>
+<td>-</td>
+<td>12</td>
+<td>GND</td>
+<td>-</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GPIO1_5P</td>
+<td>V20</td>
+<td>14</td>
+<td>GPIO1_5N</td>
+<td>W20</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GPIO1_6P</td>
+<td>Y18</td>
+<td>16</td>
+<td>GPIO1_6N</td>
+<td>Y19</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GPIO1_7P</td>
+<td>Y16</td>
+<td>18</td>
+<td>GPIO1_7N</td>
+<td>Y17</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GPIO1_8P</td>
+<td>W18</td>
+<td>20</td>
+<td>GPIO1_8N</td>
+<td>W19</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GPIO1_9P</td>
+<td>U18</td>
+<td>22</td>
+<td>GPIO1_9N</td>
+<td>U19</td>
+</tr>
+<tr>
+<td>23</td>
+<td>GPIO1_10P</td>
+<td>V16</td>
+<td>24</td>
+<td>GPIO1_10N</td>
+<td>W16</td>
+</tr>
+<tr>
+<td>25</td>
+<td>GPIO1_11P</td>
+<td>V15</td>
+<td>26</td>
+<td>GPIO1_11N</td>
+<td>W15</td>
+</tr>
+<tr>
+<td>27</td>
+<td>GPIO1_12P</td>
+<td>W14</td>
+<td>28</td>
+<td>GPIO1_12N</td>
+<td>Y14</td>
+</tr>
+<tr>
+<td>29</td>
+<td>VCC_3V3</td>
+<td>-</td>
+<td>30</td>
+<td>GND</td>
+<td>-</td>
+</tr>
+<tr>
+<td>31</td>
+<td>GPIO1_13P</td>
+<td>U14</td>
+<td>32</td>
+<td>GPIO1_13N</td>
+<td>U15</td>
+</tr>
+<tr>
+<td>33</td>
+<td>GPIO1_14P</td>
+<td>U13</td>
+<td>34</td>
+<td>GPIO1_14N</td>
+<td>V13</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GPIO1_15P</td>
+<td>V12</td>
+<td>36</td>
+<td>GPIO1_15N</td>
+<td>W13</td>
+</tr>
+<tr>
+<td>37</td>
+<td>GPIO1_16P</td>
+<td>T12</td>
+<td>38</td>
+<td>GPIO1_16N</td>
+<td>U12</td>
+</tr>
+<tr>
+<td>39</td>
+<td>GPIO1_17P</td>
+<td>T11</td>
+<td>40</td>
+<td>GPIO1_17N</td>
+<td>T10</td>
+</tr>
+</tbody>
+</table><p><strong>JP2:</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>FPGA Pin No.</th>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>FPGA Pin No.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPIO2_0P</td>
+<td>J18</td>
+<td>2</td>
+<td>GPIO2_0N</td>
+<td>H18</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPIO2_1P</td>
+<td>G17</td>
+<td>4</td>
+<td>GPIO2_1N</td>
+<td>G18</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GPIO2_2P</td>
+<td>K14</td>
+<td>6</td>
+<td>GPIO2_2N</td>
+<td>J14</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPIO2_3P</td>
+<td>H15</td>
+<td>8</td>
+<td>GPIO2_3N</td>
+<td>G15</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPIO2_4P</td>
+<td>J20</td>
+<td>10</td>
+<td>GPIO2_4N</td>
+<td>H20</td>
+</tr>
+<tr>
+<td>11</td>
+<td>VCC_5V</td>
+<td>-</td>
+<td>12</td>
+<td>GND</td>
+<td>-</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GPIO2_5P</td>
+<td>L14</td>
+<td>14</td>
+<td>GPIO2_5N</td>
+<td>L15</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GPIO2_6P</td>
+<td>K19</td>
+<td>16</td>
+<td>GPIO2_6N</td>
+<td>J19</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GPIO2_7P</td>
+<td>K16</td>
+<td>18</td>
+<td>GPIO2_7N</td>
+<td>J16</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GPIO2_8P</td>
+<td>L19</td>
+<td>20</td>
+<td>GPIO2_8N</td>
+<td>L20</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GPIO2_9P</td>
+<td>L16</td>
+<td>22</td>
+<td>GPIO2_9N</td>
+<td>L17</td>
+</tr>
+<tr>
+<td>23</td>
+<td>GPIO2_10P</td>
+<td>M14</td>
+<td>24</td>
+<td>GPIO2_10N</td>
+<td>M15</td>
+</tr>
+<tr>
+<td>25</td>
+<td>GPIO2_11P</td>
+<td>N15</td>
+<td>26</td>
+<td>GPIO2_11N</td>
+<td>N16</td>
+</tr>
+<tr>
+<td>27</td>
+<td>GPIO2_12P</td>
+<td>P15</td>
+<td>28</td>
+<td>GPIO2_12N</td>
+<td>P16</td>
+</tr>
+<tr>
+<td>29</td>
+<td>VCC_3V3</td>
+<td>-</td>
+<td>30</td>
+<td>GND</td>
+<td>-</td>
+</tr>
+<tr>
+<td>31</td>
+<td>GPIO2_13P</td>
+<td>R16</td>
+<td>32</td>
+<td>GPIO2_13N</td>
+<td>R17</td>
+</tr>
+<tr>
+<td>33</td>
+<td>GPIO2_14P</td>
+<td>V17</td>
+<td>34</td>
+<td>GPIO2_14N</td>
+<td>V18</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GPIO2_15P</td>
+<td>T16</td>
+<td>36</td>
+<td>GPIO2_15N</td>
+<td>U17</td>
+</tr>
+<tr>
+<td>37</td>
+<td>GPIO2_16P</td>
+<td>T14</td>
+<td>38</td>
+<td>GPIO2_16N</td>
+<td>T15</td>
+</tr>
+<tr>
+<td>39</td>
+<td>GPIO2_17P</td>
+<td>P14</td>
+<td>40</td>
+<td>GPIO2_17N</td>
+<td>R14</td>
+</tr>
+</tbody>
+</table></section>
+<section id="power">
+<h3>○Power<a class="headerlink" href="#power" title="Link to this heading"></a></h3>
+<p>​	The board is powered by a +5V supply through a DC jack.</p>
+<p><img alt="../../_images/POWER.jpg" src="../../_images/POWER.jpg" /></p>
+</section>
+</section>
+<section id="related-documents">
+<h2>●3. Related Documents<a class="headerlink" href="#related-documents" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Mizar-Z7_R11.pdf">Mizar-Z7_R11 Schematic</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Mizar-Z7/Mizar-Z7_R11_Dimensions.pdf">Mizar-Z7_R11 Dimensions</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/Mizar-Z7/Mizar-Z7_R11_Dimensions.dxf">Mizar-Z7_R11 Dimensions source file</a> (DXF)</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Z7-NANO/Z7-NANO_Reference_Manual.html" class="btn btn-neutral float-left" title="Z7-Nano Reference Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../XME0724CB/XME0724CB-Reference_Manual.html" class="btn btn-neutral float-right" title="XME0724CB Reference Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Microphase.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

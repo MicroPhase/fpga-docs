@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEV_XME0726 Reference Manual &mdash; Microphase_FPGA_DOC V1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ff4c0a58" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=d43430bd"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="XPE_ZU100 Reference Manual" href="../XPE_ZU100/XPE_ZU100-Reference_Manual.html" />
+    <link rel="prev" title="PE500 Reference Manual" href="../PE500/PE500-Reference_Manual.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: none" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Microphase_FPGA_DOC
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SoM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html">Artix7 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#zynq7000-series">ZYNQ7000 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#zynq-ultrascale-series">Zynq UltraScale+ Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SoM/SoM.html#kintex-ultrascale-series">Kintex UltraScale+ Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CARRIER_BOARD:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../PE100/PE100-Reference_Manual.html">PE100 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PE300/PE300-Reference_Manual.html">PE300 Reference Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PE500/PE500-Reference_Manual.html">PE500 Reference Manual</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DEV_XME0726 Reference Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wechat-public-number">WeChat Public Number:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">●1. Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#board-layout">○Board Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key-features">○Key Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#block-diagram">○Block diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mechanical-spec">○Mechanical Spec</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#function-resources">●2. Function Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#giga-eth">○Giga ETH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-jtag-uart">○USB JTAG&amp;UART</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reset">○Reset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#micro-sd">○Micro SD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hdmi">○HDMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rs485">○RS485</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can">○CAN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led">○LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key">○KEY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">○GPIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power">○Power</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#related-documents">●3. Related Documents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xme0726">○XME0726</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dev-xme0726">○Dev_XME0726</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../XPE_ZU100/XPE_ZU100-Reference_Manual.html">XPE_ZU100 Reference Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">DEV_BOARD:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html">Artix7 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DEV_BOARD/DEV_BOARD.html#zynq7000-series">ZYNQ7000 Series</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html">Company Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../About_Us/About%20Us.html#contact-us">Contact Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: none" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Microphase_FPGA_DOC</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../CARRIER_BOARD.html">&lt;no title&gt;</a></li>
+      <li class="breadcrumb-item active"><strong>DEV_XME0726 Reference Manual</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/CARRIER_BOARD/DEV_XME0726/DEV_XME0726-Reference_Manual.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dev-xme0726-reference-manual">
+<h1><strong>DEV_XME0726 Reference Manual</strong><a class="headerlink" href="#dev-xme0726-reference-manual" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/DEV_XME0726/DEV_XME0726-Reference_Manual.html">[中文]</a></p>
+<section id="wechat-public-number">
+<h2>WeChat Public Number:<a class="headerlink" href="#wechat-public-number" title="Link to this heading"></a></h2>
+<p><img alt="DEV_0726" src="../../_images/Wechat.png" /></p>
+<div style="page-break-after:always;"></div></section>
+<section id="overview">
+<h2>●1. Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>With the DEV_XME0726, you can quickly test, develop, and evaluate the features of Microphase’s XME0726. It provides multiple interfaces for XME0726, such as FMC-LPC, RS485, CAN, HDMI TX, Gigabit Ethernet, USB Host, and more.</p>
+<section id="board-layout">
+<h3>○Board Layout<a class="headerlink" href="#board-layout" title="Link to this heading"></a></h3>
+<p><img alt="DEV_0726" src="../../_images/DEV_0726.png" /></p>
+</section>
+<section id="key-features">
+<h3>○Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>1 USB UART &amp; JTAG interface</p></li>
+<li><p>1 Gigabit Ethernet interface, supporting 10/100/1000 Mbps data rates</p></li>
+<li><p>2 RS485 interfaces</p></li>
+<li><p>2 CAN interfaces</p></li>
+<li><p>1 HDMI TX interface, supporting 1080p&#64;60Hz output</p></li>
+<li><p>2 User LEDs: 1 on PS side, 1 on PL side</p></li>
+<li><p>1 User key on PL side</p></li>
+<li><p>1 SD card interface</p></li>
+<li><p>1 FMC-LPC interface</p></li>
+<li><p>1 USB OTG interface</p></li>
+</ul>
+</section>
+<section id="block-diagram">
+<h3>○Block diagram<a class="headerlink" href="#block-diagram" title="Link to this heading"></a></h3>
+<p><img alt="../../_images/block_diagram.png" src="../../_images/block_diagram.png" /></p>
+</section>
+<section id="mechanical-spec">
+<h3>○Mechanical Spec<a class="headerlink" href="#mechanical-spec" title="Link to this heading"></a></h3>
+<p><img alt="Dev_XME0726_Mech" src="../../_images/Dev_XME0726_Mech.png" /></p>
+</section>
+</section>
+<section id="function-resources">
+<h2>●2. Function Resources<a class="headerlink" href="#function-resources" title="Link to this heading"></a></h2>
+<section id="giga-eth">
+<h3>○Giga ETH<a class="headerlink" href="#giga-eth" title="Link to this heading"></a></h3>
+<p>The baseboard provides one Gigabit Ethernet interface. The Ethernet PHY IC is integrated on the core board, and the Ethernet is connected to the core board via MDI signals. For more information about the Ethernet PHY, please refer to the corresponding core board documentation.</p>
+<p>Connection diagram between the core board and the Ethernet PHY chip:</p>
+<p><img alt="ETH" src="../../_images/ETH.png" /></p>
+</section>
+<section id="usb-jtag-uart">
+<h3>○USB JTAG&amp;UART<a class="headerlink" href="#usb-jtag-uart" title="Link to this heading"></a></h3>
+<p>The carrier board provides a USB to UART and JTAG interface, the chip is FTDI FT2232H. The USB interface is TYPE-C.</p>
+<p><img alt="JTAG" src="../../_images/JTAG.png" /></p>
+<p>The pin connection table between UART and XME0726 is as follows.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>FPGA Pin</th>
+<th>Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PS_UART_RX</td>
+<td>U2</td>
+<td>UART data output</td>
+</tr>
+<tr>
+<td>PS_UART_TX</td>
+<td>V2</td>
+<td>UART data input</td>
+</tr>
+</tbody>
+</table></section>
+<section id="reset">
+<h3>○Reset<a class="headerlink" href="#reset" title="Link to this heading"></a></h3>
+<p>We provide a key (K1) that can be used as a ‘reset’ signal for designs running on FPGA.</p>
+</section>
+<section id="micro-sd">
+<h3>○Micro SD<a class="headerlink" href="#micro-sd" title="Link to this heading"></a></h3>
+<p>The board provides a Micro SD card interface, allowing users to access the SD card memory.</p>
+<p>The SDIO signals are connected to the ZYNQ’s SDIO interface. The VCCIO voltage of Bank 501 is 1.8V, while the SD data voltage is 3.3V. Therefore, a TXS02612 level shifter is used for voltage translation.</p>
+<p>Connection diagram between the core board and the SD interface:</p>
+<p><img alt="SD" src="../../_images/SD.png" /></p>
+</section>
+<section id="hdmi">
+<h3>○HDMI<a class="headerlink" href="#hdmi" title="Link to this heading"></a></h3>
+<p>An HDMI video output interface is provided, capable of 1080p image and video output.</p>
+<p><img alt="image-20250730135207630" src="../../_images/image-20250730135207630.png" /></p>
+</section>
+<section id="rs485">
+<h3>○RS485<a class="headerlink" href="#rs485" title="Link to this heading"></a></h3>
+<p>Two RS485 interfaces are provided for 485 communication. The interfaces use the MAX3485 to convert between RS485 and 3.3V TTL levels. The RS485 signals are connected to Bank 13, which operates at 3.3V or another user-configured I/O voltage. To ensure proper RS485 operation, the PCA9306DCUR level translator is used for voltage level shifting.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>FPGA Pin</th>
+<th>Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PL_485_RXD0_LS</td>
+<td>T20</td>
+<td>First RS485 Receiver</td>
+</tr>
+<tr>
+<td>PL_485_TXD0_LS</td>
+<td>V20</td>
+<td>First RS485 Transmitter</td>
+</tr>
+<tr>
+<td>PL_485_DE0_LS</td>
+<td>W20</td>
+<td>First RS485 Transmit Enable</td>
+</tr>
+<tr>
+<td>PL_485_RXD1_LS</td>
+<td>P18</td>
+<td>Second RS485 Receiver</td>
+</tr>
+<tr>
+<td>PL_485_TXD1_LS</td>
+<td>N17</td>
+<td>Second RS485 Transmitter</td>
+</tr>
+<tr>
+<td>PL_485_DE1_LS</td>
+<td>U20</td>
+<td>Second RS485 Transmit Enable</td>
+</tr>
+</tbody>
+</table></section>
+<section id="can">
+<h3>○CAN<a class="headerlink" href="#can" title="Link to this heading"></a></h3>
+<p>Two CAN interfaces are provided, utilizing the SN65HVD230 transceiver from Texas Instruments. The CAN signals are connected to Bank 500 of the board.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Signal Name</th>
+<th>FPGA Pin</th>
+<th>Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PS_CAN0_TX</td>
+<td>MIO11</td>
+<td>CAN0 Transmitter</td>
+</tr>
+<tr>
+<td>PS_CAN0_RX</td>
+<td>MIO10</td>
+<td>CAN0 Receiver</td>
+</tr>
+<tr>
+<td>PS_CAN1_TX</td>
+<td>MIO12</td>
+<td>CAN1 Transmitter</td>
+</tr>
+<tr>
+<td>PS_CAN1_RX</td>
+<td>MIO13</td>
+<td>CAN1 Receiver</td>
+</tr>
+</tbody>
+</table></section>
+<section id="led">
+<h3>○LED<a class="headerlink" href="#led" title="Link to this heading"></a></h3>
+<p>Two user LEDs are provided: one on the PS side and one on the PL side. The LED lights up when the corresponding FPGA pin is at a high level.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Position</th>
+<th><strong>Signal Name</strong></th>
+<th><strong>Pin Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D7</td>
+<td>PS_LED</td>
+<td>B5</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>GPIO1_8N</td>
+<td>F17</td>
+</tr>
+</tbody>
+</table></section>
+<section id="key">
+<h3>○KEY<a class="headerlink" href="#key" title="Link to this heading"></a></h3>
+<p>We provide one user button on the PL side. When the button is pressed, the corresponding FPGA pin will be at a low level.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Position</th>
+<th><strong>Signal Name</strong></th>
+<th><strong>Pin Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K3</td>
+<td>GPIO1_8P</td>
+<td>F16</td>
+</tr>
+</tbody>
+</table></section>
+<section id="gpio">
+<h3>○GPIO<a class="headerlink" href="#gpio" title="Link to this heading"></a></h3>
+<p>The baseboard provides one IDC40 GPIO expansion port: JP1, which can be connected to Microphase’s modules or other peripherals. <strong>When using the IO, please ensure that the signal voltage levels are consistent.</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+<th>Pin</th>
+<th>Signal Name</th>
+<th>Pin Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GPIO1_0P</td>
+<td>L14</td>
+<td>2</td>
+<td>GPIO1_0N</td>
+<td>L15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPIO1_1P</td>
+<td>M14</td>
+<td>4</td>
+<td>GPIO1_1N</td>
+<td>M15</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GPIO1_2P</td>
+<td>H15</td>
+<td>6</td>
+<td>GPIO1_2N</td>
+<td>G15</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GPIO1_3P</td>
+<td>K16</td>
+<td>8</td>
+<td>GPIO1_3N</td>
+<td>J16</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPIO1_4P</td>
+<td>J18</td>
+<td>10</td>
+<td>GPIO1_4N</td>
+<td>H18</td>
+</tr>
+<tr>
+<td>11</td>
+<td>VCC_5V</td>
+<td></td>
+<td>12</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>GPIO1_5P</td>
+<td>K14</td>
+<td>14</td>
+<td>GPIO1_5N</td>
+<td>J14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GPIO1_6P</td>
+<td>E17</td>
+<td>16</td>
+<td>GPIO1_6N</td>
+<td>D18</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GPIO1_7P</td>
+<td>H16</td>
+<td>18</td>
+<td>GPIO1_7N</td>
+<td>H17</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GPIO1_8P</td>
+<td>F16</td>
+<td>20</td>
+<td>GPIO1_8N</td>
+<td>F17</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GPIO1_9P</td>
+<td>K19</td>
+<td>22</td>
+<td>GPIO1_9N</td>
+<td>J19</td>
+</tr>
+<tr>
+<td>23</td>
+<td>GPIO1_10P</td>
+<td>G17</td>
+<td>24</td>
+<td>GPIO1_10N</td>
+<td>G18</td>
+</tr>
+<tr>
+<td>25</td>
+<td>GPIO1_11P</td>
+<td>C20</td>
+<td>26</td>
+<td>GPIO1_11N</td>
+<td>B20</td>
+</tr>
+<tr>
+<td>27</td>
+<td>GPIO1_12P</td>
+<td>E18</td>
+<td>28</td>
+<td>GPIO1_12N</td>
+<td>E19</td>
+</tr>
+<tr>
+<td>29</td>
+<td>VCC_3V3</td>
+<td></td>
+<td>30</td>
+<td>GND</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td>GPIO1_13P</td>
+<td>B19</td>
+<td>32</td>
+<td>GPIO1_13N</td>
+<td>A20</td>
+</tr>
+<tr>
+<td>33</td>
+<td>GPIO1_14P</td>
+<td>G19</td>
+<td>34</td>
+<td>GPIO1_14N</td>
+<td>G20</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GPIO1_15P</td>
+<td>J20</td>
+<td>36</td>
+<td>GPIO1_15N</td>
+<td>H20</td>
+</tr>
+<tr>
+<td>37</td>
+<td>GPIO1_16P</td>
+<td>M19</td>
+<td>38</td>
+<td>GPIO1_16N</td>
+<td>M20</td>
+</tr>
+<tr>
+<td>39</td>
+<td>GPIO1_17P</td>
+<td>L19</td>
+<td>40</td>
+<td>GPIO1_17N</td>
+<td>L20</td>
+</tr>
+</tbody>
+</table></section>
+<section id="power">
+<h3>○Power<a class="headerlink" href="#power" title="Link to this heading"></a></h3>
+<p>The development board requires a 12V DC power supply. Please use the specified power adapter to avoid damage.</p>
+</section>
+</section>
+<section id="related-documents">
+<h2>●3. Related Documents<a class="headerlink" href="#related-documents" title="Link to this heading"></a></h2>
+<section id="xme0726">
+<h3>○XME0726<a class="headerlink" href="#xme0726" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fpga-docs.microphase.cn/en/latest/SoM/XME0726/XME0726-Reference_Manual.html">XME0726_Reference Manual</a> (HTML)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XME0726_R10.pdf">XME0726_R10 Schematic</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726_R10_Dimensions.pdf">XME0726_R10 Dimensions</a> (PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/XME0726_R10_Dimensions_source_file.dxf">XME0726_R10 Dimensions source file</a> (DXF)</p></li>
+</ul>
+</section>
+<section id="dev-xme0726">
+<h3>○Dev_XME0726<a class="headerlink" href="#dev-xme0726" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Dev_XME0726_R10.pdf">Dev_XME0726_R10 Schematic</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/Dev_XME0726_R10_Dimensions.pdf">Dev_XME0726_R10 Dimensions</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://github.com/MicroPhase/fpga-docs/blob/master/others/Dev_XME0726_R10_Board_source_file.BRD">Dev_XME0726_R10 Board source file</a>(Brd)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../PE500/PE500-Reference_Manual.html" class="btn btn-neutral float-left" title="PE500 Reference Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../XPE_ZU100/XPE_ZU100-Reference_Manual.html" class="btn btn-neutral float-right" title="XPE_ZU100 Reference Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Microphase.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
