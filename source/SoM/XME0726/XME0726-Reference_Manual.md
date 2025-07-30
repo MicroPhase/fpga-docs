@@ -223,10 +223,11 @@ FPGA Bank、IO 数量与 B2B 连接器表
 ## ●3. 相关文档  
 ### ○XME0726
 - [XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/SC2jb9N9goKYPdxtRgKcDXzenmh) (PDF)
+- [XME0726_R10 走线长度](https://swnatyr2ph.feishu.cn/file/RzIZbW7y3ow0UYxRO6BcpQy9n4g) (PDF)
 - [XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/CZwUbxJLbo3I30xRQhhckySDnof) (PDF) 
 - [XME0726_R10 尺寸源文件](https://swnatyr2ph.feishu.cn/file/CZwUbxJLbo3I30xRQhhckySDnof) (DXF) 
 ### ○Dev_XME0726 
-- Dev_XME0726 用户手册（HTML）- 待添加
+- [Dev_XME0726 用户手册](https://microphase-doc.readthedocs.io/zh-cn/latest/CARRIER_BOARD/DEV_XME0726/DEV_XME0726-Reference_Manual.html)（HTML）
 - [Dev_XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/ZjEWbcSZ7oQiRsxASgvckJ2Xnwb) (PDF)
 - [Dev_XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/L3PXb4KOqoXBOSxMrqDcdwxhnYq) (PDF)
 - [Dev_XME0726_R10 板源文件](https://swnatyr2ph.feishu.cn/file/DTwxbHI3yo4M3dxVCWxcR1FKnlc) (Brd)

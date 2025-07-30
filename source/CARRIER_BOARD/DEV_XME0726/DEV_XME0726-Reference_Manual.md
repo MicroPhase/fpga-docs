@@ -1,6 +1,6 @@
 # **DEV_XME0726 用户手册**
 
-[[English]](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/PE100/PE100-Reference_Manual.html)
+[[English]](https://microphase-doc.readthedocs.io/en/latest/CARRIER_BOARD/DEV_XME0726/DEV_XME0726-Reference_Manual.html)
 
 ## 微信公众号：
 
@@ -80,7 +80,7 @@ SDIO 信号与 ZYNQ 的 SDIO 连接。Bank 501 的 VCCIO 电压为 1.8V，而 SD
 
 一个 HDMI 视频输出接口可以实现 1080P 图像以及视频输出。
 
-![](./PE100-Reference_Manual.assets/HDMI_B.png)
+![image-20250730135207630](./DEV_XME0726-Reference_Manual.assets/image-20250730135207630.png)
 
 
 
@@ -131,42 +131,45 @@ SDIO 信号与 ZYNQ 的 SDIO 连接。Bank 501 的 VCCIO 电压为 1.8V，而 SD
 
 | 引脚 | 信号名称  | 引脚号 | 引脚 | 信号名称  | 引脚号 |
 | ---- | --------- | ------ | ---- | --------- | ------ |
-| 1    | GPIO1_0P  | AA16   | 2    | GPIO1_0N  | AA17   |
-| 3    | GPIO1_1P  | W17    | 4    | GPIO1_1N  | Y17    |
-| 5    | GPIO1_2P  | AA19   | 6    | GPIO1_2N  | AA20   |
-| 7    | GPIO1_3P  | V16    | 8    | GPIO1_3N  | W16    |
-| 9    | GPIO1_4P  | AB18   | 10   | GPIO1_4N  | AB19   |
-| 11   | VCC_5V    | -      | 12   | GND       | -      |
-| 13   | GPIO1_5P  | U19    | 14   | GPIO1_5N  | V19    |
-| 15   | GPIO1_6P  | AB21   | 16   | GPIO1_6N  | AB22   |
-| 17   | GPIO1_7P  | V18    | 18   | GPIO1_7N  | W18    |
-| 19   | GPIO1_8P  | U17    | 20   | GPIO1_8N  | U18    |
-| 21   | GPIO1_9P  | Y18    | 22   | GPIO1_9N  | Y19    |
-| 23   | GPIO1_10P | AB13   | 24   | GPIO1_10N | AB14   |
-| 25   | GPIO1_11P | R17    | 26   | GPIO1_11N | T17    |
-| 27   | GPIO1_12P | V13    | 28   | GPIO1_12N | V14    |
-| 29   | VCC_3V3   | -      | 30   | GND       | -      |
-| 31   | GPIO1_13P | AA14   | 32   | GPIO1_13N | AA15   |
-| 33   | GPIO1_14P | U11    | 34   | GPIO1_14N | U12    |
-| 35   | GPIO1_15P | AA12   | 36   | GPIO1_15N | AB12   |
-| 37   | GPIO1_16P | Y12    | 38   | GPIO1_16N | Y13    |
-| 39   | GPIO1_17P | V11    | 40   | GPIO1_17N | W11    |
+| 1    | GPIO1_0P  | L14    | 2    | GPIO1_0N  | L15    |
+| 3    | GPIO1_1P  | M14    | 4    | GPIO1_1N  | M15    |
+| 5    | GPIO1_2P  | H15    | 6    | GPIO1_2N  | G15    |
+| 7    | GPIO1_3P  | K16    | 8    | GPIO1_3N  | J16    |
+| 9    | GPIO1_4P  | J18    | 10   | GPIO1_4N  | H18    |
+| 11   | VCC_5V    |        | 12   | GND       |        |
+| 13   | GPIO1_5P  | K14    | 14   | GPIO1_5N  | J14    |
+| 15   | GPIO1_6P  | E17    | 16   | GPIO1_6N  | D18    |
+| 17   | GPIO1_7P  | H16    | 18   | GPIO1_7N  | H17    |
+| 19   | GPIO1_8P  | F16    | 20   | GPIO1_8N  | F17    |
+| 21   | GPIO1_9P  | K19    | 22   | GPIO1_9N  | J19    |
+| 23   | GPIO1_10P | G17    | 24   | GPIO1_10N | G18    |
+| 25   | GPIO1_11P | C20    | 26   | GPIO1_11N | B20    |
+| 27   | GPIO1_12P | E18    | 28   | GPIO1_12N | E19    |
+| 29   | VCC_3V3   |        | 30   | GND       |        |
+| 31   | GPIO1_13P | B19    | 32   | GPIO1_13N | A20    |
+| 33   | GPIO1_14P | G19    | 34   | GPIO1_14N | G20    |
+| 35   | GPIO1_15P | J20    | 36   | GPIO1_15N | H20    |
+| 37   | GPIO1_16P | M19    | 38   | GPIO1_16N | M20    |
+| 39   | GPIO1_17P | L19    | 40   | GPIO1_17N | L20    |
 
 ### ○电源
 
-开发板需要 DC12V 电源。请使用指定的电源以避免损坏。开发板还支持从 PCIe 接口供电。电源结构如下。
-
-![](./PE100-Reference_Manual.assets/Power_structure.png)
+开发板需要 DC12V 电源。请使用指定的电源以避免损坏。
 
 ## ●3. 相关文档  
 
-### ○PE100
+### ○XME0726
 
-- [PE100_R11 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE100_R11.pdf) (PDF)
-- [PE100_R11 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/PE100/PE100_R11_Dimensions.pdf) (PDF)  
-- [PE100_R11 板源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE100_R11_Board_source_file.brd) (Brd)  
+- [XME0726_用户手册](https://fpga-docs.microphase.cn/zh-cn/latest/SoM/XME0726/XME0726-Reference_Manual.html) (HTML)
 
-### ○微相科技的 5*6 XME 系列 SoM
-- [XME0712 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0712/XME0712-Reference_Manual.html)(HTML)
-- [XME0715 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0715/XME0715-Reference_Manual.html)(HTML)
-- [XME0720 用户手册](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0720/XME0720-Reference_Manual.html)(HTML)
+- [XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/SC2jb9N9goKYPdxtRgKcDXzenmh) (PDF)
+- [XME0726_R10 走线长度](https://swnatyr2ph.feishu.cn/file/RzIZbW7y3ow0UYxRO6BcpQy9n4g) (PDF)
+- [XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/CZwUbxJLbo3I30xRQhhckySDnof) (PDF) 
+- [XME0726_R10 尺寸源文件](https://swnatyr2ph.feishu.cn/file/CZwUbxJLbo3I30xRQhhckySDnof) (DXF) 
+
+### ○Dev_XME0726 
+
+- [Dev_XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/ZjEWbcSZ7oQiRsxASgvckJ2Xnwb) (PDF)
+- [Dev_XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/L3PXb4KOqoXBOSxMrqDcdwxhnYq) (PDF)
+- [Dev_XME0726_R10 板源文件](https://swnatyr2ph.feishu.cn/file/DTwxbHI3yo4M3dxVCWxcR1FKnlc) (Brd)
+
