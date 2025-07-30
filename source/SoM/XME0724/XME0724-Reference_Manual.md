@@ -1,4 +1,4 @@
-# **XME0724 参考手册**
+# **XME0724 用户手册**
 
 [[English]](https://microphase-doc.readthedocs.io/en/latest/SoM/XME0724/XME0724-Reference_Manual.html)
 
