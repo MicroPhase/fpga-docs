@@ -241,7 +241,7 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 |  5   | GPIO2_2P  |   E17    |  6   | GPIO2_2N  |   D18    |
 |  7   | GPIO2_3P  |   E18    |  8   | GPIO2_3N  |   E19    |
 |  9   | GPIO2_4P  |   G17    |  10  | GPIO2_4N  |   G18    |
-|  11  |  VCC_5V   |          |  12  |           |          |
+|  11  |  VCC_5V   |          |  12  |    GND    |          |
 |  13  | GPIO2_5P  |   H16    |  14  | GPIO2_5N  |   H17    |
 |  15  | GPIO2_6P  |   B19    |  16  | GPIO2_6N  |   A20    |
 |  17  | GPIO2_7P  |   C20    |  18  | GPIO2_7N  |   B20    |
@@ -250,7 +250,7 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 |  23  | GPIO2_10P |   F19    |  24  | GPIO2_10N |   F20    |
 |  25  | GPIO2_11P |   G19    |  26  | GPIO2_11N |   G20    |
 |  27  | GPIO2_12P |   J20    |  28  | GPIO2_12N |   H20    |
-|  29  |  VCC_3V3  |          |  30  |           |          |
+|  29  |  VCC_3V3  |          |  30  |    GND    |          |
 |  31  | GPIO2_13P |   K16    |  32  | GPIO2_13N |   J16    |
 |  33  | GPIO2_14P |   K19    |  34  | GPIO2_14N |   J19    |
 |  35  | GPIO2_15P |   L16    |  36  | GPIO2_15N |   L17    |
