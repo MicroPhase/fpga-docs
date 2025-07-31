@@ -25,31 +25,31 @@ Z7 Nano 是一款基于 Xilinx Zynq-7000 SoC（XC7Z010 或 XC7Z020）的开发�
 ### ○资源特性
 
 - Xilinx Zynq™ XC7Z010-1CLG400C（仅限 7010 版本），  
-Xilinx Zynq™ XC7Z020-2CLG400C（仅限 7020 版本）
+  Xilinx Zynq™ XC7Z020-2CLG400C（仅限 7020 版本）
 
 - DDR3：1 个 4Gbit DDR3（MT41J256M16HA-125:K 或等效型号）。  
-  
+
 - 按键：1 个用户按键，由 PL 控制。  
-  
+
 - LED：2 个用户 LED，1 个 PS 控制，1 个 PL 控制。  
-  
+
 - GPIO：2 个 40 针扩展端口（2.54mm 间距），72 个 3.3V 电压的 IO。  
-  
+
 - USB JTAG：1 个板载 JTAG 电路，可通过 USB 电缆调试和下载 ZYNQ 系统。  
-  
+
 - HDMI：1 个 HDMI 视频输出接口，可实现 1080P 视频图像。  
-  
+
 - PHY ETH：2 个 10/100/1000M 以太网 RJ45 接口，可用于以太网数据交换或其他应用。  
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 个 PS 控制，1 个 PL 控制。  
-  
+
 - USB Host：1 个 USB Host。  
-  
+
 - SD 卡：1 个 SD 卡，用于存储操作系统镜像和文件系统。  
-  
+
 - USB UART：1 个 USB UART 接口，用于与 PC 进行串行通信。  
-  
+
 - 时钟：1 个 33.33MHz 有源晶振，为 PS 系统提供稳定时钟。  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 个 50MHz 有源晶振，为 PL 逻辑提供额外时钟。  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1 个 50MHz 有源晶振，为 PL 逻辑提供额外时钟。  
 
 ### ○系统框图
 
@@ -64,7 +64,7 @@ Xilinx Zynq™ XC7Z020-2CLG400C（仅限 7020 版本）
 ### ○FPGA
 
 - 667 MHz dual-core Cortex-A9 processor  
-  
+
 - DDR3L memory controller with 8 DMA channels and 4   
 
 - High-Performance AXI3 Slave ports  
@@ -144,8 +144,8 @@ RTL8211F芯片支持10/100/1000M网络传输速率，并通过RGMII接口与Zynq
 
 | 信号名称 |   引脚名称   | 引脚编号 |     说明      |
 | :------: | :----------: | :------: | :-----------: |
-| UART_TX  | PS_MIO15_500 |    C5    | UART 数据输出 |
-| UART_RX  | PS_MIO14_500 |    C8    | UART 数据输出 |
+| UART_TX  | PS_MIO15_500 |    C8    | UART 数据输出 |
+| UART_RX  | PS_MIO14_500 |    C5    | UART 数据输入 |
 
 ### ○USB JTAG
 
@@ -213,50 +213,49 @@ Z7-Nano 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的
 | :--: | :-------: | :------: | :--: | :-------: | :------: |
 |  1   | GPIO1_0P  |   N17    |  2   | GPIO1_0N  |   P18    |
 |  3   | GPIO1_1P  |   R16    |  4   | GPIO1_1N  |   R17    |
-|  5   | GPIO1_2P  |   T16    |  6   | GPIO1_2N  |   U17    |
-|  7   | GPIO1_3P  |   W18    |  8   | GPIO1_3N  |   W19    |
-|  9   | GPIO1_4P  |   Y18    |  10  | GPIO1_4N  |   Y19    |
-|  11  |  VCC_5V   |    \-    |  12  |    GND    |    \-    |
-|  13  | GPIO1_5P  |   Y16    |  14  | GPIO1_5N  |   Y17    |
-|  15  | GPIO1_6P  |   V17    |  16  | GPIO1_6N  |   V18    |
-|  17  | GPIO1_7P  |   W14    |  18  | GPIO1_7N  |   Y14    |
+|  5   | GPIO1_2P  |   T17    |  6   | GPIO1_2N  |   R18    |
+|  7   | GPIO1_3P  |   T16    |  8   | GPIO1_3N  |   U17    |
+|  9   | GPIO1_4P  |   W18    |  10  | GPIO1_4N  |   W19    |
+|  11  |  VCC_5V   |          |  12  |    GND    |          |
+|  13  | GPIO1_5P  |   Y18    |  14  | GPIO1_5N  |   Y19    |
+|  15  | GPIO1_6P  |   Y16    |  16  | GPIO1_6N  |   Y17    |
+|  17  | GPIO1_7P  |   V17    |  18  | GPIO1_7N  |   V18    |
 |  19  | GPIO1_8P  |   V16    |  20  | GPIO1_8N  |   W16    |
-|  21  | GPIO1_9P  |   T17    |  22  | GPIO1_9N  |   R18    |
-|  23  | GPIO1_10P |   V12    |  24  | GPIO1_10N |   W13    |
-|  25  | GPIO1_11P |   T14    |  26  | GPIO1_11N |   T15    |
-|  27  | GPIO1_12P |   T11    |  28  | GPIO1_12N |   T10    |
-|  29  |  VCC_3V3  |    \-    |  30  |    GND    |    \-    |
-|  31  | GPIO1_13P |   V15    |  32  | GPIO1_13N |   W15    |
-|  33  | GPIO1_14P |   P14    |  34  | GPIO1_14N |   R14    |
-|  35  | GPIO1_15P |   U14    |  36  | GPIO1_15N |   U15    |
-|  37  | GPIO1_16P |   U13    |  38  | GPIO1_16N |   V13    |
-|  39  | GPIO1_17P |   T12    |  40  | GPIO1_17N |   U12    |
-
+|  21  | GPIO1_9P  |   V15    |  22  | GPIO1_9N  |   W15    |
+|  23  | GPIO1_10P |   U14    |  24  | GPIO1_10N |   U15    |
+|  25  | GPIO1_11P |   U13    |  26  | GPIO1_11N |   V13    |
+|  27  | GPIO1_12P |   T12    |  28  | GPIO1_12N |   U12    |
+|  29  |  VCC_3V3  |          |  30  |    GND    |          |
+|  31  | GPIO1_13P |   W14    |  32  | GPIO1_13N |   Y14    |
+|  33  | GPIO1_14P |   V12    |  34  | GPIO1_14N |   W13    |
+|  35  | GPIO1_15P |   T14    |  36  | GPIO1_15N |   T15    |
+|  37  | GPIO1_16P |   T11    |  38  | GPIO1_16N |   T10    |
+|  39  | GPIO1_17P |   P14    |  40  | GPIO1_17N |   R14    |
 
 **JP2:**  
 
 | 引脚 | 信号名称  | 引脚编号 | 引脚 | 信号名称  | 引脚编号 |
 | :--: | :-------: | :------: | :--: | :-------: | :------: |
-|  1   | GPIO2_0P  |   L16    |  2   | GPIO2_0N  |   L17    |
-|  3   | GPIO2_1P  |   H15    |  4   | GPIO2_1N  |   G15    |
-|  5   | GPIO2_2P  |   F16    |  6   | GPIO2_2N  |   F17    |
+|  1   | GPIO2_0P  |   H15    |  2   | GPIO2_0N  |   G15    |
+|  3   | GPIO2_1P  |   F16    |  4   | GPIO2_1N  |   F17    |
+|  5   | GPIO2_2P  |   E17    |  6   | GPIO2_2N  |   D18    |
 |  7   | GPIO2_3P  |   E18    |  8   | GPIO2_3N  |   E19    |
-|  9   | GPIO2_4P  |   B19    |  10  | GPIO2_4N  |   A20    |
-|  11  |  VCC_5V   |    \-    |  12  |    GND    |    \-    |
-|  13  | GPIO2_5P  |   D19    |  14  | GPIO2_5N  |   D20    |
-|  15  | GPIO2_6P  |   E17    |  16  | GPIO2_6N  |   D18    |
-|  17  | GPIO2_7P  |   H16    |  18  | GPIO2_7N  |   H17    |
-|  19  | GPIO2_8P  |   G19    |  20  | GPIO2_8N  |   G20    |
+|  9   | GPIO2_4P  |   G17    |  10  | GPIO2_4N  |   G18    |
+|  11  |  VCC_5V   |          |  12  |           |          |
+|  13  | GPIO2_5P  |   H16    |  14  | GPIO2_5N  |   H17    |
+|  15  | GPIO2_6P  |   B19    |  16  | GPIO2_6N  |   A20    |
+|  17  | GPIO2_7P  |   C20    |  18  | GPIO2_7N  |   B20    |
+|  19  | GPIO2_8P  |   D19    |  20  | GPIO2_8N  |   D20    |
 |  21  | GPIO2_9P  |   J18    |  22  | GPIO2_9N  |   H18    |
-|  23  | GPIO2_10P |   K16    |  24  | GPIO2_10N |   J16    |
-|  25  | GPIO2_11P |   C20    |  26  | GPIO2_11N |   B20    |
-|  27  | GPIO2_12P |   G17    |  28  | GPIO2_12N |   G18    |
-|  29  |  VCC_3V3  |    \-    |  30  |    GND    |    \-    |
-|  31  | GPIO2_13P |   L19    |  32  | GPIO2_13N |   L20    |
-|  33  | GPIO2_14P |   F19    |  34  | GPIO2_14N |   F20    |
-|  35  | GPIO2_15P |   M19    |  36  | GPIO2_15N |   M20    |
-|  37  | GPIO2_16P |   K19    |  38  | GPIO2_16N |   J19    |
-|  39  | GPIO2_17P |   J20    |  40  | GPIO2_17N |   H20    |
+|  23  | GPIO2_10P |   F19    |  24  | GPIO2_10N |   F20    |
+|  25  | GPIO2_11P |   G19    |  26  | GPIO2_11N |   G20    |
+|  27  | GPIO2_12P |   J20    |  28  | GPIO2_12N |   H20    |
+|  29  |  VCC_3V3  |          |  30  |           |          |
+|  31  | GPIO2_13P |   K16    |  32  | GPIO2_13N |   J16    |
+|  33  | GPIO2_14P |   K19    |  34  | GPIO2_14N |   J19    |
+|  35  | GPIO2_15P |   L16    |  36  | GPIO2_15N |   L17    |
+|  37  | GPIO2_16P |   M19    |  38  | GPIO2_16N |   M20    |
+|  39  | GPIO2_17P |   L19    |  40  | GPIO2_17N |   L20    |
 
 ## ●3.相关文档
 
