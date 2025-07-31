@@ -145,8 +145,8 @@ Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only)
 
 | Signal Name |   Pin Name   | Pin Number |     Explain      |
 | :---------: | :----------: | :--------: | :--------------: |
-|   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
-|   UART_RX   | PS_MIO14_500 |     C8     | UART data output |
+|   UART_TX   | PS_MIO15_500 |     C8     | UART data output |
+|   UART_RX   | PS_MIO14_500 |     C5     | UART data output |
 
 ### ○USB JTAG
 
