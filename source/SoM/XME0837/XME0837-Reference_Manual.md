@@ -1,4 +1,4 @@
-# **XME0837 User Manual**
+# **XME0837 Reference Manual**
 
 [[中文]](https://microphase-doc.readthedocs.io/zh-cn/latest/SoM/XME0837/XME0837-Reference_Manual.html)
 
