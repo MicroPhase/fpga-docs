@@ -26,7 +26,7 @@ Z7 Lite 是一款基于 Xilinx Zynq-7000 SoC（XC7Z010 或 XC7Z020）的商业�
 ### ○资源特性
 
 - Xilinx Zynq™ XC7Z010-1CLG400C（仅限 7010 版本），  
-Xilinx Zynq™ XC7Z020-1CLG400C（仅限 7020 版本）。  
+  Xilinx Zynq™ XC7Z020-1CLG400C（仅限 7020 版本）。  
 
 - DDR3：1 个 4Gbit DDR3（MT41J256M16HA-125:K 或等效型号）。  
 - 按键：3 个用户按键，1 个 PS 控制，2 个 PL 控制。  
@@ -39,7 +39,7 @@ Xilinx Zynq™ XC7Z020-1CLG400C（仅限 7020 版本）。
 - SD 卡：1 个 SD 卡，用于存储操作系统镜像和文件系统。  
 - USB UART：1 个 USB UART 接口，用于与 PC 进行串行通信。  
 - 时钟：1 个 33.33MHz 有源晶振，为 PS 系统提供稳定时钟。  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1 个 50MHz 有源晶振，为 PL 逻辑提供额外时钟。  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1 个 50MHz 有源晶振，为 PL 逻辑提供额外时钟。  
 
 ### ○系统框图
 
@@ -65,16 +65,16 @@ Xilinx Zynq™ XC7Z020-1CLG400C（仅限 7020 版本）。
 - Programmable from JTAG, Quad-SPI flash, and microSD card  
 
 - Programmable logic equivalent to Artix-7 FPGA  
-     LUTs: 17,600 (7010)  
-        	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
-    DSP Slices: 80 (7010)   
-        	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
-    Logic Cells: 28K (7010)  
-    		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)  
-    Flip-Flops: 35,200 (7010)   
-        	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
-    Total Block RAM: 2.1Mb (7010)  
-    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
+  LUTs: 17,600 (7010)  
+     	   &ensp;&ensp;&ensp;&ensp;&ensp;53,200(7020)  
+  DSP Slices: 80 (7010)   
+      	&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;220 (7020)  
+  Logic Cells: 28K (7010)  
+  		  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;85K(7020)  
+  Flip-Flops: 35,200 (7010)   
+      	 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;106,400 (7020)  
+  Total Block RAM: 2.1Mb (7010)  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.9Mb (7020)  
 
 - Analog Mixed Signal (AMS) / XADC:  2x 12 bit, MSPS ADCs with up to 17 Differential Inputs  
 
@@ -132,8 +132,8 @@ RTL8201F 芯片支持 10/100M 网络传输速率，并通过 RGMII 接口与 Zyn
 
 | 信号名称 |   引脚名称   | 引脚编号 |     说明      |
 | :------: | :----------: | :------: | :-----------: |
-| UART_TX  | PS_MIO15_500 |    C5    | UART 数据输出 |
-| UART_RX  | PS_MIO14_500 |    C8    | UART 数据输入 |
+| UART_TX  | PS_MIO15_500 |    C8    | UART 数据输出 |
+| UART_RX  | PS_MIO14_500 |    C5    | UART 数据输入 |
 
 ### ○USB JTAG
 
@@ -255,6 +255,7 @@ Z7-Lite 的启动设置包括 JTAG、QSPI 和 SD 模式，这些模式由 J1 的
 ![](./Z7-Lite_Reference_Manual.assets/POWER.png)
 
 ## ●3. 相关文档 
+
 - [Z7-Lite_R11 原理图](https://swnatyr2ph.feishu.cn/file/Ka2wbiF3hoHUFVxuvu4cEH4GnuR) (PDF)
 - [Z7-Lite_R11 尺寸](https://swnatyr2ph.feishu.cn/file/SYtxb0NBPo8P9Wxwc2OcRDtdnXb) (PDF)  
 - [Z7-Lite_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/LsOnbJD3LoSD3uxNIXKcnt3cneh) (DXF)
