@@ -126,31 +126,6 @@ The base board provides 3 expansion IO ports, 2 40-Pin expansion ports JP1 and J
 
 | Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
 | :--: | :---------: | :--------: | :--: | :---------: | :--------: |
-|  1   |  GPIO2_0P   |    J18     |  2   |  GPIO2_0N   |    H18     |
-|  3   |  GPIO2_1P   |    E17     |  4   |  GPIO2_1N   |    D18     |
-|  5   |  GPIO2_2P   |    E18     |  6   |  GPIO2_2N   |    E19     |
-|  7   |  GPIO2_3P   |    C20     |  8   |  GPIO2_3N   |    B20     |
-|  9   |  GPIO2_4P   |    K14     |  10  |  GPIO2_4N   |    J14     |
-|  11  |   VCC_5V    |     -      |  12  |     GND     |     -      |
-|  13  |  GPIO2_5P   |    B19     |  14  |  GPIO2_5N   |    A20     |
-|  15  |  GPIO2_6P   |    H15     |  16  |  GPIO2_6N   |    G15     |
-|  17  |  GPIO2_7P   |    F16     |  18  |  GPIO2_7N   |    F17     |
-|  19  |  GPIO2_8P   |    D19     |  20  |  GPIO2_8N   |    D20     |
-|  21  |  GPIO2_9P   |    L16     |  22  |  GPIO2_9N   |    L17     |
-|  23  |  GPIO2_10P  |    F19     |  24  |  GPIO2_10N  |    F20     |
-|  25  |  GPIO2_11P  |    G17     |  26  |  GPIO2_11N  |    G18     |
-|  27  |  GPIO2_12P  |    G19     |  28  |  GPIO2_12N  |    G20     |
-|  29  |   VCC_3V3   |     -      |  30  |     GND     |     -      |
-|  31  |  GPIO2_13P  |    K19     |  32  |  GPIO2_13N  |    J19     |
-|  33  |  GPIO2_14P  |    M17     |  34  |  GPIO2_14N  |    M18     |
-|  35  |  GPIO2_15P  |    L19     |  36  |  GPIO2_15N  |    L20     |
-|  37  |  GPIO2_16P  |    M19     |  38  |  GPIO2_16N  |    M20     |
-|  39  |  GPIO2_17P  |    H16     |  40  |  GPIO2_17N  |    H17     |
-
-**JP2**
-
-| Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
-| :--: | :---------: | :--------: | :--: | :---------: | :--------: |
 |  1   |  GPIO1_0P   |    U18     |  2   |  GPIO1_0N   |    U19     |
 |  3   |  GPIO1_1P   |    T20     |  4   |  GPIO1_1N   |    U20     |
 |  5   |  GPIO1_2P   |    V20     |  6   |  GPIO1_2N   |    W20     |
@@ -171,6 +146,32 @@ The base board provides 3 expansion IO ports, 2 40-Pin expansion ports JP1 and J
 |  35  |  GPIO1_15P  |    U13     |  36  |  GPIO1_15N  |    V13     |
 |  37  |  GPIO1_16P  |    T12     |  38  |  GPIO1_16N  |    U12     |
 |  39  |  GPIO1_17P  |    T11     |  40  |  GPIO1_17N  |    T10     |
+
+
+**JP2**
+
+| Pin  | Signal Name | Pin Number | Pin  | Signal Name | Pin Number |
+| :--: | :---------: | :--------: | :--: | :---------: | :--------: |
+|  1   |  GPIO2_0P   |    J18     |  2   |  GPIO2_0N   |    H18     |
+|  3   |  GPIO2_1P   |    E17     |  4   |  GPIO2_1N   |    D18     |
+|  5   |  GPIO2_2P   |    E18     |  6   |  GPIO2_2N   |    E19     |
+|  7   |  GPIO2_3P   |    C20     |  8   |  GPIO2_3N   |    B20     |
+|  9   |  GPIO2_4P   |    K14     |  10  |  GPIO2_4N   |    J14     |
+|  11  |   VCC_5V    |     -      |  12  |     GND     |     -      |
+|  13  |  GPIO2_5P   |    B19     |  14  |  GPIO2_5N   |    A20     |
+|  15  |  GPIO2_6P   |    H15     |  16  |  GPIO2_6N   |    G15     |
+|  17  |  GPIO2_7P   |    F16     |  18  |  GPIO2_7N   |    F17     |
+|  19  |  GPIO2_8P   |    D19     |  20  |  GPIO2_8N   |    D20     |
+|  21  |  GPIO2_9P   |    L16     |  22  |  GPIO2_9N   |    L17     |
+|  23  |  GPIO2_10P  |    F19     |  24  |  GPIO2_10N  |    F20     |
+|  25  |  GPIO2_11P  |    G17     |  26  |  GPIO2_11N  |    G18     |
+|  27  |  GPIO2_12P  |    G19     |  28  |  GPIO2_12N  |    G20     |
+|  29  |   VCC_3V3   |     -      |  30  |     GND     |     -      |
+|  31  |  GPIO2_13P  |    K19     |  32  |  GPIO2_13N  |    J19     |
+|  33  |  GPIO2_14P  |    M17     |  34  |  GPIO2_14N  |    M18     |
+|  35  |  GPIO2_15P  |    L19     |  36  |  GPIO2_15N  |    L20     |
+|  37  |  GPIO2_16P  |    M19     |  38  |  GPIO2_16N  |    M20     |
+|  39  |  GPIO2_17P  |    H16     |  40  |  GPIO2_17N  |    H17     |
 
 **JP3**
 
