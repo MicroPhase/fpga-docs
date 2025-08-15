@@ -178,5 +178,5 @@ The development board requires a 12V DC power supply. Please use the specified p
 
 - [Dev_XME0726_R10 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/Dev_XME0726_R10.pdf)(PDF)
 - [Dev_XME0726_R10 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XME0726/Dev_XME0726_R10_Dimensions.pdf)(PDF)
-- [Dev_XME0726_R10 Board source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/Dev_XME0726_R10_Board_source_file.BRD)(Brd)
+- [Dev_XME0726_R10 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/others/Dev_XME0726_R10_Board_source_file.BRD)(DXF)
 
