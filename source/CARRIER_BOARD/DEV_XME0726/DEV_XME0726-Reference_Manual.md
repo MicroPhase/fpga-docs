@@ -171,5 +171,5 @@ SDIO 信号与 ZYNQ 的 SDIO 连接。Bank 501 的 VCCIO 电压为 1.8V，而 SD
 
 - [Dev_XME0726_R10 原理图](https://swnatyr2ph.feishu.cn/file/ZjEWbcSZ7oQiRsxASgvckJ2Xnwb) (PDF)
 - [Dev_XME0726_R10 尺寸](https://swnatyr2ph.feishu.cn/file/L3PXb4KOqoXBOSxMrqDcdwxhnYq) (PDF)
-- [Dev_XME0726_R10 板源文件](https://swnatyr2ph.feishu.cn/file/DTwxbHI3yo4M3dxVCWxcR1FKnlc) (Brd)
+- [Dev_XME0726_R10 尺寸源文件](https://swnatyr2ph.feishu.cn/file/DTwxbHI3yo4M3dxVCWxcR1FKnlc) (DXF)
 
