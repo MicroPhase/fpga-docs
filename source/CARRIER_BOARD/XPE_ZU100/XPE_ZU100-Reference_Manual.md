@@ -202,7 +202,7 @@ XPE_ZU100 板提供了五个 LED，一个电源指示灯和四个用户 LED。�
 
 - [XPE-ZU100_R40 原理图](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
 - [XPE-ZU100_R40 尺寸](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/PE500_R10_Dimensions.pdf)(PDF)
-- [XPE-ZU100_R40 板卡源文件](https://github.com/MicroPhase/fpga-docs/blob/master/others/PE500_R10_Board_source_file.brd)(Brd)
+- [XPE-ZU100_R40 尺寸源文件](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.dxf)(DXF)
 
 ### ○XME0803
 
