@@ -134,8 +134,8 @@ A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
 | Signal Name |   Pin Name   | Pin Number |     Explain      |
 | :---------: | :----------: | :--------: | :--------------: |
-|   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
-|   UART_RX   | PS_MIO14_500 |     C8     | UART data output |
+|   UART_TX   | PS_MIO15_500 |     C8     | UART data output |
+|   UART_RX   | PS_MIO14_500 |     C5     | UART data output |
 
 ### ○eMMC
 
