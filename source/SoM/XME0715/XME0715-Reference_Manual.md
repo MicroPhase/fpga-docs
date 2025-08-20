@@ -135,8 +135,8 @@ RTL8211F 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
 
 | Signal Name |   Pin Name   | Pin Number |    Explain    |
 | :---------: | :----------: | :--------: | :-----------: |
-|   UART_TX   | PS_MIO15_500 |     C5     | UART 数据输出 |
-|   UART_RX   | PS_MIO14_500 |     C8     | UART 数据输入 |
+|   UART_TX   | PS_MIO15_500 |     E17     | UART 数据输出 |
+|   UART_RX   | PS_MIO14_500 |     B17     | UART 数据输入 |
 
 ### ○eMMC
 
@@ -203,7 +203,7 @@ LED 信号描述如下表所示。
 | :--: | ------------------------ | ----------------------------------- |
 |  D4  | --                       | Power LED                           |
 |  D1  | T10                      | FPGA配置状态LED，FPGA配置成功后点亮 |
-|  D2  | G14/PS_MIO0_500          | PS侧用户LED，输出低时，LED亮        |
+|  D2  | G17/PS_MIO0_500          | PS侧用户LED，输出低时，LED亮        |
 |  D3  | T16                      | PL侧用户LED，输出低时，LED亮        |
 
 ### ○拓展口
