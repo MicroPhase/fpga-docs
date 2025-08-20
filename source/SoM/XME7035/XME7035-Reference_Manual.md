@@ -234,7 +234,7 @@ The LED signals are described in the following table.
 | ---- | -------- | ------------------------------------------------------------ |
 | D4   | --       | Power LED                                                    |
 | D1   | W9       | FPGA configuration status LED, lit after successful FPGA configuration |
-| D2   | G14      | LED on when FPGA E26 (MIO0) output is low                    |
+| D2   | E26      | LED on when FPGA E26 (MIO0) output is low                    |
 | D3   | H16      | LED on when FPGA H16 output is low                           |
 
 ### ○Expansion Ports  
