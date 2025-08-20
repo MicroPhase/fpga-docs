@@ -187,7 +187,7 @@ The LED signals are described in the following table.
 |  D4  | --                       | Power LED                                                    |
 |  D1  | T12/DONE_0               | FPGA configuration status LED, lit after successful FPGA configuration |
 |  D2  | G6/PS_MIO0_500           | LED on when FPGA PS_MIO0_500 output is low                   |
-|  D3  | T16                      | LED on when FPGA T16 output is low                           |
+|  D3  | R7                      | LED on when FPGA R7 output is low                           |
 
 ### ○Expansion Ports
 
