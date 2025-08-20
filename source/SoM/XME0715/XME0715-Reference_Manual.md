@@ -128,8 +128,8 @@ A USB to UART chip, the CH340, is provided for user connection to the host PC.
 
 | Signal Name |   Pin Name   | Pin Number |     Explain      |
 | :---------: | :----------: | :--------: | :--------------: |
-|   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
-|   UART_RX   | PS_MIO14_500 |     C8     | UART data input  |
+|   UART_TX   | PS_MIO15_500 |     E17     | UART data output |
+|   UART_RX   | PS_MIO14_500 |     B17     | UART data input  |
 
 ### ○eMMC
 
@@ -195,7 +195,7 @@ The LED signals are described in the following table.
 | :--: | ------------------------ | ------------------------------------------------------------ |
 |  D4  | --                       | Power LED                                                    |
 |  D1  | T10                      | FPGA configuration status LED, lit after successful FPGA configuration |
-|  D2  | G14/PS_MIO0_500          | LED on when FPGA PS_MIO0_500 output is low                   |
+|  D2  | G17/PS_MIO0_500          | LED on when FPGA PS_MIO0_500 output is low                   |
 |  D3  | T16                      | LED on when FPGA T16 output is low                           |
 
 ### ○Expansion Ports
