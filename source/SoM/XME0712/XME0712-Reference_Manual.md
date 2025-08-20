@@ -248,7 +248,7 @@ The LED signals are described in the following table.
 | :--: | -------- | ------------------------------------------------------------ |
 |  D4  | --       | Power LED                                                    |
 |  D1  | G11      | FPGA configuration status LED, lit after successful FPGA configuration |
-|  D3  | T16      | LED on when FPGA T16 output is high                          |
+|  D3  | F4      | LED on when FPGA T16 output is high                          |
 
 ### ○Expansion Ports
 
