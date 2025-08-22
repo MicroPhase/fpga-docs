@@ -240,17 +240,18 @@ FPGA Bank, IO count, and B2B connector relationship table
 | Bank231    | JM2            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
 | Bank230    | JM2            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
 | Bank229    | JM2            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
-| Bank90     | JM3            | 24       | Adjustable | 36 single-ended, configurable as 18 differential pairs |
-| Bank91     | JM3            | 24       | Adjustable | 36 single-ended, configurable as 18 differential pairs |
+| Bank90     | JM3            | 24       | Adjustable | 24 single-ended, configurable as 12 differential pairs |
+| Bank91     | JM3            | 24       | Adjustable | 24 single-ended, configurable as 12 differential pairs |
 | Bank228    | JM3            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
 | Bank227    | JM3            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
 | Bank226    | JM3            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
 | Bank225    | JM3            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
 | Bank224    | JM3            | 18       | -          | 1 CLK pair, 4 TX and RX pairs                          |
-| Bank69     | JM4            | 48       | Adjustable | 36 single-ended, configurable as 18 differential pairs |
-| Bank70     | JM4            | 48       | Adjustable | 36 single-ended, configurable as 18 differential pairs |
-| Bank71     | JM4            | 46       | Adjustable | 36 single-ended, configurable as 18 differential pairs |
-| Bank93     | JM4            | 48       | Adjustable | 36 single-ended, configurable as 18 differential pairs |
+| Bank69     | JM4            | 48       | Adjustable | 48 single-ended, configurable as 24 differential pairs |
+| Bank70     | JM4            | 48       | Adjustable | 48 single-ended, configurable as 24 differential pairs |
+| Bank71     | JM4            | 46       | Adjustable | 46 single-ended, configurable as 23 differential pairs |
+| Bank93     | JM4            | 24       | Adjustable | 24 single-ended, configurable as 12 differential pairs |
+| Bank94     | JM4            | 24       | Adjustable | 24 single-ended, configurable as 12 differential pairs |
 
 Notes:
 
