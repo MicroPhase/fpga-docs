@@ -200,8 +200,8 @@ The carrier board provides one IDC40 GPIO expansion ports, JP1, which allows con
 ## ●3. Related Documents  
 
 ### ○XPE-ZU100 
-- [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/PE500_R10.pdf)(PDF)
-- [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/PE500_R10_Dimensions.pdf)(PDF)
+- [XPE-ZU100_R40 Schematic](https://github.com/MicroPhase/fpga-docs/blob/master/schematic/XPE-ZU100_R40.pdf)(PDF)
+- [XPE-ZU100_R40 Dimensions](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.pdf)(PDF)
 - [XPE-ZU100_R40 Dimensions source file](https://github.com/MicroPhase/fpga-docs/blob/master/mechanical/XPE-ZU100/XPE-ZU100_R40_Dimensions.dxf)(DXF)
 
 ### ○XME0803
