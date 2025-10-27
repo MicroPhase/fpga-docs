@@ -23,7 +23,7 @@ Mizar-Z7 is a commercial-grade SoC development board based on the Xilinx Zynq-70
 ### ○Key Features
 
 - Xilinx Zynq™ XC7Z010-1CLG400C (7010 Version Only),  
-  Xilinx Zynq™ XC7Z020-1CLG400C (7020 Version Only).  
+  Xilinx Zynq™ XC7Z020-2CLG400C (7020 Version Only).  
 
   
   
@@ -33,7 +33,7 @@ Mizar-Z7 is a commercial-grade SoC development board based on the Xilinx Zynq-70
   
 
 
-- Flash: 256Mbit QSPI Flash, 8GB eMMC Flash.    
+- Flash: 256Mbit QSPI Flash.    
 
   
 
