@@ -23,12 +23,12 @@ Mizar-Z7 是微相科技基于 Xilinx Zynq-7000 系列开发的商业级 SoC 开
 ### ○资源特性
 
 - Xilinx Zynq™ XC7Z010-1CLG400C（仅 7010 版本），  
-  Xilinx Zynq™ XC7Z020-1CLG400C（仅 7020 版本）。  
+  Xilinx Zynq™ XC7Z020-2CLG400C（仅 7020 版本）。  
 
 - DDR3：512MB DDR3 RAM（仅 7010 版本），  
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1GB DDR3 RAM（仅 7020 版本）。  
 
-- 闪存：256Mbit QSPI 闪存，8GB eMMC 闪存。  
+- 闪存：256Mbit QSPI 闪存。  
 
 - Wi-Fi/BT：1 通道 Wi-Fi 集成蓝牙，可用于无线传输、物联网应用。（仅 7020 版本）  
 
