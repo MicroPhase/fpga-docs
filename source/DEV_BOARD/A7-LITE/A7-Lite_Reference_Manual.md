@@ -14,7 +14,7 @@
 
 ## ●1. 概述
 
-A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L 和 XC7A200T-2FGG484L）的商业级 SoC 开发板，配备高达 4Gb 的 DDR3/L SDRAM、128MB 的 SPI 闪存、千兆以太网 PHY 收发器、USB接口以及简单的供电方式。可根据需求提供定制版本，定制需求可能需要满足最低订购量，请联系我们的销售团队获取更多信息：<sales@microphase.cn>。
+A7-Lite 是一款基于 Xilinx Artix-7（XC7A35T-2FGG484L、XC7A100T-2FGG484L 和 XC7A200T-2FGG484L）的商业级 SoC 开发板，配备高达 4Gb 的 DDR3/L SDRAM、128MB 的 SPI 闪存、千兆以太网 PHY 收发器、USB接口以及简单的供电方式。选择型号时请注意,35T BANK13为NC，如需使用BANK13请选择其它规格。可根据需求提供定制版本，定制需求可能需要满足最低订购量，请联系我们的销售团队获取更多信息：<sales@microphase.cn>。
 
 ### ○板卡布局
 
@@ -312,6 +312,6 @@ A7-Lite 提供了一个按键（K3），可用作 FPGA 上运行设计的“复�
 
 ## ●3. 相关文档
 
-- [A7-Lite_R11 原理图](https://swnatyr2ph.feishu.cn/file/TK56bzHwToLKwEx32WpcGsLxnCb) (PDF)
+- [A7-Lite_R13 原理图](https://swnatyr2ph.feishu.cn/file/Xjv2byJQgo2ABGxPUgRcW4DTnef) (PDF)
 - [A7-Lite_R11 尺寸](https://swnatyr2ph.feishu.cn/file/YOCNbeMFmo3jz4xwcORc9qV0nvg) (PDF)  
 - [A7-Lite_R11 尺寸源文件](https://swnatyr2ph.feishu.cn/file/DpAObockPopsCGxFne4culVFnpg) (DXF)
