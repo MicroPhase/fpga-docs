@@ -219,7 +219,7 @@ The XME0837 core board has two LEDs. One is a power indicator, which is red. The
 
 The XME0837 uses four high-speed connectors to extend the FPGA signals.
 
-4 x ADF6-60-03.5-L-4-2-FR, 168Pin, 0.64mm pitch
+4 x ADF6-60-03.5-L-4-2-FR, 240Pin, 0.64mm pitch
 
 | Core Board Connector Model | Base Board Connector Model | Manufacturer | Height |
 | -------------------------- | -------------------------- | ------------ | ------ |
