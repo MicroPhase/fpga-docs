@@ -219,7 +219,7 @@ Description:
 2. Bank35 IO level depends on Pin71 voltage input, input range 1.2V-3.3V.
 3. SD Signal (Pin139-Pin144) voltage is 1.8V.
 4. MIO9-MIO13, UART, JTAG, RESET(Pin145-Pin157) level is 3.3V.
-5. Please refer to the ‘[XME0724_Pinout _Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724_Pinout_Table.pdf)’ for detailed pin definitions of the XME0724.
+5. Please refer to the ‘[XME0724_Pinout _Table](https://github.com/MicroPhase/fpga-docs/blob/master/others/XME0724_Pinout_Table_R20.xlsx)’ for detailed pin definitions of the XME0724.
 
 ## ●3. Related Documents  
 ### ○XME0724
