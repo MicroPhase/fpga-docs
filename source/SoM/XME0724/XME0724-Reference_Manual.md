@@ -220,7 +220,7 @@ XME0724 采用 1.27mm 间距邮票孔连接，确保最佳电气特性和抗干�
   2. Bank35 IO 电平取决于 Pin71 电压输入，输入范围为 1.2V-3.3V。  
   3. SD 信号（Pin139-Pin144）电压为 1.8V。  
   4. MIO9-MIO13、UART、JTAG、RESET（Pin145-Pin157）电平为 3.3V。  
-  5. 有关 XME0724 的详细引脚定义，请参阅《[XME0724_Pinout _Table](https://swnatyr2ph.feishu.cn/file/CHHRbiNSqozH67xvEGscG2i6nVe)》。
+  5. 有关 XME0724 的详细引脚定义，请参阅《[XME0724_Pinout _Table](https://swnatyr2ph.feishu.cn/file/OEJabsO7EobbVFxn1eucWhmwnJf?from=from_copylink)》。
 
   ## ●3. 相关文档  
   ### ○XME0724
