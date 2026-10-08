@@ -185,12 +185,12 @@ The USB2.0 transceiver on-board is the USB3320C-EZK, which supports the ULPI sta
 
 ### ○USB UART
 
-A USB to UART chip, the CH340, is provided for user connection to the host PC.
+A USB to UART chip, the CP2102, is provided for user connection to the host PC.
 
 | Signal Name |   Pin Name   | Pin Number |     Explain      |
 | :---------: | :----------: | :--------: | :--------------: |
-|   UART_TX   | PS_MIO15_500 |     C5     | UART data output |
-|   UART_RX   | PS_MIO14_500 |     C8     | UART data input  |
+|   UART_TX   | PS_MIO15_500 |     B12     | UART data output |
+|   UART_RX   | PS_MIO14_500 |     C12     | UART data input  |
 
 ### ○USB JTAG
 
