@@ -154,12 +154,12 @@ RTL8211E 芯片支持 10/100/1000M 网络传输速率，并通过 RGMII 接口�
 
 ### ○USB UART
 
-提供了一个 USB 转 UART 芯片 CH340，用于用户连接到主机 PC。
+提供了一个 USB 转 UART 芯片 CP2102，用于用户连接到主机 PC。
 
 | 信号名称 | 引脚名称     | 引脚号 | 说明          |
 | -------- | ------------ | ------ | ------------- |
-| UART_TX  | PS_MIO15_500 | C5     | UART 数据输出 |
-| UART_RX  | PS_MIO14_500 | C8     | UART 数据输入 |
+| UART_TX  | PS_MIO15_500 | B12     | UART 数据输出 |
+| UART_RX  | PS_MIO14_500 | C12     | UART 数据输入 |
 
 ### ○USB JTAG
 
